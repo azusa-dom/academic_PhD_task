@@ -1,0 +1,4 @@
+interface:
+  display_name: "医学与 AI 科研绘图工作包"
+  short_description: "医学影像与 AI 机制图工作流：规划、预览、精修、可编辑交付与科学审计"
+  default_prompt: "使用 $medical-ai-figure-workflow 根据我的素材制作科研机制图，先锁定科学论点，再生成紧凑清晰的 PNG 预览。"

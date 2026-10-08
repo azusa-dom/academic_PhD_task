@@ -1,0 +1,40 @@
+template_version: "1.0"
+record_status: TEMPLATE_NOT_EXECUTED
+figure_id: null
+mode: preview
+primary_claim: null
+claim_source: null
+figure_role: null
+inputs: []
+output_directory: null
+defaults:
+  explanation_language: zh-CN
+  figure_label_language: en
+  preview_format: PNG
+  native_format: null
+  journal_context: research_manuscript_unspecified
+  style_status: ESTIMATED
+  style_profile: compact_restrained_academic
+  style_sample_paths: []
+  style_calibration_status: TEXT_PREFERENCES_ONLY
+  # Working presets, not verified journal rules.
+  manuscript_width_mm: 180
+  body_label_pt: 8
+  preview_dpi: 300
+evidence:
+  panels: []
+  source_locations: []
+  unsupported_claims: []
+scope:
+  preserve_originals: true
+  preserve_label_text: false
+  requested_changes: []
+  do_not_change: []
+  external_service_authorization: null
+execution:
+  selected_backend: null
+  actual_source_paths: []
+  reversible_assumptions: []
+  missing_essential_inputs: []
+  completed_stage: null
+  next_action: null

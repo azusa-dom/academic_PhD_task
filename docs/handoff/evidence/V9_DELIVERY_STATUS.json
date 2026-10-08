@@ -1,0 +1,65 @@
+{
+  "project": "Cine-CMR critical narrative review v9",
+  "date": "2026-10-08",
+  "route": "narrative_review",
+  "target_journal": "Journal of Cardiovascular Magnetic Resonance",
+  "starting_git_revision": "fd23448630260315d1af0daab3f3e5bec6976576",
+  "baseline": {
+    "selected": "complete predecessor v8.1 delivery from Slurm job 22322783",
+    "predecessor_job_exit": "completed_exit_0",
+    "anchor_v8_sha256": "a1e6a1cd515ce3f902d4e81de0e835d6df715f68683213fdccfcebcbfe9bdfe7"
+  },
+  "deliverables": {
+    "main_pdf": {
+      "path": "main_v9.pdf",
+      "pages": 23,
+      "sha256": "d2635cb07968c718d047293b50ebcf830848278e966bc97f9985e4f1c0c1becb"
+    },
+    "supplement_pdf": {
+      "path": "supplement_v9.pdf",
+      "pages": 10,
+      "sha256": "c0328f5d9bd83b53ed7caa38c5cdc085f39c7a3d3a941003d53275134ec8ca35"
+    },
+    "source": "source/",
+    "editable_tables": "tables/",
+    "figure_assets": "figures/",
+    "qa": "qa/"
+  },
+  "checks": {
+    "scientific_content_revision": "complete_at_ai_assisted_preparation_level",
+    "central_claim_source_checks": "complete_with_reading_depth_and_human_review_pending_recorded",
+    "active_references": 51,
+    "bibtex_errors": 0,
+    "bibtex_duplicates": 0,
+    "latex_build": "passed_main_and_supplement",
+    "unresolved_references": 0,
+    "release_log_warnings_matched": 0,
+    "page_by_page_visual_inspection": "passed_after_documented_correction_and_rebuild",
+    "clean_directory_rebuild": "passed_with_identical_extracted_text_and_page_rasters",
+    "figure_byte_identity": "passed_27_of_27_complete_assets_and_6_of_6_source_pdfs",
+    "zip_integrity": "passed_after_archive_creation_and_test",
+    "obsidian_csf3_reading_mirror": "staged_and_file_hashes_verified",
+    "author_approval": "pending",
+    "editorial_acceptance": "not_assessed"
+  },
+  "scope_limits": {
+    "new_experiment": false,
+    "raw_cardiac_data_processed": false,
+    "figure_created_or_edited_in_v9": false,
+    "journal_contact_or_submission": false,
+    "systematic_review_claim": false
+  },
+  "submission_ready": false,
+  "obsidian_stage_path": "/mnt/iusers01/fatpou01/bmh01/f12147zh/codex-slurm/obsidian-export/CSF3/Cine-CMR-review-v9-2026-10-08",
+  "submission_blockers": [
+    "author scientific review and approval",
+    "final author list, postal address and CRediT confirmation",
+    "competing-interests, funding and acknowledgement statements",
+    "figure and graphical-abstract scientific/rights/policy confirmation",
+    "live JCMR proposal route and upload-field verification"
+  ],
+  "future_research_not_submission_prerequisite": [
+    "file-level Stanford usable-pair audit",
+    "prespecified original benchmark using complementary validation resources"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Deep Research"
+  short_description: "Build deep, source-grounded research synthesis across papers."
+  default_prompt: "Synthesize deep research insights from a set of papers with evidence traceability"

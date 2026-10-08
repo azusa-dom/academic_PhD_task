@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing"
+  short_description: "Draft structured paper sections from study inputs."
+  default_prompt: "Write a structured first draft section for a research paper"

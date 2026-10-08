@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Assistant"
+  short_description: "Polish and optimize academic writing for clarity and rigor."
+  default_prompt: "Rewrite this academic paragraph for clarity and journal-ready style"

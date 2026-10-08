@@ -1,0 +1,1569 @@
+\section{Introduction}\label{sec:introduction}
+
+Myocardial infarction (MI) damages the left ventricle unevenly. Within weeks of an occlusion, the
+same ventricle contains an infarct core, a peri-infarct border region of mixed viable and
+non-viable tissue, and remote myocardium that is spared by the occlusion but is not thereby normal,
+since it works under altered loading. These regions do not behave alike, and the clinical questions that follow an infarction are
+regional questions: which segments will recover contractile function, how far the injury extends
+through the wall, and whether the remote wall is beginning to remodel. Contrast-enhanced cardiovascular magnetic
+resonance (CMR) established the first of these: the transmural extent of hyperenhancement is inversely related to
+the likelihood that a dysfunctional segment regains function after revascularisation~\citep{kim2000},
+and infarct size measured early after primary percutaneous coronary intervention is associated with
+subsequent mortality and heart failure~\citep{stone2016}. Cine-derived strain has in turn been
+associated with functional recovery, adverse remodelling, remote dysfunction and subsequent
+events~\citep{buss2015,reindl2021,delcanto2026,he2024}. Regional deformation is also the quantity of
+interest in hypertrophic and dilated phenotypes, in cardiotoxicity surveillance and in inflammatory
+and infiltrative disease, but post-infarction dysfunction is the clearest case and is used as the
+running example throughout this review.
+
+The decisions a reliable regional measurement might inform are worth naming, because they set the
+accuracy that would be needed. Candidates include identifying segments likely to recover after
+revascularisation, stratifying arrhythmic risk from the extent and timing of regional dysfunction,
+targeting a pacing lead away from scar, and detecting early regional deterioration during
+cardiotoxicity surveillance. None of these is established for cine-derived regional strain, and this
+review does not claim otherwise; they are listed because a tolerance has no meaning until the
+decision it serves is named.
+
+Left ventricular ejection fraction (LVEF) is a global quantity: it summarises net chamber emptying
+and therefore cannot localise a deficit that is offset by preserved or exaggerated motion
+elsewhere~\citep{schulzmenger2020,hundley2022}. Global strain is a finer summary of the same kind.
+In 45,700 UK Biobank participants, feature-tracking global longitudinal strain (GLS) was the only
+strain measure independently associated with mortality after
+adjustment~\citep{chadalavada2024}. That is useful prognostic information, but it is still a single
+number for the whole ventricle. A measurement that is intended to answer a regional question has to be
+evaluated as a regional measurement.
+
+Routine balanced steady-state free-precession (bSSFP) cine CMR is the natural place to look for that
+measurement. It is acquired in nearly every clinical CMR examination, needs no contrast agent, no
+additional breath-holds and no dedicated pulse sequence, and large retrospective archives of it
+already exist. Tagging and displacement encoding with stimulated echoes (DENSE) encode material
+motion deliberately and remain the material-sensitive references, but both require a separate
+acquisition, additional scan time and dedicated post-processing, and neither is routinely performed.
+If regional deformation could be recovered reliably from the cine images that are already acquired,
+it would be available in retrospective cohorts and in ordinary clinical practice at no extra cost in
+scan time.
+
+That possibility has driven a decade of methodological work. Commercial feature-tracking packages
+brought cine strain into clinical workflows; deformable registration gave dense fields with explicit
+objectives; and since 2016 a large family of learning-based estimators has appeared, first by
+transplanting general-purpose unsupervised registration networks to the heart, then by designing
+cardiac-specific architectures with shape, mesh, temporal, biomechanical or spectral structure, and
+most recently by supervising directly on DENSE-derived displacement or on downstream tissue and
+outcome labels. \Cref{sec:methods_families} reviews this literature in detail.
+
+What has not kept pace is the evidence that these estimates recover regional abnormality. The
+central question of this review is therefore:
+
+\begin{quote}
+\emph{To what extent does the available evidence support the claim that motion and strain estimated
+from routine cine CMR recover regional myocardial dysfunction, meaning its magnitude, its location,
+its spatial extent and its timing, and under which conditions does direct validation remain absent?}
+\end{quote}
+
+The question is deliberately symmetrical. It is not a premise that estimators smooth focal
+abnormalities away, and this review does not adopt that premise; it is an empirical claim that has
+been tested under some conditions and not under others, and the purpose of the funnel that follows
+is to establish which is which.
+
+Two reviews published in 2026 cover adjacent ground. Monfared et al.\ survey deep learning for
+cardiac wall-motion analysis across echocardiography, four-dimensional computed tomography and cine
+MRI, and emphasise data scarcity, interpretability and limited external
+validation~\citep{monfared2026}. Mahmoodi et al.\ survey artificial intelligence across the whole
+cardiovascular MRI pipeline, from planning and acquisition through reconstruction to analysis and
+reporting~\citep{mahmoodi2026}. The present review is narrower in scope and different in
+organisation: it is restricted to routine cine CMR, and it is organised by what each piece of
+evidence can establish about regional recovery rather than by method family or headline performance.
+
+\Cref{sec:observation} sets out what routine cine makes observable and what a strain number must
+declare before it can be compared. \Cref{sec:methods_families} reviews the estimators.
+\Cref{sec:validation} classifies the validation targets that have been used.
+\Cref{sec:regional} narrows to what is known specifically about regional and focal abnormalities.
+\Cref{sec:synthesis} synthesises the evidence along three axes and states what would have to be
+shown for a regional attribute to be treated as recoverable. \Cref{sec:open} lists the remaining
+open problems and returns to the central question.
+
+\subsection{Review type, search and reading depth}\label{sec:methods}
+
+This is a critical review in the sense of Grant and Booth: it evaluates and interprets a body of
+evidence against an explicit question rather than aggregating effect sizes~\citep{grant2009}, and it
+was written against the SANRA self-assessment items for narrative reviews~\citep{baethge2019sanra}.
+Searches covered PubMed and Europe PMC, OpenAlex, Crossref and arXiv, with backward and forward
+citation expansion from core method, comparison and standardisation papers, and with direct
+retrieval of official dataset, repository, guideline and regulatory records. The principal search
+themes were cine CMR motion estimation and deformable registration; myocardial strain measurement
+and its specification; tagging, DENSE and prescribed-motion references; regional and
+post-infarction strain; and accelerated or deep-learning cine reconstruction. Learning-based methods
+were searched from 2016 onwards, with earlier foundational registration and tagging work included
+where it is still the reference point. The evidence cutoff was 1 September 2026; one post-cutoff
+study was appraised separately as a targeted update and is identified as such wherever it is
+used~\citep{jahromi2026densecine}.
+
+Two reading rules were applied throughout. First, every quantitative or comparative statement is
+attributed to the specific source location it came from, and the depth at which that source was read
+is recorded in the accompanying claim audit; where only an abstract was available, only
+abstract-level statements are made. Second, each table cell is traceable to a source, and cells for
+which the source does not report the information are marked \texttt{not reported} rather than
+inferred. This review does not pool results, was screened by one person without independent
+duplicate screening, was not registered and deposits no protocol, and makes no claim of exhaustive
+retrieval; the supplementary search record supplies the query strings, caps and hit counts but no
+screening flow counts.
+
+\section{What cine observes and how strain is specified}\label{sec:observation}
+
+\subsection{Information available in routine cine}\label{sec:observability}
+
+bSSFP cine provides high blood--myocardium contrast, a well-sampled cardiac cycle and clinically
+reliable ventricular geometry. At the endocardial and epicardial boundaries, moving contours and
+local intensity patterns constrain motion directly. Within the myocardial wall, however, routine
+cine usually lacks persistent, deliberately encoded material markers comparable with tag
+intersections or DENSE phase: the trabecular and papillary structures that do provide interior
+texture are neither uniformly distributed nor stable through the cycle. Correspondence between
+material points is therefore inferred rather than observed, and every estimator closes the gap with
+continuity, smoothness, anatomical, incompressibility, biomechanical or learned
+constraints~\citep{pedrizzetti2016,duchateau2020}. This is not a property of machine learning; it
+arises whenever more degrees of freedom are estimated than the image distinguishes.
+\Cref{tab:signal} summarises the information each commonly paired acquisition supplies, and
+\cref{fig:chain} traces the chain from image evidence to a reported regional value.
+
+\begin{longtable}{@{}L{0.18\textwidth}L{0.23\textwidth}L{0.25\textwidth}L{0.25\textwidth}@{}}
+\caption{Trackable signal and the claim supported by commonly paired CMR acquisitions. The rows are
+complementary rather than an accuracy ranking.}\label{tab:signal}\\
+\toprule
+Acquisition & Signal that can constrain analysis & Relevant use & Principal boundary\\
+\midrule
+\endfirsthead
+\toprule
+Acquisition & Signal that can constrain analysis & Relevant use & Principal boundary\\
+\midrule
+\endhead
+Routine bSSFP cine & Moving blood--myocardium boundaries, papillary and trabecular patterns, and incompletely persistent wall texture & Chamber volumes, boundary motion and estimator-conditioned cine strain & No deliberately encoded dense material labels; resolution, partial volume and through-plane exchange weaken regional correspondence~\citep{pedrizzetti2016,adams2023}\\
+Tagging & Deforming tag lines and intersections embedded at preparation & Sparse or gridded material-sensitive displacement and strain comparison & Tag fading, spatial resolution, tag-tracking and registration error; a dedicated acquisition~\citep{cao2018,wehner2018}\\
+DENSE & Motion-encoded phase that yields displacement components under its acquisition model & Material-sensitive displacement and strain reference with explicit uncertainty & Phase unwrapping, stimulated-echo acquisition, spatial and temporal registration and processing error; not an error-free truth~\citep{cao2018,wang2023strainnet}\\
+Late gadolinium enhancement & Contrast-related tissue signal delineating infarct core, peri-infarct and remote zones & Independent tissue zoning and biological association & Different breath-holds, cardiac phases and slice geometry require registration; tissue contrast does not encode dense motion~\citep{guo2021,almeida2021}\\
+\bottomrule
+\end{longtable}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{figures/p1_Figure1_image_information_to_strain_report.pdf}
+ \caption{From image information to a regional strain report. \textbf{a}, end-diastolic (ED) and
+ end-systolic (ES) cine frames supply boundaries, texture and intensity, but not labels identifying
+ the same material point at both phases. \textbf{b}, an estimator infers a candidate correspondence
+ $\vect{\varphi}(\vect{X},t)$; feature-tracking, registration, biomechanical and learning-based
+ families overlap and each constrains the undetermined part of the field through its own
+ assumptions. \textbf{c}, strain is then defined on that inferred mapping through the displacement
+ $\vect{u}=\vect{\varphi}-\vect{X}$, the deformation gradient $\mat{F}$ and, in this example, the
+ Green--Lagrange tensor $\mat{E}$; seven further specification choices are required. \textbf{d}, the
+ regional value that is finally reported is conditional on all of the preceding choices. The cine
+ frames in panels a and c are real images; the ring, the dashed correspondences and the strain curve
+ are schematics and carry no measured value, which is why the curve is labelled illustrative and
+ normalised rather than given units.}
+ \label{fig:chain}
+\end{figure}
+
+\subsection{Through-plane motion, multiple views and image quality}\label{sec:throughplane}
+
+Two-dimensional regional analysis is particularly exposed to through-plane motion. A short-axis
+pixel at one phase need not contain the same tissue at the next: basal longitudinal excursion, slice
+thickness and non-parallel repeat prescriptions all change the sampled material, and a
+two-dimensional estimator can only explain that change as in-plane deformation. Global averaging
+absorbs non-systematic local error, whereas peak and time-to-peak estimates remain sensitive to it.
+Consistent with this observation model, the same-day strain-8 experiment found substantially poorer
+repeatability for many segmental longitudinal and radial measures than for global measures, with
+basal segments the most difficult~\citep{bell2025strain8}; the pattern is consistent with
+through-plane exchange but does not attribute every error to it.
+
+Long-axis cine narrows part of the gap by constraining longitudinal excursion and apical--basal
+geometry that a short-axis stack represents poorly, and multi-view and three-dimensional estimators
+exploit exactly this complementary information~\citep{meng2022mulvimotion,meng2024deepmesh,liu2026fe}.
+Independently acquired two-dimensional slices are not a simultaneous isotropic material volume,
+however, and slice misregistration remains possible. Additional views constrain the field without
+guaranteeing identifiable material correspondence, so a method claiming three-dimensional motion
+from multi-planar two-dimensional cine should report slice geometry, temporal alignment, view
+interaction and behaviour when one view is missing or degraded~\citep{duchateau2020}.
+
+Image quality enters the same way. Temporal undersampling can alter peak magnitude and timing;
+spatial averaging can alter the width and amplitude of a regional gradient; mistriggering and
+arrhythmia disrupt the assumed cycle; and contour correction changes the information supplied to the
+tracker. Silently excluding low-quality cases may overstate accuracy for a clinical population,
+while retaining them without a failure flag hides the resulting uncertainty, so a validation dataset
+needs both acceptable and deliberately challenging cases with the rejection rate and the residual
+error reported together. \Cref{sec:conditions} returns to this with the reconstruction literature.
+
+\subsection{Tissue zones after infarction}\label{sec:zones}
+
+Because post-infarction dysfunction is this review's running example, the definition of these
+regions needs to be precise. Late gadolinium enhancement (LGE) separates infarct core,
+peri-infarct border and remote myocardium by contrast kinetics; the border or grey zone and the
+extent of peri-infarct scar have each been related to arrhythmic and clinical outcomes in their own
+cohorts~\citep{yang2013,tulumen2021}. These zones are defined by \emph{tissue} signal. Many of
+the comparisons discussed below are scar-versus-remote within the same heart, which is an efficient
+design because it removes between-subject variation; remote myocardium after infarction is, however, a
+loaded, remodelling region rather than a healthy control, so a scar-to-remote contrast understates
+the difference from a normal ventricle by an unknown amount. These zones are an
+independent and clinically meaningful stratification, and they are the right way to ask whether a
+strain measurement differs between injured and uninjured myocardium. They are not, however, a motion
+reference, and an LGE map does not state how far any material point moved. The distinction governs
+how the evidence in \cref{sec:cineonly} may be read.
+
+Using the two together adds an alignment problem of its own. In the porcine registration study of
+Guo et al., cine and LGE were acquired with different contrasts and required explicit registration
+before infarct heterogeneity could be quantified~\citep{guo2021}. Even successful anatomical
+registration does not establish that the cine tracker recovered material motion within each zone, so
+registration uncertainty should be propagated into zone-wise strain analyses, or at least probed
+through plausible perturbations of slice, phase and contour alignment.
+
+\subsection{Specifying the strain measurement}\label{sec:estimand}
+
+A strain value is not defined by the word \enquote{strain}. Consider a forward material mapping
+$\vect{x}=\vect{\varphi}(\vect{X},t)$ from a reference coordinate $\vect{X}$ to the current
+coordinate $\vect{x}$, with displacement $\vect{u}(\vect{X},t)=\vect{\varphi}(\vect{X},t)-\vect{X}$
+and deformation gradient
+$\mat{F}=\partial\vect{\varphi}/\partial\vect{X}=\mat{I}+\partial\vect{u}/\partial\vect{X}$, where
+$\mat{I}$ is the identity tensor. Writing $\mat{C}=\mat{F}^{\trans}\mat{F}$ and
+$\mat{B}=\mat{F}\mat{F}^{\trans}$ for the right and left Cauchy--Green tensors, the Green--Lagrange
+strain $\mat{E}=\tfrac12(\mat{C}-\mat{I})$ is referred to the reference configuration and the
+Euler--Almansi strain $\mat{e}=\tfrac12(\mat{I}-\mat{B}^{-1})$ to the current one. For a stretch
+$\lambda_i$ in principal direction $i$, engineering strain is $\lambda_i-1$, Green--Lagrange strain
+is $(\lambda_i^2-1)/2$, Euler--Almansi strain is $(1-\lambda_i^{-2})/2$, and Hencky or logarithmic
+strain is $\ln\lambda_i$. At $\lambda=0.8$ these give $-0.20$, $-0.18$, $\approx-0.281$ and
+$\approx-0.223$ respectively: the same shortening, four non-interchangeable percentages. The
+calculation follows from the definitions and is not a claim about any physiological value, but it
+sets the scale of the problem, because differences of this size are comparable with the between-method
+differences reported in \cref{sec:crosssoftware}.
+
+Standard terminology from deformation imaging provides a common language for these
+quantities~\citep{voigt2015,amzulescu2019,smiseth2025}, but a shared vocabulary does not prove that
+a given CMR implementation follows every convention, and in clinical usage the word
+\enquote{Lagrangian} can denote a relative length change rather than a Green--Lagrange
+tensor~\citep{voigt2015}. Several further choices change the number as much as the tensor does. Differentiating a backward
+sampling map as though it were the forward material map changes the tensor and can change signs and
+directions, and negating a displacement field does not in general invert a nonlinear transformation.
+The reference phase, whether end-diastole, the first acquired frame, end-systole or a user selection,
+sets the baseline length. Circumferential, radial and longitudinal axes may be built from a cavity
+centre, a local wall normal, a fitted surface or a ventricular mesh. Layer-specific strain may mean
+a contour length, a band average, a sampled subendocardial surface or a transmural interpolation,
+and radial strain is the most heterogeneous of all: a tensor projection, wall thickening, a change
+in endocardial--epicardial distance or an average of local radial components. Finally, the peak of
+an averaged curve is generally not the average of local peaks, because regions reach their extrema
+at different phases, so taking a peak and averaging across regions do not commute.
+\Cref{tab:estimand} is the minimum that must be declared before two values may be compared.
+
+The comparison by Jahromi et al.\ shows how much this matters even between careful studies:
+single-slice cine strain was built from contour-length, wall-thickness and myocardial-area ratios
+with longitudinal shortening inferred under uniform-shortening and per-slice volume-conservation
+assumptions, whereas two-slice DENSE used displacement gradients. The two shared a strain measure
+and a component label without sharing material sampling or spatial
+aggregation~\citep[Eqs.~1--6]{jahromi2026densecine}. Conventions can be declared explicitly: the
+United States Food and Drug Administration record K232661 states that one cleared product uses an
+end-diastole-referenced Lagrangian tensor in radial, circumferential and longitudinal directions and
+defines peak as the maximum absolute value over the cycle~\citep{fdaK232661}, which is exactly the
+kind of declaration \cref{tab:estimand} asks for, though it licenses no assumption about other
+products or other releases.
+
+\begin{longtable}{@{}L{0.17\textwidth}L{0.26\textwidth}L{0.24\textwidth}L{0.24\textwidth}@{}}
+\caption{Minimum strain measurement specification. Two values are not safely compared unless every
+row is compatible or a conversion is justified.}\label{tab:estimand}\\
+\toprule
+Specification item & Required declaration & Why it changes the value & Minimum audit question\\
+\midrule
+\endfirsthead
+\toprule
+Specification item & Required declaration & Why it changes the value & Minimum audit question\\
+\midrule
+\endhead
+Mapping and reference & Forward material map or backward spatial warp, composition order, and the reference phase (end-diastole, first frame, end-systole or other) & Inverse and gradient operations do not commute, and the reference sets the baseline length & Which coordinates does each vector index, was the map inverted before differentiation, and is the reference identical across subjects?\\
+Strain measure & Engineering, Green--Lagrange, Euler--Almansi, Hencky/logarithmic or other & At finite deformation the measures differ numerically from the same mapping & Is the tensor or formula stated, rather than inferred from a label?\\
+Direction & Local radial, circumferential and longitudinal axes, their origin and their update rule & Rotating bases and different centre definitions change the projection & Are the axes material, spatial, slice-based or three-dimensional anatomical?\\
+Spatial object & Endocardial contour, epicardial contour, midwall, named layer, voxel band or full myocardium & A contour length is not a dense transmural tensor average & What tissue or geometric object contributes to the reported scalar?\\
+Spatial differentiation & Voxel-, mesh- or basis-based deformation gradient; interpolation order; derivative operator; spatial smoothing; boundary handling & Strain is a spatial derivative, so differentiation and smoothing can amplify or attenuate regional displacement error & How was the deformation gradient computed, regularised and evaluated near the myocardial boundaries?\\
+Temporal summary and aggregation & End-systolic value, peak of the global curve, mean of segmental peaks or peak strain rate; area, length or volume weighting; American Heart Association (AHA) segmentation and excluded segments; units and sign convention & Peak and averaging do not commute, frame rate affects extrema, and weighting and missing segments alter both global and regional summaries & Was the extremum observed at an acquired frame or interpolated, and can signed curves, timestamps, weights and exclusion flags be exported?\\
+\bottomrule
+\end{longtable}
+
+Finally, strain describes deformation. It is not stress, active tension or contractility; inferring
+those requires assumptions about loading, geometry, constitutive behaviour and activation, and a
+homogeneous material model may not represent both viable and scarred tissue~\citep{almeida2021,amzulescu2019}.
+Radial thickening in particular can reflect kinematic coupling with longitudinal and circumferential
+shortening under near-volume conservation rather than a locally generated radial force. This review
+treats strain as an image-derived kinematic measurement throughout.
+
+\section{Motion estimation from cine: from conventional to learning-based methods}\label{sec:methods_families}
+
+\subsection{An underdetermined problem, and what the prior is doing}\label{sec:illposed}
+
+Let $I_t(\vect{x})$ denote image intensity at spatial coordinate $\vect{x}$ in phase $t$, and let
+$\vect{\varphi}_{0\rightarrow t}$ map a material point in a reference configuration to its position
+at $t$. Almost every estimator reviewed below can be written as, or interpreted through, the
+objective
+\begin{equation}
+\widehat{\vect{\varphi}}_{0\rightarrow t}
+=\arg\min_{\vect{\varphi}_{0\rightarrow t}}
+\mathcal{D}\!\left(I_0,I_t\circ\vect{\varphi}_{0\rightarrow t}\right)
++\alpha\,\mathcal{R}(\vect{\varphi}_{0\rightarrow t}),
+\label{eq:registration}
+\end{equation}
+in which $\mathcal{D}$ rewards image agreement, $\mathcal{R}$ encodes prior structure and $\alpha$
+sets their balance. Here $\vect{\varphi}_{0\rightarrow t}$ is a forward map defined on the reference
+domain, so that the target image is evaluated as $I_t(\vect{\varphi}_{0\rightarrow t}(\vect{X}))$;
+frameworks that optimise a backward sampling map use a different coordinate convention, and the two
+must not be interchanged when transformations are composed or differentiated for strain.
+\Cref{eq:registration} is written for one pair of phases; the groupwise and sequence models in
+\cref{sec:conventional,sec:cardiacspecific} optimise an analogous objective over the whole cycle at
+once, and learning-based methods minimise its expectation over a training set rather than solving it
+per case.
+
+The difficulty is that $\mathcal{D}$ alone does not identify the map. Where intramyocardial texture
+is weak, many fields achieve nearly the same data term while implying different displacement
+gradients, and the prior selects among them. \Cref{fig:correspondence} makes the point exactly: for
+a circular annulus, the map $\varphi(r,\theta)=(r,\theta+a\sin\theta)$ with $|a|<1$ has positive
+angular derivative $1+a\cos\theta$, so it is a smooth one-to-one reparameterisation that leaves both
+boundaries and the continuous binary mask unchanged. Dice is 1 and the Hausdorff distance is 0,
+while the tangential stretch varies between $1-|a|$ and $1+|a|$. The construction is analytic, not
+an empirical error estimate, but it establishes that image and contour agreement cannot by
+themselves certify material correspondence, which is why \cref{sec:validation} treats overlap and
+material-sensitive references as different kinds of evidence.
+
+\begin{figure}[!t]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{figures/p2_Figure2_same_contours_not_same_correspondence.pdf}
+ \caption{Identical contours do not determine the same material correspondence. \textbf{a}, routine
+ cine supplies anatomy and image cues, tagging supplies a prepared magnetisation pattern, and
+ displacement encoding with stimulated echoes (DENSE) encodes displacement in the magnetic resonance
+ phase. \textbf{b}, under the analytic map $\theta'=\theta+a\sin\theta$ with $a=0.5$, eight labelled
+ material points are redistributed around the annulus while the annulus itself is unchanged.
+ \textbf{c}, the identical continuous masks give Dice~$=1$ and Hausdorff distance~$=0$, whereas the
+ tangential stretch $\lambda_\theta=1+a\cos\theta$ ranges from 0.5 to 1.5. The stretch ratio is not
+ Green--Lagrange strain, and discrete resampling need not preserve exact equality. This is a derived
+ counterexample, not a measurement of any estimator's error. Panel a reproduces real acquired
+ images, credited within the figure.}
+ \label{fig:correspondence}
+\end{figure}
+
+Two statements about priors are easy to conflate and are kept separate throughout this review.
+The first concerns what a representation can express. Strain is a spatial \emph{derivative} of
+displacement, so a displacement field that looks smooth to the eye can still carry a rapidly varying
+strain; visual smoothness of $\vect{u}$ is not evidence that $\partial\vect{u}/\partial\vect{X}$ has
+been flattened. Restricting a displacement field to a band of spatial frequencies does restrict the
+derivatives it can represent, but the consequence for a particular regional measurement depends
+jointly on the bandwidth, the spatial scale of the abnormality and the measurement definition, and a
+Fourier basis is global: widening the band raises the representable frequency content everywhere and
+does not target a chosen region. The second statement concerns the estimation process: even with a
+representation rich enough to express a focal deficit, the optimiser or network may not recover it
+if the image evidence is weak or the penalty $\alpha\mathcal{R}$ is strong. A third factor, the
+information actually present in the input images, is separate again.
+
+The three come apart in practice, and the way they come apart is the basis of an attribution
+experiment. Suppose a focal deficit is under-recovered. If the same estimator recovers it when the
+penalty weight $\alpha$ is reduced, the limitation was the estimation process. If it is still
+under-recovered after the deficit has been projected directly onto the estimator's function space
+(a cheap test that uses the known field rather than the images), the limitation lies in the
+representation. And if neither holds, but the deficit becomes recoverable when the same motion is
+re-imaged at finer resolution or with added long-axis views, the limitation was the input
+information. Attributing an observed regional error therefore requires an experiment that holds the
+other two factors fixed; this is the structure of \cref{sec:synthesis}.
+
+Temporal strategy adds a further set of assumptions. Reference-to-frame tracking keeps one reference
+configuration but must estimate large displacements from it; sequential tracking estimates smaller
+inter-frame steps but accumulates composition error and drift; groupwise methods estimate all phases
+jointly and can improve temporal consistency under whatever temporal constraint they
+impose~\citep{metz2011,chen2024}. A periodic deformation can close perfectly at the end of the cycle
+and still be wrong at intermediate phases, so cycle closure is a useful constraint and a useful
+quality-control signal rather than proof of correct material trajectories.
+
+\subsection{Conventional estimators}\label{sec:conventional}
+
+A note on evaluation applies to this whole section. Segmentation does not merely precede motion
+estimation; it can initialise the search region, define the cardiac coordinate system, select the
+sampled layer and, in several learning-based designs, supply an anatomical loss during training.
+When the same reference contours both shape the fitted transformation and provide the overlap score
+that assesses it, the evaluation is not independent of the fitting. A single inter-observer
+coefficient for the final scalar cannot separate contour uncertainty from tracking uncertainty from
+strain-computation uncertainty; perturbing each in turn can.
+
+Boundary feature tracking follows local patterns near user-defined or automatically generated
+contours, usually with propagation and correction. It exploits the strongest signal routine cine
+provides and keeps contour interaction explicit, but interior motion is to a large degree
+interpolated from boundary behaviour~\citep{pedrizzetti2016}. It is the family implemented in the
+commercial packages whose mutual agreement is examined in \cref{sec:crosssoftware}. Automating its
+front end was an early application of deep learning: Vigneault et al.\ segmented the sequence with a
+fully convolutional network and then fitted quadratic basis splines simultaneously across all cardiac
+frames, reporting pixel accuracy around 97\% against expert manual segmentation in 42 patients with
+hypertrophic cardiomyopathy and 21 controls~\citep{vigneault2017}, and Puyol-Ant\'on et al.\
+combined convolutional-network segmentation with subsequent feature tracking and strain
+calculation~\citep{puyolanton2018}. In both, the learned component is the segmentation and the
+motion model remains a conventional tracker.
+
+Intensity-based deformable registration estimates a dense field by optimising
+\cref{eq:registration} directly. The free-form deformation model of Rueckert et al., a B-spline
+control lattice with a smoothness penalty, remains the reference implementation of this
+approach~\citep{rueckert1999}. Groupwise variants remove the dependence on an arbitrarily chosen
+reference frame: Metz et al.\ fit an $n$D$+t$ B-spline model to the whole dynamic sequence with
+spatial and temporal smoothness and an optional cyclic constraint, reporting sub-voxel accuracy on
+synthetic and thoracic computed tomography data~\citep{metz2011}. More recently, Chen et al.\
+replaced the groupwise dissimilarity term with a locally low-rank metric, evaluating it on a
+20-case simulation, 100 public cine cases and 16 in-house tagging-MRI patients, and reporting
+reduced late-diastolic drift and better correlation with tagging for radial strain in several
+myocardial segments and levels than optical flow, pairwise registration, global low-rank groupwise
+registration, $n$D$+t$ B-splines, and pTVreg, a general-purpose total-variation-regularised
+groupwise registration package~\citep{chen2024}.
+
+Mechanical constraints narrow the admissible set in a different way. Nearly incompressible models
+impose a volume constraint whose adequacy depends on the conditions studied; the FDA record K232661
+describes one cleared implementation as a two-dimensional nearly incompressible deformable model
+with control points on a midwall curve, without disclosing every numerical
+detail~\citep{fdaK232661}. Geometry- and anatomy-constrained estimators occupy similar ground,
+constraining the field with masks, contours, shape priors or geometric correspondence rather than a
+constitutive model~\citep{chen2020anatomy,hammouda2020}.
+
+Tagging analysis is the comparison point rather than a cine method. Harmonic phase (HARP) analysis
+extracts displacement from the phase of an isolated spectral peak of an image tagged by spatial
+modulation of magnetisation (SPAMM), giving material-sensitive
+motion directly from the acquisition~\citep{osman2000harp}. The contrast is instructive: HARP solves
+a different problem, because the information it needs has been deliberately encoded into the images.
+
+\subsection{Unsupervised learning-based registration}\label{sec:unsupervised}
+
+The learning-based literature began by amortising \cref{eq:registration}. VoxelMorph reformulated
+registration as a function, parameterised by a convolutional network, that maps an image pair to a
+deformation field; the unsupervised training objective is the same image-matching and smoothness
+objective that a classical method optimises per pair, and the gain is that inference becomes a
+single forward pass~\citep{balakrishnan2019voxelmorph}. TransMorph replaced the convolutional
+encoder with a hybrid Transformer--convolutional architecture to widen the receptive field, and
+added diffeomorphic and Bayesian variants that respectively guarantee topology preservation and
+produce an uncertainty estimate; its reported validation covers inter-patient and atlas-to-patient
+brain MRI and phantom-to-computed-tomography registration~\citep{chen2022transmorph}. The important
+point for this review is not the backbone but the objective: in this family the prior is still
+smoothness or diffeomorphism, now partly learned, and the reported evidence is label overlap and
+deformation-field regularity.
+
+A distinct strand constrains the representation rather than the penalty. Fourier-Net predicts a
+band-limited representation of the displacement field in a low-dimensional frequency domain and
+recovers the full-resolution field by zero-padding and an inverse discrete Fourier transform,
+replacing the expensive full-resolution decoder of a U-Net-style registration network and
+substantially reducing computation~\citep{jia2023fouriernet}; Fourier-Net+ extends the idea by
+taking band-limited representations of the images themselves as input~\citep{jia2026fouriernetplus}.
+Band-limiting is an explicit, tunable statement about which deformations the model may output, which
+makes this family unusually well suited to the experiment described in \cref{sec:axis_prior};
+but, as \cref{sec:illposed} sets out, the bandwidth is a global property of the field, and what it
+implies for a focal regional strain has to be measured rather than asserted. Both are general-purpose registration
+networks rather than cardiac methods: the evaluations reported in the records retrieved here use
+general medical image registration benchmarks with overlap and deformation-regularity metrics, not
+cine CMR against a motion reference. Within the searches recorded in \cref{sec:methods} and up to
+the stated cutoff, this review did not identify an evaluation of a band-limited cine estimator against a
+regional motion or strain reference; that is a statement about what those searches returned, not an
+assertion that no such study exists.
+
+\subsection{Cardiac-specific motion estimation}\label{sec:cardiacspecific}
+
+A second group of methods builds cardiac structure into the estimator. Qin et al.\ learned motion
+estimation and segmentation jointly in a single architecture, an unsupervised Siamese recurrent
+spatial-transformer branch for motion and a fully convolutional branch for segmentation, sharing a
+multi-scale feature encoder so that each task supplies features to the other, and reported
+improved accuracy and speed over separate models in 220 subjects~\citep{qin2018joint}. Zheng et al.\ learned a pixel-wise
+\enquote{apparent flow} between two phases of a 2D$+t$ cine sequence semi-supervised from a large
+unsegmented set and a small expert-segmented set, then combined the flow with segmentation masks to
+derive radius and wall-thickness time series per segment; using nine feature values, their
+classifier reached 95\% and 94\% accuracy on the ACDC training and testing
+sets~\citep{zheng2019apparent}. The target in that study is pathology classification, so the motion
+representation is validated through its usefulness for a downstream label rather than against a
+motion reference, a pattern that recurs in \cref{sec:cineonly}. Motion Pyramid Networks introduced
+multi-scale fused estimation with a cyclic teacher--student training procedure, which is a training
+strategy and not evidence of cardiac-cycle closure~\citep{yu2020mpn}, and FOAL added online
+adaptation of a learned estimator to a new sequence at test time~\citep{yu2020foal}.
+
+Multi-view and mesh-based designs target the through-plane problem of \cref{sec:throughplane}.
+MulViMotion fuses short-axis and long-axis cine in a hybrid 2D/3D network and adds a shape
+regularisation module that provides weak supervision to the 3D field, evaluated on 580 UK Biobank
+subjects~\citep{meng2022mulvimotion}. DeepMesh represents the heart as a 3D mesh of endocardial and
+epicardial surfaces, propagates a template mesh into subject space and estimates vertex-wise
+displacement through a differentiable mesh-to-image rasteriser, so that vertex correspondence is
+maintained across frames and subjects~\citep{meng2024deepmesh}. CardioMorphNet takes the shape idea
+further: a recurrent variational autoencoder with separate posteriors for bi-ventricular
+segmentation and for motion, trained by recursively registering segmentation maps \emph{without} an
+intensity-based similarity loss, and validated on UK Biobank and M\&Ms by comparing warped masks
+with ground-truth masks; its Bayesian formulation also yields uncertainty maps for the estimated
+field~\citep{movahed2026cardiomorphnet}. Qiao et al.\ take a different route to the same problem,
+representing cardiac motion through keypoints extracted without supervision and reconstructing the
+dense field as a weighted combination of basis vectors derived from matched keypoint pairs, with
+evaluation on four-dimensional computed tomography and cine MRI and a strain analysis reported to
+separate patients under different cardiac conditions~\citep{qiao2026stcmt}.
+
+Temporal structure has been addressed in parallel. A
+low-rank groupwise deformation model has been proposed for cine tracking in a preprint that is a
+master's thesis and has not been peer reviewed~\citep{rendell2024lowrank}, and a Mamba-based sequential
+model has been presented in a MICCAI workshop paper~\citep{yin2025mcm}. Ruan et al.\ embed the
+deformation in a continuous-time latent neural ordinary differential equation with bidirectional
+forward--backward evolution and a bidirectional Lagrangian consistency term, evaluated on ACDC and
+M\&Ms~\citep{ruan2026latentode}.
+
+One parallel development belongs here precisely because it is not a motion-estimation development.
+CMR-specific foundation models now exist: one was pre-trained on 15 million cine images from 74,916
+studies and fine-tuned for segmentation, landmark localisation, disease diagnosis and
+prognostication across eight independent datasets~\citep{fu2026cinema}, and another was trained by
+self-distillation on 36 million images from 27,524 subjects and fine-tuned for nine tasks including
+classification, segmentation, landmark localisation and pathology detection~\citep{jacob2025cmrfm}.
+Dense motion estimation is not among the tasks either reports. That is informative about where
+effort is currently going, and it means the pre-trained representations these models offer have not
+yet been tested on the problem this review is about.
+
+Read together, this group has made real progress on two things the earlier literature handled badly:
+three-dimensional motion from two-dimensional acquisitions, and temporal consistency across the
+cycle. Their reported validation needs stating plainly, because it bears
+directly on this review's question. In the cardiac-specific papers reviewed here, the dominant
+evidence is agreement between a warped segmentation and a reference segmentation, together with
+surface distances and deformation-field regularity; landmark error appears where a landmarked
+dataset was available. That is appropriate evidence for the claims those papers make, and it is also
+the evidence that \cref{fig:correspondence} shows cannot by itself establish material
+correspondence.
+
+\subsection{Physics, biomechanics and continuous representations}\label{sec:physics}
+
+A third group replaces a generic smoothness penalty with a statement about tissue mechanics or about
+the function space itself. Qin et al.\ learned the prior instead of writing it down: a variational
+autoencoder trained on biomechanically simulated deformations defines a manifold of plausible
+fields, and tracking becomes a search over that manifold, validated on three public cine
+datasets~\citep{qin2023biomech}. WarpPINN takes the opposite route and states the physics
+explicitly, representing the deformation with a neural network trained per case under an
+intensity-similarity term plus a hyperelastic regulariser and a Jacobian penalty for
+near-incompressibility; strain follows by automatic differentiation, and Fourier feature mappings
+are used to overcome the spectral bias of the network and so to allow sharp features in the strain
+field. It was tested on synthetic examples and on a cine bSSFP benchmark of 15 healthy
+volunteers~\citep{arratia2023warppinn}; a later version adds a fibre-stretch term and reports
+evaluation on a synthetic phantom and the same 15-participant healthy
+benchmark~\citep{alvarez2026warppinn}. Implicit neural representations of intramyocardial motion and strain
+have also been presented in the 2026 STACOM proceedings; no abstract accompanies the proceedings
+record retrieved for this review, so the acquisition, data and evaluation of that study are not
+characterised here~\citep{bell2026inr}.
+
+Liu et al.\ combine the mechanical and the temporal arguments in a space-time finite-element
+digital image correlation framework with region-specific biomechanical regularisation, a data-driven
+temporal decomposition and a correlation-based multi-view alignment module. Their evaluation is the
+most layered in this group: one synthetic dataset with ground-truth motion and strain fields, three
+public datasets with ground-truth landmarks or myocardial masks, and a clinical dataset with
+ground-truth myocardial masks, compared against two classical feature-tracking methods and four
+deep-learning baselines~\citep{liu2026fe}. The limiting factor is the same throughout the group:
+where a strain reference exists at all, it exists in one simulation setting, and the in-vivo
+evaluation returns to landmarks and masks. A mechanical prior is not a weaker constraint than a
+smoothness prior, merely a differently shaped one, and whether it preserves a focal deficit depends
+on whether its constitutive assumptions hold in heterogeneous injured tissue, which is an open
+question rather than a defect.
+
+\subsection{Reference-supervised and end-to-end strain}\label{sec:supervised}
+
+The final group changes the supervision rather than the prior. DeepTag estimates motion on tagged
+images without labels, using a bidirectional diffeomorphic registration network between consecutive
+frames and a differentiable composition layer to recover the Lagrangian field, validated on a
+clinical tagging dataset by landmark tracking accuracy~\citep{ye2021deeptag}. StrainNet is the
+clearest example of transferring material-sensitive information into cine analysis. A 2D$+t$
+convolutional network was trained to predict intramyocardial displacement from the motion of
+myocardial contours, with DENSE displacement measurements as ground truth, across 161 patients, 99
+healthy adults and 45 children and adolescents. It achieved an end-point error of
+$0.75\pm0.35$~mm against DENSE, and when applied to contour motion from cine it reached intraclass
+correlation coefficients (ICCs) with DENSE of 0.87 for global and 0.75 for segmental circumferential
+strain, against 0.72 and 0.48 for commercial feature tracking~\citep{wang2023strainnet}.
+
+The same supervision route has since been extended to the part of the motion that a displacement
+network handles least naturally. Lei et al.\ report a DENSE-supervised network for routine cine
+bSSFP that estimates the large rotational dynamics of the myocardium in a separate time-series
+branch, predicts radial motion by deformable registration in a second branch and fuses the two,
+motivated by the observation that earlier DENSE-supervised models captured twist and torsion
+poorly~\citep{lei2025denserotation}. A pre-clinical study takes the idea to a different reference:
+MyoNet was trained to recover displacement maps from cine images in a rat model of
+radiation-therapy-induced injury and evaluated against strain derived by a sine-wave modelling
+method, reporting intraclass correlations of 0.973 and 0.975 for circumferential and radial strain
+respectively~\citep{an2026myonet}. Both are abstract-level readings here. Neither changes the
+validation pattern set out in \cref{sec:method_table}, and the second is reported in a rat model
+against an analysis-derived reference, so it bears on the design rather than on human cine accuracy.
+
+DeepStrain is the most completely documented end-to-end cine workflow. It centres the ventricle,
+segments anatomy with CarSON, estimates end-diastole-to-phase displacement with CarMEN and derives
+Green--Lagrange radial and circumferential strain. The final motion model was trained on all 150
+ACDC subjects, including the 50-subject official segmentation test set with predicted labels, and
+the original study reported a Cardiac Motion Analysis Challenge (CMAC) landmark end-point error of
+$2.9\pm1.5$~mm together with scan--rescan repeatability in ten healthy
+volunteers~\citep{morales2021}. A later single-centre comparison in 47 healthy participants and 533
+patients found correlations with manual cvi42 analysis of 0.83--0.85 for global radial and
+0.88--0.91 for global circumferential strain, with mean processing times of $4.1\pm1.2$~minutes for
+manual feature tracking and $34.7\pm3.3$~seconds for DeepStrain~\citep{morales2022comparison}; the
+comparator is another estimator rather than a motion reference, and the developer overlap limits
+independence. The pinned public repository supplies inference code, examples and an MIT licence, but not a
+complete deterministic retraining workflow or a supported clinical release~\citep{deepstrainrepo}.
+An unrelated tagging network shares the name~\citep{abdelmoniem2021}.
+
+A further set of systems is supervised on a downstream label instead of on motion. Deep learning
+synthetic strain derives regional wall-motion assessment from cine and was evaluated against the
+consensus of four cardiothoracic radiologists in 53 patients and 846 segments, reaching an area under
+the receiver operating characteristic curve (AUC) of 0.90 and sensitivity, specificity and accuracy
+of 86\%, 85\% and 86\% at a 30\% peak radial strain threshold~\citep{masutani2023dlss}. Deep
+learning-based aligned strain was developed to detect fibrotic myocardium in Duchenne muscular
+dystrophy, with LGE as the reference~\citep{koehler2025alignedstrain}. Bello et al.\ supervised a
+motion representation directly on survival, reporting a Harrell C index of 0.75 (95\% confidence
+interval 0.70--0.79) against a human benchmark of 0.59 (0.53--0.65) in 302
+patients~\citep{bello2019}. Each is a well-posed study, and each validates something other than the
+accuracy of the motion field: the supervision target determines what the evidence can support, and
+\cref{sec:cineonly} returns to this distinction where it matters most.
+
+\subsection{Comparison across methods}\label{sec:method_table}
+
+\Cref{tab:methods_what} records what each method does and \cref{tab:methods_validation} records how
+it has been validated, in the same row order. Every cell is drawn from the cited source; where the
+source does not report an item, the cell reads \texttt{not reported}, and no value has been inferred
+from a related paper. \Cref{tab:methods_validation} is the one that bears on this review's question,
+and reading its last column downwards is the quickest way to see where the evidence thins. The rows
+are not ranked and are not equivalent in status: they include peer-reviewed journal and conference
+papers, a workshop paper, a preprint submitted as a master's thesis and one regulatory summary, and
+the \enquote{Year, source} column states which is which. A method with a short validation entry has
+usually been evaluated for the claim its own authors made, not tested and found wanting for the
+claim this review is asking about.
+
+\begin{longtable}{@{}L{0.135\textwidth}L{0.115\textwidth}L{0.135\textwidth}L{0.155\textwidth}L{0.215\textwidth}L{0.155\textwidth}@{}}
+\caption{What each estimator does. Entries are taken from the cited source; \texttt{not reported}
+means the source does not state the item. Hybrid systems can belong to more than one group.}\label{tab:methods_what}\\
+\toprule
+Method & Year, source & Input & Supervision & Prior or representation & Output\\
+\midrule
+\endfirsthead
+\toprule
+Method & Year, source & Input & Supervision & Prior or representation & Output\\
+\midrule
+\endhead
+\multicolumn{6}{@{}l}{\textit{Conventional estimators}}\\
+Boundary feature tracking & Family; see \citep{pedrizzetti2016} & Cine plus endocardial and epicardial contours & None (per-case tracking) & Contour continuity and propagation; interior motion largely interpolated from boundaries & Boundary and segmental displacement, velocity and strain\\
+Automated segmentation plus spline tracking & 2017, FIMH~\citep{vigneault2017}; 2018, ISBI~\citep{puyolanton2018} & Cine sequence & Supervised segmentation; tracking itself unsupervised & Learned segmentation front end feeding a conventional spline or feature tracker & Contours, then boundary-derived strain\\
+Free-form deformation (FFD) & 1999, IEEE TMI~\citep{rueckert1999} & Image pair & None (per-pair optimisation) & Affine plus B-spline control lattice with a smoothness cost; normalised mutual information data term & Dense displacement field\\
+Groupwise $n$D$+t$ B-splines & 2011, Med Image Anal~\citep{metz2011} & Whole dynamic sequence & None & $n$D$+t$ B-spline with spatial and temporal smoothness; optional cyclic constraint; no fixed reference frame & Dense 2D/3D$+t$ displacement\\
+Groupwise locally low-rank (Groupwise-LLR) & 2024, BMC Med Imaging~\citep{chen2024} & Whole cine sequence & None & Groupwise registration minimising the sum of patchwise signal ranks of the deformed movie & Whole-cycle displacement field and strain\\
+Anatomy-Aware Tracker & 2020, MLMI~\citep{chen2020anatomy} & Long-axis cine & Weak, from a shape model & Convolutional variational autoencoder encoding realistic myocardial shapes, used to refine a dense tracker & Anatomy-aware dense motion field\\
+Laplace-based murine framework & 2020, Sci Rep~\citep{hammouda2020} & Mouse cine & Supervised segmentation networks & Laplace equation solved between contours of successive frames & LV wall point tracks and Lagrangian strain\\
+Cleared nearly in\-com\-pressible model & 2023, FDA K232661 \citep{fdaK232661} & bSSFP cine with confirmed contours & not reported & Two-dimensional nearly incompressible deformable model with control points on a midwall curve & Global and regional strain; end-diastole-referenced Lagrangian tensor\\
+Harmonic phase (HARP) & 2000, IEEE TMI~\citep{osman2000harp} & SPAMM-tagged MR (comparator, not cine) & None & Isolated spectral peak of the tagged image; phase of the complex image & Displacement for small motions and 2D strain\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Unsupervised learning-based registration}}\\
+VoxelMorph & 2019, IEEE TMI~\citep{balakrishnan2019voxelmorph} & Image pair & Unsupervised image matching; optionally auxiliary segmentations & Learned amortisation of a similarity-plus-smoothness objective & Dense deformation field in one forward pass\\
+TransMorph & 2022, Med Image Anal~\citep{chen2022transmorph} & Volumetric image pair & Unsupervised & Hybrid Transformer--convolutional encoder; diffeomorphic and Bayesian variants & Deformation field; uncertainty in the Bayesian variant\\
+Fourier-Net & 2023, AAAI~\citep{jia2023fouriernet} & Image pair & Unsupervised & Low-dimensional band-limited Fourier representation of the displacement, expanded by a parameter-free model-driven decoder & Full-resolution displacement field\\
+Fourier-Net+ & 2026, IEEE TNNLS~\citep{jia2026fouriernetplus} & Band-limited spatial representation of the image pair & Unsupervised & As Fourier-Net, with a shortened contracting path; a cascaded variant is also proposed & Full-resolution displacement field\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Cardiac-specific estimators}}\\
+Joint motion and segmentation & 2018, MICCAI~\citep{qin2018joint} & Cine sequence & Unsupervised motion branch; weakly supervised segmentation & Shared multi-scale encoder; Siamese recurrent spatial transformer & Motion field and segmentation\\
+Apparent flow & 2019, Med Image Anal~\citep{zheng2019apparent} & 2D$+t$ cine, two phases & Semi-supervised: many unsegmented plus few expert-segmented images & Pixel-wise apparent flow combined with segmentation masks & Flow maps; per-segment radius and thickness time series; pathology class\\
+Motion Pyramid Networks & 2020, MICCAI~\citep{yu2020mpn} & Cine image pair & Unsupervised, with cyclic teacher--student distillation & Multi-scale pyramid of motion fields, fused & Refined motion field in a single step\\
+FOAL & 2020, CVPR~\citep{yu2020foal} & Cine sequence at test time & Meta-learned online optimiser & Test-time adaptation of a learned tracker to the new sequence & Adapted motion field (about 0.4~s per video)\\
+MulViMotion & 2022, IEEE TMI~\citep{meng2022mulvimotion} & Short-axis plus two- and four-chamber long-axis cine & Unsupervised, with weak shape supervision & Hybrid 2D/3D network; shape regularisation module during training & Dense 3D motion field of the LV myocardium\\
+DeepMesh & 2024, IEEE TMI~\citep{meng2024deepmesh} & Short- and long-axis cine & Unsupervised, via a differentiable mesh-to-image rasteriser & Template 3D mesh of endocardial and epicardial surfaces propagated to subject space & Vertex-wise 3D displacement with maintained vertex correspondence\\
+Low-rank groupwise deformations & 2024, preprint (MSc thesis)~\citep{rendell2024lowrank} & Image sequence and a target image & Unsupervised & Groupwise diffeomorphic registration driven towards a low-rank registered stack & Groupwise deformations\\
+MCM (Mamba) & 2025, MICCAI RIME workshop~\citep{yin2025mcm} & Target image sequence from the cardiac cycle & Unsupervised & Bi-directional Mamba block with bi-directional scanning; motion decoder using adjacent frames & Temporally consistent deformation fields\\
+Cardio\-Morph\-Net & 2026, Med Image Anal~\citep{movahed2026cardiomorphnet} & Short-axis cine volumes & Recursive registration of segmentation maps; no intensity similarity loss & Recurrent variational autoencoder with separate posteriors for segmentation and motion & 3D motion field plus a voxel-wise uncertainty map\\
+Bidirectional latent neural ODE & 2026, Comput Med Imaging Graph~\citep{ruan2026latentode} & Cine sequence & Unsupervised & Continuous-time latent ODE with bidirectional forward--backward evolution and Lagrangian consistency & Inter-frame deformation fields over the cycle\\
+STCMT-Net & 2026, Med Image Anal~\citep{qiao2026stcmt} & 4D cardiac images (computed tomography and cine MR) & Unsupervised & Keypoints detected without supervision as structural anchors; the dense field is a weighted combination of basis vectors from matched keypoint pairs, with residual refinement & Dense motion field; derived strain\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Physics-, biomechanics- and representation-constrained estimators}}\\
+Biomechanics-informed prior & 2023, Med Image Anal~\citep{qin2023biomech} & Cine sequence & Unsupervised; prior learned from simulated deformations & Variational autoencoder manifold of biomechanically plausible deformations, traversed at tracking time & Motion field and derived strain\\
+WarpPINN & 2023, Med Image Anal~\citep{arratia2023warppinn} & Cine bSSFP, fitted per case & None (per-case optimisation) & Neural network deformation with hyperelastic regulariser and Jacobian-based near-incompressibility; Fourier feature mapping against spectral bias & Deformation field; strain by automatic differentiation\\
+WarpPINN-fibers & 2026, Eng Comput~\citep{alvarez2026warppinn} & Cine MR & None (per-case optimisation) & As WarpPINN plus a fibre-stretch penalisation along synthetically generated fibres & Deformation field and fibre-informed strain\\
+Implicit neural representation & 2026, STACOM~\citep{bell2026inr} & not reported & not reported & Implicit neural representation of intramyocardial motion and strain & not reported\\
+Space-time finite-element correlation & 2026, Med Image Anal~\citep{liu2026fe} & Routine cine, short- and long-axis & None (correlation framework) & Region-specific biomechanical regularisation, data-driven temporal decomposition, correlation-based multi-view alignment & 2D/3D$+t$ motion and strain\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Reference-supervised and end-to-end strain}}\\
+DeepTag & 2021, CVPR~\citep{ye2021deeptag} & Tagged MR (comparator acquisition) & Unsupervised & Bidirectional diffeomorphic registration between consecutive frames; differentiable composition to a Lagrangian field & Inter-frame and Lagrangian motion fields\\
+StrainNet & 2023, Radiol Cardiothorac Imaging~\citep{wang2023strainnet} & Time series of myocardial contours (from DENSE magnitude at training, cine feature tracking at test) & Supervised on DENSE displacement & 2D$+t$ convolutional network; prior is implicit in the DENSE-derived training distribution & Intramyocardial displacement; global and segmental circumferential strain\\
+DENSE-guided rotation network & 2025, Proc IEEE ISBI~\citep{lei2025denserotation} & Routine cine bSSFP & Supervised on DENSE displacement & Separate time-series rotation branch and deformable-registration radial branch, combined in a fusion network & Myocardial displacement, with large rotation modelled explicitly\\
+MyoNet & 2026, Bioengineering~\citep{an2026myonet} & Cine (pre-clinical rat model) & Supervised against a sine-wave-modelling reference & Convolutional network with alternating kernel sizes for spatial and temporal analysis & Displacement maps; circumferential and radial strain\\
+DeepStrain & 2021, Front Cardiovasc Med~\citep{morales2021} & Cine bSSFP & Image, anatomical-label and smoothness losses & CarSON segmentation plus CarMEN motion network; end-diastolic reference & Segmentation, displacement, Green--Lagrange radial and circumferential strain\\
+Deep learning synthetic strain & 2023, Radiol Cardiothorac Imaging~\citep{masutani2023dlss} & Cine & Supervised on a radiologist wall-motion reference & not reported in detail & Regional wall-motion assessment from synthetic strain\\
+Deep learning aligned strain & 2025, Radiol Artif Intell~\citep{koehler2025alignedstrain} & Cine & Supervised; LGE-defined fibrosis as the reference standard & not reported in detail & Aligned strain used to flag fibrotic myocardium\\
+Cine-only infarct delineation & 2018, Med Image Anal~\citep{xu2018} & Non-contrast cine sequence & Supervised on manual delineation of delayed-enhancement images & Long short-term memory motion features plus optical flow, fused per pixel & Pixel-wise infarct map\\
+Survival-supervised motion & 2019, Nat Mach Intell~\citep{bello2019} & Cine-derived motion & Supervised on survival outcome & Learned low-dimensional motion representation & Risk prediction\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{@{}L{0.145\textwidth}L{0.245\textwidth}L{0.275\textwidth}L{0.282\textwidth}@{}}
+\caption{How each estimator has been validated, in the row order of \cref{tab:methods_what}. The
+last column is the one that bears directly on this review's question. \texttt{not reported} means
+the cited source does not state the item; no entry has been inferred from a related
+publication.}\label{tab:methods_validation}\\
+\toprule
+Method & Training and evaluation data & Validation approach reported & Evaluation on pathology or focal abnormality\\
+\midrule
+\endfirsthead
+\toprule
+Method & Training and evaluation data & Validation approach reported & Evaluation on pathology or focal abnormality\\
+\midrule
+\endhead
+\multicolumn{4}{@{}l}{\textit{Conventional estimators}}\\
+Boundary feature tracking & Many clinical cohorts; the cross-software comparisons are collected in \cref{sec:crosssoftware} & Inter-software and inter-version agreement, scan--rescan precision, comparison with tagging or DENSE, clinical association & Studied in many disease cohorts; regional and radial agreement is consistently weaker than global agreement~\citep{militaru2021,brandt2024,bell2025strain8}\\
+Automated segmentation plus spline tracking & 42 patients with hypertrophic cardiomyopathy and 21 healthy controls~\citep{vigneault2017} & Segmentation accuracy against expert manual segmentation (pixel accuracy about 97\%); endocardial circumferential strain compared between patients and controls & Group separation between hypertrophic cardiomyopathy and controls; no motion reference and no focal abnormality experiment\\
+Free-form deformation (FFD) & Three-dimensional contrast-enhanced breast MRI in volunteers and patients & Comparison with rigid and affine registration for recovery of breast motion and deformation & Not applicable; the original study is outside cardiac imaging. Included as the transformation model reused by later cardiac work\\
+Groupwise $n$D$+t$ B-splines & Synthetic data and 3D$+t$ lung computed tomography; 3D$+t$ cardiac computed tomography angiography; demonstrated on 2D$+t$ ultrasound and MR & Sub-voxel registration accuracy on synthetic data; LV volume curves deviating on average about 3\% from manual annotations & not reported\\
+Groupwise locally low-rank & Simulation ($n=20$), public cine ($n=100$), in-house tagging-MRI patients ($n=16$) & Point-tracking, voxelwise strain and global strain error against simulation; contour-tracking error and late-diastolic drift on public cine; correlation with tagging radial strain in patients & Patient dataset with paired tagging; disease composition not reported in the record retrieved. No prescribed focal abnormality\\
+Anatomy-Aware Tracker & Long-axis cardiac cine & Tracking performance against other methods, with qualitative assessment of shape realism & not reported\\
+Laplace-based murine framework & Mouse cine MRI & Comparison of derived strain with tagged MR in the same animals & Not a human cine study; focal abnormality not reported\\
+Cleared nearly incompressible model & Non-clinical verification using analytical and realistic phantoms, real MR data and expert manual tracking; the record states that no clinical study was needed for substantial equivalence & Regulatory substantial-equivalence evidence~\citep{fdaK232661} & Not established by the record; a 510(k) summary states device identity and intended use, not regional accuracy\\
+Harmonic phase (HARP) & Real and simulated tagged MR images & Synthesis of conventional tag lines; displacement reconstruction for small motions; 2D strain & Not applicable; tagged acquisition, included as the material-sensitive comparator\\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Unsupervised learning-based registration}}\\
+VoxelMorph & General medical image registration datasets & Comparison of registration accuracy and run time against the methods the authors selected as comparators; effect of training-set size & not reported\\
+TransMorph & Inter-patient and atlas-to-patient brain MRI; phantom-to-computed-tomography & Comparison with existing registration methods and Transformer architectures; topology preservation in the diffeomorphic variant; calibration of the Bayesian uncertainty & not reported for cardiac pathology\\
+Fourier-Net & Image-registration benchmarks & Registration accuracy with inference speed, memory and multiply-add operations & not reported\\
+Fourier-Net+ & Three registration datasets & Accuracy comparable with the authors' selected comparator methods at lower computational cost & not reported\\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Cardiac-specific estimators}}\\
+Joint motion and segmentation & Cardiac MRI from 220 subjects & Accuracy and speed against competing methods for both tasks & not reported\\
+Apparent flow & ACDC & Classification accuracy of 95\% (training) and 94\% (testing) from nine motion and shape features & Pathology classes are the target; the motion field itself is validated through the downstream label, not against a motion reference\\
+Motion Pyramid Networks & Two public clinical datasets & Multiple metrics plus inference time against a strong baseline; additional clinically oriented error metrics proposed & not reported\\
+FOAL & Two public clinical datasets & Accuracy against an offline-trained tracker under train--test distribution mismatch; 0.4~s per video & Distribution shift is the explicit target, but the shift is not characterised as focal myocardial abnormality\\
+MulViMotion & 580 UK Biobank subjects & Quantitative and qualitative comparison with competing methods for 3D motion tracking of the LV myocardium & not reported\\
+DeepMesh & UK Biobank & Mesh-based 3D motion estimation of the LV, with vertex correspondence maintained across frames & not reported\\
+Low-rank groupwise deformations & not reported & Comparison of resulting low-rankness with other groupwise approaches & not reported\\
+MCM (Mamba) & Two public datasets & Quantitative and qualitative comparison with conventional and learning-based trackers & not reported\\
+Cardio\-Morph\-Net & UK Biobank and M\&Ms & Warped mask shapes compared with ground-truth masks; uncertainty values compared with other probabilistic methods & M\&Ms is multi-centre and multi-pathology, but the published comparison is mask agreement, not focal motion accuracy\\
+Bidirectional latent neural ODE & ACDC and M\&Ms & Comparison with the authors' selected comparator methods for temporal consistency and plausibility of the motion field & not reported\\
+STCMT-Net & 4D computed tomography and cine MRI datasets & Comparison with competing motion-estimation methods, plus a strain analysis reported to separate patients under different cardiac conditions & Group separation by cardiac condition is reported; no prescribed focal abnormality and no motion reference\\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Physics-, biomechanics- and representation-constrained estimators}}\\
+Biomechanics-informed prior & Three public cardiac cine datasets & Motion-tracking accuracy, volume preservation, generalisability across data distributions, and derived strain & not reported as a prescribed focal abnormality experiment\\
+WarpPINN & Synthetic examples and a cine bSSFP benchmark of 15 healthy volunteers & Landmark tracking against existing methods; strain obtained by automatic differentiation & Healthy benchmark; focal abnormality not evaluated\\
+WarpPINN-fibers & Synthetic phantom and the same 15-participant healthy benchmark & Strain estimation with fibre information compared with the fibre-free formulation & Healthy benchmark; focal abnormality not evaluated\\
+Implicit neural representation & not reported & not reported & not reported\\
+Space-time finite-element correlation & One synthetic dataset with ground-truth motion and strain; three public datasets with ground-truth landmarks or masks; one clinical dataset with ground-truth masks & 2D$+t$ motion and strain accuracy and temporal consistency against two classical feature-tracking and four deep-learning baselines; multi-view alignment and 3D$+t$ motion on the clinical dataset only & One synthetic ground-truth setting; the in-vivo references are landmarks and masks. Systematic variation of abnormality size or severity is not reported\\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Reference-supervised and end-to-end strain}}\\
+DeepTag & A representative clinical tagging dataset & Landmark tracking accuracy and inference efficiency against conventional tracking & not reported\\
+StrainNet & 161 patients, 99 healthy adults, 45 children and adolescents, with paired DENSE & End-point error of $0.75\pm0.35$~mm against DENSE; ICC with DENSE 0.87 (global) and 0.75 (segmental) circumferential strain, versus 0.72 and 0.48 for commercial feature tracking & Segmental agreement against a material-sensitive reference in a mixed patient population; abnormality size and severity were not varied experimentally\\
+DENSE-guided rotation network & not reported in the record retrieved & Strain accuracy against DENSE ground truth, with large rotation as the stated target & not reported\\
+MyoNet & Dahl salt-sensitive rat models undergoing radiation therapy & Agreement with strain derived by sine-wave modelling: ICC 0.973 (circumferential) and 0.975 (radial), with structural-similarity and correlation measures & Radiation-therapy injury in a rodent model; not human cine, and the reference is analysis-derived rather than prescribed\\
+DeepStrain & ACDC ($n=150$, including the 50-subject official segmentation test set with predicted labels); CMAC; ten healthy volunteers & CMAC landmark end-point error $2.9\pm1.5$~mm; scan--rescan repeatability; later independent synthetic evaluation (see \cref{sec:focal}) & Independently evaluated on MRXCAT2.0 synthetic normal, dilated, hypertrophic and infarcted cases; see \cref{sec:focal} for the reported errors\\
+Deep learning synthetic strain & 53 patients, 846 segments & AUC 0.90 against the consensus of four cardiothoracic radiologists; sensitivity, specificity and accuracy 86\%, 85\% and 86\% at a 30\% peak radial strain threshold; reader kappa 0.60--0.78 & Regional wall-motion abnormality is the target, but the reference is expert reading, not measured motion\\
+Deep learning aligned strain & 139 male patients with Duchenne muscular dystrophy; fibrosis evaluation in 57, reproducibility in 82 & Specificity $+40\%$, accuracy $+17\%$, and accuracy in patients with preserved ejection fraction $+61\%$ relative to the comparator & Target is LGE-defined fibrosis, a tissue reference rather than a motion reference\\
+Cine-only infarct delineation & 165 cine datasets & Pixel accuracy 95.03\%, Dice 89.87\% and $\kappa=0.91$ against manual delineation of delayed-enhancement images by two radiologists & Infarction is the target, but the reference is LGE-defined tissue, not motion\\
+Survival-supervised motion & 302 patients & Harrell C index 0.75 (95\% CI 0.70--0.79) versus a human benchmark of 0.59 (0.53--0.65), $P=0.0012$ & Prognostic discrimination; neither regional motion accuracy nor focal abnormality was evaluated\\
+\bottomrule
+\end{longtable}
+
+Three patterns in \cref{tab:methods_validation} are worth stating explicitly, because they define the
+rest of this review. First, the modal evidence across the methods reviewed is agreement between a
+propagated and a reference segmentation, supplemented by sparse landmark error; this is reasonable
+evidence for the claims those papers make and, by the construction in \cref{fig:correspondence}, it
+cannot by itself certify material correspondence. Second, where a method in that table is evaluated
+against a material-sensitive reference, the reference is almost always acquired in a mixed or
+healthy population, and the comparison is reported as agreement rather than as error under controlled
+conditions. Third, the right-hand column is mostly \texttt{not reported}: among the estimators
+reviewed, deliberate evaluation on a focal abnormality of known size and severity appears in one
+independent synthetic study, and the evidence that does exist on pathological hearts tends to be
+mask agreement or a downstream label. This is a statement about the published evaluation record, not
+about the methods' capability, and it is exactly the gap that \cref{sec:regional,sec:synthesis}
+characterise.
+
+\section{How motion and strain estimates have been validated}\label{sec:validation}
+
+\subsection{What each validation target can establish}\label{sec:targets}
+
+The previous section compared estimators by what they do. This section classifies the evidence by
+what it can support. A study may test agreement with observed anatomy, consistency between
+estimators, error against prescribed motion, agreement with a material-sensitive acquisition,
+repeatability, association with tissue, or association with outcome. These targets are not
+interchangeable, and a result at one point in the measurement chain does not retrospectively
+establish the steps before it. \Cref{tab:targets} separates, for each target, the metric or record it
+produces, the interpretation it supports and the questions it leaves open. \Cref{fig:targets} carries
+the same classification as a single display, setting what each target \emph{can} support directly
+against what it does not establish on its own; that two-column contrast is the order in which
+\cref{sec:overlap} to \cref{sec:unit} then work through the evidence.
+
+\begin{longtable}{@{}L{0.16\textwidth}L{0.20\textwidth}L{0.26\textwidth}L{0.29\textwidth}@{}}
+\caption{Validation targets and what they support. The rows are complementary questions, not an
+accuracy ranking. Regulatory records are listed as a distinct source of device claims, not as a
+motion reference.}\label{tab:targets}\\
+\toprule
+Target or reference & Typical metric or record & Supported interpretation & Questions it leaves open\\
+\midrule
+\endfirsthead
+\toprule
+Target or reference & Typical metric or record & Supported interpretation & Questions it leaves open\\
+\midrule
+\endhead
+Anatomical overlap & Dice, surface distance, contour error & Propagated anatomy aligns with a reference segmentation & Tangential material correspondence, dense interior motion and the accuracy of strain gradients\\
+Image-registration similarity & Image-similarity score or registration data term & Agreement with image intensities under the chosen matching criterion & Material trajectories; independent accuracy, when the same criterion is both optimised and evaluated\\
+Inter-estimator or inter-software agreement & Bias, limits of agreement, intraclass correlation & Consistency of specified outputs between the tested implementations & Accuracy against material motion, whether a shared bias is present, and equivalence under another strain definition\\
+Sparse landmarks & Endpoint or trajectory error with observer uncertainty & Correspondence near the selected visible or tagged points & Error between landmarks, and derivative accuracy through the wall\\
+Implanted physical markers & Segment shortening or crystal-pair distance against the imaging estimate & Agreement with a physical material reference inside a living heart under the studied preparation & Human applicability, sparse spatial sampling, and the effect of the surgical preparation on mechanics\\
+Prescribed motion & Vector error, strain bias, localisation, width, spillover, timing, topology & Technical accuracy under the stated simulated geometry, motion and image formation & In-vivo accuracy and behaviour outside the simulated regime\\
+Tagging or DENSE & Displacement or strain agreement after spatial and temporal registration & Agreement with an independent material-sensitive acquisition under the paired conditions & Error-free truth, performance at untested sites, and outcome benefit\\
+Scan--rescan & Within-subject standard deviation, coefficient of variation, repeatability coefficient & Precision under the specified scanner, protocol, software, reader and interval & Accuracy, absence of systematic bias, and transfer to another version or population\\
+Independent tissue target (LGE) & Zone contrast, discrimination, spatial association & Relationship between a strain marker and independently defined tissue regions & Dense motion truth, a causal mechanism, and one-to-one tissue--strain correspondence\\
+Clinical outcomes & Adjusted association, discrimination, calibration, decision analysis & Prognostic or diagnostic association, or decision-related performance as directly studied & Material-motion accuracy, threshold transport, and treatment benefit without the corresponding trial design\\
+Regulatory record & Intended use, technical comparison, submitted verification & Device status and bounded claims within one jurisdiction & Superiority, outcome benefit, interchangeability and routine adoption\\
+\bottomrule
+\end{longtable}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{figures/p3_Figure3_validation_targets.pdf}
+ \caption{Validation targets support different claims. Each row names a reference or comparison, what
+ it can support, and what it does not establish on its own. The rows are complementary rather than
+ ranked, and none describes the performance of any particular estimator.
+ \enquote{Independently defined} late gadolinium enhancement (LGE) regions means that the tissue
+ regions are defined separately from the strain marker; it does not assert statistical independence
+ or a dense motion truth. The implanted-physical-marker row of \cref{tab:targets} has no counterpart
+ in this figure; it is discussed in \cref{sec:focal}.}
+ \label{fig:targets}
+\end{figure}
+
+\subsection{Anatomical and image consistency}\label{sec:overlap}
+
+Anatomical overlap tests whether a propagated structure matches a reference segmentation, and the
+annulus construction of \cref{sec:illposed} shows the limit of that test exactly: a smooth
+one-to-one reparameterisation can leave Dice at 1 and the Hausdorff distance at 0 while the
+tangential stretch varies by a factor of three. The counterexample is analytic and says nothing
+about how often any particular estimator behaves this way; it establishes only that overlap cannot
+be used as a substitute. The same applies to the data term of \cref{eq:registration}: a lower
+registration loss is evidence of a better fit to that criterion, not an independent measurement of
+trajectory accuracy, and where the myocardial signal does not distinguish between candidate
+transformations, similar data-term values can accompany different displacement gradients.
+
+\subsection{Prescribed motion}\label{sec:prescribed}
+
+In a design that uses images alone, a prescribed-motion experiment is the setting in which regional
+error can be measured directly, because the deformation is known by construction; the one other
+material reference, physical markers implanted in the tissue, requires surgery and is taken up in
+\cref{sec:focal}. Several generators now exist, and they make
+different trade-offs between realism and control. Adams et al.\ built a single-slice numerical
+phantom from one volunteer's acquisitions with the JEMRIS open-source MR
+simulator, at in-plane resolutions from
+$1.4\times1.4$ to $3.0\times3.0$~mm$^2$ and 20 to 40 cardiac phases, and used it to test two
+feature-tracking packages against known radial and circumferential strain. Increasing pixel size
+produced a trend of increasing departure from the ground-truth peak strain, reaching 9.17 percentage
+points for radial and 8.42 percentage points for circumferential strain for one cvi42 version
+between the finest and coarsest resolutions~\citep{adams2023}. Mukherjee et al.\ derived an
+in-silico phantom from finite-element simulations, first recovering an exact twist angle for a
+thick-walled cylinder under pure torsion and then synthesising dynamic images from mouse-specific
+simulations~\citep{mukherjee2024}.
+
+Two of the generators carry pathology. MRXCAT2.0 couples the XCAT torso phantom with a statistical shape
+model and a biophysical electromechanical model, generating paired bSSFP images and ground-truth LV
+function across healthy, infarcted, dilated and hypertrophic cases~\citep{mrxcat2023}. The Multimodality
+STRAUS framework generates 3D synthetic cine MR, tagged MR and ultrasound sequences for the same
+virtual patient from an electromechanical model, and its released database is the most
+pathology-dense prescribed-motion resource in \cref{tab:datasets}: three anatomical templates, each
+simulated under six conditions, give 18 virtual patients of which 12 are ischaemic across four coronary
+configurations, with 90 sequences and per-modality reference meshes released publicly and without
+login~\citep{zhou2018straus}. Two properties bound its use. The images are synthesised from the
+prescribed deformation, so an estimator whose own deformation prior resembles the generator's can be
+flattered by construction, and the released set is a fixed list of cases rather than a parameterised
+generator, so scar location and size cannot be swept without re-running the underlying
+electromechanical pipeline.
+
+DENSE-SIM targets the reference acquisition rather than cine. It generates cine DENSE images with
+high-resolution known strain, and its released example of 180 short-axis slices was used to
+characterise how the spatial regularisation parameter of a standard DENSE analysis tool trades bias
+against variance. At a typical setting the average signed error in end-systolic Green radial strain
+was $0.04\pm0.09$ and circumferential $-0.00\pm0.04$, with radial strain showing the larger
+underestimation, particularly near the endocardium~\citep{barbaroux2025,densesimrepo}.
+
+The DENSE-SIM result deserves emphasis because it is about the reference itself. Even a
+material-sensitive acquisition has a regularisation parameter whose setting biases regional radial
+strain, so the uncertainty of the reference belongs in any comparison that uses it. Simulator
+evidence as a whole is bounded by its anatomy, motion, texture and acquisition assumptions, and
+visual realism does not by itself establish in-vivo validity. \Cref{tab:datasets} lists the public
+resources that a regional cine validation study could currently draw on.
+
+\begin{longtable}{@{}L{0.17\textwidth}L{0.19\textwidth}L{0.20\textwidth}L{0.17\textwidth}L{0.18\textwidth}@{}}
+\caption{Public datasets and simulation frameworks relevant to regional cine motion validation.
+\enquote{Motion reference} means a reference for material displacement or strain, not a
+segmentation. Entries describe the resource as documented in the cited record.}\label{tab:datasets}\\
+\toprule
+Resource & Modality and content & Population & Motion reference & Pathology represented\\
+\midrule
+\endfirsthead
+\toprule
+Resource & Modality and content & Population & Motion reference & Pathology represented\\
+\midrule
+\endhead
+CMAC~\citep{cmac2011,tobongomez2013}; used by DeepStrain in \cref{tab:methods_validation}~\citep{morales2021} & 3D tagged MR, cine bSSFP and 3D ultrasound (1,158 image volumes) & A dynamic phantom and 15 healthy volunteers & 12 landmarks (four walls at three ventricular levels) tracked over the cycle in the 3D tagged data by two observers; median inter-observer variability 0.77~mm (phantom) and 0.84~mm (volunteers) & None; healthy volunteers only\\
+Stanford \emph{Human MRI Data to Quantify Cardiac Performance}~\citep{stanforddata} & Cine bSSFP ($1\times1\times8$~mm, 25 phases, contiguous short-axis stack covering the left ventricle plus five long-axis views rotated $37^\circ$ apart), xyz-encoded cine DENSE \emph{at slice locations identical to the cine}, three mid-ventricular short-axis grid-tagging slices (30 phases, 7~mm tag spacing) and native T1 at those same locations, plus cardiac diffusion tensor imaging; de-identified DICOM, one archive per subject; Open Data Commons Open Database Licence v1.0 & 55 participants imaged 2023--2025 on one 3-T system with identical coils and protocol: 51 healthy volunteers (mean age $39\pm14$ years) and 4 patients with aortic stenosis & DENSE displacement at corresponding slice locations; a processed measurement, not a prescribed truth. Cine is retrospectively gated and DENSE prospectively gated, so the two must be aligned in time & No focal infarction. The only pathology is aortic stenosis in 4 of 55, which is a pressure-overload rather than a regional-injury phenotype\\
+Multimodality STRAUS~\citep{zhou2018straus} & Synthetic 3D cine MR, tagged MR in three channels and 3D ultrasound for every virtual patient; 90 sequences and 2,700 image volumes as \texttt{raw}/\texttt{mhd} with per-modality \texttt{vtk} reference meshes; public with no login, and no licence stated on the project page & 18 virtual patients: three anatomical templates, each simulated under six conditions (healthy, left bundle branch block, and ischaemia in the left circumflex, left anterior descending and two right coronary configurations), giving 3 healthy, 3 dyssynchronous and \textbf{12 ischaemic} cases & Motion fields prescribed by an electromechanical model, supplied as reference meshes; the images are then generated from those fields, so an estimator whose deformation prior resembles the generator's carries an inverse-crime risk & Ventricular dyssynchrony and myocardial ischaemia across four coronary territories. The released set is a fixed list of cases: infarct location and size are not exposed as adjustable parameters\\
+MRXCAT2.0~\citep{mrxcat2023} & Synthetic bSSFP cine with paired ground truth & Shape model trained on a clinical population; four demonstrated use cases & Prescribed biophysical deformation and strain & Normal, infarcted (one elliptical free-wall scar), dilated and hypertrophic\\
+DENSE-SIM~\citep{barbaroux2025,densesimrepo} & Synthetic cine DENSE with sub-voxel ground-truth strain & 180 short-axis slices in the released example & Prescribed Lagrangian strain & Not stated; the released example varies motion and signal-to-noise ratio\\
+Numerical FT phantom~\citep{adams2023} & Single-slice simulated cine at several resolutions & Derived from one volunteer & Prescribed radial and circumferential strain & None; resolution is the varied factor\\
+In-silico heart phantom~\citep{mukherjee2024} & Synthetic MR from finite-element simulations & Cylinder plus mouse-specific models & Exact analytic twist; simulated kinematics & Not reported for human pathology\\
+ACDC~\citep{bernard2018acdc} & Cine with expert segmentations, reference measurements and an expert diagnostic label & 150 multi-equipment examinations, 100 training and 50 test & None & Five equally sized classes: previous myocardial infarction, dilated and hypertrophic cardiomyopathy, abnormal right ventricle and normal\\
+UK Biobank CMR~\citep{petersen2016ukb} & Cine (short- and long-axis) in a population cohort & Tens of thousands of participants & None & Population-based; disease is incidental\\
+Emidec~\citep{lalande2020emidec} & Delayed-enhancement MR only, in the short axis, with expert myocardial and diseased-area contours plus emergency-department clinical parameters & Number of examinations not stated in the record retrieved & None; this is a tissue resource, not a motion resource & Normal cases and patients with myocardial infarction\\
+Cardiac Atlas Project~\citep{fonseca2011cap,suinesiaputra2018} & Imaging examinations with associated clinical data and 3D LV surface-point shape models & Multi-cohort; the infarct-classification challenge used 100 patients with myocardial infarction and 100 asymptomatic volunteers for training and 200 further cases for validation & None & Myocardial infarction versus asymptomatic\\
+CMRxRecon2024 \citep{wang2025cmrxrecon2024} & Multi-contrast, multi-view raw $k$-space including cine and tagging & Not read in this review; see note & None (reconstruction benchmark) & Not read in this review\\
+\bottomrule
+\end{longtable}
+
+\noindent\emph{Notes to \cref{tab:datasets}}: the CMRxRecon2024 record was verified bibliographically
+but its abstract text could not be retrieved in this review, so its participant numbers and split
+sizes are deliberately not stated here. The STRAUS and Stanford entries were re-checked on
+8~October 2026, the first against the project page and the database catalogue, the second against
+the Stanford Digital Repository record and the laboratory protocol page. The case
+composition of STRAUS is taken from the catalogue listing rather than inferred, and the Stanford
+cohort is given as the repository record states it, which includes four participants the laboratory
+protocol page does not mention.
+
+\subsection{Tagging and DENSE as in-vivo references}\label{sec:material}
+
+Tagging and DENSE supply material-sensitive information in vivo, and comparisons against them are
+the closest thing to a material reference that is routinely available in human studies. They remain
+conditional on the acquired components, on spatial and temporal registration between the two
+acquisitions, and on the strain definition used for each. Wehner et al.\ analysed 88 participants and 186 paired slices and found
+that some feature-tracking whole-slice strain measures agreed with DENSE and with simple two-contour
+geometry, while basal, apical, torsional and dyssynchrony measures were less
+reliable~\citep{wehner2018}; agreement of a whole-slice contour-derived measure can occur without
+establishing that interior points were followed correctly. Cao et al.\ reported systematic
+differences among DENSE, tagging and feature tracking~\citep{cao2018}, which is a reminder that
+dedicated motion-sensitive acquisitions are neither interchangeable with one another nor error-free.
+
+How fallible the reference is has itself been measured, and the answer is encouraging for the
+reference and relevant to every comparison that uses it. Li et al.\ repeated breath-hold
+two-dimensional cine DENSE in a mid-ventricular short-axis slice before and after contrast in two
+cohorts of 11, one receiving gadolinium and one receiving three incremental doses of ferumoxytol,
+and assessed circumferential strain against a declared region of practical equivalence of $\pm0.02$
+in a Bayesian analysis. Global circumferential strain showed practical equivalence in both cohorts,
+and segmental reproducibility was high throughout, with at least 87.02\% of comparisons falling
+inside that region~\citep{li2025densereprod}. Two readings follow, and they point in opposite
+directions. The reference is more stable under a deliberate perturbation than the phrase
+\enquote{not an error-free truth} on its own suggests, which strengthens rather than weakens
+comparisons made against it. At the same time the study measures reproducibility across a contrast
+manipulation in 22 subjects at one site, not accuracy, and the regularisation result of
+\cref{sec:prescribed} shows that a processing choice inside the same pipeline still moves regional
+radial strain. Reference stability and reference accuracy remain separate properties.
+
+Resources that pair the two acquisitions in the same participants are what make such comparisons
+possible at all, and the most completely specified one currently public is the Stanford
+\emph{Human MRI Data to Quantify Cardiac Performance} collection. Its value for this review's
+question lies in a single acquisition decision: the cine DENSE slices, short-axis and long-axis
+alike, were prescribed at locations identical to the cine slices, and the three mid-ventricular
+tagging slices and native T1 maps sit at those same locations, so a cine estimate and a
+material-sensitive reference can be compared without a between-slice interpolation step. The
+collection holds 55 participants imaged on one 3-T system between 2023 and 2025 with identical coils
+and protocol, of whom 51 are healthy volunteers and 4 have aortic stenosis, and it is released as
+de-identified DICOM under an Open Data Commons Open Database Licence~\citep{stanforddata}; the
+custodians recommend a published tag-tracking pipeline for the tagging
+series~\citep{loecher2021tagging}. Three properties bound what it can establish. It contains no
+focal infarction, so it cannot show whether a regional deficit survives estimation. Its cine is
+retrospectively gated while its DENSE is prospectively gated, so the two must be aligned in time and
+late diastole may be missing from one of them. And DENSE displacement is itself the output of phase
+unwrapping, contouring and spatial regularisation, so a comparison against it supports a statement
+about \emph{agreement with DENSE} and not about accuracy.
+
+Militaru et al.\ provide the most directly scale-resolved comparison. In 61 participants under one
+3-T protocol, agreement with tagging gave global longitudinal-strain ICCs of 0.92--0.94 and global
+circumferential-strain ICCs of 0.88--0.91, whereas the corresponding regional ranges were 0.44--0.50
+and 0.57--0.77, and regional radial-strain ICCs were 0.05--0.51~\citep[Detailed Results and
+Fig.~5]{militaru2021}. The study describes a two-way mixed-effects model for overall agreement; a
+single-measure versus average-measure designation was not identified in the available methods, and
+the detailed-results ranges are retained here because the abstract gives partly different ranges
+without an identified explanation for every discrepancy. No adequacy threshold is applied to these
+coefficients here, because \cref{sec:recoverability} declines to set a tolerance until the decision a
+measurement serves has been named; what the numbers carry is the within-study contrast between the
+global and the regional value, which is internal to one cohort and one protocol and is therefore
+robust to the dependence of an intraclass correlation on the between-segment variance of the sample.
+Brandt et al.\ reached a compatible
+conclusion in 42 subjects comparing MRI tagging, MRI feature tracking and ultrasound speckle
+tracking: global peak strain ICCs of 0.71--0.83 without significant bias, but significant biases in
+all segmental peak-strain parameters, with segmental ICCs of 0.62--0.77 except for lateral
+longitudinal strain at 0.23 ($P=0.22$)~\citep{brandt2024}.
+
+Kihlberg et al.\ compared the acquisitions against an independent tissue target rather than against
+each other: in 116 patients with suspected coronary artery disease, for detecting segments with more
+than 50\% LGE transmurality at 80\% specificity, sensitivity was 82\% for DENSE and 71\% for
+tagging, and segment-level AUCs were 0.87 for DENSE, 0.83 for tagging ($P<0.001$) and 0.66 for
+feature tracking ($P=0.003$)~\citep{kihlberg2020}. This ranks the acquisitions by their ability to
+identify tissue-defined dysfunction, which is a clinically meaningful ordering, and it is not a
+measurement of motion accuracy for any of the three.
+
+The post-cutoff study of Jahromi et al.\ illustrates how much the comparison depends on the
+measurement definition. In 40 healthy volunteers contributing two short-axis slices each, alongside
+an idealised cylindrical phantom, cine showed closer endocardial circumferential agreement,
+lower-magnitude epicardial circumferential strain, and higher-magnitude radial and longitudinal
+strain than two-slice DENSE; the authors reported equivalence for peak slice-wise endocardial
+circumferential strain within a selected margin of $\pm3.5$ percentage points, with a mean
+cine-minus-DENSE difference of $-2.7$ percentage points~\citep{jahromi2026densecine}. This is a
+selected-margin comparison of slice-wise peaks in healthy hearts, with two dependent slices per
+participant; it does not address individual interchangeability or accuracy within an infarct region.
+
+\subsection{Repeatability}\label{sec:repeatability}
+
+Repeatability addresses precision under repeated measurement conditions, which is a different
+property from accuracy. The Quantitative Imaging Biomarkers Alliance framework separates bias,
+repeatability and reproducibility and ties each to a defined measurand and use
+condition~\citep{raunig2015}. In the same-day strain-8 experiment, 20 healthy volunteers underwent
+eight CMR and echocardiographic protocols; repeatability varied by direction and by spatial scale,
+with many segmental measures less precise than global ones, and for 1.5-T CMR feature-tracking
+global longitudinal strain the reported coefficient of variation was 9.0\% (95\% confidence interval
+6.0--11.2\%)~\citep{bell2025strain8}. A confidence limit for a coefficient of variation is not a
+threshold for change between two individual measurements, and 11.2\% is not interpreted here as a
+validated individual-change threshold. The quantity a clinician needs is the repeatability coefficient, which under the usual assumptions
+is $2.77$ times the within-subject standard deviation and bounds the difference expected between two
+measurements of an unchanged subject; the strain-8 segment-level values were not extracted at the
+reading depth used here and are therefore not reproduced. A repeatability coefficient and a
+clinically important change answer different questions: the first asks whether two measurements differ by more than the stated
+technical conditions predict, the second whether the difference matters for management, and
+biological day-to-day variation adds a third source of change.
+
+\subsection{Consistency across software and versions}\label{sec:crosssoftware}
+
+Agreement between analysis packages addresses the consistency of the tested outputs rather than
+their accuracy against an independent reference, and it is nonetheless important here, because a
+regional value that changes with the software cannot be compared across studies at all.
+\Cref{tab:software} keeps each result tied to its tested versions, population and reference. Across
+these studies, global longitudinal and circumferential agreement was generally stronger than
+regional or radial agreement, and reproducible measurements were not necessarily
+interchangeable~\citep{militaru2021,goetze2026,ochs2026}. Software version matters as much as
+vendor: contour propagation, interpolation, coordinate construction, peak detection and default
+exclusions can all change between releases while the output label stays the same, which is why
+\cref{tab:estimand} asks for the full version alongside the estimand settings. The regulatory record
+does not close this gap, because a 510(k) summary establishes device identity, intended use,
+predicate and submitted evidence within one jurisdiction, not cross-product
+equivalence~\citep{fda2022qib,fdaK232661}.
+
+\begin{longtable}{@{}L{0.20\textwidth}L{0.23\textwidth}L{0.27\textwidth}L{0.24\textwidth}@{}}
+\caption{Independent comparison evidence, tied to the versions, population and reference of each
+study.}\label{tab:software}\\
+\toprule
+Study and population & Tested implementations & What the study establishes & Boundary\\
+\midrule
+\endfirsthead
+\toprule
+Study and population & Tested implementations & What the study establishes & Boundary\\
+\midrule
+\endhead
+Militaru et al.; 61 participants & cvi42 5.1, Segment 3.0 and TomTec Arena 4.6 & Pairwise global and regional agreement, and comparison with tagging, under one 3-T protocol~\citep{militaru2021} & Global agreement did not transfer to all regional or radial measures; not a current-version comparison\\
+Lim et al.; healthy volunteers & Two analysis packages, plus full-stack versus three-slice sampling & Segmentation coverage and software both alter the reported strain under the tested protocol~\citep{lim2021} & Healthy cohort; no outcome threshold and no known-motion regional truth\\
+Goetze et al.; 15 travelling healthy volunteers at three 3-T sites & Medis Suite 3.1 and cvi42 5.13 & Scanner and software effects can be separated within the travelling design~\citep{goetze2026} & Small healthy cohort; the detailed table reports centre-specific inter-software global radial strain bias of 18.34--19.93 percentage points, whereas the abstract gives 18.34--19.83\\
+Ochs et al.; 183 post-COVID participants and 57 controls & cvi42; CAAS within IntelliSpace Portal 12; fast strain-encoded imaging with MyoStrain 5.2.2 & Method agreement and observer reproducibility~\citep{ochs2026} & No cvi42 version reported; scan--rescan precision was not assessed, and post-COVID evidence does not establish post-infarction accuracy\\
+Zhang et al.; heart failure with preserved ejection fraction & Multiple CMR strain packages & Discrimination between patients and controls can differ between software in the studied cohort~\citep{zhang2021hfp} & Group discrimination does not establish prospective prediction, motion accuracy or a treatment rule\\
+\bottomrule
+\end{longtable}
+
+\subsection{Tissue and outcome association}\label{sec:association}
+
+Two further classes of evidence are frequently cited in support of cine strain and are included here
+for completeness, with their interpretation stated. Association with LGE-defined tissue shows that a
+strain marker differs between independently defined tissue regions. In 18 participants with chronic
+infarction, circumferential-strain discrimination of any LGE had an AUC of 0.802 for HARP tagging
+and 0.679 for one feature-tracking package ($P=0.006$), with further significant inter-software
+comparisons~\citep[Fig.~7]{militaru2021}; these are segment-level comparisons in a small cohort, with
+within-patient dependence and multiple comparisons to consider, and they demonstrate
+method-dependent tissue discrimination rather than the accuracy of the underlying motion field.
+Mangion et al.\ compared cine feature tracking with DENSE after infarction and found that the
+reported incremental prognostic result concerned DENSE circumferential strain rather than the
+feature-tracking measure~\citep{mangion2019}, which is a reminder that a prognostic finding belongs
+to the acquisition and estimator that produced it. Association with outcome shows prognostic
+relevance: the UK Biobank analysis cited in
+\cref{sec:introduction} is the largest example, and its analysable denominator differed by strain
+component, since segmentation failures prevented global circumferential and radial analysis in 4,390
+participants~\citep{chadalavada2024}. Mechanical dispersion derived from echocardiographic
+deformation has been associated with ventricular arrhythmia after infarction~\citep{haugaa2010}, and
+an inter-vendor echocardiographic study found implementation-dependent dispersion
+values~\citep{appadurai2022}; these motivate a marker and an endpoint without supplying a regional
+cine motion reference or a transportable CMR threshold.
+
+\subsection{Unit of inference and reference uncertainty}\label{sec:unit}
+
+Two statistical points govern how every number in this section may be read. First, the unit of
+inference: segments within a participant are correlated, and analysing them as independent
+observations underestimates uncertainty. A high correlation can coexist with a scale offset, and a
+non-significant mean difference does not demonstrate equivalence without a declared margin and
+sufficient precision, so bias, limits of agreement and the sources of variation are needed alongside
+correlation. Repeated scans, readers, scanners and software versions create crossed or nested
+variation, and a regional map adds localisation and multiple-comparison
+questions~\citep{raunig2015,puntmann2018}. Second, reference uncertainty: tag intersections and
+DENSE phase require processing and registration, manual landmarks carry observer variability,
+simulated anatomy may not reproduce in-vivo texture, and LGE zones depend on segmentation and
+thresholding. The DENSE-SIM regularisation result in \cref{sec:prescribed} quantifies one instance
+of this directly. Propagating reference error, or at least performing a sensitivity analysis across
+plausible registrations and annotations, shows how much a comparison depends on the reference
+itself.
+
+\section{What is known about recovering regional and focal abnormalities}\label{sec:regional}
+
+The previous section classified the evidence by target. This section narrows to the question the
+review set out to answer, and asks what is known specifically about a \emph{focal} deficit: its
+magnitude, its location, its extent and its timing. Four kinds of study bear on it, and they are
+kept apart because they support different claims.
+
+\subsection{Tests against prescribed focal abnormality}\label{sec:focal}
+
+Prescribed-motion experiments and implanted physical markers are the two settings in which regional
+error can be measured against a material reference rather than against another estimate: in the first
+the deformation is known by construction, and in the second it is measured by a device placed in the
+tissue. Implanted markers established the in-vivo credibility of tagging itself. Yeon et al.\ compared
+circumferential segment shortening from spatial modulation of magnetisation with sonomicrometry in a
+canine coronary-ligation model, with paired data from 19 of 31 studies, and reported that both methods
+separated ischaemic from remote myocardium, that tagged shortening matched sonomicrometry in ischaemic
+myocardium ($2\pm3$ against $0\pm3$\%, $P=0.067$) and was slightly higher in remote myocardium
+($11\pm10$ against $7\pm5$\%, $P=0.033$), with correlations of $r=0.84$ at end-systole and $r=0.88$ in
+late systole~\citep{yeon2001sonomicrometry}. That design, a graded regional deficit with a physical
+material reference, is the one this review finds missing for cine estimators; it is reported here for a
+dedicated tagging acquisition in an animal model, and the surgical preparation, the sparse sampling and
+the species all bound its transfer.
+
+Within the cine literature retrieved, the most informative single result is the DeepStrain
+evaluation reported in the MRXCAT2.0 paper, which is independent of the DeepStrain developers. Four
+use cases were simulated, namely normal, dilated, hypertrophic and infarcted left ventricles, with
+ejection fractions of 51\%, 34\%, 41\% and 49\% respectively, and the infarct was modelled as an
+elliptical scar in the free wall. In the infarcted simulation, the
+ejection fraction stayed at 49\% because remote myocardium compensated for the reduced mobility of
+the scar, which is precisely the configuration a global measure cannot see: ground-truth peak
+systolic strains were 0.95 (radial), $-0.18$ (longitudinal) and $-0.18$ (circumferential) in remote
+tissue against 0.30, $-0.17$ and 0.01 in the scar. The prescribed deficit is therefore strongly
+attribute-dependent before any estimator is applied: radial and circumferential strain are largely
+abolished inside the scar while longitudinal strain is almost unchanged ($-0.17$ against $-0.18$).
+An experiment on these images can test whether an estimator preserves a radial or circumferential
+deficit; it cannot test whether a longitudinal deficit survives, because there is almost none to
+lose.
+
+Applying DeepStrain to these images gave a mean Dice of 0.82 across cardiac phases, lowest for the
+infarcted case and particularly in the thin scar region, and an average displacement error of
+$1.0\pm0.9$~mm. For strain, agreement was good for the circumferential component (average error
+$0.02\pm0.04$ across all cases) with larger errors in the thinner-walled dilated and infarcted
+cases, while radial strain was generally underestimated, reported as $-0.24\pm0.21$ overall with the
+lowest performance attributed to the infarcted case at $-0.20\pm0.21$. All values
+are averages over three mid-ventricular short-axis slices~\citep{mrxcat2023}.
+
+This result should be read with two qualifications that the source itself supplies. The authors
+describe the infarcted case as the worst performer, but the radial error they report for it
+($-0.20$) is smaller in magnitude than the across-case average ($-0.24$), and the per-case standard
+deviations overlap; the attribution of \enquote{worst} therefore rests on the full set of panels
+rather than on those two numbers alone, and should not be quoted as a quantitative ordering. The
+paper also states that a simple scar model was implemented and could be extended to arbitrary shapes
+and property variations. One scar geometry, one estimator, one slice position and one simulated
+signal-to-noise ratio is a single point in the space this review is asking about, and the record read
+here does not identify which DeepStrain release or weights were used, so the result cannot be tied to
+a version. Corroboration would require the same grid applied to at least one further estimator from a
+different family and to at least one further generator, so that an effect of the estimator can be
+separated from an effect of the image-formation model.
+
+What the experiment does establish is mixed, and both halves deserve equal weight. A learning-based
+estimator underestimated radial strain across all four cases, most visibly where the wall was thin,
+and that is a genuine finding. In the same experiment, on the same images and the same estimator,
+circumferential strain was recovered to within an average error of $0.02\pm0.04$, which includes the
+infarcted case. The one published test of a cine estimator against a prescribed focal deficit
+therefore reports an attribute-specific result rather than a uniform loss, which is the empirical
+instance of the claim form set out in \cref{sec:recoverability}: an estimator may hold one component
+while losing another. Several explanations for the radial result are available and the single
+experiment separates none of them, among them the composition of the training set, which contained
+mostly non-infarcted anatomy; wall thinning and partial-volume effects in the scar region; the
+generator's image-formation model; and the estimator's own regularisation. Nor is the result a
+measurement of how the underestimation scales with scar size, transmurality or location, because
+those were not varied.
+
+The other prescribed-motion studies cover other axes but not this one. Adams et al.\ varied spatial
+and temporal resolution and showed that peak strain departs further from ground truth as pixel size
+grows, with the effect differing between two versions of the same commercial
+package~\citep{adams2023}. DENSE-SIM varied the regularisation strength of the analysis tool and
+showed that it trades bias against variance in regional radial strain, worst near the
+endocardium~\citep{barbaroux2025}. The space-time finite-element framework of Liu et al.\ evaluated
+displacement and strain against one synthetic dataset with ground truth and otherwise against
+landmarks and masks~\citep{liu2026fe}. STRAUS includes ischaemic cases with prescribed motion fields
+and so could in principle support a focal analysis, but the published framework paper reports
+discrimination of pathological from healthy subjects by global indices and regional strain curves
+rather than a quantified regional recovery error for any estimator~\citep{zhou2018straus}. Taken
+together: resolution has been varied against known motion, analysis regularisation has been varied
+against known motion, and abnormality has been \emph{represented} in known-motion data. Within the
+searches recorded in \cref{sec:methods} and up to the stated cutoff, this review did not identify a
+study that varied abnormality size, severity or transmurality against known motion while holding the
+estimator and the measurement definition fixed. As with every such statement in this review, that is
+a property of the recorded searches rather than an assertion that no such study exists.
+
+\subsection{Regional agreement against material-sensitive references}\label{sec:regionalagreement}
+
+Where a prescribed abnormality is unavailable, the closest in-vivo evidence is segmental agreement
+with tagging or DENSE, and here there is a consistent and well-replicated finding: regional
+agreement is worse than global agreement, and radial strain is worst of all. The numbers were given
+in \cref{sec:material}: regional circumferential ICCs of 0.57--0.77 and regional radial ICCs of
+0.05--0.51 against tagging in 61 participants~\citep{militaru2021}; significant biases in every
+segmental peak-strain parameter with segmental ICCs of 0.62--0.77 except lateral longitudinal strain
+at 0.23 in 42 subjects~\citep{brandt2024}; poorer reliability of basal, apical, torsional and
+dyssynchrony measures in 88 participants and 186 paired slices~\citep{wehner2018}; and segmental
+repeatability substantially worse than global repeatability in the strain-8
+experiment~\citep{bell2025strain8}. Supervision on DENSE improves this without eliminating it:
+StrainNet reached a segmental circumferential ICC of 0.75 against DENSE, compared with 0.48 for
+commercial feature tracking, in a mixed cohort of 305 participants~\citep{wang2023strainnet}.
+
+Three cautions apply to reading this as evidence about focal recovery. These are agreement
+statistics, not error against a known deficit, and the reference carries its own regional bias
+(\cref{sec:prescribed}). The cohorts are mixed or healthy rather than selected for focal
+abnormality, so a segmental ICC averages over segments that mostly have nothing wrong with them,
+which is spectrum bias in its usual measurement sense.
+And an ICC is sensitive to the between-segment variance in the sample, so the same estimator can
+produce different regional ICCs in populations with different distributions of regional
+dysfunction. What the body of evidence does establish is that spatial scale and strain component
+change the answer, and that a global agreement statistic cannot be assigned to an individual
+segment.
+
+\subsection{Inferring infarction from cine alone}\label{sec:cineonly}
+
+A separate and rapidly growing literature asks whether cine alone can identify infarcted or fibrotic
+myocardium. Xu et al.\ learned motion features from non-contrast cine with a recurrent architecture
+and optical flow and delineated infarction directly, reporting pixel accuracy of 95.03\%, Dice of
+89.87\% and $\kappa=0.91$ against manual delineation of delayed-enhancement images by two
+radiologists in 165 cine datasets~\citep{xu2018}. Zhang et al.\ diagnosed chronic infarction from
+non-enhanced cine~\citep{zhang2019mi}; Righetti et al.\ classified scar presence by adding
+Fourier- and monogenic-signal parametric images to cine~\citep{righetti2024}; a preprint
+segments scar from cine using an end-diastole-referenced displacement field, with LGE annotations
+transferred into cine coordinates by registration~\citep{yang2025fusion}; and cine radiomics has
+been used to predict adverse left ventricular remodelling after ST-segment elevation
+infarction~\citep{xin2023}. Deep learning synthetic
+strain detects regional wall-motion abnormality against a radiologist consensus reference, with an
+AUC of 0.90 in 53 patients and 846 segments~\citep{masutani2023dlss}, and deep learning-based
+aligned strain improves detection of LGE-defined fibrosis in Duchenne muscular
+dystrophy~\citep{koehler2025alignedstrain}. Virtual native enhancement agrees closely with
+LGE-derived scar size and transmurality, but its input includes native T1 mapping and so it operates
+under a richer tissue-information regime than cine alone~\citep{zhang2022vne}.
+
+These are substantial results, and they are frequently cited as evidence that cine motion estimates
+capture regional dysfunction. They do not establish that. In every case the reference standard is a
+tissue map or an expert reading, not a measurement of how far the myocardium moved. A model can
+reach a high AUC against LGE by exploiting wall thinning, regional texture, timing or any other
+correlate, with or without an accurate displacement field; conversely, an estimator could recover
+displacement accurately and still discriminate tissue poorly, because motion and tissue abnormality
+are not in one-to-one correspondence. The useful reading is the one the studies themselves support, and it is a
+positive one: a routine cine series, with no contrast agent, carries enough information for a learned
+model to localise infarction at a level that is clinically interesting, with segment-level agreement
+with expert reading at an AUC of 0.90 in one study~\citep{masutani2023dlss}, pixel-level agreement
+with delayed-enhancement delineation at a Dice of 0.90 in another~\citep{xu2018}. For a patient in
+whom gadolinium is contraindicated, or when a scan must be shortened, that is worth having on its own
+terms. What it leaves open is the accuracy of the motion field, which is a different claim and needs
+a different reference.
+
+\subsection{Acquisition, reconstruction and processing conditions}\label{sec:conditions}
+
+The last group of evidence concerns the images themselves, and here one distinction does most of the
+work: between \emph{precision}, which repeated measurement can establish, and \emph{accuracy}, which
+requires a reference. A second distinction, between a global and a regional measurement, is equally
+important, because almost all of this literature reports global strain.
+
+Accelerated and deep-learning reconstruction has generally not degraded functional measurements in
+the studies retrieved. CineVN, a variational-network reconstruction, was evaluated in 18 healthy
+subjects prospectively and 46 patients, comparing volumes and strain with conventional
+cine~\citep{vornehm2025cinevn}. REGAIN, trained on 1,616 patients and evaluated in 181 individuals
+(126 patients, 55 healthy), gave diagnostic-quality and artefact scores similar to generalised
+autocalibrating partially parallel acquisition (GRAPPA) with
+Bland--Altman agreement for left ventricular function, volume and strain~\citep{yoon2023regain}. A
+deformation-encoding transformer for high-frame-rate cine was developed on 5,840 retrospective
+patients across nine centres and tested prospectively in 49 patients and 12 healthy subjects, with
+image root-mean-square error and reader preference for temporal smoothness as the
+endpoints~\citep{morales2024dent}. A model-based deep-learning reconstruction compared with
+compressed-sensing SENSE in ten healthy volunteers at reduction factors of 2, 4, 6 and 8 improved
+the \emph{precision} of global circumferential strain at factors 6 and 8, measured as Bland--Altman
+agreement with the fully sampled acquisition~\citep{tsuneta2025dlr}. Processing choices can matter
+more than reconstruction: Grob et al.\ found that retrospective temporal-resolution interpolation of
+compressed-sensing cine significantly underestimated peak longitudinal and circumferential strain
+($P<0.01$) while volumes and ejection fraction were similar, and left many strain-rate curves
+unusable, in 19 patients and 51 acquisitions~\citep{grob2025}. A generalist foundation model for
+accelerated cardiovascular imaging has been described in a preprint that is not peer
+reviewed~\citep{wang2026cardiomm}, and CMRxRecon2024 provides a multi-contrast, multi-view raw
+$k$-space resource that includes both cine and tagging~\citep{wang2025cmrxrecon2024}.
+
+Three readings follow. First, the common summary that \enquote{deep-learning reconstruction
+preserves strain} is supported for global strain under the tested conditions, and is untested for
+regional strain: none of the studies above reports segmental accuracy against an independent motion
+reference. Second, the endpoints differ in kind: agreement with a conventional acquisition
+analysed by the same software is a consistency result, image root-mean-square error is an image
+result, and precision relative to a fully sampled acquisition is a precision result. None of them
+is accuracy against material motion. Third, a point of vocabulary that is easy to slip on: the
+undersampling in these studies is undersampling of \emph{$k$-space}, the spatial-frequency domain of
+the image. That is a different frequency domain from the spatial-frequency content of the
+\emph{motion field} discussed in \cref{sec:unsupervised}. A reconstruction network alters image
+texture, and motion estimation depends on texture, so there is a real mechanism by which
+reconstruction could affect a motion estimate, but it is a mechanism that must be demonstrated
+through the images, not inferred from a shared word.
+
+\section{Synthesis: where the evidence is, and where the gap is}\label{sec:synthesis}
+
+\subsection{Stating the claim precisely}\label{sec:recoverability}
+
+The preceding sections make it clear that \enquote{can cine recover regional dysfunction?} is not a
+single question with a single answer, because the answer depends on what is being recovered, under
+what conditions, against what reference and within what tolerance. This review uses \emph{conditional
+recoverability} for the resulting claim form. A regional attribute, meaning magnitude, location,
+extent or timing, is conditionally recoverable when, under declared acquisition and image-quality
+conditions, a declared class of abnormality, a named estimator and version, and a complete
+measurement specification in the sense of \cref{tab:estimand}, its error against a stated reference
+remains within a prespecified tolerance at a reported coverage. \Cref{fig:attributes} separates the
+four attributes from the two validity checks that must accompany them.
+
+Three consequences follow from stating it this way. The claim is attribute-specific: an estimator
+may hold the location of a deficit while underestimating its amplitude, which is what the MRXCAT2.0
+radial result looks like. It is reference-specific: a tolerance met against DENSE is not
+automatically met against prescribed motion, and the reference's own error enters the comparison. And
+recoverability is not the same as detectability: detectability asks whether an abnormal case can
+be distinguished from a reference condition, recoverability asks whether its magnitude, location,
+extent and timing are retained, so a classifier that separates infarcted from normal hearts at high
+AUC has not thereby recovered the deficit. This is a reporting framework rather than a validated
+biomarker property; this review sets no numerical tolerances and does not estimate a recoverability
+surface.
+
+\begin{figure}[!t]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{figures/p4_Figure4_error_attributes_mapping_validity.pdf}
+ \caption{Regional error attributes and mapping validity are separate checks. \textbf{a--f},
+ schematic reference and estimate profiles illustrate differences in magnitude, location, extent,
+ spillover beyond a declared evaluation region, temporal magnitude and peak time; the curves are
+ non-negative schematics and carry no physiological strain sign or measured value.
+ \enquote{Declared support} denotes a prespecified evaluation region rather than strict compact
+ support. \textbf{g}, mapping validity is a different question: for $\varphi(X,Y)=(X^2,Y)$ the
+ Jacobian determinant is $2X$, so the map reverses orientation for $X<0$, is singular at $X=0$, and
+ sends the distinct points $-a$ and $+a$ to the same image $a^2$. This is an analytic example, not a
+ measured reference--estimate comparison.}
+ \label{fig:attributes}
+\end{figure}
+
+The remainder of this section organises the evidence along the three axes on which regional recovery
+could plausibly depend, and states for each what is established, what is missing and what design
+would settle it.
+
+\subsection{Axis 1: abnormality scale and severity}\label{sec:axis_scale}
+
+\textbf{What is established.} A focal deficit can coexist with a preserved global measurement: the
+MRXCAT2.0 infarct simulation had an ejection fraction of 49\% with remote compensation, and its
+scar-region circumferential strain was 0.01 against $-0.18$ in remote tissue~\citep{mrxcat2023}. One
+estimator evaluated on that simulation underestimated radial strain, with the largest Dice and
+strain errors where the wall was thin, while recovering circumferential strain in the same images to
+within an average error of $0.02$. Recovery of a focal deficit is therefore attribute-specific in
+the one place it has been measured directly. In vivo, segmental agreement with material-sensitive
+references is systematically weaker than global agreement, and radial strain is the weakest
+component~\citep{militaru2021,brandt2024,wehner2018}; supervision on DENSE narrows but does not
+close that gap, reaching a segmental circumferential ICC of 0.75 against 0.48 for commercial feature
+tracking in 305 participants~\citep{wang2023strainnet}.
+
+\textbf{What is missing.} The dependence of recovery on the \emph{size}, \emph{severity} and
+\emph{transmurality} of the abnormality. Every number above comes from a single abnormality
+configuration or from a population average over mostly normal segments. Without varying the
+abnormality itself, attenuation that is specific to small or thin lesions cannot be distinguished
+from a uniform scale bias.
+
+\textbf{What would settle it.} A prescribed-motion experiment in which abnormality size, severity,
+transmural extent and location are varied on a grid under a fixed estimator and a fixed measurement
+definition, with a no-abnormality control arm so that an apparent deficit can be separated from
+noise amplification, and with error reported per attribute: amplitude in percentage points,
+localisation and width in millimetres, timing in milliseconds or cardiac phase, and spillover into
+neighbouring regions as a declared quantity. Of the two pathology-bearing prescribed-motion
+resources in \cref{tab:datasets}, MRXCAT2.0 states that its scar model could be extended to
+arbitrary shapes and property variations, so a grid is within the scope its authors
+describe~\citep{mrxcat2023}. STRAUS as released is a fixed set of 18 cases whose infarct locations
+and sizes are not exposed as parameters, so generating a grid from it would mean re-running the
+electromechanical pipeline that produced it rather than using the published data.
+
+\subsection{Axis 2: motion representation and prior}\label{sec:axis_prior}
+
+\textbf{What is established.} Different priors give different regional answers in the same images:
+feature tracking, registration and biomechanically constrained estimators disagree more regionally
+than globally~\citep{militaru2021,goetze2026}, and the analysis-side regularisation parameter of a
+DENSE pipeline measurably trades bias against variance in regional radial
+strain~\citep{barbaroux2025}. The latter is the cleanest existing demonstration that a prior
+strength, held under known motion, moves a regional number in a predictable direction.
+
+\textbf{What is missing.} The same experiment on the estimation side for cine. The representation
+families now available make this unusually tractable: a band-limited displacement representation has
+an explicit, tunable bandwidth~\citep{jia2023fouriernet,jia2026fouriernetplus}, a classical
+registration has an explicit $\alpha$ in \cref{eq:registration}, and a biomechanical or
+physics-informed estimator has explicit model weights~\citep{qin2023biomech,arratia2023warppinn,liu2026fe}.
+Within the recorded searches this review did not identify a study that varied such a control under known
+motion and measured the effect on a focal deficit.
+
+\textbf{What would settle it, and what it must not assume.} The experiment is to hold images,
+implementation and measurement definition fixed, vary one controllable prior, and evaluate against
+prescribed motion. Three distinctions have to be preserved in its design and its interpretation.
+First, representation capacity, estimation behaviour and input information are three different
+things (\cref{sec:illposed}); a result obtained by changing a bandwidth constrains the first two
+jointly unless the input is also controlled. Second, a smooth-looking displacement field is not
+evidence of a flattened strain field, because strain is a derivative; the strain field must be
+measured, not inferred from the appearance of $\vect{u}$. Third, a Fourier basis is global, so
+widening a band does not improve the representation of a chosen region, and any regional claim about
+bandwidth has to be demonstrated regionally. A further methodological point: changing a
+\emph{training-loss} weight requires matched retraining under controlled splits, whereas changing an
+exposed \emph{inference-time} control does not; the two are different experiments and are
+distinguished in Supplementary Figure~S1.
+
+\subsection{Axis 3: imaging and processing conditions}\label{sec:axis_conditions}
+
+\textbf{What is established.} Spatial resolution changes peak strain error against known motion, by
+up to about 9 percentage points for radial strain between 1.4 and 3.0~mm pixels in one
+phantom~\citep{adams2023}. Retrospective temporal interpolation significantly underestimates peak
+longitudinal and circumferential strain~\citep{grob2025}. Deep-learning and compressed-sensing
+reconstructions have not degraded global strain agreement or precision in the cohorts
+tested~\citep{vornehm2025cinevn,yoon2023regain,tsuneta2025dlr}. Through-plane motion degrades
+segmental repeatability, particularly basally~\citep{bell2025strain8}.
+
+\textbf{What is missing.} Every one of those results is either global or obtained without a regional
+motion reference. The interaction is also untested: whether a reconstruction that preserves global
+strain also preserves a focal deficit is a separate question from whether it preserves the global
+number, and the answer could differ with lesion size.
+
+\textbf{What would settle it.} Paired acquisitions in the same participants across reconstruction
+and sampling conditions, analysed with one locked estimator and one estimand, with a regional
+reference where one exists; and, in simulation, controlled degradation applied to images whose
+underlying motion is known, so that sampling, reconstruction and estimation error can be separated.
+\Cref{tab:designs} sets out the three designs together, and \cref{fig:qc} shows how a prespecified
+evaluation and an optional quality-control rule fit around them. \Cref{tab:designs} states evidence
+needs rather than a powered protocol: the precision each arm requires follows from the tolerance,
+and this review deliberately sets none, so no sample size is given and none should be inferred.
+
+The resources these designs would need already exist in part, and the two that carry pathology or a
+human material reference are complementary rather than alternative. A prescribed-motion generator
+supplies a deficit of known size in a known place, so an experiment on it answers a question about
+\emph{accuracy under prescribed motion}; its limits are that the images are synthesised from the
+same deformation the estimator is being asked to recover, which flatters an estimator whose prior
+resembles the generator's, and that the released case lists are finite. MRXCAT2.0 covers one scar
+geometry but states that its model admits others; STRAUS covers 12 ischaemic cases across four
+coronary configurations but as a fixed set.
+
+A paired human resource such as the Stanford collection
+supplies cine and xyz-encoded DENSE at identical slice locations in the same participants, so an
+experiment on it answers a question about \emph{agreement with DENSE}, with the reference's own
+processing uncertainty and the gating difference inside the comparison; what it cannot answer is
+whether a focal deficit survives, because it contains none. Running both is therefore not redundant:
+the simulation bounds the error against a known deficit, the human data bound the transfer of that
+estimator to real images and a real reference, and neither substitutes for the other. The prior
+sweep of \cref{sec:axis_prior} needs only an estimator with an exposed control and the same
+prescribed-motion data. What none of these resources yet provides is a patient cohort with focal
+disease \emph{and} a material-sensitive motion reference, which is why \cref{tab:open} lists it as a
+field-level gap rather than a study design.
+
+\begin{longtable}{@{}L{0.18\textwidth}L{0.26\textwidth}L{0.28\textwidth}L{0.22\textwidth}@{}}
+\caption{Study designs that would close the three gaps. The rows separate evidence needs; they are
+not a validated protocol or an accuracy hierarchy.}\label{tab:designs}\\
+\toprule
+Axis and question & Reference and design & Informative outputs & Interpretation boundary\\
+\midrule
+\endfirsthead
+\toprule
+Axis and question & Reference and design & Informative outputs & Interpretation boundary\\
+\midrule
+\endhead
+Abnormality scale and severity: how does recovery change with the size, severity and transmurality of the deficit? & Prescribed motion from an independent generator; abnormality parameters varied on a grid; a no-abnormality control arm; one fixed estimator and estimand & Amplitude error in percentage points; localisation and width in millimetres; timing error in milliseconds or phase; spillover into neighbouring regions; topology checks & Recovery within the simulated regime; not an in-vivo guarantee, and not transferable to another generator without testing\\
+Motion representation and prior: which part of a regional error is the prior? & Images, implementation and estimand held fixed; one controllable prior varied (regularisation weight, representation bandwidth, physics weight); matched retraining where the control is a training weight & Attribute-specific error as a function of the control; separation of representation capacity, estimation behaviour and input information & Constrains the varied control only; a monotone trend in one estimator is not a general law of regularisation\\
+Imaging and processing conditions: do sampling and reconstruction change the regional answer? & Paired acquisitions in the same participants across reconstruction and sampling conditions with a locked estimator; plus controlled degradation of images with known motion & Regional error and precision separately; interaction between condition and abnormality size; failure and exclusion rates & Precision results do not establish accuracy; $k$-space sampling and motion-field frequency are different quantities\\
+External transfer: do regional findings and failure indicators carry over? & Held-out anatomies and sites; paired cine with DENSE or tagging; repeat cine; multi-scanner data; LGE for tissue stratification & Agreement against a registered material-sensitive reference with its uncertainty; repeatability; subgroup performance; calibration of any failure rule & Reference-specific; limited samples and imperfect references narrow the claim\\
+Decision contribution: does a specified measurement add useful information? & Fixed estimator, estimand and failure handling; cohort with ejection fraction, infarct variables and outcomes; held-out evaluation & Incremental calibration and discrimination; decision analysis; threshold transfer; profile of accepted and rejected cases & Association does not establish management benefit without an appropriate intervention study\\
+\bottomrule
+\end{longtable}
+
+\begin{figure}[!t]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{figures/p5_Figure5_prespecified_evaluation_QC.pdf}
+ \caption{A prespecified evaluation, with an optional quality-control or abstention rule.
+ \textbf{a}, acquisition and image quality, abnormality characteristics, and estimator and version
+ are declared under a fixed measurement definition. \textbf{b}, the comparison names its evaluation
+ reference and that reference's uncertainty, an attribute-specific loss $L_g$ and a prespecified
+ tolerance $\delta_g$. \textbf{c}, held-out cases are evaluated for magnitude, location, extent and
+ timing, with separate implementation and field-validity checks. \textbf{d}, any reporting or
+ abstention rule is fixed before final testing and operates on observable quality-control signals,
+ not on the unknown true error; the joint audit then reports coverage together with accepted-case
+ errors, failures and subgroups. This is a proposed evaluation design, not a validated
+ quality-control threshold or a clinical decision rule.}
+ \label{fig:qc}
+\end{figure}
+
+\subsection{Keeping the evidence layers apart}\label{sec:layers}
+
+The three axes concern measurement. A separate hierarchy governs what a measurement licenses
+clinically, and conflating its levels is the most common way that regional claims become
+overstated. Technical accuracy against a reference, precision under repeated measurement,
+association with tissue or outcome, incremental value over existing covariates, and benefit from
+acting on a threshold are five distinct claims requiring five distinct study
+designs~\citep{raunig2015,fda2022qib,puntmann2018}. Ejection fraction illustrates the complete chain
+rather than the absence of error: it has a chamber-volume definition, standardised reporting and
+guideline categories tied to intervention evidence~\citep{schulzmenger2020,hundley2022,heidenreich2022},
+even though core-laboratory comparisons found that fewer than 55\% of paired measurements agreed
+within five percentage points across the tested modalities~\citep{pellikka2018}. Strain does not yet
+have that chain, and the gap is more than technical: a threshold must name a quantity, a population
+and a decision, and be connected to evidence that the resulting action helps. Echocardiographic
+consensus recommendations provide a precedent for specifying acquisition, analysis, reporting and
+intended use~\citep{thomas2025}, and CMR reference values remain conditional on technique,
+population and software~\citep{kawelboehm2025}. A version-locked workflow can be useful in a
+specialist setting well before any of this is settled; the appropriate claim is simply local.
+
+\section{Other open problems and conclusion}\label{sec:open}
+
+\subsection{Open problems beyond the three axes}\label{sec:otheropen}
+
+The three axes of \cref{sec:synthesis} follow from the central question. Several further problems
+recur across the literature reviewed and are set out in \cref{tab:open} because they condition any
+answer to it.
+
+\begin{longtable}{@{}L{0.20\textwidth}L{0.33\textwidth}L{0.42\textwidth}@{}}
+\caption{Further open problems in regional cine motion and strain estimation.}\label{tab:open}\\
+\toprule
+Problem & Where the evidence currently stands & What would move it forward\\
+\midrule
+\endfirsthead
+\toprule
+Problem & Where the evidence currently stands & What would move it forward\\
+\midrule
+\endhead
+Through-plane motion and 3D from 2D & Multi-view and mesh-based estimators now produce 3D fields from 2D acquisitions~\citep{meng2022mulvimotion,meng2024deepmesh,liu2026fe}, but their published evaluation is mask or landmark agreement, and segmental repeatability remains worst basally~\citep{bell2025strain8} & Simulations with prescribed through-plane motion; comparison against 3D tagging or DENSE; reporting of behaviour when one view is missing or misaligned\\
+Generalisation across acquisition and population & Learning-based estimators are predominantly developed on UK Biobank, ACDC and M\&Ms; online adaptation has been proposed for distribution shift~\citep{yu2020foal} & Error reported stratified by disease class, field strength, vendor and reconstruction, rather than pooled\\
+Uncertainty and failure detection & Bayesian and probabilistic estimators now output uncertainty maps~\citep{chen2022transmorph,movahed2026cardiomorphnet} & Calibration of the uncertainty against measured regional error on data with a reference; coverage and accepted-case error reported together, following the selective-prediction formulation~\citep{geifman2019selectivenet}\\
+Serial precision and minimum detectable change & Global coefficients of variation are available~\citep{bell2025strain8}, and DeepStrain reported scan--rescan in ten healthy volunteers~\citep{morales2021} & Segment-level scan--rescan studies in patient populations, reported as a repeatability coefficient with its confidence limits and distinguished from a clinically important change\\
+A public cine benchmark with a motion reference & CMAC supplies 12 landmarks in 15 healthy volunteers~\citep{tobongomez2013}; the Stanford collection supplies cine and xyz-encoded DENSE at identical slice locations, plus mid-ventricular tagging and native T1, in 55 participants of whom 51 are healthy and 4 have aortic stenosis~\citep{stanforddata}; synthetic resources supply prescribed motion~\citep{mrxcat2023,zhou2018straus,barbaroux2025} & An open benchmark that pairs cine with a material-sensitive reference in \emph{patients with focal disease}, or a realistic simulation resource with per-case reference motion and a declared abnormality grid\\
+Cross-modality precedent & In echocardiography, a photorealistic simulation strategy incorporating speckle decorrelation from real recordings produced an open dataset of 1,478 videos with reference motion, used to train a motion estimator reported to reach a global longitudinal strain variability of 1.42\% against 1.78\% for the clinical reference~\citep{judge2026} (preprint; speckle-tracking echocardiography, not CMR) & The analogous resource does not exist for cine CMR. Whether a cine image-formation model can reach comparable realism is itself an open question\\
+\bottomrule
+\end{longtable}
+
+\subsection{Limitations of this review}\label{sec:limitations}
+
+This is a critical narrative review, not a systematic review or a pooled accuracy assessment.
+Retrieval was limited by indexing, query vocabulary and result caps, and screening was performed by
+one person without independent duplicate screening; no claim of exhaustive retrieval is made, and
+statements that something was \enquote{not identified} are bounded by the recorded searches and the
+1 September 2026 cutoff rather than being assertions of absence. No screening flow is reported: the
+query strings, database caps and hit counts are supplied in the supplementary search record, but no
+count of records screened, excluded or included is given, so a reader cannot distinguish a wide
+search with narrow inclusion from a narrow search. The review was not registered and no protocol was
+deposited.
+
+A further limit applies to the central observation that deliberate evaluation on focal
+abnormality is rare. The observation is made on the published record, and a published record can be
+thin for reasons other than the experiments not having been performed, including page limits in
+conference and workshop venues and the ordinary incentive to report the evaluation that supports a
+method's stated claim. This bounds the inference, and it is not a criticism of any cited author.
+
+Heterogeneous populations,
+acquisitions, software versions, references and measurement definitions preclude a shared error
+distribution, which is why no result in \cref{tab:methods_validation} has been pooled or ranked.
+Several sources were read at abstract level only; those are marked in the accompanying claim audit,
+and no full-text-level statement is made from them. Bibliographic verification confirms that a
+record exists and says what it is; it does not validate the study. Conditional recoverability is the
+interpretive frame adopted here, not a construct that the cited studies set out to test, and this
+review supplies no numerical tolerances, no recoverability surface and no validated quality-control
+rule. The review is also restricted to ischaemic regional dysfunction as its running example; a 2026
+scoping review synthesising strain in non-ischaemic cardiomyopathy covers both echocardiography and
+CMR, and its aggregate conclusions cannot all be assigned to routine cine~\citep{mohammed2026}.
+Finally, this review is restricted to the left ventricle and principally to short-axis analysis; right ventricular, atrial and layer-specific measurement raise the same questions under
+harder conditions.
+
+\subsection{Conclusion}\label{sec:conclusion}
+
+Routine cine CMR supports motion and strain estimation without dedicated motion encoding, but dense
+regional material correspondence is estimated rather than observed, and that single fact organises
+the evidence. Returning to the question posed in \cref{sec:introduction}: current evidence supports
+regional recovery \emph{conditionally} and \emph{unevenly}. For global measurements, the evidence is
+substantial, because repeatability, cross-method agreement and prognostic association are all
+documented.
+For regional measurements, agreement with material-sensitive references is consistently weaker than
+global agreement and weakest for radial strain, which is a well-replicated finding across
+independent cohorts. For focal abnormality specifically, the direct evidence is thin and mixed
+rather than thin and negative: within the literature retrieved, systematic evaluation against a
+prescribed focal deficit appears in a single independent synthetic study with one scar geometry and
+one estimator, and in that study circumferential strain was recovered to within an average error of
+$0.02$ while radial strain was underestimated by about $0.24$. The large and growing literature that
+identifies infarction from cine validates against tissue references, which answer a different
+question.
+
+That is a statement about the evidence, not about the methods. Nothing reviewed here establishes
+that cine-based estimators fail to recover focal deficits; the point is that the experiments that
+would show either way, namely varying abnormality size and severity under known motion, varying a
+controllable prior while holding images and estimand fixed, and varying acquisition and
+reconstruction conditions with a regional reference, were not identified within the searches
+recorded in \cref{sec:methods}. The methods
+literature has moved quickly towards three-dimensional, temporally continuous and physically
+constrained estimators, and the validation literature has not moved with it. Until it does, a
+regional claim should name its implementation, its measurement definition, its population, its
+reference, its tolerance and its coverage, and should be read as local to them.

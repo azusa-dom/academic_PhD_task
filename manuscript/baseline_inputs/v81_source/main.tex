@@ -1,0 +1,231 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Core ----------
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext}
+\usepackage{fix-cm}
+\usepackage[british]{babel}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\usepackage{lineno}
+\setstretch{1.20}
+
+% ---------- Math ----------
+\usepackage{amsmath,amssymb,amsfonts,mathtools,bm}
+\usepackage{newtxmath}
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\trans}{\mathsf{T}}
+
+% ---------- Tables ----------
+\usepackage{booktabs,longtable,array,tabularx,multirow,ragged2e,calc}
+\usepackage{caption}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period,
+  skip=0.35em,
+  justification=justified,
+  singlelinecheck=true
+}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+% ---------- Lists ----------
+\usepackage{enumitem}
+\setlist{itemsep=0.08em,topsep=0.2em,leftmargin=1.3em,parsep=0pt}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{graphicx}
+
+% ---------- Sectioning ----------
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.75em}{}
+\titlespacing*{\section}{0pt}{1.45ex plus 0.25ex}{0.65ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus 0.2ex}{0.45ex}
+
+% ---------- Header ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Regional myocardial dysfunction from routine cine CMR}
+\fancyhead[R]{\small\itshape Huo}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+% ---------- Hyperref & cites (last) ----------
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\usepackage[nameinlink,noabbrev,capitalize]{cleveref}
+
+\modulolinenumbers[1]
+\renewcommand\linenumberfont{\normalfont\scriptsize\sffamily\color{black}}
+\AtBeginEnvironment{equation}{\linenomath}
+\AtEndEnvironment{equation}{\endlinenomath}
+\AtBeginEnvironment{equation*}{\linenomath}
+\AtEndEnvironment{equation*}{\endlinenomath}
+
+% ---------- Layout ----------
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.10}
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt plus 1fill}
+\AtBeginEnvironment{longtable}{\nolinenumbers\small}
+\AtEndEnvironment{longtable}{\linenumbers}
+\setlength{\LTcapwidth}{\textwidth}
+\setlength{\abovedisplayskip}{0.5em}
+\setlength{\belowdisplayskip}{0.5em}
+\setlength{\abovedisplayshortskip}{0.25em}
+\setlength{\belowdisplayshortskip}{0.25em}
+
+\title{\textbf{Recovering regional myocardial dysfunction from routine cine CMR:
+methods, validation evidence and open questions}}
+\author{Ziying Huo\\[0.3em]
+\small Faculty of Biology, Medicine and Health\\
+\small The University of Manchester, Manchester, United Kingdom\\[0.2em]
+\small Correspondence: \href{mailto:ziying.huo@postgrad.manchester.ac.uk}{\nolinkurl{ziying.huo@postgrad.manchester.ac.uk}}\\
+\small ORCID: \href{https://orcid.org/0009-0003-1090-8784}{0009-0003-1090-8784}}
+\date{\small 8 October 2026}
+
+\begin{document}
+\pagenumbering{arabic}
+\linenumbers
+\maketitle
+
+\begin{abstract}
+\noindent
+\textbf{Background.} Regional myocardial dysfunction after infarction is spatially
+heterogeneous, and global measures such as ejection fraction describe net chamber
+emptying, not where and when deformation is lost. Routine balanced steady-state
+free-precession cine cardiovascular magnetic resonance (CMR) is acquired in almost every clinical
+examination and is now the usual input for automated motion and strain estimation. Unlike tagging or
+displacement encoding with stimulated echoes, it does not deliberately encode dense material
+correspondence, so motion is estimated under assumptions rather than observed.
+
+\textbf{Methods.} A critical narrative review with a structured search of PubMed/Europe PMC, OpenAlex,
+Crossref and arXiv, plus citation expansion and official dataset, repository and regulatory records,
+to a 1 September 2026 cutoff with one documented post-cutoff update. Screening was by one person,
+without independent duplication. One question is asked: to what extent does current evidence
+support the claim that motion and strain from routine cine CMR recover the magnitude, location,
+extent and timing of regional dysfunction, and where does direct validation remain absent?
+
+\textbf{Findings.} Conventional registration, unsupervised learning-based registration,
+cardiac-specific estimators, physics-informed representations and reference-supervised networks are
+compared on what each is trained to do and how each has been validated. Across these methods
+the most frequently reported evidence is anatomical overlap, image similarity or sparse
+landmark error; agreement with a material-sensitive reference is less common, and evaluation on
+prescribed focal abnormality rarer still. Where regional comparisons exist, agreement is
+consistently weaker than global agreement: in one 61-participant comparison, intraclass correlation
+coefficients against tagging were 0.88--0.94 for global longitudinal and circumferential strain
+against 0.44--0.77 regionally, with radial values of 0.05--0.51, the least consistent
+component. Studies that infer infarction from cine alone validate against tissue references, which
+answer a different question.
+
+\textbf{Conclusions.} Evidence for routine cine CMR is uneven rather than uniformly absent: several
+global measurements are well characterised, whereas direct regional evidence is confined to a few
+conditions and is mixed rather than uniformly discouraging. This
+review sets out what a study must declare for a regional attribute to be called
+conditionally recoverable, and identifies the designs that would close the gap, without presupposing
+that any method family fails.
+\end{abstract}
+
+\vspace{-0.6em}
+\noindent\textbf{Keywords:}
+cardiovascular magnetic resonance;
+cine imaging;
+myocardial strain;
+motion estimation;
+image registration;
+deep learning;
+myocardial infarction;
+validation.
+
+\vspace{0.5em}
+\noindent\textbf{Abbreviations:}
+AHA, American Heart Association;
+AUC, area under the receiver operating characteristic curve;
+bSSFP, balanced steady-state free precession;
+CMAC, Cardiac Motion Analysis Challenge;
+CMR, cardiovascular magnetic resonance;
+DENSE, displacement encoding with stimulated echoes;
+FFD, free-form deformation;
+GLS, global longitudinal strain;
+HARP, harmonic phase;
+ICC, intraclass correlation coefficient;
+LGE, late gadolinium enhancement;
+LV, left ventricle/left ventricular;
+LVEF, left ventricular ejection fraction;
+MI, myocardial infarction;
+QC, quality control.
+
+
+\input{body.tex}
+
+\clearpage
+\section*{Declarations}
+
+\subsection*{Ethics approval and consent to participate}
+Not applicable. This review analyses published literature and publicly documented resources. No new
+human or animal data were collected, and no identifiable participant data were accessed.
+
+\subsection*{Consent for publication}
+Not applicable.
+
+\subsection*{Availability of data and materials}
+No new data were generated. All studies, datasets, repositories and regulatory records discussed are
+cited in the reference list and are available from their original sources. The search record and the
+reference and claim audits that support this review accompany the manuscript as supplementary
+material.
+
+\subsection*{Competing interests}
+The author declares no competing interests.
+
+\subsection*{Funding}
+This research received no specific grant from any funding agency in the public, commercial or
+not-for-profit sectors.
+
+\subsection*{Author contributions}
+Ziying Huo (CRediT roles: conceptualisation; methodology; investigation; data curation; formal
+analysis; visualisation; writing -- original draft; writing -- review and editing) is the sole
+author and is responsible for the whole of the work. Academic guidance was provided by the author's
+supervisor.
+
+\subsection*{Acknowledgements}
+The author thanks their supervisor for academic guidance.
+
+\subsection*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+During the preparation of this work the author used OpenAI Codex and Anthropic Claude in order to
+prepare and run bibliographic database queries, cross-check reference metadata against authoritative
+records, assist with manuscript organisation and language editing, and perform LaTeX quality
+assurance. After using these tools/services, the author reviewed and edited the content as needed
+and takes full responsibility for the content of the published article. No text, figure or numerical
+result in this manuscript was accepted without the author's verification against the cited source.
+\emph{This declaration must be confirmed by the author before submission.}
+
+\subsection*{Figures and image permissions}
+All five main figures and the supplementary figure are the author's own vector artwork, drawn in
+draw.io and exported as vector PDF. Figures~\ref{fig:chain} and~\ref{fig:correspondence} embed real
+cardiac magnetic resonance images; the credit line within Figure~\ref{fig:correspondence} attributes
+the tagging and DENSE panels to published open-access articles and the cine panel to a public
+challenge dataset. \emph{The author must confirm the provenance and republication rights of every
+embedded image before submission}; the items still outstanding are listed in the accompanying
+revision materials. No figure in this review reports experimental results, and no figure contains
+generated or synthetic medical imagery.
+
+\subsection*{Evidence cutoff}
+Statements about published evidence, software and regulatory records retain the review's
+1 September 2026 cutoff, with one documented post-cutoff targeted update (\cref{sec:methods}).
+
+\par\bigskip
+\setlength{\bibsep}{2pt}
+\bibliographystyle{jcmr-review}
+\bibliography{references}
+
+\end{document}

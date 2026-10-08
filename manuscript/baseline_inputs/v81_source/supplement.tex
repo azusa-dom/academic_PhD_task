@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs,longtable,array,ragged2e}
+\usepackage{setspace}
+\usepackage{csquotes}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt plus 1fill}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\begin{document}
+\begin{center}
+{\Large\bfseries Supplementary material}\par
+\vspace{0.4em}
+{\large Recovering regional myocardial dysfunction from routine cine CMR: methods, validation
+evidence and open questions}\par
+\vspace{0.3em}
+{Ziying Huo}\par
+\end{center}
+
+\section*{S1. Search record}
+
+The review is a critical narrative review with a structured search, not a systematic review. The
+search was designed to map method families and to test the review's central question; it was not
+designed to estimate a pooled effect or to guarantee exhaustive retrieval. The evidence cutoff was
+1~September 2026. Screening was performed once, without independent duplicate human screening.
+
+\textbf{Sources.} PubMed and PubMed Central/Europe PMC; OpenAlex; Crossref; arXiv. These were
+supplemented by backward and forward citation expansion from core method, comparison and
+standardisation papers, and by direct retrieval of official dataset, repository, guideline and
+regulatory records.
+
+\textbf{Themes.} (i) cine CMR motion estimation and deformable registration; (ii) myocardial strain
+measurement and its specification; (iii) tagging, DENSE and prescribed-motion references;
+(iv) regional and post-infarction strain; (v) accelerated and deep-learning cine reconstruction.
+Learning-based methods were searched from 2016 onwards; earlier registration and tagging work was
+retained where it remains the reference point for later methods.
+
+\textbf{Query log.} The exact query strings, database caps and hit counts from the structured gap
+search are supplied in the machine-readable file \path{supplementary/gap-search-query-log.csv}. The
+queries rely on exact phrases such as \enquote{cine CMR} or \enquote{cine MRI} and do not document a
+parallel controlled-vocabulary expansion, so the search can establish whether a given conjunction
+was retrieved by the named queries but cannot estimate recall or the prevalence of qualifying
+studies. The file records the queries so that they can be re-entered by hand; it is not an
+executable script, and no screening flow counts are reported.
+
+\textbf{Post-cutoff update.} One study published after the cutoff (Naqizadeh Jahromi et al., Biomech
+Model Mechanobiol 2026;25(5):103) was appraised separately as a targeted update and is identified as
+such wherever it is used in the main text. It was not included in the original query or screening
+counts.
+
+\textbf{Reference verification.} Every entry in the reference list was checked against Crossref,
+Europe PMC, DataCite or the arXiv application programming interface for authors, title, year, venue,
+volume and pages, and digital object identifier or arXiv identifier. The entries newly added for
+this version were verified when they were added; the entries retained from the previous version were
+re-verified in a second pass against Crossref, the arXiv application programming interface or
+DataCite, which corrected three records. All 112 entries with a registered identifier resolve and
+match on authors, title, year, venue, volume and pages, with four documented notes where a publisher
+record differs from the entry by design: two preprints or articles cited by the version or issue of
+record rather than by the earliest online date, one article number in place of a page range, and one
+range completed from Europe PMC where Crossref lists only the first page. Six entries have no
+registered identifier because they are regulatory documents, software repositories, a challenge page
+or conference proceedings without a digital object identifier; each is cited by its stable URL with
+the access date. Records that could not be verified were not cited. Verification confirms that a record
+exists and what it is; it does not validate the study it describes.
+
+\textbf{Reading depth.} Each quantitative or comparative statement in the main text is attributed to
+a specific source location, and the depth at which that source was read is recorded in the
+accompanying claim audit. Sources read at abstract level support abstract-level statements only.
+
+\section*{S2. Separating a training-time change from an inference-time control}
+
+Comparisons that vary a prior must distinguish two different experiments, because they require
+different controls (main text, \S6.3). Changing a weight in the \emph{training}
+objective changes the trained model and therefore requires matched retraining under controlled
+splits and training conditions; changing an exposed \emph{inference-time} setting leaves the trained
+model fixed and is only possible where such a control is implemented. Supplementary
+Figure~\ref{fig:supp-controls} sets out both, together with the parts of the comparison that must be
+held fixed in either case.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{figures/p6_FigureS1_training_vs_inference_control.pdf}
+\caption{Training-time changes and inference-time controls require different comparisons.
+\textbf{a}, changing a training-objective weight requires matched retraining under controlled splits
+and training conditions. \textbf{b}, changing an inference-time setting is meaningful only when the
+trained model exposes that implemented control; the model otherwise remains fixed. Cases, splits,
+measurement definition, evaluation reference, losses and tolerances form the fixed comparison
+contract, where \enquote{losses} refers to evaluation losses rather than the training weight varied
+in panel a. Model or setting selection must be completed without using the final held-out test set.
+This is a proposed comparison design, not an experiment, a performance result or an optimum.}
+\label{fig:supp-controls}
+\end{figure}
+
+\section*{S3. Reporting a conditional recoverability claim}
+
+This section states the bookkeeping that a conditional recoverability claim requires. It is a
+reporting contract, not a validated rule, and no tolerance given here is empirically justified by
+this review.
+
+Let $g$ index a regional attribute (amplitude, location, extent or timing), let $L_g$ be the loss
+chosen for that attribute, and let $\delta_g$ be a tolerance fixed before the final evaluation. For a
+held-out case $i$ with a reference value available, the attribute is \emph{within tolerance} when
+$L_g(i)\le\delta_g$. If the method also provides a reporting or abstention rule $r(i)\in\{0,1\}$ that
+depends only on observable quality-control signals and not on the unknown true error, then the
+quantities that must be reported together are
+\[
+\text{coverage } = \frac{1}{N}\sum_{i=1}^{N} r(i),
+\qquad
+\text{tolerance success among reported cases } = \frac{\sum_{i} r(i)\,\mathbb{1}\{L_g(i)\le\delta_g\}}{\sum_{i} r(i)},
+\]
+together with the false-acceptance rate $\sum_i r(i)\mathbb{1}\{L_g(i)>\delta_g\}/\sum_i r(i)$ and
+the coverage within each prespecified subgroup. Reporting the second quantity without the first is
+uninformative, because rejecting almost every case drives it towards one; reporting the first
+without the second is equally uninformative. This is the standard selective-prediction
+decomposition of error conditional on reporting~\cite{geifman2019selectivenet}; it is a reporting
+framework, not evidence about CMR measurement accuracy.
+
+A complete claim therefore names: the acquisition and image-quality regime; the abnormality class
+and the range of its parameters; the estimator, its version and the setting of any exposed control;
+the complete measurement specification (Table~2 of the main text); the evaluation reference and its
+own uncertainty; the attribute $g$, the loss $L_g$ and the tolerance $\delta_g$; and the coverage at
+which the result holds. Changing any of these changes the claim.
+
+\begin{thebibliography}{1}
+\bibitem{geifman2019selectivenet}
+Geifman Y, El-Yaniv R. SelectiveNet: a deep neural network with an integrated reject option.
+\emph{Proc 36th Int Conf Mach Learn} 2019;97:2151--2159.
+\end{thebibliography}
+
+\end{document}

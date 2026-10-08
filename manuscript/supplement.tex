@@ -292,6 +292,8 @@ Bidirectional latent neural ODE & 2026; Comput Med Imaging Graph\cite{ruan2026la
 \addlinespace
 STCMT-Net & 2026; Med Image Anal\cite{qiao2026stcmt} & 4D CT and cine MRI; unsupervised & Unsupervised keypoints as anchors; dense field from matched-keypoint basis vectors & 4D CT and cine datasets; comparison with competing methods; strain analysis separating cardiac conditions & Group separation by condition; no prescribed focal abnormality, no motion reference \\
 \addlinespace
+Semi-supervised motion flow & 2025; Comput Biol Med\cite{portal2025semisup} & Full cine sequence; semi-supervised with ED distance-map weighting & Memory network over all frames & In-house 271 patients; EPE 1.02~mm versus 1.19~mm (retrained RAFT); global peak RS/CS correlation 0.83/0.90 (abstract level) & NR; no material reference or focal abnormality \\
+\addlinespace
 CMR foundation models & 2025--2026\cite{jacob2025cmrfm,fu2026cinema} & 36M images/27,524 subjects (self-distillation); 15M cine images/74,916 studies & Pre-trained representation fine-tuned per task & Segmentation, landmark localisation, diagnosis, prognostication across independent datasets & Dense motion estimation is not among the reported tasks \\
 \midrule
 \multicolumn{6}{@{}l}{\textit{Physics-, biomechanics- and representation-constrained estimators}}\\
@@ -311,6 +313,8 @@ Cine-only infarct delineation & 2018; Med Image Anal\cite{xu2018} & Non-contrast
 Survival-supervised motion & 2019; Nat Mach Intell\cite{bello2019} & Cine-derived motion; supervised on survival & Learned low-dimensional motion representation & 302 patients; Harrell C 0.75 (95\% CI 0.70--0.79) versus human benchmark 0.59 (0.53--0.65) & Prognostic discrimination; neither regional accuracy nor focal abnormality evaluated \\
 \addlinespace
 DeepTag & 2021; CVPR\cite{ye2021deeptag} & Tagged MR (comparator acquisition); unsupervised & Bidirectional diffeomorphic registration; differentiable composition to Lagrangian field & Clinical tagging dataset; landmark tracking accuracy and efficiency & NR \\
+\addlinespace
+3D tagging networks (synthetic training) & 2025; JCMR\cite{buoso2025tagging3d} & 3D tagged MR (comparator acquisition); trained on synthetic images from a biophysical LV model & Two networks predicting LV motion through the cycle & Synthetic 3D tagged images with analytic signal model (abstract level) & Not applicable; tagging analysis, not cine \\
 \addlinespace
 DeepStrain & 2021; Front Cardiovasc Med\cite{morales2021}; 2022 com\-parison\cite{morales2022comparison} & Cine bSSFP; image, anatomical-label and smoothness losses & Segmentation plus motion network; end-diastolic reference; Green--Lagrange strain & ACDC (\(n=150\)); CMAC landmark EPE \(2.9\pm1.5\)~mm; scan--rescan in ten volunteers; 47 healthy/533 patients versus manual FT, \(r\) 0.83--0.85 radial and 0.88--0.91 circumferential & Independent MRXCAT2.0 evaluation on normal, dilated, hypertrophic and infarcted cases (main text, known-motion tests) \\
 \addlinespace

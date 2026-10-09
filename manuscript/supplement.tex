@@ -275,7 +275,7 @@ TransMorph & 2022; Med Image Anal\cite{chen2022transmorph} & Volumetric pair; un
 \addlinespace
 Fourier-Net & 2023; AAAI\cite{jia2023fouriernet} & Image pair; unsupervised & Band-limited Fourier representation of displacement; model-driven decoder & Registration benchmarks; accuracy with speed, memory and multiply-adds & NR \\
 \addlinespace
-Fourier-Net+ & 2026; IEEE TNNLS\cite{jia2026fouriernetplus} & Band-limited image representation; unsupervised & As Fourier-Net with shortened contracting path; cascaded variant & Three registration datasets; comparable accuracy at lower cost; cardiac registration, geometric and functional measures & NR \\
+Fourier-Net+ & 2026; IEEE TNNLS\cite{jia2026fouriernetplus} & Band-limited image representation; unsupervised & As Fourier-Net with shortened contracting path; cascaded variant & Five datasets including one 3D cardiac MRI set; Dice, Hausdorff distance, ED volume and EF versus TransMorph and other baselines at lower memory and compute (abstract level) & NR; cardiac evaluation is geometric/functional, not regional strain \\
 \midrule
 \multicolumn{6}{@{}l}{\textit{Cardiac-specific estimators}}\\
 Joint motion and segmentation & 2018; MICCAI\cite{qin2018joint} & Cine sequence; unsupervised motion, weakly supervised segmentation & Shared multi-scale encoder; Siamese recurrent spatial transformer & 220 subjects; accuracy and speed versus competing methods & NR \\

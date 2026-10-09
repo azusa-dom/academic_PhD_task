@@ -58,18 +58,18 @@ Common finite-strain measures include the right Cauchy--Green tensor \(\vect C=\
 
 Cardiac components require a coordinate frame. Circumferential, radial and longitudinal axes can be defined at the reference state, updated through time or constructed from a ventricular centreline. Local axes become unstable near the apex and can vary with segmentation. A transmural average differs from endocardial strain because deformation varies through the wall. Two-dimensional short-axis analyses omit longitudinal and through-plane derivatives; a reported radial or circumferential component is consequently conditional on the 2D model.
 
-Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve, \(\min_t E_s(t)\) is generally not equal to the spatial average of pointwise minima. ``End-systolic'', ``peak systolic'' and ``peak over the whole cardiac cycle'' may diverge in dyssynchrony or post-systolic shortening. A reproducible comparison must fix the order of differentiation, projection, spatial averaging and temporal peak selection.
-
-\section*{Supplementary Note 2: validation targets}
-
-The claim boundaries for common validation targets are summarised in Supplementary Figure~\ref{fig:supp-targets}.
+Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve, \(\min_t E_s(t)\) is generally not equal to the spatial average of pointwise minima. ``End-systolic'', ``peak systolic'' and ``peak over the whole cardiac cycle'' may diverge in dyssynchrony or post-systolic shortening. A reproducible comparison must fix the order of differentiation, projection, spatial averaging and temporal peak selection. Supplementary Figure~\ref{fig:supp-definitions} illustrates these four traps.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{Figure_S1_validation_targets.pdf}
-\caption{Validation targets support different claims. The middle column states the strongest direct interpretation of each comparison; the right column states what it does not establish alone. The table is an original conceptual synthesis and contains no experimental data. OpenAI Codex (gpt-5.6-sol) assisted deterministic Draw.io XML edits; no generative image model was used. Author verification is required before submission.}
-\label{fig:supp-targets}
+\includegraphics[width=\textwidth]{Figure_S1_strain_definition_traps.pdf}
+\caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\). (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes. (c) One segmental curve read as peak systolic, end-systolic and post-systolic peak. (d) The minimum of a segment-mean curve differs from the mean of pointwise minima. Conceptual and analytic schematics with no measured scale. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
+\label{fig:supp-definitions}
 \end{figure}
+
+\section*{Supplementary Note 2: validation targets}
+
+The claim boundaries for common validation targets are summarised in Figure~5a of the main text.
 
 A validation hierarchy should not be interpreted as a single ranking. Simulation supplies exact truth but imperfect realism. DENSE and tagging provide material-sensitive in-vivo information but have sequence- and processing-specific error. Scan--rescan establishes precision. LGE and outcomes test biological or clinical relationships. A mature claim often needs several targets because their weaknesses are complementary.
 
@@ -82,7 +82,7 @@ The distinct spatial, temporal and field-validity failure modes are illustrated 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figure_S2_error_attributes_mapping_validity.pdf}
-\caption{Regional error attributes and mapping validity. The top panels separate magnitude, location, width/extent and support errors; the middle panels separate temporal magnitude and phase errors. The final panel illustrates a mapping that becomes singular and reverses orientation. Curves and fields are prescribed schematics with no measured scale. OpenAI Codex (gpt-5.6-sol) assisted deterministic Draw.io XML and Python-builder edits; no generative image model was used. Author verification is required before submission.}
+\caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. (c) A smooth invertible mapping (\(\det J>0\)), which can still be wrong, and a folded mapping with \(\det J\le 0\) in the outlined cells. Prescribed schematics with no measured scale. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
 \label{fig:supp-errors}
 \end{figure}
 
@@ -108,7 +108,7 @@ Supplementary Figure~\ref{fig:supp-controls} shows the two control points and th
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figure_S3_training_vs_inference_controls.pdf}
-\caption{Training-time versus inference-time controls. A training-loss weight requires controlled matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on held-out cases under the same estimand, reference and attribute-specific losses. This is an original conceptual schematic. OpenAI Codex (gpt-5.6-sol) assisted deterministic Draw.io XML and Python-builder edits; no generative image model was used. Author verification is required before submission.}
+\caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
 \label{fig:supp-controls}
 \end{figure}
 

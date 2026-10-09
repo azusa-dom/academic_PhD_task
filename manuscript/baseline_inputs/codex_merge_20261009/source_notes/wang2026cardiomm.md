@@ -1,0 +1,11 @@
+# wang2026cardiomm
+
+Metadata/source access checked by OpenAI Codex on 9 October 2026; independent human verification pending.
+
+Title: Enabling Ultra-Fast Cardiovascular Imaging Across Heterogeneous Clinical Environments with A Generalist Foundation Model and Multimodal Database
+DOI: 10.48550/arXiv.2512.21652
+PMID: 
+PMCID: 
+Access: abstract
+
+Multimodal cardiovascular magnetic resonance (CMR) imaging provides comprehensive and non-invasive insights into cardiovascular disease (CVD) diagnosis and underlying mechanisms. Despite decades of advancements, its widespread clinical adoption remains constrained by prolonged scan times, inconsistent image quality, and heterogeneity across medical environments. This underscores the urgent need for a generalist reconstruction foundation model for ultra-fast CMR imaging, one formulated for physics-constrained inverse problems in the sensor (k-space) domain, capable of adapting across diverse imaging scenarios and serving as the essential substrate for all downstream analyses. To enable this goal, we curate MMCMR-427K, the largest and most comprehensive multimodal CMR k-space database to date, comprising 427,465 multi-coil k-space data paired with structured metadata across 13 international centers, 12 CMR modalities, 15 scanners spanning four field strengths, and 17 CVD categories in populations across three continents. Building on this unprecedented resource, we introduce CardioMM, a generalist reconstruction foundation model capable of dynamically adapting to heterogeneous fast CMR imaging scenarios. CardioMM unifies semantic contextual understanding with physics-informed data consistency to deliver robust reconstructions across varied scanners, protocols, and patient presentations. Comprehensive evaluations demonstrate that CardioMM achieves state-of-the-art performance across internal centers and exhibits strong zero-shot generalization to unseen external settings. Importantly, CardioMM supports acceleration up to 24x, providing the first evidence that such extreme acquisition speed can preserve key cardiac phenotypes, quantitative myocardial biomarkers, and diagnostic image quality without compromising clinical integrity.

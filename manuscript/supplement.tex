@@ -252,7 +252,15 @@ Free-form deformation (FFD) & 1999; IEEE TMI\cite{rueckert1999} & Image pair; no
 \addlinespace
 Harmonic phase (HARP) & 2000; IEEE TMI\cite{osman2000harp} & SPAMM-tagged MR (comparator, not cine); none & Phase of an isolated spectral peak & Real and simulated tagged images; small-motion displacement and 2D strain & Not applicable; material-sensitive comparator \\
 \addlinespace
+Early clinical feature tracking & 2009--2013\cite{maret2009ft,hor2010ft,augustine2013ft} & Cine plus contours; vendor feature tracking, per case & Proprietary feature tracking & 30 post-STEMI patients (scar association); 191 DMD patients and 42 controls versus HARP, mid-LV whole-slice Ecc; 145 healthy volunteers with tagging in 20 (abstract level) & Scar association and whole-slice/global agreement; no focal localisation endpoint \\
+\addlinespace
 Groupwise \(n\)D\(+t\) B-splines & 2011; Med Image Anal\cite{metz2011} & Whole dynamic sequence; none & Spatio-temporal B-spline, optional cyclic constraint, no fixed reference & Synthetic and 3D\(+t\) lung/cardiac CT; sub-voxel accuracy; LV volume curves within about 3\% of manual & NR \\
+\addlinespace
+Laplace-based contour mapping & 2015; Int J CARS\cite{elnakib2015laplace} & Cine contours; none & Laplace equation between successive contours & Synthetic data and in-vivo feasibility (abstract level) & NR \\
+\addlinespace
+Variational data assimilation & 2016; IEEE TMI\cite{tuyisenge2016assimilation} & Cine sequence; none & Contraction model coupled to image observations & Synthetic data and a clinical cohort (abstract level) & NR as a prescribed focal experiment \\
+\addlinespace
+Gradient-based optical flow & 2019; Med Image Anal\cite{wang2019opticalflow} & Cine and tagged MR; none & Intensity and shape-feature invariance, iteratively optimised & Realistic simulations and preliminary clinical data (abstract level) & NR \\
 \addlinespace
 Automated segmentation plus spline tracking & 2017; FIMH\cite{vigneault2017}; 2018; ISBI\cite{puyolanton2018} & Cine; supervised segmentation, unsupervised tracking & Learned segmentation feeding a conventional tracker & 42 HCM patients and 21 controls; pixel accuracy about 97\% against manual segmentation & Group separation HCM versus controls; no motion reference, no focal experiment \\
 \addlinespace
@@ -282,9 +290,13 @@ MulViMotion & 2022; IEEE TMI\cite{meng2022mulvimotion} & SAX plus 2-/4-chamber L
 \addlinespace
 DeepMesh & 2024; IEEE TMI\cite{meng2024deepmesh} & SAX and LAX cine; unsupervised via differentiable rasteriser & Template 3D endo/epicardial mesh propagated to subject space & UK Biobank; vertex-wise 3D displacement with maintained correspondence & NR \\
 \addlinespace
+Bidirectional registration network & 2023; Comput Biol Med\cite{lu2023bireg} & Cine sequence; unsupervised & Bidirectional reference-to-frame prediction with sequence context & Public cine data (abstract level) & NR \\
+\addlinespace
 Low-rank groupwise deformations & 2024; preprint (MSc thesis)\cite{rendell2024lowrank} & Image sequence; unsupervised & Groupwise diffeomorphic registration towards a low-rank stack & NR; comparison of resulting low-rankness with other groupwise approaches & NR \\
 \addlinespace
 MCM (Mamba) & 2025; MICCAI work\-shop\cite{yin2025mcm} & Cardiac-cycle image sequence; unsupervised & Bidirectional Mamba block; adjacent-frame motion decoder & Two public datasets; comparison with conventional and learned trackers & NR \\
+\addlinespace
+SegMorph & 2025; IEEE TMI\cite{bi2025segmorph} & Cine sequence; joint motion and segmentation & Recurrent variational representation & Public cine data (abstract level) & NR \\
 \addlinespace
 Cardio\-Morph\-Net & 2026; Med Image Anal\cite{movahed2026cardiomorphnet} & SAX cine volumes; recursive registration of segmentation maps without an intensity loss & Recurrent VAE with separate segmentation and motion posteriors; uncertainty map & UK Biobank and M\&Ms; warped versus reference masks; uncertainty versus other probabilistic methods & M\&Ms is multi-centre/multi-pathology, but the comparison is mask agreement, not focal motion accuracy \\
 \addlinespace
@@ -293,6 +305,8 @@ Bidirectional latent neural ODE & 2026; Comput Med Imaging Graph\cite{ruan2026la
 STCMT-Net & 2026; Med Image Anal\cite{qiao2026stcmt} & 4D CT and cine MRI; unsupervised & Unsupervised keypoints as anchors; dense field from matched-keypoint basis vectors & 4D CT and cine datasets; comparison with competing methods; strain analysis separating cardiac conditions & Group separation by condition; no prescribed focal abnormality, no motion reference \\
 \addlinespace
 Semi-supervised motion flow & 2025; Comput Biol Med\cite{portal2025semisup} & Full cine sequence; semi-supervised with ED distance-map weighting & Memory network over all frames & In-house 271 patients; EPE 1.02~mm versus 1.19~mm (retrained RAFT); global peak RS/CS correlation 0.83/0.90 (abstract level) & NR; no material reference or focal abnormality \\
+\addlinespace
+IG-BiReg & 2026; Phys Med Biol (online first)\cite{jia2026igbireg} & Cine pairs; unsupervised & Implicit-guided bidirectional residual registration & Anatomical registration improvement (abstract level) & NR \\
 \addlinespace
 CMR foundation models & 2025--2026\cite{jacob2025cmrfm,fu2026cinema} & 36M images/27,524 subjects (self-distillation); 15M cine images/74,916 studies & Pre-trained representation fine-tuned per task & Segmentation, landmark localisation, diagnosis, prognostication across independent datasets & Dense motion estimation is not among the reported tasks \\
 \midrule

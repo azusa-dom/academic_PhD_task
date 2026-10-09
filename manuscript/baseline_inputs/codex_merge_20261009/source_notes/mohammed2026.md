@@ -1,0 +1,11 @@
+# mohammed2026
+
+Metadata/source access checked by OpenAI Codex on 9 October 2026; independent human verification pending.
+
+Title: Prognostic Value of Strain Imaging Measurements in Patients with Non-ischemic Cardiomyopathy
+DOI: 10.1097/CRD.0000000000001410
+PMID: 42647668
+PMCID: 
+Access: abstract
+
+Nonischemic cardiomyopathy (NICM) carries significant morbidity and mortality. While left ventricular ejection fraction (LVEF) remains central to risk stratification, it may not fully capture the extent of myocardial impairment, and strain imaging can provide independent prognostic information beyond LVEF alone. Myocardial strain imaging may provide additional prognostic value, but its role in NICM remains incompletely defined. This scoping review, conducted per PRISMA-ScR guidelines, searched PubMed, Embase, and Cochrane Library from inception through October 25, 2025, to identify studies evaluating myocardial strain parameters, specifically left ventricular global longitudinal strain (LVGLS), left ventricular global circumferential strain, left ventricular global radial strain, and right ventricular global longitudinal strain, in adult NICM populations using speckle-tracking echocardiography or cardiac magnetic resonance feature tracking. Data were extracted by 2 independent reviewers and synthesized descriptively. From 1356 records, 36 studies (7903 patients) were included, with follow-up ranging from 9 months to 7.8 years. LVGLS was the most frequently assessed parameter. Across 21 studies evaluating major adverse cardiovascular events, worse baseline strain values were consistently associated with increased risk (hazard ratios 1.06-2.70 per unit decrease in strain magnitude). Two studies reported significant associations with ventricular arrhythmias, and 4 showed that more favorable baseline strain predicted a higher likelihood of left ventricular reverse remodeling. Strain parameters, particularly LVGLS, remained independently associated with outcomes in 34 of 36 studies after multivariable adjustment, often providing incremental value beyond LVEF and late gadolinium enhancement. These findings support strain imaging, especially LVGLS, as an adjunct to conventional risk stratification in diverse NICM populations. Standardized, multicenter prospective studies are needed to establish its role in clinical decision-making.

@@ -1,0 +1,9 @@
+# Draft declaration of generative AI and AI-assisted technologies
+
+OpenAI Codex was used to assist with targeted literature-query preparation, bibliographic and primary-source checks, evidence structuring, manuscript and table revision, language editing, LaTeX preparation and deterministic quality assurance. No raw cardiac image was processed and no new experimental measurement or patient data were generated. Claude Code (Anthropic) was subsequently used to merge the v8.1 and v9 drafts, restore the method-lineage and prescribed-focal-test content with their previously verified references, adopt corrections identified by an independently merged draft, add cross-references and Supplementary Table S3, re-verify all reference metadata against Crossref, arXiv and DataCite, and run LaTeX, BibTeX and static consistency checks. Neither task created, edited or regenerated any figure: all retained figures and the graphical abstract were inherited byte-for-byte from the selected v8.1 baseline. Their existing captions retain the earlier task-specific production disclosures.
+
+Because the inherited graphical abstract involved earlier AI-assisted deterministic production, the package does not certify current policy compatibility. The corresponding author should confirm the live JCMR/Elsevier interpretation or manually reconstruct it if required.
+
+The corresponding author must review and verify all generated or revised content, citations, figures, graphical abstract and declarations before submission and accept responsibility for the final article. That review has not been asserted in this package.
+
+This wording is also included in the manuscript. The author should compare it with the exact disclosure field shown in the live JCMR/Elsevier submission system and amend it if the publisher requests a different form.

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "A001",
+    "section": "3.1",
+    "type": "analytical derivation",
+    "statement": "An orientation-preserving annular angular map leaves masks identical while tangential stretch changes.",
+    "check": "For |a|<1, angular derivative is positive; circles map onto themselves.",
+    "empirical_status": "not experimental evidence"
+  },
+  {
+    "id": "A002",
+    "section": "3.2",
+    "type": "definition and calculation",
+    "statement": "Forward map, F and Green–Lagrange strain definitions; four strain conventions at stretch 0.8.",
+    "check": "Engineering -0.20; Green -0.18; Euler-Almansi -0.28125; log -0.22314355.",
+    "empirical_status": "author mathematical example"
+  },
+  {
+    "id": "A003",
+    "section": "6.3",
+    "type": "statistical relationship",
+    "statement": "Independent normal within-subject two-measurement repeatability coefficient is 1.96*sqrt(2)*sw.",
+    "check": "Factor 2.77185858; not a clinical meaningful-change threshold.",
+    "empirical_status": "assumption-dependent formula"
+  },
+  {
+    "id": "A004",
+    "section": "8",
+    "type": "recommendation",
+    "statement": "Separate representation capacity, image estimation and human reference transfer tests.",
+    "check": "No experiment conducted; no new algorithm or biomarker validation claimed.",
+    "empirical_status": "proposed validation programme"
+  }
+]

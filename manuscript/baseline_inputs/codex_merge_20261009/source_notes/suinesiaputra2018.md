@@ -1,0 +1,11 @@
+# suinesiaputra2018
+
+Metadata/source access checked by OpenAI Codex on 9 October 2026; independent human verification pending.
+
+Title: Statistical Shape Modeling of the Left Ventricle: Myocardial Infarct Classification Challenge
+DOI: 10.1109/JBHI.2017.2652449
+PMID: 28103561
+PMCID: PMC5857476
+Access: abstract
+
+Statistical shape modeling is a powerful tool for visualizing and quantifying geometric and functional patterns of the heart. After myocardial infarction (MI), the left ventricle typically remodels in response to physiological challenges. Several methods have been proposed in the literature to describe statistical shape changes. Which method best characterizes left ventricular remodeling after MI is an open research question. A better descriptor of remodeling is expected to provide a more accurate evaluation of disease status in MI patients. We therefore designed a challenge to test shape characterization in MI given a set of three-dimensional left ventricular surface points. The training set comprised 100 MI patients, and 100 asymptomatic volunteers (AV). The challenge was initiated in 2015 at the Statistical Atlases and Computational Models of the Heart workshop, in conjunction with the MICCAI conference. The training set with labels was provided to participants, who were asked to submit the likelihood of MI from a different (validation) set of 200 cases (100 AV and 100 MI). Sensitivity, specificity, accuracy and area under the receiver operating characteristic curve were used as the outcome measures. The goals of this challenge were to (1) establish a common dataset for evaluating statistical shape modeling algorithms in MI, and (2) test whether statistical shape modeling provides additional information characterizing MI patients over standard clinical measures. Eleven groups with a wide variety of classification and feature extraction approaches participated in this challenge. All methods achieved excellent classification results with accuracy ranges from 0.83 to 0.98. The areas under the receiver operating characteristic curves were all above 0.90. Four methods showed significantly higher performance than standard clinical measures. The dataset and software for evaluation are available from the Cardiac Atlas Project website1.

@@ -55,3 +55,6 @@ Nothing in this checklist is marked as approved on the author's behalf.
 - [ ] Decide between the retained v9 title/framing (regional-fidelity measurement question) and the Codex framing (algorithm methods review); the current manuscript keeps the former.
 - [ ] Unify the Wehner 2018 bias unit (% versus percentage points) across text, Table 2 and Table S1.
 - [ ] Replace the AI declaration in the manuscript and this folder with the final wording required by the live submission form.
+- [ ] Confirm that §1.1 and the Supplementary Methods describe the search as you conducted it (core set and citation expansion; six concept families in PubMed, Europe PMC and OpenAlex to 1 September 2026; verification update to 8 October 2026), and that you accept responsibility for the retention decisions. The per-record screening file (`search/gap_2026-09-01/screening.csv`) is not in this package; retrieve it from the v8.1 archive and keep it with the search record.
+- [ ] Read at full text the abstract-level sources that carry numbers in the main text (list in `review/19_§1.1检索方法段重写说明.md`), starting with Brandt 2024, Gao 2014, Mangion 2019, DENT 2024, REGAIN 2023, STRAUS 2018 and CMAC 2013; update the evidence ledger reading depth afterwards.
+

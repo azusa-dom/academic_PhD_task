@@ -128,8 +128,8 @@ def main():
     panel_a(ax)
     panel_b(ax)
     pc = panel_c(fig, ax)
-    ax.text(0.5, 1.0, "Analytic example, not a measured cardiac result. The circumferential stretch ratio "
-            "is not Green–Lagrange strain.", fontsize=FS_SMALL, color=MUTED, va="bottom")
+    ax.text(0.5, 1.0, "Analytic example; no cardiac measurement is shown. The circumferential stretch ratio "
+            "is a different quantity from Green–Lagrange strain.", fontsize=FS_SMALL, color=MUTED, va="bottom")
     save(fig, "Figure_2_same_contours_analytic", {
         "axes": [pc],
         "panel_ids": ["c"],

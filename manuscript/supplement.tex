@@ -69,7 +69,7 @@ Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve,
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figure_S1_strain_definition_traps.pdf}
-\caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\). (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes. (c) One segmental curve read as peak systolic, end-systolic and post-systolic peak. (d) The minimum of a segment-mean curve differs from the mean of pointwise minima. Conceptual and analytic schematics with no measured scale. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
+\caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\); the table converts five values. (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes, with the choices a report must state (layer, reference frame, axes, 2D slice). (c) One segmental curve read as peak systolic (\(-0.17\)), end-systolic (\(-0.14\)) and post-systolic peak (\(-0.21\)). (d) The minimum of a segment-mean curve (\(-0.10\)) differs from the mean of pointwise minima (\(-0.20\)). Conceptual and analytic schematics; the printed values are computed from the drawn curves and have no measured scale. Drawn programmatically (Python-generated SVG rendered to PDF with headless Chromium) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
 \label{fig:supp-definitions}
 \end{figure}
 
@@ -88,7 +88,7 @@ The distinct spatial, temporal and field-validity failure modes are illustrated 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figure_S2_error_attributes_mapping_validity.pdf}
-\caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. (c) A smooth invertible mapping (\(\det J>0\)), which can still be wrong, and a folded mapping with \(\det J\le 0\) in the outlined cells. Prescribed schematics with no measured scale. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
+\caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. In a, and again in b, every estimate is set to the same root-mean-square error against its reference (0.17 and 0.16), so a single mean-squared error cannot tell these failures apart. (c) A smooth invertible mapping (minimum \(\det J\) of 0.81), which can still be wrong, and a folded mapping with \(\det J\le 0\) in 5 of 121 outlined cells (minimum \(-1.13\)). Prescribed schematics with no measured scale. Drawn programmatically (Python-generated SVG rendered to PDF with headless Chromium) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
 \label{fig:supp-errors}
 \end{figure}
 
@@ -114,7 +114,7 @@ Supplementary Figure~\ref{fig:supp-controls} shows the two control points and th
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figure_S3_training_vs_inference_controls.pdf}
-\caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic. Drawn programmatically (Python/matplotlib and Typst/CeTZ) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
+\caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic. Drawn programmatically (Python-generated SVG rendered to PDF with headless Chromium) with AI assistance (Claude Code, Anthropic); no generative image model was used. Author verification is required before submission.}
 \label{fig:supp-controls}
 \end{figure}
 

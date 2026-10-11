@@ -86,9 +86,9 @@ When these items are missing, apparent disagreement may reflect different quanti
 
 All estimators resolve incomplete image information by adding structure. The useful comparison between them therefore concerns which assumptions each introduces, whether those assumptions are visible to the user, and whether they suit the abnormality being studied. \Cref{tab:families} summarises these attribute-level distinctions. \Cref{sec:illposed} then states the estimation problem that all the families share, and \cref{sec:ft} to \cref{sec:supervised} follow the literature in approximate chronological order within each family. A year-ordered table of the individual methods, with the data, validation approach and pathology evaluation each source reports, is given in Supplementary Table~S3.
 
-{\scriptsize\sloppy
-\setlength{\tabcolsep}{2pt}
-\begin{longtable}{L{0.09\textwidth}L{0.115\textwidth}L{0.11\textwidth}L{0.105\textwidth}L{0.115\textwidth}L{0.11\textwidth}L{0.145\textwidth}}
+{\setstretch{1.0}\scriptsize\sloppy
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{L{0.102\textwidth}L{0.131\textwidth}L{0.125\textwidth}L{0.119\textwidth}L{0.131\textwidth}L{0.125\textwidth}L{0.165\textwidth}}
 \caption{Method attributes that may coexist within a cine-CMR motion estimator. Rows are descriptive archetypes; a single method may combine several of them.}\label{tab:families}\\
 \toprule
 Archetype & Input & Output and estimand & Motion representation & Constraint/prior & Optimisation or training target & Endpoint directly validated in representative work \\
@@ -215,9 +215,9 @@ The product dependence seen by Cao and colleagues was examined directly at 3~T b
 
 Recent work continues to show direction- and model-specific success. A 2026 study evaluated one- and two-slice DENSE models and a one-slice cine model using a deforming phantom and 40 healthy volunteers. Circumferential strain was recovered well in the phantom; in volunteers, the one-slice cine model was statistically equivalent to the two-slice DENSE model for endocardial circumferential strain within a prespecified margin of 3.5\% (two one-sided tests) and differed for radial, longitudinal and epicardial circumferential estimates~\cite{jahromi2026densecine}. The result identifies which component, layer and setting were supported and where the slice model was insufficient; it supports neither ``cine works'' nor ``cine fails'' as a general verdict. Selected studies are compared directly in \cref{tab:evidence}.
 
-{\scriptsize\sloppy
-\setlength{\tabcolsep}{2pt}
-\begin{longtable}{L{0.11\textwidth}L{0.13\textwidth}L{0.14\textwidth}L{0.13\textwidth}L{0.20\textwidth}L{0.10\textwidth}}
+{\setstretch{1.0}\scriptsize\sloppy
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{L{0.124\textwidth}L{0.146\textwidth}L{0.157\textwidth}L{0.146\textwidth}L{0.225\textwidth}L{0.112\textwidth}}
 \caption{Empirical validation studies relevant to regional fidelity. The analysis unit and support boundary are retained because participant, slice, segment and pixel results are not interchangeable.}\label{tab:evidence}\\
 \toprule
 Study; development/test denominator & Population/input; statistical unit & Spatial/temporal estimand & Comparator & Result, including uncertainty where reported & Supported scope \\
@@ -248,8 +248,9 @@ Jahromi et al.\cite{jahromi2026densecine}; phantom and 40 volunteers & Healthy, 
 
 The studies in \cref{tab:evidence} do not all inspect the four attributes in the motivating question, so \cref{tab:attributes} records the direct endpoint of each, keeping a segmental analysis distinct from a localisation or extent validation.
 
-{\scriptsize\sloppy
-\begin{longtable}{L{0.13\textwidth}L{0.19\textwidth}L{0.18\textwidth}L{0.17\textwidth}L{0.17\textwidth}}
+{\setstretch{1.0}\scriptsize\sloppy
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{L{0.143\textwidth}L{0.209\textwidth}L{0.198\textwidth}L{0.187\textwidth}L{0.187\textwidth}}
 \caption{Direct inspection of abnormality magnitude, location, extent and timing in selected paired or regional studies. An entry of ``not inspected'' records that the study did not evaluate the attribute; it says nothing about whether the attribute is present or can be evaluated.}\label{tab:attributes}\\
 \toprule
 Study & Magnitude & Location & Extent & Timing \\
@@ -367,9 +368,9 @@ CMAC paired cine SSFP, 3D tagged MRI and 3D ultrasound from a dynamic phantom an
 
 Large multi-centre resources such as CMRxRecon2025 remain useful for reconstruction robustness and disease representation. Its official description covers multiple centres, scanners, disease groups and CMR contrasts, and it does not establish tagging/DENSE motion labels or a fully paired cine--LGE cohort~\cite{cmrxrecon2025official}. The same limit applies to segmentation collections and the Data Science Bowl: containing cine images does not make a collection a regional-motion reference. Detailed access, pairing, scale and uncertainty fields are provided in Supplementary Table~S2 and the editable resource table.
 
-{\scriptsize\sloppy
-\setlength{\tabcolsep}{2pt}
-\begin{longtable}{L{0.12\textwidth}L{0.14\textwidth}L{0.18\textwidth}L{0.16\textwidth}L{0.20\textwidth}}
+{\setstretch{1.0}\scriptsize\sloppy
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{L{0.139\textwidth}L{0.162\textwidth}L{0.208\textwidth}L{0.185\textwidth}L{0.231\textwidth}}
 \caption{Complementary validation resources for cine-derived motion and strain. Counts denote the resource unit stated; they are not counts of independent test participants or complete paired analyses.}\label{tab:resources}\\
 \toprule
 Resource & Nature and scale & Available pairing/reference & What it can evaluate & Access and principal boundary \\

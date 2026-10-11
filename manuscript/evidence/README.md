@@ -1,6 +1,6 @@
 # Current revision evidence status — 11 October 2026
 
-The CSV ledgers below, except the updated COHORT_DATASET_LINKAGE.csv, are inherited records. Their historical VERIFIED labels are not fresh verification. Current claim/location/read-depth reconciliation is in the delivery review/claim_evidence.csv and current_citation_claim_map.csv; specific corrections are in meaning_changes.csv. Historical records are retained, including keys not cited in the current manuscript. Author review remains pending.
+The CSV ledgers below, except the updated COHORT_DATASET_LINKAGE.csv, are inherited records. Their historical VERIFIED labels are not fresh verification. The current citation-to-location map is review/integration_20261011/CURRENT_CITATION_OCCURRENCES.csv, the per-item dispositions of the three review jobs are in review/integration_20261011/83_item_critical_disposition.csv, and the corrections made on 11 October 2026 are logged in review/22 with a per-source verification checklist in review/23. Historical records are retained, including keys not cited in the current manuscript. Author review remains pending.
 
 ---
 

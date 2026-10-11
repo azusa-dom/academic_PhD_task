@@ -122,7 +122,7 @@ def main() -> int:
         if not path.exists():
             errors.append(f"Missing input: {input_name}")
 
-    csv_roots = ["research", "audit", "search", "supplementary", "independent-review", "figures/source_data"]
+    csv_roots = ["research", "audit", "search", "supplementary", "independent-review", "figures/source_data", "figures/integrated_sources/data"]
     csv_paths = sorted({path for name in csv_roots for path in (ROOT / name).rglob("*.csv")})
     for path in csv_paths:
         with path.open(newline="", encoding="utf-8") as handle:

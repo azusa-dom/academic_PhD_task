@@ -1,0 +1,30 @@
+{
+  "updated": "2026-10-11T01:50:00+01:00",
+  "job_id": "22557218",
+  "host": "node600.csf3.man.alces.network",
+  "starting_revision": "bcdd65a5b8dfdd83ffb2539a0f114cc4c407a1af",
+  "status": "AUTHOR_REVIEW_REQUIRED",
+  "current_phase": 7,
+  "phases": {
+    "1_read_and_diagnose": "completed",
+    "2_claim_evidence_map": "completed",
+    "3_reverse_outline": "completed",
+    "4_substantive_editing": "completed",
+    "5_language_semantics": "completed",
+    "6_integrated_qa": "completed",
+    "7_adversarial_closure": "completed"
+  },
+  "registered_issue_status": {
+    "resolved": 12,
+    "resolved_by_narrowing": 6,
+    "partially_resolved": 0,
+    "unresolved": 0
+  },
+  "deliverables": {
+    "main_pdf": "delivery/main_v10_skill_revised_20261011.pdf",
+    "supplement_pdf": "delivery/supplement_v10_skill_revised_20261011.pdf",
+    "source_archive": "delivery/manuscript_source.zip",
+    "delivery_status": "delivery/DELIVERY_STATUS.json"
+  },
+  "continuation": "Await accountable author review; do not submit or contact the journal without new explicit authority."
+}

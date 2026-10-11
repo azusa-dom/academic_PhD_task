@@ -1,0 +1,315 @@
+--- 22557325_final/main.tex
++++ integrated/main.tex
+@@ -11,10 +11,15 @@
+ \usepackage{amsmath,bm}
+ \usepackage{booktabs,longtable,tabularx,array,ragged2e,multirow}
+ \usepackage{graphicx}
++\usepackage[section]{placeins}
++\renewcommand{\topfraction}{0.95}
++\renewcommand{\bottomfraction}{0.85}
++\renewcommand{\textfraction}{0.05}
++\renewcommand{\floatpagefraction}{0.6}
+ \graphicspath{{figures/}}
+ \usepackage{caption}
+ \captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified,singlelinecheck=false}
+-\usepackage{float}
++\usepackage{float,needspace}
+ \usepackage{enumitem}
+ \setlist{leftmargin=1.5em,itemsep=0.15em,topsep=0.3em}
+ \usepackage{xcolor}
+@@ -100,10 +105,10 @@
+ \textbf{Author confirmation required before submission.} Names, contributions and permission to acknowledge individuals must be confirmed by the author.
+ 
+ \subsection*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+-The supplied draft records prior assistance from OpenAI Codex and Claude Code (Anthropic) with search support, evidence organisation, drafting, revision and programmatic figures. Those historical process statements remain subject to author verification. For the present 11 October 2026 revision, OpenAI Codex 0.162.1 (GPT-6 Astra, High reasoning) assisted with primary-source checks, scientific and language revision, table and citation corrections, editable figure derivatives, LaTeX compilation and quality checks. An earlier fresh-context AI review and citation check informed this revision. The finaliser then rechecked modified claims in the same context; that targeted recheck was not a new independent review. Neither stage was an independent human or clinical review. No raw cardiac images were processed, and no new experimental data or clinical validation were generated. Figure derivatives were generated from Python/SVG sources and rendered with librsvg; no generative image model was used. The author must verify all content, sources, figures and declarations, confirm applicable journal policy and accept responsibility. That approval is not asserted here.
++The supplied draft records prior assistance from OpenAI Codex and Claude Code (Anthropic) with search support, evidence organisation, drafting, revision and programmatic figures. These historical statements remain subject to author verification. The 11 October 2026 integration used OpenAI Codex to compare three AI-assisted review jobs, inspect selected primary-source passages, revise the manuscript and reconcile the user-supplied figure package with those findings. An earlier fresh-context AI review evaluated an intermediate draft; later rechecks and this integration do not constitute independent human or clinical review. Figures were edited as Python/SVG sources and rendered with headless Chromium, and the multi-file manuscript was compiled with Tectonic. No generative image model, raw cardiac images or new experimental data were used. The author must verify the scientific content, sources, figures, historical process statements and declarations, confirm current journal policy and accept responsibility. Author approval is pending.
+ 
+ \subsection*{Figure provenance and permissions}
+-The figures combine conceptual diagrams, analytic illustrations and redraws of published numerical results. Figure~1 redraws reported values from MRXCAT2.0, Militaru, Cao, StrainNet, REGAIN, Strain-8, Kihlberg, Bello and DLSS; Figure~4 redraws MRXCAT2.0 values. Figure~3 maps selected source records, rather than measured patient data. Figures~2 and~5, Supplementary Figures~S1--S3 and the graphical abstract contain conceptual or analytic schematics. No patient image or third-party figure artwork is copied. Original supplied assets are preserved alongside clearly labelled editable revision derivatives. Scientific review of the figures, source acknowledgement, rights assessment and current journal-policy interpretation remain the author's responsibility and are pending.
++The figures combine conceptual diagrams, analytic illustrations and redraws of published numerical results. Figure~1 redraws reported values from MRXCAT2.0, Militaru, Cao, StrainNet, REGAIN, Strain-8, Kihlberg, Bello and DLSS; Figure~4 redraws MRXCAT2.0 values. Figure~3 maps selected source records, rather than measured patient data. Figures~2 and~5, Supplementary Figures~S1--S3 and the graphical abstract contain conceptual or analytic schematics. No patient image or third-party figure artwork is copied. Original supplied assets are preserved outside this derivative. Editable integration sources and their numerical inputs accompany the revised figures. Scientific review of the figures, source acknowledgement, rights assessment and current journal-policy interpretation remain the author's responsibility and are pending.
+ 
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{jcmr-review}
+--- 22557325_final/body.tex
++++ integrated/body.tex
+@@ -30,14 +30,13 @@
+ 
+ Balanced steady-state free-precession cine CMR samples a time series of image intensities. In a typical short-axis image, the blood--myocardium interfaces are conspicuous, whereas intramyocardial texture can be weak and changes with coil sensitivity, through-plane motion, partial volume, reconstruction and artefact. The image therefore supplies anatomical and intensity cues without a persistent identity label for every tissue element. Every estimator has to add something to those cues. Feature tracking exploits image features or propagated contours; registration exploits an image-similarity relation; biomechanical models constrain admissible deformation; and learning-based methods import associations learned from training data~\cite{pedrizzetti2016,duchateau2020}. These four categories overlap in practice: a neural network may predict registration parameters, a registration method may use a learned similarity measure, and a biomechanical penalty may be embedded in either.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_1_two_track_evidence_map.pdf}}
+-\caption{From image cues to a regional measurement. (a) Conceptual chain: correspondence is inferred and strain depends on the measurement definition. The registration objective is an example, not a universal loss. Segment~11 is reduced; all curve readouts are calculated illustrations. Input (I), estimation (E) and representation (R) tests probe potentially coupled errors. (b) Selected empirical endpoints, not a pooled ranking. MRXCAT2.0 reports slice averages~\cite{mrxcat2023}. Militaru LS/CS ICCs compare FT with tagging; its RS range compares FT vendors~\cite{militaru2021}. Cao reports mid-slice peak Ecc~\cite{cao2018}; StrainNet reports end-systolic cine--DENSE Ecc agreement~\cite{wang2023strainnet}. REGAIN assesses reconstruction-plus-analysis agreement~\cite{yoon2023regain}; Strain-8 assesses repeatability~\cite{bell2025strain8}. Kihlberg's ROC uses end-systolic segmental Ecc and LGE~\cite{kihlberg2020clinical}. CTEPH denotes chronic thromboembolic pulmonary hypertension. Bello's corrected C index concerns RV survival prediction in chronic thromboembolic pulmonary hypertension~\cite{bello2019}; DLSS AUC evaluates reader-defined wall-motion abnormality across thresholds~\cite{masutani2023dlss}. The axis value 0.5 is a scale reference, not an observed result. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_1_two_track_evidence_map.pdf}}
++\caption{From image cues to a regional measurement. (a) Conceptual chain: correspondence is inferred and strain depends on the measurement definition. The registration objective is an example, not a universal loss. Segment~11 is reduced; all curve readouts are calculated illustrations. Input (I), estimation (E) and representation (R) tests probe potentially coupled errors. (b) Selected empirical endpoints, not a pooled ranking. MRXCAT2.0 reports slice averages~\cite{mrxcat2023}. Militaru LS, CS and RS ICCs compare FT with tagging; the global RS range is 0.10--0.63~\cite{militaru2021}. Cao reports mid-slice peak Ecc~\cite{cao2018}; StrainNet reports end-systolic cine--DENSE Ecc agreement~\cite{wang2023strainnet}. REGAIN assesses reconstruction-plus-analysis agreement~\cite{yoon2023regain}; Strain-8 assesses repeatability~\cite{bell2025strain8}. Kihlberg's ROC uses end-systolic segmental Ecc and LGE~\cite{kihlberg2020clinical}. CTEPH denotes chronic thromboembolic pulmonary hypertension. Bello's corrected C index concerns RV survival prediction in chronic thromboembolic pulmonary hypertension~\cite{bello2019}; DLSS AUC evaluates reader-defined wall-motion abnormality across thresholds~\cite{masutani2023dlss}. The axis value 0.5 is a scale reference, not an observed result.}
+ \label{fig:image-to-report}
+ \end{figure}
+-\clearpage
++
+ 
+ The separation between observed cues and inferred correspondence in \cref{fig:image-to-report}a is a causal one, and it can be written down. Let a point in a reference configuration be \(\vect X\), and let an estimated mapping be \(\boldsymbol\varphi(\vect X,t)\). The displacement and deformation gradient are
+ \begin{equation}
+@@ -58,14 +57,13 @@
+ 
+ Boundary agreement constrains deformation without determining it. Consider an annulus whose end-diastolic and end-systolic contours are fixed. Material points can retain their angular positions, or they can be reparameterised around the same final contour. Both mappings give Dice overlap of one and Hausdorff distance of zero for the masks, yet their circumferential stretch varies differently with position (\cref{fig:same-contours}). The counterexample proves a limited point: equal masks or equal mean geometry are insufficient to identify intramyocardial correspondence. It leaves two other questions open, namely whether cine-derived regional strain is wrong in any particular case, and whether image texture and temporal information can select a useful mapping.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_2_same_contours_analytic.pdf}}
+-\caption{Identical contours do not determine the same material correspondence. (a) Schematic of the information each acquisition supplies: routine cine provides boundaries and weak texture, tagging a prepared pattern, DENSE phase-encoded displacement; only tagging and DENSE carry a material label in the signal. (b) Two material mappings between the same annular contours (\(r\mapsto r\)): angular identity, \(\theta\mapsto\theta\), and \(\theta\mapsto\theta+a\sin\theta\) with \(a=0.5\). Both give identical masks (Dice~\(=1\), Hausdorff~\(=0\)). (c) Their circumferential stretch, \(\lambda_\theta=1\) and \(\lambda_\theta=1+a\cos\theta\), differs; the latter ranges from 0.5 to 1.5 and preserves orientation for \(|a|<1\), while both mappings have the same mean stretch over \(\theta\) (1.0). The figure is an analytic counterexample; no estimator error is measured, and the stretch ratio is a different quantity from Green--Lagrange strain. Programmatic schematic or numerical redraw; sources and preparation are stated in the declarations. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_2_same_contours_analytic.pdf}}
++\caption{Identical contours do not determine the same material correspondence. (a) Schematic of the information each acquisition supplies: routine cine provides boundaries and weak texture, tagging a prepared pattern, DENSE phase-encoded displacement; only tagging and DENSE carry a material label in the signal. (b) Two material mappings between the same annular contours (\(r\mapsto r\)): angular identity, \(\theta\mapsto\theta\), and \(\theta\mapsto\theta+a\sin\theta\) with \(a=0.5\). Both give identical masks (Dice~\(=1\), Hausdorff~\(=0\)). (c) Their circumferential stretch, \(\lambda_\theta=1\) and \(\lambda_\theta=1+a\cos\theta\), differs; the latter ranges from 0.5 to 1.5 and preserves orientation for \(|a|<1\), while both mappings have the same mean stretch over \(\theta\) (1.0). The figure is an analytic counterexample; no estimator error is measured, and the stretch ratio is a different quantity from Green--Lagrange strain.}
+ \label{fig:same-contours}
+ \end{figure}
+-\clearpage
++
+ 
+ The consequence of this non-uniqueness grows as the claim becomes more local. Chamber volume can be estimated from boundaries alone. A global contour-length change is also strongly boundary-constrained. A segmental average additionally requires correspondence between sectors. Transmural or voxelwise strain requires, on top of that, intramyocardial correspondence and spatial derivatives. Along this sequence, a method can be accurate for volumes and useful for global strain while remaining insufficiently validated for focal strain gradients. Validation should therefore follow the finest claimed spatial and temporal scale; credibility earned at a coarser scale does not transfer downward.
+ 
+@@ -88,7 +86,7 @@
+ 
+ \section{Estimator families and the assumptions they contribute}\label{sec:families}
+ 
+-All estimators resolve incomplete image information by adding structure. The useful comparison between them therefore concerns which assumptions each introduces, whether those assumptions are visible to the user, and whether they suit the abnormality being studied. \Cref{tab:families} summarises these attribute-level distinctions. \Cref{sec:illposed} then uses registration to explain how information, representation and estimation interact, and \cref{sec:ft} to \cref{sec:supervised} follow the literature in approximate chronological order within each family. A year-ordered table of the individual methods, with the data, validation approach and pathology evaluation each source reports, is given in Supplementary Table~S3.
++All estimators resolve incomplete image information by adding structure. The useful comparison between them therefore concerns which assumptions each introduces, whether those assumptions are visible to the user, and whether they suit the abnormality being studied. \Cref{tab:families} summarises these attribute-level distinctions. \Cref{sec:illposed} then uses registration to explain how information, representation and estimation interact, and \cref{sec:ft} to \cref{sec:supervised} follow the literature in approximate chronological order within each family. Supplementary Table~S3 and \cref{fig:timeline} map selected method and evaluation entries, including non-cine comparators. Their documented endpoints do not provide a field-wide prevalence estimate.
+ 
+ {\scriptsize\sloppy
+ \setlength{\tabcolsep}{2pt}
+@@ -104,7 +102,7 @@
+ \endhead
+ Feature and contour tracking & Cine pixels plus initial contours & Contour/mesh motion; product-defined strain & Boundary points, meshes or proprietary field & Feature similarity and trajectory continuity & Frame-to-frame match or contour propagation & Global/segmental peak strain, repeatability and tissue discrimination; product-specific \\
+ \addlinespace
+-Deformable registration & Image pairs or cine sequence & Dense displacement; derived strain & Voxel field, spline, spectral or implicit field & Spatial/temporal regularity; optional topology & Image/feature similarity plus penalties & Image/shape alignment; selected phantom, tagging or DENSE comparisons \\
++Deformable registration & Image pairs or cine sequence & Dense displacement; derived strain & Voxel field, spline, spectral or implicit field & Spatial and temporal regularity; optional topology & Image/feature similarity plus penalties & Image/shape alignment; selected phantom, tagging or DENSE comparisons \\
+ \addlinespace
+ FE model & Images, masks or meshes & Nodal displacement and tensor strain & Finite-element or reduced-order basis & Compatibility, volume constraint, constitutive/fibre terms & Image correlation plus mechanical residual & Landmark/curve or phantom error in the specified model domain \\
+ \addlinespace
+@@ -129,9 +127,9 @@
+ \end{equation}
+ in which \(\mathcal D\) rewards image agreement, \(\mathcal R\) encodes prior structure and \(\alpha\) sets their balance. The map is written here as a forward map on the reference domain. Frameworks that optimise a backward sampling map use a different convention, and the two conventions must not be interchanged when transformations are composed or differentiated for strain. Groupwise registration extends such an objective over a sequence, while an amortised registration network can minimise its expectation during training. Other families use different targets: StrainNet learns from DENSE-derived displacement, DLSS uses velocity and segmentation supervision, and a downstream disease model learns from clinical labels. Their training losses, inference mappings and evaluation references must therefore be distinguished. What these methods share is the need to combine observed information with representational and learned assumptions, rather than a universal image-matching loss.
+ 
+-The difficulty is that \(\mathcal D\) may not identify a unique material map. Where intramyocardial texture is weak, many fields achieve nearly the same data term while implying different displacement gradients, and the prior selects among them; \cref{fig:same-contours} demonstrates the narrower case in which only the masks constrain correspondence. The prior's role can be read in two ways, and the review keeps them separate throughout. The first concerns what a representation can \emph{express}. Strain is a spatial derivative of displacement, so a displacement field that looks smooth can still carry a rapidly varying strain. Restricting the field to a band of spatial frequencies restricts the derivatives it can represent, and the size of that restriction depends jointly on the bandwidth, the spatial scale of the abnormality and the measurement definition. The second concerns the estimation \emph{process}. Even with a representation rich enough to express a focal deficit, the optimiser or network may fail to recover it if the image evidence is weak or the penalty \(\alpha\mathcal R\) is strong. A third factor, the information actually present in the input images, is separate from both.
+-
+-Controlled tests can help distinguish these contributions, although they can coexist. Recovery after reducing a regularisation weight implicates the estimation process under that comparison; it does not establish that the input uniquely determines the motion. A representation test should fit the known displacement directly in the candidate function space, stating the norm, boundary conditions and sampling, and then measure error in both displacement and the specified strain or abnormality attribute. A small displacement approximation error need not imply a small derivative error. Re-imaging the same motion at finer resolution or with additional views can test sensitivity to input information, but also changes discretisation, optimisation and potentially the training domain. Such comparisons need matched controls, including retraining when a training-loss weight is changed. These are diagnostic experiments, not mutually exclusive causal assignments. \Cref{sec:threequestions} returns to their interpretation, and \cref{sec:resources} describes resources on which they could be performed.
++Where intramyocardial texture is weak, different fields may achieve nearly the same image agreement while implying different displacement gradients. The prior then helps select the estimated field; \cref{fig:same-contours} demonstrates the narrower case in which only masks constrain correspondence. Three factors require separate tests. Input information limits what can be identified from the images. Representation limits which fields the model can express. Estimation determines which admissible field the optimiser or network recovers. These factors can interact: a bandwidth restriction, for example, changes both representational capacity and optimisation, and displacement agreement does not guarantee agreement of its spatial derivatives.
++
++A direct fit to a known field probes the representation under a stated norm, sampling scheme and boundary treatment, with displacement and the target strain or abnormality attribute evaluated separately. Running the estimator on rendered images probes recovery under the combined image and estimation conditions. Changing regularisation, resolution or views can reveal sensitivity, but causal attribution needs matched controls and retraining when a training-loss weight changes. These experiments diagnose possible mechanisms rather than assigning errors to mutually exclusive causes. The interpretation of representation fitting is developed in \cref{sec:threequestions}, and the proposed programme specifies the additional optimisation checks needed before a failed fit can establish a capacity limit.
+ 
+ Temporal strategy adds a further assumption to the objective. Reference-to-frame tracking keeps one reference configuration and must therefore estimate large displacements from it; sequential tracking estimates smaller inter-frame steps and accumulates composition error and drift; groupwise methods estimate all phases jointly under whatever temporal constraint they impose~\cite{metz2011,chen2024}. None of these strategies guarantees correct intermediate phases, because a periodic deformation can close perfectly at the end of the cycle and still be wrong in between. Cycle closure is therefore a useful constraint and a useful quality-control signal, and no more than that.
+ 
+@@ -179,18 +177,13 @@
+ 
+ Deep-learning aligned strain also separates motion estimation from clinical classification. Its cine pipeline detects key phases, segments the myocardium and estimates deformation using image similarity, smoothness and mask agreement; LGE labels the downstream patient-level fibrosis classifier, not the displacement field. Development used 57 patients with Duchenne muscular dystrophy, followed by a same-centre temporal holdout of 82 patients. The classification target was the presence of at least one LGE-positive segment, rather than the spatial boundary of fibrosis~\cite{koehler2025alignedstrain}. In a different chamber and population, Bello and colleagues used right-ventricular motion to predict survival in 302 patients with chronic thromboembolic pulmonary hypertension. Internally bootstrap-corrected Harrell C indices were 0.75 for the learned model and 0.59 for a model using manually measured conventional volumetric and functional variables~\cite{bello2019}. Both studies provide clinically relevant discrimination evidence in their tested settings, without converting that evidence into dense motion accuracy or demonstrated treatment benefit.
+ 
+-\subsection{What the method record shows by year}\label{sec:method_record}
+-
+-Supplementary Table~S3 and \cref{fig:timeline} map selected studies and their reported endpoints. The entries include cine estimators, general registration precedents, tagging-analysis comparators, clinical prediction systems and an evaluation of an existing estimator. They are therefore neither independent cohorts nor a uniform sample of algorithms. Shape and landmark comparisons are common in the cardiac-specific designs, while synthetic motion, DENSE and tagging provide complementary tests in selected studies. Clinical labels add another form of evidence, as the DLSS and aligned-strain examples show. The map records positive endpoints at the available reading depth; an unclassified or unverified endpoint is not counted as an absent experiment. These distinctions, rather than a percentage of the field said to be validated, motivate the target-based synthesis that follows.
+-
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_3_method_timeline.pdf}}
+-\caption{Selected method and evaluation records by year (Supplementary Table~S3). One marker denotes a plotted entry, not an independent cohort or a unique algorithm. Related non-cine methods and separate evaluations are included. Colours identify one selected documented endpoint per entry; studies may report several endpoints. They do not rank validation strength. MPN includes model-generated imposed-motion tests, which are distinct from independent physiological references. ``Unverified/other task'' does not mean no validation. Source-specific reading depths and populations are documented in the figure data. The selective map is not a prevalence estimate for the field. Years 2001--2008, which have no selected entries, are compressed. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_3_method_timeline.pdf}}
++\caption{Selected method and evaluation records by year (Supplementary Table~S3). One marker denotes a plotted entry, not an independent cohort or a unique algorithm. Related non-cine methods and separate evaluations are included. Colours identify one selected documented endpoint per entry; studies may report several endpoints. They do not rank validation strength. MPN includes model-generated imposed-motion tests, which are distinct from independent physiological references. ``Endpoint not verified'' and ``other-task validation'' are separate categories, neither of which means that a study performed no validation. Source-specific reading depths and populations are documented in the figure data. The selective map is not a prevalence estimate for the field. Years 2001--2008, which have no selected entries, are compressed.}
+ \label{fig:timeline}
+ \end{figure}
+-\clearpage
++
+ 
+ \section{What the validation literature establishes}
+ 
+@@ -206,14 +199,13 @@
+ 
+ The generated domain also limits interpretation. The evaluation used one scar geometry and SNR 30, and myocardial texture was removed during image generation. TextNet and DeepStrain both used ACDC data: independence of the evaluating team does not establish independence of the image domain, although shared dataset use alone is not evidence of leakage. The inspected source does not identify the evaluated DeepStrain release or weights. The component-specific errors could reflect image formation, wall thinning and partial volume, training data or estimation constraints; the experiment does not isolate these contributions~\cite{mrxcat2023}.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_4_attribute_specific_recovery.pdf}}
+-\caption{Prescribed tissue strain and reported DeepStrain errors in MRXCAT2.0. (a) Remote-to-scar peak systolic strain: radial strain is markedly reduced (0.95 to 0.30), circumferential strain approaches zero (\(-0.18\) to 0.01), and longitudinal strain changes little (\(-0.18\) to \(-0.17\)); infarct-case EF is 49\%. Differences are arithmetic scar-minus-remote values. (b) Source-reported means and standard deviations: Ecc error \(0.02\pm0.04\), Err error \(-0.24\pm0.21\) across cases and \(-0.20\pm0.21\) in the infarct case. Source Figure~14 averages over three mid-ventricular short-axis slices. The all-case summary includes the infarct case; SD overlap does not establish equivalence, and no uniform case ranking is inferred. (c) The inspected results do not quantify scar-level magnitude, localisation, extent or peak-time error. Profile glyphs define attributes and are conceptual. Source values are retained~\cite{mrxcat2023}; this redraw is not a new experiment. The separate evaluating team and shared ACDC image domain are discussed in the text. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_4_attribute_specific_recovery.pdf}}
++\caption{Prescribed tissue strain and reported DeepStrain errors in MRXCAT2.0. (a) Remote-to-scar peak systolic strain: radial strain is markedly reduced (0.95 to 0.30), circumferential strain approaches zero (\(-0.18\) to 0.01), and longitudinal strain changes little (\(-0.18\) to \(-0.17\)); infarct-case EF is 49\%. Differences are arithmetic scar-minus-remote values. (b) Source-reported means and standard deviations: Ecc error \(0.02\pm0.04\), Err error \(-0.24\pm0.21\) across cases and \(-0.20\pm0.21\) in the infarct case. Source Figure~14 averages over three mid-ventricular short-axis slices. The all-case summary includes the infarct case; SD overlap does not establish equivalence, and no uniform case ranking is inferred. (c) The inspected results do not quantify scar-level magnitude, localisation, extent or peak-time error. Profile glyphs define attributes and are conceptual. Source values are retained~\cite{mrxcat2023}; this redraw is not a new experiment. The separate evaluating team and shared ACDC image domain are discussed in the text.}
+ \label{fig:attributes-mrxcat}
+ \end{figure}
+-\clearpage
++
+ 
+ Known-motion resources allow investigators to test representation capacity, recovery at a chosen signal-to-noise ratio and sensitivity to sampling or regularisation. Existing work has varied resolution~\cite{adams2023}, varied analysis regularisation~\cite{barbaroux2025}, or represented regional pathology in simulated motion~\cite{mrxcat2023,zhou2018straus}. These are useful precedents for the proposed validation programme. The surviving search records do not establish whether all combinations of graded lesion size, severity, transmurality and fixed-estimator evaluation have already been studied. Here, graded attribute recovery is proposed as a research priority, rather than justified by a claim of field-wide absence. Simulation results remain conditional on the anatomy, mechanics, image formation and pathology represented; paired in-vivo comparisons are needed to assess transfer.
+ 
+@@ -334,9 +326,9 @@
+ 
+ An uncertainty map can describe posterior dispersion, ensemble variability or sensitivity to perturbation. It becomes a clinically interpretable error estimate only after calibration against relevant reference errors. Quality control stands in the same relation to accuracy: it can detect image artefact, contour failure or field folding, and it cannot guarantee that an accepted case has accurate regional strain. Methods should therefore report the observable signal used by a quality rule, its coverage, and error among accepted and rejected cases. A selective or abstaining workflow is appropriate only when such a rule is actually implemented, and it should not be imposed as a rhetorical requirement on every estimator. The consolidated mapping from validation target to supported claim is provided in Supplementary Note~2.
+ 
+-\section{A validation programme for regional or focal claims}
+-
+-A persuasive evaluation should narrow from controlled capacity to clinical relevance while keeping the measurement contract fixed. Its objective is to match the strength of the claim to the evidence provided, which does not require every possible experiment from every paper. \Cref{fig:evaluation}b shows the resulting evaluation flow, and the subsections below describe its stages.
++\section{A proposed validation programme for regional or focal claims}
++
++A proposed evaluation programme should combine controlled tests, material-sensitive comparisons and clinical endpoints around an explicit measurement contract. Its objective is to match the strength of the claim to the evidence provided, which does not require every possible experiment from every paper. \Cref{fig:evaluation}b shows the resulting evaluation flow, and the subsections below describe its stages.
+ 
+ \subsection{Pre-specify the measurement contract}
+ 
+@@ -346,13 +338,13 @@
+ 
+ \subsection{Stage 1: challenge representation and sampling with known motion}
+ 
+-Known-motion experiments should vary one factor at a time and then test interactions: abnormality width, transmural extent, amplitude, onset/peak timing, position, wall thickness, through-plane motion, temporal resolution, spatial resolution, contrast, noise and artefact. The known field should first be fitted in the candidate representation under an explicit norm, sampling scheme and boundary treatment. Both displacement error and error in the chosen strain or abnormality attribute should be reported. Running the estimator on rendered images then measures recovery under the combined image and estimation conditions; the difference between these tests is informative but is not automatically an additive or uniquely attributable optimisation error.
++Known-motion experiments should vary one factor at a time and then test interactions: abnormality width, transmural extent, amplitude, onset/peak timing, position, wall thickness, through-plane motion, temporal resolution, spatial resolution, contrast, noise and artefact. The known field should first be fitted in the candidate representation under an explicit norm, sampling scheme and boundary treatment. The fitting objective must match the target: minimising displacement error need not minimise strain-gradient or focal-attribute error. A failed numerical fit alone does not establish a representation limit. Such a conclusion requires an analytic restriction, a certified approximation bound, or convincing evidence that the best attainable fit was reached; otherwise optimisation remains an alternative explanation. Both displacement error and error in the chosen strain or abnormality attribute should be reported. Running the estimator on rendered images then measures recovery under the combined image and estimation conditions; the difference between these tests is informative but is not automatically an additive or uniquely attributable optimisation error.
+ 
+ An equal-mean counterexample is particularly useful at this stage (\cref{fig:evaluation}c). Two fields can have the same global strain while one contains a focal abnormality. Recovery of their mean is then no evidence of success; the method must distinguish their location and extent within pre-specified tolerances. Such tests show whether apparent global success masks spatial redistribution.
+ 
+ \subsection{Stage 2: use paired material-sensitive in-vivo acquisitions}
+ 
+-The next stage should pair routine cine with tagging or DENSE in the same session and align acquisitions carefully. Reference processing should be blinded to cine outputs where feasible. Registration between acquisitions, slice mismatch and temporal alignment should be quantified. Analyses should report results separately for healthy myocardium and relevant disease patterns, including scar location, wall thickness and image quality. External centres and scanners test transfer only if participants and acquisition conditions are genuinely independent of training and model selection.
++The material-sensitive comparison should pair routine cine with tagging or DENSE in the same session and align acquisitions carefully. Reference processing should be blinded to cine outputs where feasible. Registration between acquisitions, slice mismatch and temporal alignment should be quantified. Analyses should report results separately for healthy myocardium and relevant disease patterns, including scar location, wall thickness and image quality. External centres and scanners test transfer only if participants and acquisition conditions are genuinely independent of training and model selection.
+ 
+ No material-sensitive reference is perfect, so this stage also needs a sensitivity analysis. Varying reference smoothing, registration and segmentation estimates how much apparent cine error is attributable to the comparator. Where tagging and DENSE disagree, the disagreement should be reported; choosing the more favourable reference would hide it.
+ 
+@@ -360,14 +352,13 @@
+ 
+ Tissue characterisation, expert wall-motion scores and outcomes become valuable after the technical claim is clear. LGE can test whether a regional measurement captures scar-associated dysfunction; perfusion or mapping can address other substrates. Longitudinal studies can test responsiveness and minimal detectable change. Decision studies should specify what action changes, how false-positive and false-negative regional calls matter, and whether the regional measurement adds information beyond volumes, LGE and clinical covariates.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_5_validation_targets_programme.pdf}}
+-\caption{What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, the strongest claim each supports, and what each leaves open on its own. (b) Pre-specification followed by three stages, with the resources reviewed in \cref{tab:resources} placed at the stage they can serve; counts denote resource units and are not counts of independent test participants. (c) Two fields with an equal global strain of \(-0.18\) and different regional content (segment values \(-0.22\), \(-0.22\), \(-0.06\), \(-0.18\), \(-0.20\) and \(-0.20\) against a uniform \(-0.18\)): recovering the mean is no evidence of regional recovery. Conceptual synthesis; no study data. Programmatic schematic or numerical redraw; sources and preparation are stated in the declarations. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_5_validation_targets_programme.pdf}}
++\caption{What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, a direct claim each supports, and what each leaves open on its own. (b) A proposed programme of complementary tests, with the resources reviewed in \cref{tab:resources} placed alongside tests they can serve; counts denote resource units and are not counts of independent test participants. (c) Two fields with an equal global strain of \(-0.18\) and different regional content (segment values \(-0.22\), \(-0.22\), \(-0.06\), \(-0.18\), \(-0.20\) and \(-0.20\) against a uniform \(-0.18\)): recovering the mean is no evidence of regional recovery. Conceptual synthesis; no study data.}
+ \label{fig:evaluation}
+ \end{figure}
+-\clearpage
++
+ 
+ \subsection{Validation resources answer different parts of the question}\label{sec:resources}
+ 
+@@ -381,6 +372,7 @@
+ 
+ Large multi-centre resources such as CMRxRecon2025 remain useful for reconstruction robustness and disease representation. Its official description covers multiple centres, scanners, disease groups and CMR contrasts, and it does not establish tagging/DENSE motion labels or a fully paired cine--LGE cohort~\cite{cmrxrecon2025official}. The same limit applies to segmentation collections and the Data Science Bowl: containing cine images does not make a collection a regional-motion reference. Detailed access, pairing, scale and uncertainty fields are provided in Supplementary Table~S2 and the editable resource table.
+ 
++\Needspace{100mm}
+ {\scriptsize\sloppy
+ \setlength{\tabcolsep}{2pt}
+ \begin{longtable}{L{0.12\textwidth}L{0.14\textwidth}L{0.18\textwidth}L{0.16\textwidth}L{0.20\textwidth}}
+--- 22557325_final/supplement.tex
++++ integrated/supplement.tex
+@@ -9,6 +9,11 @@
+ \usepackage{amsmath,bm}
+ \usepackage{booktabs,longtable,tabularx,array,ragged2e}
+ \usepackage{graphicx}
++\usepackage[section]{placeins}
++\renewcommand{\topfraction}{0.95}
++\renewcommand{\bottomfraction}{0.85}
++\renewcommand{\textfraction}{0.05}
++\renewcommand{\floatpagefraction}{0.6}
+ \graphicspath{{figures/}}
+ \usepackage{caption,float,enumitem,xcolor}
+ \captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified,singlelinecheck=false}
+@@ -48,7 +53,7 @@
+ 
+ \paragraph{Reading depth and unresolved detail.} The inherited 135-row claim ledger labels 75 entries full text, 56 abstract and 4 official record. It covers 69 citation keys, which do not match the complete current 94-reference set; many locators refer to source files absent from this package. Those labels are retained as historical provenance, not current verification. The updated claim and coverage tables distinguish inspected full-text sections, abstracts, metadata, official records, inherited extraction and failed access. Supplementary Table~\ref{tab:s3-methods} preserves method-specific summaries at those available depths. NV denotes detail not verified by this review, rather than a claim that the source did not report it. A bibliographic-only entry is not assigned a validation result.
+ 
+-\paragraph{Software assistance.} The supplied history attributes search and drafting assistance to OpenAI Codex and Claude Code (Anthropic). The present revision used OpenAI Codex 0.162.1 (GPT-6 Astra, High reasoning) for primary-source retrieval, evidence-grounded editing, table and figure correction, compilation and quality checks. An earlier fresh-context AI source review was followed by the finaliser's same-context targeted recheck of modified claims. The latter is not a new independent review; neither procedure is duplicate human screening or independent clinical review. Author verification and responsibility remain pending, as stated in the main declarations.
++\paragraph{Software assistance.} The supplied history attributes search and drafting assistance to OpenAI Codex and Claude Code (Anthropic). The present integration used OpenAI Codex to compare the three review jobs, check selected primary-source passages, reconcile the latest figure package and compile the manuscript. An earlier fresh-context AI review evaluated an intermediate draft; subsequent targeted rechecks and this integration are not independent human screening or clinical review. Figure sources were edited programmatically and rendered with headless Chromium; Tectonic compiled the multi-file document. Author verification and responsibility remain pending, as stated in the main declarations.
+ 
+ \section*{Supplementary Note 1: strain definitions and comparison traps}
+ 
+@@ -66,14 +71,13 @@
+ 
+ Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve, \(\min_t E_s(t)\) is generally not equal to the spatial average of pointwise minima. ``End-systolic'', ``peak systolic'' and ``peak over the whole cardiac cycle'' may diverge in dyssynchrony or post-systolic shortening. A reproducible comparison must fix the order of differentiation, projection, spatial averaging and temporal peak selection. Supplementary Figure~\ref{fig:supp-definitions} illustrates these four traps.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_S1_strain_definition_traps.pdf}}
+-\caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\); the table converts five values. (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes, with the choices a report must state. (c) One segmental curve read as peak systolic (\(-0.17\)), end-systolic (\(-0.14\)) and post-systolic peak (\(-0.21\)). (d) The minimum of a segment-mean curve (\(-0.10\)) differs from the mean of pointwise minima (\(-0.20\)). Conceptual and analytic schematics with no measured scale; printed values are computed from the drawn curves. Programmatic schematic or numerical redraw; sources and preparation are stated in the declarations. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S1_strain_definition_traps.pdf}}
++\caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\); the table converts five values. (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes, with the choices a report must state. (c) One segmental curve read as peak systolic (\(-0.17\)), end-systolic (\(-0.14\)) and post-systolic peak (\(-0.21\)). (d) The minimum of a segment-mean curve (\(-0.10\)) differs from the mean of pointwise minima (\(-0.20\)). Conceptual and analytic schematics with no measured scale; printed values are computed from the drawn curves.}
+ \label{fig:supp-definitions}
+ \end{figure}
+-\clearpage
++
+ 
+ \section*{Supplementary Note 2: validation targets}
+ 
+@@ -87,14 +91,13 @@
+ 
+ The distinct spatial, temporal and field-validity failure modes are illustrated in Supplementary Figure~\ref{fig:supp-errors}.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_S2_error_attributes_mapping_validity.pdf}}
+-\caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. In a, and again in b, every estimate has the same root-mean-square error against its reference (0.17 and 0.16), so a single mean-squared error cannot tell these failures apart. (c) A smooth invertible mapping (minimum \(\det J=0.81\)), which can still be wrong, and a folded mapping with \(\det J\le 0\) in 5 of 121 outlined cells (minimum \(-1.13\)). Prescribed schematics with no measured scale. Programmatic schematic or numerical redraw; sources and preparation are stated in the declarations. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S2_error_attributes_mapping_validity.pdf}}
++\caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. In a, and again in b, every estimate has the same root-mean-square error against its reference (0.17 and 0.16), so a single mean-squared error cannot tell these failures apart. (c) A smooth invertible mapping (minimum \(\det J=0.81\)), which can still be wrong, and a folded mapping with \(\det J\le 0\) in 5 of 121 outlined cells (minimum \(-1.13\)). Prescribed schematics with no measured scale.}
+ \label{fig:supp-errors}
+ \end{figure}
+-\clearpage
++
+ 
+ Let a prescribed abnormality field be \(g_{\mathrm{ref}}(\vect x,t)\) and an estimate be \(g_{\mathrm{est}}(\vect x,t)\). A single mean-squared error can conceal clinically different failures. Attribute-specific losses may include:
+ \begin{itemize}
+@@ -115,14 +118,13 @@
+ 
+ Supplementary Figure~\ref{fig:supp-controls} shows the two control points and their shared held-out evaluation contract.
+ 
+-\clearpage
+-\begin{figure}[p]
++\begin{figure}[htbp]
+ \centering
+-\makebox[\textwidth][c]{\includegraphics[width=190mm]{revision/Figure_S3_training_vs_inference_controls.pdf}}
+-\caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic. Programmatic schematic or numerical redraw; sources and preparation are stated in the declarations. Code revision used OpenAI Codex 0.162.1 (GPT-6 Astra); see declarations.}
++\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S3_training_vs_inference_controls.pdf}}
++\caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic.}
+ \label{fig:supp-controls}
+ \end{figure}
+-\clearpage
++
+ 
+ \section*{Supplementary Note 5: pre-specified evaluation template}
+ 
+@@ -185,6 +187,7 @@
+ }
+ 
+ \setcounter{table}{0}
++\renewcommand{\theHtable}{supplement-numbered.\arabic{table}}
+ \section*{Supplementary Table S1: empirical validation contracts}
+ 
+ {\scriptsize\sloppy
+--- 22557325_final/scripts/build_manuscript.sh
++++ integrated/scripts/build_manuscript.sh
+@@ -19,6 +19,10 @@
+   local source="$1"
+   local target_dir="$2"
+   local job="${source%.tex}"
++  if command -v tectonic >/dev/null 2>&1; then
++    tectonic --keep-logs --keep-intermediates --outdir "${target_dir}" "${source}"
++    return
++  fi
+   pdflatex -interaction=nonstopmode -halt-on-error -file-line-error \
+     -output-directory="${target_dir}" "${source}"
+   (
+@@ -34,8 +38,8 @@
+ build_one main.tex "${output_root}/main"
+ build_one supplement.tex "${output_root}/supplement"
+ 
+-cp "${output_root}/main/main.pdf" "${output_root}/v81_main.pdf"
+-cp "${output_root}/supplement/supplement.pdf" "${output_root}/v81_supplement.pdf"
++cp "${output_root}/main/main.pdf" "${output_root}/cine_cmr_final_integrated_20261011_main.pdf"
++cp "${output_root}/supplement/supplement.pdf" "${output_root}/cine_cmr_final_integrated_20261011_supplement.pdf"
+ 
+-echo "Built ${output_root}/v81_main.pdf"
+-echo "Built ${output_root}/v81_supplement.pdf"
++echo "Built ${output_root}/cine_cmr_final_integrated_20261011_main.pdf"
++echo "Built ${output_root}/cine_cmr_final_integrated_20261011_supplement.pdf"

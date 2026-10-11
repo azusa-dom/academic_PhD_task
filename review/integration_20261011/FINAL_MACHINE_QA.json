@@ -1,0 +1,585 @@
+{
+  "main": {
+    "pages": 36,
+    "labels": {
+      "fig:image-to-report": 5,
+      "fig:same-contours": 6,
+      "tab:families": 7,
+      "fig:timeline": 14,
+      "fig:attributes-mrxcat": 16,
+      "tab:evidence": 18,
+      "tab:attributes": 19,
+      "fig:evaluation": 24,
+      "tab:resources": 26
+    },
+    "page_checks": [
+      {
+        "page": 1,
+        "characters": 2827,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 2,
+        "characters": 3780,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 3,
+        "characters": 3670,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 4,
+        "characters": 3501,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 5,
+        "characters": 4183,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:image-to-report"
+        ],
+        "figure_min_nominal_size_pt": 6.458
+      },
+      {
+        "page": 6,
+        "characters": 2844,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:same-contours"
+        ],
+        "figure_min_nominal_size_pt": 6.188
+      },
+      {
+        "page": 7,
+        "characters": 3291,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 8,
+        "characters": 4053,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 9,
+        "characters": 4208,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 10,
+        "characters": 4225,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 11,
+        "characters": 4119,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 12,
+        "characters": 4183,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 13,
+        "characters": 4362,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 14,
+        "characters": 2335,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:timeline"
+        ],
+        "figure_min_nominal_size_pt": 7.065
+      },
+      {
+        "page": 15,
+        "characters": 4102,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 16,
+        "characters": 2058,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:attributes-mrxcat"
+        ],
+        "figure_min_nominal_size_pt": 7.065
+      },
+      {
+        "page": 17,
+        "characters": 3737,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 18,
+        "characters": 2624,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 19,
+        "characters": 2773,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 20,
+        "characters": 3420,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 21,
+        "characters": 3604,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 22,
+        "characters": 3515,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 23,
+        "characters": 3869,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 24,
+        "characters": 2354,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:evaluation"
+        ],
+        "figure_min_nominal_size_pt": 7.065
+      },
+      {
+        "page": 25,
+        "characters": 3419,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 26,
+        "characters": 3671,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 27,
+        "characters": 4042,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 28,
+        "characters": 3042,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 29,
+        "characters": 3425,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 30,
+        "characters": 3522,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 31,
+        "characters": 3417,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 32,
+        "characters": 3517,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 33,
+        "characters": 3441,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 34,
+        "characters": 3459,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 35,
+        "characters": 3597,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 36,
+        "characters": 2446,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      }
+    ],
+    "sha256": "7cba97e8c44d063effcde241f41a54655e53b25d7d5184089daa5704392c2fc1",
+    "layout_reference_failures": [],
+    "named_destinations": 179
+  },
+  "supplement": {
+    "pages": 20,
+    "labels": {
+      "fig:supp-definitions": 3,
+      "fig:supp-errors": 4,
+      "fig:supp-controls": 5,
+      "tab:s3-methods": 10
+    },
+    "page_checks": [
+      {
+        "page": 1,
+        "characters": 2916,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 2,
+        "characters": 3302,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 3,
+        "characters": 3098,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:supp-definitions"
+        ],
+        "figure_min_nominal_size_pt": 6.728
+      },
+      {
+        "page": 4,
+        "characters": 2286,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:supp-errors"
+        ],
+        "figure_min_nominal_size_pt": 7.065
+      },
+      {
+        "page": 5,
+        "characters": 3241,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [
+          "fig:supp-controls"
+        ],
+        "figure_min_nominal_size_pt": 7.065
+      },
+      {
+        "page": 6,
+        "characters": 2654,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 7,
+        "characters": 3091,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 8,
+        "characters": 3572,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 9,
+        "characters": 3584,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 10,
+        "characters": 3520,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 11,
+        "characters": 3321,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 12,
+        "characters": 3480,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 13,
+        "characters": 3570,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 14,
+        "characters": 3390,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 15,
+        "characters": 3216,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 16,
+        "characters": 3262,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 17,
+        "characters": 3256,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 18,
+        "characters": 3102,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 19,
+        "characters": 2964,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      },
+      {
+        "page": 20,
+        "characters": 3115,
+        "unresolved_reference": false,
+        "outside_page": 0,
+        "figure_labels": [],
+        "figure_min_nominal_size_pt": null
+      }
+    ],
+    "sha256": "ded217e512c9da6266fdfa13e20837041de63e7ee6bc95f6ea9a91f227395392",
+    "layout_reference_failures": [],
+    "named_destinations": 132
+  },
+  "figures": [
+    {
+      "file": "Figure_1_two_track_evidence_map.pdf",
+      "width_mm": 190.0,
+      "height_mm": 177.65,
+      "min_nominal_font_pt": 6.457,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_2_same_contours_analytic.pdf",
+      "width_mm": 190.0,
+      "height_mm": 66.975,
+      "min_nominal_font_pt": 6.187,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_3_method_timeline.pdf",
+      "width_mm": 190.0,
+      "height_mm": 207.219,
+      "min_nominal_font_pt": 7.065,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_4_attribute_specific_recovery.pdf",
+      "width_mm": 190.0,
+      "height_mm": 109.725,
+      "min_nominal_font_pt": 7.065,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_5_validation_targets_programme.pdf",
+      "width_mm": 190.0,
+      "height_mm": 143.688,
+      "min_nominal_font_pt": 7.065,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_S1_strain_definition_traps.pdf",
+      "width_mm": 190.0,
+      "height_mm": 123.5,
+      "min_nominal_font_pt": 6.727,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_S2_error_attributes_mapping_validity.pdf",
+      "width_mm": 190.0,
+      "height_mm": 113.525,
+      "min_nominal_font_pt": 7.065,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Figure_S3_training_vs_inference_controls.pdf",
+      "width_mm": 190.0,
+      "height_mm": 76.475,
+      "min_nominal_font_pt": 7.065,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    },
+    {
+      "file": "Graphical_abstract.pdf",
+      "width_mm": 260.0,
+      "height_mm": 100.0,
+      "min_nominal_font_pt": 7.935,
+      "outside_page_chars": 0,
+      "interpretation": "Main labels source-audited at >=7pt; smaller values are mathematical subscripts. Rotated text uses nominal font height, not character advance."
+    }
+  ],
+  "figure3": {
+    "entries": 49,
+    "endpoint_categories": {
+      "mask": 20,
+      "material": 16,
+      "label": 8,
+      "nr": 3,
+      "other": 1,
+      "focal": 1
+    }
+  },
+  "unique_citekeys": 94
+}

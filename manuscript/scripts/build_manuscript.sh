@@ -19,6 +19,10 @@ build_one() {
   local source="$1"
   local target_dir="$2"
   local job="${source%.tex}"
+  if command -v tectonic >/dev/null 2>&1; then
+    tectonic --keep-logs --keep-intermediates --outdir "${target_dir}" "${source}"
+    return
+  fi
   pdflatex -interaction=nonstopmode -halt-on-error -file-line-error \
     -output-directory="${target_dir}" "${source}"
   (
@@ -34,8 +38,8 @@ build_one() {
 build_one main.tex "${output_root}/main"
 build_one supplement.tex "${output_root}/supplement"
 
-cp "${output_root}/main/main.pdf" "${output_root}/v81_main.pdf"
-cp "${output_root}/supplement/supplement.pdf" "${output_root}/v81_supplement.pdf"
+cp "${output_root}/main/main.pdf" "${output_root}/cine_cmr_final_integrated_20261011_main.pdf"
+cp "${output_root}/supplement/supplement.pdf" "${output_root}/cine_cmr_final_integrated_20261011_supplement.pdf"
 
-echo "Built ${output_root}/v81_main.pdf"
-echo "Built ${output_root}/v81_supplement.pdf"
+echo "Built ${output_root}/cine_cmr_final_integrated_20261011_main.pdf"
+echo "Built ${output_root}/cine_cmr_final_integrated_20261011_supplement.pdf"

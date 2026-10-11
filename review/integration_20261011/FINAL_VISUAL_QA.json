@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-11",
+  "passed": true,
+  "reviewer": "Codex visual inspection; not independent human review",
+  "pdf_sha256": {
+    "main": "7cba97e8c44d063effcde241f41a54655e53b25d7d5184089daa5704392c2fc1",
+    "supplement": "ded217e512c9da6266fdfa13e20837041de63e7ee6bc95f6ea9a91f227395392"
+  },
+  "scope": {
+    "overview_pages": {
+      "main": 36,
+      "supplement": 20
+    },
+    "overview_artifacts": [
+      "main_final_contact_1.png",
+      "main_final_contact_2.png",
+      "main_final_contact_3.png",
+      "supplement_final_contact_1.png",
+      "supplement_final_contact_2.png"
+    ],
+    "detailed_pages": {
+      "main": [
+        5,
+        14,
+        24,
+        26
+      ],
+      "supplement": [
+        5,
+        12
+      ]
+    },
+    "figures": "All nine integrated figure renders were inspected during integration; final main/supplement placements and selected detailed pages were rechecked after the final build."
+  },
+  "findings": {
+    "observed_clipping": false,
+    "observed_overlap": false,
+    "observed_missing_glyphs": false,
+    "table4_fragmentation_resolved": true,
+    "figure5_bottom_clipping_resolved": true,
+    "font_embedding": {
+      "main": {
+        "font_rows": 71,
+        "all_embedded": true
+      },
+      "supplement": {
+        "font_rows": 37,
+        "all_embedded": true
+      }
+    }
+  },
+  "limits": [
+    "Overview contact sheets verify gross layout; they are not evidence of full scientific verification of every sentence.",
+    "Ordinary figure labels are approximately 7.06 pt or larger at 190 mm placement; mathematical subscripts are approximately 6.19-6.73 pt.",
+    "No independent human review or journal compliance certification is implied."
+  ]
+}

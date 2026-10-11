@@ -201,7 +201,7 @@ for i, (key, text) in enumerate(EVIDENCE):
     fig.text(BX + n * SCALE + 6, yy, str(n), T.SMALL + 0.5, 700)
 fig.line(BX, B_TOP + 36, BX, B_TOP + 48 + 5 * 19 + 4, C.INK, 0.9)
 fy = B_TOP + 48 + len(EVIDENCE) * 19 + 6
-fig.text(20, fy, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator", "† preprint (MSc thesis)",
+fig.text(20, fy, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator",
                                   "‡ workshop paper or no abstract retrieved", "§ rat model"]), T.SMALL, fill=C.MUTED)
 
 export(fig, "Figure_3_method_timeline")

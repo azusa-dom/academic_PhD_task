@@ -50,7 +50,7 @@ Nothing in this checklist is marked as approved on the author's behalf.
 - [ ] Re-read §3.1–3.7 and Supplementary Table S3: every method description and number was restored from v8.1 or adopted from the Codex draft at the reading depth stated; confirm against the sources you have read.
 - [ ] Confirm the MRXCAT2.0/DeepStrain wording in §4.1, Tables 2–3, §5.3, §9 and the abstract: the errors are case- and slice-averaged, not scar-region errors.
 - [ ] Confirm the Jahromi 2026 equivalence statement (margin 3.5%, TOST, endocardial Ecc, one-slice cine versus two-slice DENSE); the mean difference was not extracted here.
-- [ ] Confirm the Brandt 2024 timing sentence (42 participants; global/segmental time to peak; abstract level).
+- [ ] Brandt 2024 was re-read at full text on 12 October: 42 enrolled, 30 in the circumferential tagging–FT comparison, ICC 0.82 global and 0.74 septal/lateral; confirm the rewritten §4.2 sentence against your copy.
 - [ ] Decide whether to keep the abstract-level 2009–2016 and 2023–2026 entries adopted from the Codex draft (early feature tracking, optical flow, Laplace mapping, data assimilation, bidirectional registration, SegMorph, IG-BiReg).
 - [ ] Decide between the retained v9 title/framing (regional-fidelity measurement question) and the Codex framing (algorithm methods review); the current manuscript keeps the former.
 - [ ] Unify the Wehner 2018 bias unit (% versus percentage points) across text, Table 2 and Table S1.
@@ -60,3 +60,7 @@ Nothing in this checklist is marked as approved on the author's behalf.
 - [ ] Figure 1 (two-track evidence map) is a poster-scale canvas: minimum rendered text is about 2.4 pt at the 160 mm text width. Decide whether to re-lay it out for the journal width (fewer panels or two figures) before submission; the in-figure title and footer also differ from the other figures.
 - [ ] Confirm the revised scar wording in §4.1 and the Figure 4 caption (radial 0.95 to 0.30, circumferential near zero, longitudinal unchanged) against the MRXCAT2.0 paper.
 - [ ] Verify every number printed inside Figure 1 panels b, d and e (for example the DENSE, tagging and feature-tracking agreement values, the seven-study coverage matrix and the 48-entry evidence counts) against Tables 2 and 3 and Supplementary Table S3; the figure was drawn in a separate session and these values were not re-checked here.
+- [ ] STRAUS: confirm from Zhou 2018 (IEEE TMI) Methods that the 18 virtual patients come from 3 volunteer templates × 6 functional states and that the regional curves use engineering strain; neither the CSF3 audit nor the 12 October second review could access the full text (the v9 ledger records a full-text reading). If you cannot confirm, replace with the bounded wording in review/second_review_20261012/proposed_changes.md.
+- [ ] REGAIN, DLSS, Koehler 2025 and DENT were re-checked only at abstract level on 12 October (no PMC full text); confirm the REGAIN limits of agreement (−7 to 6, −2 to 3, −3 to 3 percentage points) and the DLSS 86%/85% figures against the RSNA full texts.
+- [ ] StrainNet: obtain the full text and Appendix S1 to confirm the strain-tensor definition (the manuscript now says Lagrangian strain with the implementation unverified) and the Table 2 versus Figure 5 limits of agreement.
+

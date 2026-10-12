@@ -1,0 +1,38 @@
+citation_key,version_accessed,access_type,sections_or_items_read,not_read_or_limit,access_failure
+chen2024,"PMC11619273 (BMC Med Imaging 2024, 10.1186/s12880-024-01519-7)",Full text XML,"Abstract; Methods (patient dataset, baselines); Results (ACDC, late-diastole, patient)",Table 3 numbers not transcribed,none
+brandt2024,Author PDF via Pie Medical Imaging (NMR Biomed 2024;37:e5164),"Full text PDF, 17 pages",Methods 2.1-2.5; Results p7; Fig. 5 ICC text,Figure pixels not inspected,none
+gao2014cine,"Author PDF, University of Glasgow (Phys Med Biol 2014;59:3637)","Full text PDF, 21 pages",Abstract; Methods 2.1-2.5; Results 3.1-3.2 passages; Discussion passage on MI vs non-MI regions,Figures not inspected,none
+movahed2026cardiomorphnet,arXiv 2508.20734v2 author version; PubMed 42242080 abstract,"Author PDF, 8 pages; PubMed abstract","Abstract; loss definitions (ELBO, Lrec)",Not the publisher version of record,none
+meng2024deepmesh,PMC7615801 (IEEE TMI author manuscript),Full text XML,Abstract; Methods on differentiable rasterizer and 2D ground-truth segmentations,-,none
+militaru2021,PMC8117295 (JCMR 2021),Full text XML,Abstract; Results GRS and regional agreement paragraphs,Fig. 5c pixels not inspected,none
+cao2018,PMC5907464 (JCMR 2018),Full text XML,Results; Table 3; Fig. 3 caption,-,none
+wehner2018,PMC6136226 (JCMR 2018),Full text XML,Abstract,Methods/Results already verified in the prior round of this repository (review/22),none
+bell2025strain8,PMC12671395 (Eur Heart J Imaging Methods Pract 2025),Full text XML,Methods statistics (CoV categories); results table (CoV CIs); Discussion (11.2%),2D echo GCS/GRS statement not located,none
+vornehm2024cinevn,PMC11518642 (MRM 2024 author manuscript),Full text XML,Abstract; Methods 2.2.2; Discussion on under/overestimation,Fig. 5 pixels not inspected; pooling of protocols not checked,none
+grob2025interp,PMC11880142,Full text XML,"Abstract; Methods dataset inclusion (19 patients, 51 acquisitions)",-,none
+chen2022transmorph,PMC9999483,Full text XML,Abstract; contributions paragraph (appearance uncertainty),-,none
+kihlberg2020clinical,PMC7720468,Full text XML,Abstract (116 patients; AUC 0.87/0.83/0.66; sensitivity 82/71%),-,none
+bello2019,PMC6382062,Full text XML,Abstract; Results (C 0.75 vs 0.59; bootstrapped internal validation),-,none
+tsuneta2025dlr,PMC12772260,Full text XML,Abstract (10 healthy volunteers),-,none
+fu2026cinema,PMC13396196,Full text XML,Abstract; exploratory analyses (survival),-,none
+jacob2025cmrfm,PMC12745146,Full text XML,Table 1 task list and in/out-of-distribution marks,-,none
+morales2021,PMC8446607 (Front Cardiovasc Med 2021),Full text XML,Experiments (synthetic AEPE 1.20 px; CMAC 15 healthy; MEVIS strain reference); Results,Figure pixels not inspected,none
+mrxcat2023,PMC10116689 (JCMR 2023),Full text XML,Fig. 14 caption; Results on DeepStrain,Temporal aggregation not stated in the text read,none
+wang2023strainnet,PMC10316292 abstract only; PubMed,Abstract,"Abstract (305 participants; EPE 0.75 +/- 0.35 mm; ICC 0.87/0.72, 0.75/0.48)",Full text and appendix not available via PMC; table/figure values rely on prior audit,access limit
+morales2024dent,PubMed 38722232,Abstract,"Abstract (5840 patients, nine centres; training/testing at three centres; 49 + 12 prospective; noninferiority margin 10%)",Full text not accessible via PMC XML,access limit
+yoon2023regain,PubMed 37249435,Abstract,Abstract (1616 trained; 181 evaluated),Full text and Fig. 4 not accessible,access limit
+masutani2023dlss,PubMed 37404797,Abstract,Abstract (223 examinations; 846 segments/53 patients; 86%/85% at 30%),Full text not accessible,access limit
+koehler2025alignedstrain,PubMed 40008976,Abstract,Abstract (139 DMD; 57 evaluation; 82 reproducibility),Full text not accessible,access limit
+chadalavada2024,PubMed 39111972,Abstract,"Abstract (UK Biobank, 45,700 participants)",-,none
+zhou2018straus,PubMed 28574344; official STRAUS page,Abstract; resource page,"Abstract (18 virtual patients; E/M model; template images); page (18 patients, 90 sequences, 2700 volumes)",Full text (IEEE) not accessible; 3 x 6 construction and strain convention not re-verified,access limit
+goetze2026,PubMed 40884734,Abstract,Abstract,-,none
+elnakib2015laplace,PubMed 25542202,Abstract,Abstract,Full text not accessible,access limit
+tuyisenge2016assimilation,PubMed 26372228,Abstract,Abstract (observation term; 47 patients; ICC > 0.8),Full text not accessible,access limit
+liu2026fe,PubMed 41547064,Abstract,Abstract,Full text not accessible,access limit
+jia2026fouriernetplus,PubMed 42154702,Abstract,Abstract (five datasets; parameter-free decoder; cascaded/diffeomorphic),Full text not accessible,access limit
+lei2025denserotation,PubMed 42626382,Abstract,Abstract,Full text not accessible,access limit
+arratia2023warppinn,PubMed 37598608,Abstract,Abstract (intensity similarity + hyperelastic regulariser; synthetic + 15 volunteers),Full text not read this round,access limit
+tobongomez2013cmac,PubMed 23708255,Abstract,"Abstract (0.77 mm phantom, 0.84 mm volunteers)",Challenge README not accessible,access limit
+jia2026igbireg,"Crossref-deposited abstract, 10.1088/1361-6560/aeb060",Abstract,Abstract,Full text (IOP) not accessed,access limit
+cmrxrecon2025official,cmrxrecon.github.io/2025/Data.html and Tasks.html,Web pages,Data page (diseases listed; 600 volunteers); Tasks page Regular Task 2 (disease information not disclosed),-,none
+vornehm2024cinevn (bib),Crossref 10.1002/mrm.30260,Metadata,published-online 2024-08-26,-,none

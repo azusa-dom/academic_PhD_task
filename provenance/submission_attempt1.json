@@ -1,0 +1,22 @@
+{
+  "job_id": "22636050",
+  "submitted_at_utc": "2026-10-11T21:29:46.842035+00:00",
+  "remote_project": "/mnt/iusers01/fatpou01/bmh01/f12147zh/codex-slurm/cine-citation-audit-20261011",
+  "manifest_files_verified": 141,
+  "preferred_model": "gpt-6-astra",
+  "permitted_fallback": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "resources": {
+    "partition": "serial",
+    "cpus": 1,
+    "memory": "4G",
+    "time_limit": "12:00:00"
+  },
+  "stages": [
+    "01_CORE",
+    "02_CORE_RECON",
+    "03_REMAINING",
+    "04_SYNTHESIS"
+  ],
+  "status": "submitted_not_completed"
+}

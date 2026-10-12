@@ -1,0 +1,48 @@
+label,citekeys,old_s3_line,proposed_s3_line,current_audit_depth,old_endpoint,proposed_endpoint,reason
+FFD,rueckert1999,268,270,rueckert1999:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+HARP,osman2000harp,270,272,osman2000harp:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+nD+t B-spline,metz2011,274,276,metz2011:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Puyol-Antón,puyolanton2018,284,286,puyolanton2018:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Vigneault,vigneault2017,282,284,vigneault2017:ABSTRACT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Anatomy-Aware,chen2020anatomy,286,288,chen2020anatomy:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Groupwise LLR,chen2024,288,290,chen2024:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+VoxelMorph,balakrishnan2019voxelmorph,291,293,balakrishnan2019voxelmorph:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+TransMorph,chen2022transmorph,293,295,chen2022transmorph:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Fourier-Net,jia2023fouriernet,295,297,jia2023fouriernet:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Fourier-Net+,jia2026fouriernetplus,297,299,jia2026fouriernetplus:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Joint motion+seg,qin2018joint,300,302,qin2018joint:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Apparent flow,zheng2019apparent,302,304,zheng2019apparent:SELECTED_FULLTEXT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+MPN,yu2020mpn,304,306,yu2020mpn:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+FOAL,yu2020foal,306,308,yu2020foal:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+MulViMotion,meng2022mulvimotion,308,310,meng2022mulvimotion:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DeepMesh,meng2024deepmesh,310,312,meng2024deepmesh:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+MCM,yin2025mcm,316,316,yin2025mcm:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+CMR FMs,"jacob2025cmrfm,fu2026cinema",330,330,jacob2025cmrfm:SELECTED_FULLTEXT;fu2026cinema:SELECTED_FULLTEXT,other,other,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Semi-sup. flow,portal2025semisup,326,326,portal2025semisup:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+CardioMorphNet,movahed2026cardiomorphnet,320,320,movahed2026cardiomorphnet:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Latent ODE,ruan2026latentode,322,322,ruan2026latentode:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+STCMT,qiao2026stcmt,324,324,qiao2026stcmt:ABSTRACT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Biomech prior,qin2023biomech,333,333,qin2023biomech:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+WarpPINN,arratia2023warppinn,335,335,arratia2023warppinn:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+WarpPINN-fibers,alvarez2026warppinn,337,337,alvarez2026warppinn:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Space-time FE,liu2026fe,341,339,liu2026fe:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Cine-only MI,xu2018,344,342,xu2018:ABSTRACT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Survival-sup.,bello2019,346,344,bello2019:SELECTED_FULLTEXT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DeepTag,ye2021deeptag,348,346,ye2021deeptag:SELECTED_FULLTEXT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DeepStrain,"morales2021,morales2022comparison",352,350,morales2021:SELECTED_FULLTEXT;morales2022comparison:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+MRXCAT2.0 test of DeepStrain,mrxcat2023,182;244,,mrxcat2023:SELECTED_FULLTEXT,focal,focal,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+StrainNet,wang2023strainnet,174;212;354,352,wang2023strainnet:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DL synthetic strain,masutani2023dlss,356,354,masutani2023dlss:SELECTED_FULLTEXT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+3D tagging nets,buoso2025tagging3d,350,348,buoso2025tagging3d:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DENSE-rotation,lei2025denserotation,358,356,lei2025denserotation:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+DL aligned strain,koehler2025alignedstrain,360,358,koehler2025alignedstrain:SELECTED_FULLTEXT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+MyoNet,an2026myonet,362,360,an2026myonet:SELECTED_FULLTEXT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Maret,"maret2009ft,hor2010ft,augustine2013ft",272,274,maret2009ft:ABSTRACT;hor2010ft:ABSTRACT;augustine2013ft:ABSTRACT,label,label,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Hor,"maret2009ft,hor2010ft,augustine2013ft",272,274,maret2009ft:ABSTRACT;hor2010ft:ABSTRACT;augustine2013ft:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Augustine,"maret2009ft,hor2010ft,augustine2013ft",272,274,maret2009ft:ABSTRACT;hor2010ft:ABSTRACT;augustine2013ft:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Laplace mapping,elnakib2015laplace,276,278,elnakib2015laplace:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Data assimilation,tuyisenge2016assimilation,278,280,tuyisenge2016assimilation:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Optical flow,wang2019opticalflow,280,282,wang2019opticalflow:ABSTRACT,material,material,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+Bidirectional reg.,lu2023bireg,312,314,lu2023bireg:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+SegMorph,bi2025segmorph,318,318,bi2025segmorph:ABSTRACT,mask,mask,源行按当前补表显式引用定位；历史阅读标注不可当独立认证。
+IG-BiReg,jia2026igbireg,328,328,jia2026igbireg:ABSTRACT,nr,mask,IG-BiReg出版摘要已获，mask/contour指标可核；不代表材料strain验证。

@@ -1,0 +1,11 @@
+{
+  "description": "Only Markdown navigation links changed in convenience copies; scientific prose and original_audit_delivery untouched.",
+  "files": [
+    "reports/03_逐条修改建议.md",
+    "reports/04_阅读深度与未核实事项.md",
+    "reports/05_复核与限制.md",
+    "reports/02_承重文献逐篇核对.md",
+    "reports/00_阅读导航.md",
+    "review/targeted_corrections.md"
+  ]
+}

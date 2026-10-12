@@ -1,0 +1,161 @@
+
+第一层：必须读相关章节全文
+1. StrainNet（Wang 2023，Radiol Cardiothorac Imaging，10.1148/ryct.220196）
+稿件依赖：§3.6 第二段（p12–13）整段；表 2 StrainNet 行（p19）；表 3 StrainNet 行（p20）；摘要第二段 "DENSE-supervised learning improved end-systolic cine--DENSE agreement, with residual individual differences and no external-dataset validation"；结论第一段 "StrainNet improved end-systolic cine--DENSE agreement over its tested conventional feature-tracking pipeline, while residual limits of agreement and internal validation constrain the inference"；图 1b（0.87 vs 0.72，0.75 vs 0.48）；补充 Note 4（p5）和表 S1 行及其后关于 LoA 口径不一致的一段（p8）。
+
+读：Methods 的 participants 与 data split；Results 的 displacement 评价与 strain 评价两小节及 Table 2；Discussion 的 limitations。
+
+对照：305 = 161 患者 + 99 健康成人 + 45 健康儿童/青少年；训练 243 人/670 sections，内部测试 62 人/190 sections；EPE 0.75 ± 0.35 mm 且输入为 DENSE 幅值图轮廓；cine 应变比较在 59 人；ICC 全局 0.87 vs 0.72，节段 0.75 vs 0.48；LoA 正文 −5.74 至 4.72、−9.16 至 8.07 百分点，而 Table 2 给 −0.51 ± 5.15（稿件 S1 下方那段专门说明这个不一致，请确认原文确实如此）；比较时相是 end-systolic 而非 peak；是否明确写了没有外部数据集验证。
+
+MRXCAT2.0 对 DeepStrain 的评价（Buoso 2023，JCMR，10.1186/s12968-023-00934-z）
+稿件依赖：§4.1 第 2–4 段（p16）；图 4 及图注（p17）；表 2 与表 3 的 MRXCAT 行；摘要 "A prescribed-scar evaluation of DeepStrain on MRXCAT2.0 reported component-specific errors averaged over whole slices"；结论第二段。
+读：Methods 末尾 "DeepStrain analysis"，Results 的 "Cardiac functional model" 与 "DeepStrain analysis"，Discussion 倒数第三段，Fig. 14。
+
+已核：EF 51/34/41/49%；远端(瘢痕) 径向 0.95(0.30)、纵向 −0.18(−0.17)、环向 −0.18(0.01)；Dice 0.82；位移误差 1.0 ± 0.9 mm；Ecc 误差 0.02 ± 0.04；Err −0.24 ± 0.21，梗死例 −0.20 ± 0.21；SNR 30；心肌纹理被移除；TextNet 与 DeepStrain 都源于 ACDC；瘢痕薄壁处 Dice 最低。未核：稿件说 "Figure 14 averages over three mid-ventricular short-axis slices"，这来自图注，正文文本里看不到，请你看 Fig. 14 确认。
+
+DeepStrain 原文与后续比较（Morales 2021，Front Cardiovasc Med，10.3389/fcvm.2021.730316；Morales 2023，JMRI，10.1002/jmri.28374）
+稿件依赖：§3.6 第一段（p12）"the original study reported a CMAC landmark end-point error of 2.9 ± 1.5 mm together with scan--rescan repeatability in ten healthy volunteers … A later single-centre comparison in 47 healthy participants and 533 patients found correlations with manual feature-tracking analysis of 0.83--0.85 for global radial and 0.88--0.91 for global circumferential strain"；表 S3 DeepStrain 行；补充 Note 4 首句。
+读：2021 文 Results 的 CMAC 评价与 repeatability；2023 文 Results 的相关系数表。
+
+对照：2.9 ± 1.5 mm 是否是 CMAC landmark 端点误差；重扫人数 10；47/533；r 的两个区间；比较对象是人工 FT。
+
+Militaru 2021（JCMR，10.1186/s12968-021-00742-3）
+稿件依赖：§4.2 第二段（p18）"compared three feature-tracking products with tagging in 61 participants. Global longitudinal and circumferential agreement was high, regional and radial agreement varied more, and scar discrimination differed by vendor"；表 2 行（p19）含 "global ICC 0.92--0.94 for LS and 0.88--0.91 for CS; global RS ICC 0.10--0.63 versus tagging and 0.10--0.81 between FT products"；表 3 行；图 1b 的 ICC 点；表 S1 行。
+读：Methods 的 population 与 strain analysis；Results 的 Fig. 5（尤其 5c）和 intervendor 表；LGE 判别结果。
+
+对照：61 = 18 健康 + 18 慢性心梗 + 15 DCM + 10 LV 肥厚；3 T；三个产品；16 节段 transmural；对 tagging 的全局 RS ICC 三个值 0.63、0.48、0.10（这是整合轮目检 Fig. 5c 得到的，我没有重核，是全稿里最需要你亲自看的一个数）；厂商间 RS ICC 0.10–0.81。
+
+Cao 2018（JCMR，10.1186/s12968-018-0448-9）
+稿件依赖：§4.2 第一段（p18）"A larger comparison of 77 patients with cardiomyopathy and ten controls found relatively small circumferential differences but wide radial differences across tagging, DENSE and three feature-tracking products"；表 2 行 "DENSE Ecc agreement with tagging ICC 0.778"；表 S1 行（95 招募、87 分析；bias 0.155 百分点；LoA −6.166 至 6.476）；图 1b 的 0.778；§5.2 引用。
+读：Methods 的 population 与 image planes；Results 的 ICC/Bland–Altman 表。
+
+对照：95/87/77/10；ICC 0.778 的比较双方是 DENSE 对 tagging；bias 与 LoA；三个 FT 产品；Err 一致性远差于 Ecc/Ell。
+
+Wehner 2018（JCMR，10.1186/s12968-018-0485-4）
+稿件依赖：§4.2 第一段（p18）"part of the apparent cine--DENSE discrepancy can arise from comparing different strain definitions, while still finding that regional tracking information cannot be inferred from contours alone"；表 2 行；表 3 行 "only mid-slice Ecc was judged acceptable by the study (coefficient of variation 11%, bias not significant)"；表 S1 行；补充 Note 1 末句；§2.1 末句引用。
+已核（本轮全文）：88 人、186 对切面、扭转/不同步子集 38 人；偏差以"绝对百分比"报告，即百分点，稿件表 2 与 S1 已改为 percentage points；中部 Ecc 偏差 −0.4、CoV 11%；基底 −4.0、CoV 18%；心尖 −2.4、CoV 15%；Ell −0.2、CoV 19%；不同步 26 ms、CoV 76%；作者预设 CoV < 20% 为可接受，并结论"只有中部 Ecc 准确"；FT 的 1D 应变先换算成 Green–Lagrange 再比较；轮廓法应变与 FT 一致（CoV 3–7%）。你只需读 Statistics 一段和 Discussion 第一段确认我的读法。
+
+Kihlberg 2020（JCMR，10.1186/s12968-020-00684-2）
+稿件依赖：§4.4 第二段（p21）"In 116 patients … 34 had more than 50% transmural LGE in at least one segment … AUCs were 0.87 for DENSE, 0.83 for tagging and 0.66 for feature tracking; at 80% specificity, sensitivities were 82%, 71% and 35%"；表 2、表 3、表 S1 行；图 1b 的 AUC 与敏感度；图 1 图注 "Kihlberg's ROC analysis uses end-systolic segmental Ecc"。
+读：Methods 的 ROC 终点定义；Results 的 ROC 表。
+
+对照：116/34；三组 AUC；80% 特异度下的敏感度；ROC 用的是 end-systolic 节段 Ecc 而不是 peak；LGE 阈值 > 50% 透壁。
+
+Jahromi 2026（Biomech Model Mechanobiol，10.1007/s10237-026-02120-3）
+稿件依赖：§4.2 第三段（p18）整段，含 "mean difference −2.7 percentage points. Two one-sided tests supported equivalence within a selected margin of ±3.5 percentage points, despite a significant difference from zero" 和 "Prospective specification of the margin and the handling of within-person slice correlation were not established"；表 2、表 3、表 S1 行；§6.5 "Jahromi and colleagues explicitly identify their healthy-volunteer data as part of this repository"；补充 Note 8 行。
+读：Methods 的 participants、模型（一层/两层 DENSE、一层 cine）、statistical analysis；Results 的 volunteer 比较；Data availability。
+
+对照：40 名健康志愿者与变形体模；终点是两个中部层面的 slice-wise peak median systolic endocardial Ecc；均值差 −2.7；TOST 界值 ±3.5 且原文用词是 selected 而非 prespecified；p < 0.001 与效应量 d ≈ −0.89；是否说明切面聚类处理；径向、纵向、心外膜环向比较不同；数据来自 Stanford 仓库。
+
+Strain-8（Bell 2025，Eur Heart J Imaging Methods Pract，10.1093/ehjimp/qyaf144）
+稿件依赖：§4.3（p21）"scanned 20 healthy volunteers twice on the same day using eight protocols: cine, tagging and DENSE at 1.5 and 3 T, plus 2D and 3D echocardiography. Global repeatability ranged from fair to excellent … while segmental results were more variable"；表 2 行 "Global coefficients of variation ranged from excellent to fair (≤20%); segmental values were frequently poor (>20%), especially longitudinal/radial"；表 S1 行；图 1b。
+读：Methods 的八个方案；Results 的 CoV/ICC 表。
+
+对照：20 人、同日、八方案；全局 CoV 分级与 ≤ 20% 的口径；节段 > 20% 多见于纵向/径向。
+
+REGAIN（Yoon 2023，Radiology，10.1148/radiol.222878）
+稿件依赖：§6.6 第一段（p27）"trained on 1616 patients and tested prospectively in 181 participants; its paired breath-hold comparison used 94 patients and 36 healthy participants, while global … strain was available in 49 participants. Mean global-strain differences versus a separately acquired GRAPPA cine were near zero, while the 95% limits of agreement remained −7% to 6% for radial, −2% to 3% for circumferential and −3% to 3% for longitudinal strain"；补充 Note 7；图 1b 的 LoA 条。
+读：Methods 的 participant flow；Results 的 strain 一致性表。
+
+对照：1616/181/94+36/49；三组 LoA；比较对象是另行采集的 GRAPPA cine。
+
+DLSS（Masutani 2023，Radiol Cardiothorac Imaging，10.1148/ryct.220202）
+稿件依赖：§3.6 第五段（p13）"DLSS predicts myocardial velocities and segmentation, using velocity supervision from registered 4D-flow MRI and segmentation targets generated by commercial software … 223 examinations from 219 patients; four-reader consensus wall-motion labels were used for the separate clinical evaluation in 53 patients and 846 segments. The ROC AUC was 0.90; a 30% peak-radial-strain threshold gave sensitivity 86% and specificity 85%"；表 S3 行；图 1b；§3.1 "DLSS uses velocity and segmentation supervision"。
+读：Methods 的 training targets 与 reader study；Results 的 ROC。
+
+对照：监督来源（4D flow 速度 + 商业软件分割）；223/219；53/846；四读者共识；AUC 0.90 跨阈值；30% 是一个操作点。
+
+对齐应变（Koehler 2025，Radiol Artif Intell，10.1148/ryai.240303）
+稿件依赖：§3.6 第六段（p13）"Its cine pipeline detects key phases, segments the myocardium and estimates deformation using image similarity, smoothness and mask agreement; late gadolinium enhancement (LGE) labels the downstream patient-level fibrosis classifier … Development used 57 patients with Duchenne muscular dystrophy, followed by a same-centre temporal holdout of 82 patients. The classification target was the presence of at least one LGE-positive segment"；表 S3 行。
+读：Methods 的损失项与数据划分；Results 的分类结果。
+
+对照：三项损失（SSIM、平滑、Dice）；57 + 82 = 139；同中心时间上的留出；终点是患者级 ≥ 1 个 LGE 阳性节段。
+
+Bello 2019（Nat Mach Intell，10.1038/s42256-019-0019-2）
+稿件依赖：§3.6 第六段末（p13）"right-ventricular motion to predict survival in 302 patients with chronic thromboembolic pulmonary hypertension. Internally bootstrap-corrected Harrell C indices were 0.75 for the learned model and 0.59 for a model using manually measured conventional volumetric and functional variables"；表 S3 行（含 95% CI 0.70–0.79 与 0.53–0.65）；图 1b。
+读：Methods 的 cohort；Results 的 C 指数表。
+
+对照：302 例、病种是 CTEPH（Group 4）、右室；内部 bootstrap 校正；两个 C 指数及其区间。
+
+Chen 2024（BMC Med Imaging，10.1186/s12880-024-01519-7）
+稿件依赖：§3.3 第一段（p9）"evaluated it on a 20-case simulation, 100 public cine cases and 16 in-house tagging patients. They reported reduced late-diastolic drift and better correlation with tagging for radial strain in several segments than Farneback optical flow, pairwise registration and global low-rank groupwise registration. Comparisons with nD+t B-splines and pTVreg concerned simulation and in-vivo tracking endpoints"；§3.1 引用；表 S3 行。
+读：Experiments 各小节与表格。
+
+对照：20/100/16；tagging 比较的三个比较器；nD+t 与 pTVreg 出现在哪个实验；"several segments" 的措辞。
+
+Gao 2014（Phys Med Biol，10.1088/0031-9155/59/13/3637）
+稿件依赖：§4.2 第一段（p18）"In three healthy volunteers and 41 patients with recent or chronic myocardial infarction, Gao and colleagues reported agreement in peak circumferential strain and similar regional patterns between cine registration and DENSE, while cine radial strain was overestimated"；表 3 行。
+读：摘要与 Results。
+
+对照：3 + 41；环向一致、径向高估；"similar regional patterns" 是摘要级说法。
+
+Brandt 2024（NMR Biomed，10.1002/nbm.5164）
+稿件依赖：§4.2 第二段末（p18）"In 42 participants, Brandt and colleagues found moderate-to-good agreement for global and segmental circumferential time to peak strain between tagging and feature tracking, alongside significant biases in segmental peak strain"；表 S3 FT 家族行引用。
+读：摘要与 Results 的 timing 一致性。
+
+对照：42 人；time-to-peak 的 ICC 区间（旧稿记为 0.56–0.82，现稿未给数）；节段峰值偏差显著。
+
+第一层半：§6.6 与补充 Note 7 的重建研究（读摘要和结果表即可）
+文献	稿件依赖的数字	对照
+CineVN（Vornehm 2025，MRM，10.1002/mrm.30260）	18 名志愿者配对比较；46 例患者无常规参照；所有加速方案低估峰值径向、高估峰值环向；分割失败后排除切面	人数、方向、排除说明
+Tsuneta 2025（Magn Reson Med Sci，10.2463/mrms.mp.2024-0202）	10 名志愿者；加速因子 6 与 8；离散度较 CS 减小；环向偏差与径向低估仍在	人数、因子、结论
+Grob 2025（Int J Cardiovasc Imaging，10.1007/s10554-025-03348-3）	19 人 = 13 CAD + 6 健康；51 次采集；插值改变峰值 Ell 与 Ecc，容积不变	人数拆分、51
+DENT（Morales 2024，Radiol Cardiothorac Imaging，10.1148/ryct.230177）	5840 例/9 中心；前瞻 49 例患者 + 12 名健康；未评价应变、形变向量未作为运动验证	人数、"未评价应变"
+第二层：读摘要即可（表 S3 谱系条目与摘要级引用）
+稿件对这些只做方法描述或引用摘要级结果，并在表 S3 标明读深。读摘要时核对右列一项即可。
+
+引用键	稿件说法（位置）	读摘要确认
+rueckert1999	FFD：仿射 + B 样条格点 + 平滑罚，源于乳腺 MRI（§3.3，S3）	来源领域、模型
+osman2000harp	HARP：标记像谱峰相位（S3）	比较器身份
+maret2009ft	30 例 STEMI 后，cine 功能测量与瘢痕关联（§3.2，S3，图 3）	30、关联对象
+hor2010ft	191 DMD + 42 对照，中部整层 Ecc 对 HARP（§3.2，S3）	191/42、整层
+augustine2013ft	145 健康人，20 人 tagging 比较；环向全局一致优于纵向/径向（§3.2，S3）	145/20、方向结论
+metz2011	群组 nD+t B 样条，可选周期约束；合成与胸部 CT 亚体素精度；容积曲线均值偏差约 3%（§3.3，S3）	亚体素、3% 为均值
+elnakib2015laplace	相邻轮廓间 Laplace 映射；合成数据 + 在体可行性（§3.3，S3）	验证类型
+tuyisenge2016assimilation	变分同化到收缩模型；已知运动合成测试；47 例三层面；对 tag 的 ICC > 0.8；与临床评分关联（§3.3，S3）	47、> 0.8
+wang2019opticalflow	强度 + 形状特征不变性的光流；真实模拟与初步临床（§3.3，S3）	验证类型
+vigneault2017	FCN 分割 + 二次 B 样条；42 HCM + 21 对照（§3.2，S3）	42/21
+puyolanton2018	CNN 分割 + 常规 FT；40 健康 + 40 缺血（UKBB）；与 cvi42 比（S3）	40/40
+chen2020anatomy	解剖感知跟踪，形状 VAE 弱监督（§3.3，S3）	监督类型
+balakrishnan2019voxelmorph	配准作为函数，无监督相似度 + 平滑目标（§3.3，S3）	目标函数描述
+chen2022transmorph	Transformer–CNN 混合；微分同胚与贝叶斯变体；脑 MRI 与体模到 CT（§3.3，S3）	验证数据
+jia2023fouriernet	带限位移表示 + 逆 DFT；scaling-and-squaring 后不再带限（§3.3，S3）	带限说明
+jia2026fouriernetplus	带限图像输入；五个数据集含一个 3D 心脏 MRI；Dice/HD/EDV/EF 优于 TransMorph（§3.3，S3）	五数据集、指标
+qin2018joint	联合运动 + 分割，共享编码器；220 人含 100 测试（§3.4，S3）	220/100
+zheng2019apparent	表观流半监督；九特征含形状/容积/EF；95% 五折 CV，94% 挑战测试（§3.4，S3）	95/94 的口径
+yu2020mpn	运动金字塔；循环师生训练；对另一网络生成并施加的运动测 EPE/关键点误差（§3.4，S3，图 3 图注）	已知施加运动的性质
+yu2020foal	测试时在线适应；约 0.4 s 为在线优化时间（§3.4，S3）	0.4 s 口径
+meng2022mulvimotion	短轴 + 长轴融合；580 UKBB = 450/50/80（§3.4，S3）	划分
+meng2024deepmesh	模板网格 + 可微光栅化；模板索引一致不等于材料同源（§3.4，S3）	索引说明
+lu2023bireg	双向循环配准，参考到帧（§3.4，S3）	方向
+yin2025mcm	Mamba 序列模型，MICCAI 研讨会（§3.4，S3）	发表形式
+bi2025segmorph	循环变分表示联合运动与分割（§3.4，S3）	机制
+movahed2026cardiomorphnet	循环 VAE，分割与运动分开后验，无强度损失；UKBB 与 M&Ms；不确定性图（§3.4，S3）	无强度损失、数据集
+ruan2026latentode	连续时间隐 ODE；双向演化 + Lagrangian 一致项；ACDC 与 M&Ms（§3.4，S3）	数据集
+qiao2026stcmt	无监督关键点 + 基向量重建；4D CT 与 cine；应变分析区分病况（§3.4，S3）	数据与结论强度
+portal2025semisup	271 患者；EPE 1.02/0.95/0.91 mm，RAFT 1.19；评价点是 FT 传播的轮廓点（§3.4，S3）	四个 EPE 与参考性质
+jia2026igbireg	仅题名层面；性能 NV（§3.4，S3，图 3）	是否已有可读全文，有则补内容
+jacob2025cmrfm、fu2026cinema	基础模型：36M 图/27,524 人自蒸馏；15M cine/74,916 研究；任务不含稠密运动（§3.4，S3）	规模数字、任务列表
+qin2023biomech	生物力学模拟形变训练 VAE 先验；三个公开 cine 数据集（§3.5，S3）	数据集数
+arratia2023warppinn	神经形变 + 超弹性正则 + Jacobian 罚；合成 + 15 人基准（§3.5，S3）	15
+alvarez2026warppinn	加纤维拉伸罚；合成体模已知运动；15 人 landmark 改善、应变曲线仅合理性（§3.5，S3）	无参考应变曲线
+liu2026fe	时空有限元相关；2D+t 已知运动、三个公开集、一个临床集；3D+t 仅临床掩膜；2 FT + 4 DL 比较器（§3.5，S3）	维度与参考划分
+xu2018	仅 cine 梗死勾画；LSTM + 光流；165 例；像素精度 95.0%，Dice 89.9%，κ 0.91（§3.6，S3）	三个数
+ye2021deeptag	标记图像无监督双向微分同胚配准；临床 tagging 集 landmark（§3.6，S3）	验证类型
+buoso2025tagging3d	合成 3D tagging 训练；外部人体 landmark + 猪应变对人工 cine 标注（§3.6，S3）	两类评价
+lei2025denserotation	DENSE 监督，旋转与径向分支（§3.6，S3）	机制
+an2026myonet	二值分割输入；SinMod 处理的 tagging 作监督；Dahl 盐敏感大鼠；ICC 0.973/0.975（§3.6，S3）	输入、物种、两个 ICC
+adams2023	简单真实体模显示时空分辨率影响 FT（§4.1）	结论
+mukherjee2024、barbaroux2025	在体心脏模型与 DENSE-SIM 扩展可控测试；后者改变分析正则化（§4.1）	各自内容
+zhou2018straus、strausdata	18 虚拟患者 = 3 模板 × 6 状态；3D cine、三种 tagging、超声、逐帧网格；工程应变（§6.5，表 4，S2）	18 = 3 × 6
+yeon2001sonomicrometry	犬冠脉结扎，tagging 环向缩短对声学微测晶体（§4.1）	模型与比较
+goetze2026	多中心旅行志愿者，扫描仪与后处理差异（§4.3）	设计
+buss2015	全局 FT 应变与心梗后 6 个月 LVEF 恢复（§4.4）	终点
+he2024	STEMI 后节段应变预后（§4.4）	终点
+mangion2019	DENSE 环向应变与急性心梗后预后（§1、§4.5）	终点
+reindl2021、chadalavada2024	FT 应变与重构/结局关联（§1、§4.5）	终点
+第三层：知道它们讲什么即可
+指南与共识：schulzmenger2020、hundley2022、voigt2015、puntmann2018、raunig2015。综述与教程：amzulescu2019、smiseth2025、monfared2026review、hussein2026review、pedrizzetti2016、duchateau2020、lim2021。资源与数据集说明：stanforddata、cmac2011、tobongomez2013cmac、wissmann2014mrxcat、mrxcat2repo、cmrxrecon2025official。这些在稿件里只承担定位、术语和资源描述，审稿人不会就其中的数字提问；唯一例外是 tobongomez2013cmac 的 "12 landmarks … median inter-observer variability 0.84 mm"（§6.5、表 4、S2），读摘要确认即可。
+
+怎么用这张表
+按第一层顺序读，每篇 20 到 40 分钟，一天两三篇，一周读完。读完一篇在本文件该条后面写"已核"或列出出入，提交到分支或发给我。出入我按条改稿并记入 review/22。第二层可以在导师通读的同时穿插做，每条五分钟。 我现在要读这个 在 zerote 创建新的文件夹 帮我导入 按照类别 称重什么的 然后按照每一篇对我的文章的重要程度排序 标注在文章名字前面 比如最重要的就是 1

@@ -1,0 +1,1 @@
+First job 22636050 failed with exit 69 during the 180-second model preflight. No manuscript stage ran. CLI log reached the Astra high execution header but no answer before timeout; no explicit model-unavailable error. Increased preflight timeout to 600 seconds and made empty stdin explicit. Retrying the same authorized audit without switching the model.

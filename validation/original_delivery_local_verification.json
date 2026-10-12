@@ -1,0 +1,14 @@
+{
+  "verified_at_london": "2026-10-12T00:20:59.588891+01:00",
+  "zip_sha256": "814ed6c696edc3855405230464e76f4f65f5bb8bb1fcae8ee7c85d9aac0a9f04",
+  "remote_zip_match": true,
+  "zip_integrity_passed": true,
+  "manifest_entries_verified": 191,
+  "manifest_mismatches": [],
+  "delivery_directory": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/csf3_cine_citation_audit_20261011/results/delivery",
+  "job_id": "22636451",
+  "scheduler_state": "COMPLETED",
+  "job_exit_code": "0:0",
+  "scientific_validation_claimed": false,
+  "author_review_required": true
+}

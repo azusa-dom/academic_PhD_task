@@ -1,0 +1,25 @@
+{
+  "created_at_london": "2026-10-12T00:29:38.107032+01:00",
+  "original_manuscript_sha256": "4d8d1b7ba55b6c06863842f41e1a880572ad680cb6aa251b2dffb7606d919ba3",
+  "source_files_indexed": 416,
+  "source_bytes": 149004937,
+  "valid_pdf_files": 22,
+  "image_files": 23,
+  "pdf_named_nonpdf_responses": [
+    "sources/retrieved/cinevn_supp.pdf",
+    "sources/retrieved/kihlberg2020.pdf",
+    "sources/retrieved/morales2022comparison.pdf",
+    "sources/retrieved/mrxcat2023.pdf",
+    "sources/retrieved/wang2023strainnet.pdf",
+    "sources/retrieved/wang_pmc.pdf",
+    "sources/stage03/jia2026igbireg_iop.pdf",
+    "sources/stage03/tobongomez2013cmac_author.pdf",
+    "sources/stage03/tuyisenge2016assimilation_hal.pdf",
+    "sources/stage03/zhou2018straus_author.pdf"
+  ],
+  "missing_referenced_files": [],
+  "historical_manifest_hash_differences": [],
+  "credential_pattern_candidates": [],
+  "source_catalog_rows": 92,
+  "original_audit_is_not_independent_human_review": true
+}

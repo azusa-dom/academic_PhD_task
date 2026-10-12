@@ -1,0 +1,494 @@
+[
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/SHA256SUMS.txt",
+    "decoded_path": "cine_cmr_reviewed_20261011/SHA256SUMS.txt",
+    "sha256": "7855b946a47ecbbe20117d8da93fb4c8829946d445d5db84ca3ca0086a6218ae",
+    "bytes": 10175
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/17_µ£Çτ╗êτëêΘÇÉΘí╣σ«íµƒÑµ╕àσìò.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/17_最终版逐项审查清单.md",
+    "sha256": "4567c4aa231ac0e359fa0866e2c0e09a3c329824ea9549dfd9f4a99d12cdd912",
+    "bytes": 15323
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/23_µë┐Θçìµûçτî«µá╕σ»╣µ╕àσìò.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/23_承重文献核对清单.md",
+    "sha256": "d3a4d22d20649e91f26c250be080c33925116c27d275336c8c67ab3c46c64003",
+    "bytes": 23715
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/22_µò┤σÉêτ¿┐σ«íΘÿàΣ╕Äµ╢ªΦë▓_µö╣σè¿Σ╕ÄΘ¬îΦ»üµùÑσ┐ù.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/22_整合稿审阅与润色_改动与验证日志.md",
+    "sha256": "99a094cf615ef57e96132c6285119ba2ac58f0dc48667cf6638cd570fcb8b1ea",
+    "bytes": 19489
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/21_µò┤σÉêτ¿┐τºæσ¡ªσ«íΘÿà_Θù«ΘóÿΦí¿.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/21_整合稿科学审阅_问题表.md",
+    "sha256": "6a2087b3624404c7d4021c0a64c8ba424d00195c24243dc2347ffc915765181d",
+    "bytes": 16295
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/83_item_critical_disposition_zh.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/83_item_critical_disposition_zh.md",
+    "sha256": "74a357bb42757d5f1f599cfce7d8f38ab3c5a8a9bf21c3657f294591f24a5580",
+    "bytes": 23935
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/15_Σ╜£ΦÇàΣ╗╗σèíµ╕àσìò.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/15_作者任务清单.md",
+    "sha256": "03482d6157f53ddc1fa91f267fbf0319cad028939bcdc0b494131d6d26d24b1b",
+    "bytes": 7741
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/review/µ£Çτ╗êτ╗╝σÉêσ╗║Φ««Σ╕ÄΘÇÉΣ╗╜µë╣σêñµÇºΦ»äΣ╗╖.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/review/最终综合建议与逐份批判性评价.md",
+    "sha256": "d78deab3a14e5c54872bf21c350015b09371ad532c4e6061d4fdd876601f265c",
+    "bytes": 15258
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/README.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/README.md",
+    "sha256": "a643f6144a6768d3cfa893a7fb86032b5936dd5352ea3e4e8e260a7e3c75c820",
+    "bytes": 2184
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/search-record.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/search-record.md",
+    "sha256": "bffad59aa4b8d2001ac62d220177751bfe391764620dab50bdd2a94e49220412",
+    "bytes": 5328
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/gap-search-query-log.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/gap-search-query-log.csv",
+    "sha256": "8e977d87161d8e4428bd0e57d12ec1ba07825cc32f2b55a542b037e69494a094",
+    "bytes": 5311
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/near-neighbour-matrix.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/supplementary/historical/near-neighbour-matrix.csv",
+    "sha256": "b8eef31e8f6493a8686f0aed2d2d253eefa602a16a23149122a771102d24db5e",
+    "bytes": 11231
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/supplement.tex",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/supplement.tex",
+    "sha256": "9b5dcd225b939655decfe71e9865c0a268f1d721578c9d868cd356d5f2298de3",
+    "bytes": 51627
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/jcmr-review.bst",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/jcmr-review.bst",
+    "sha256": "5f7cc450b940f691f35689a936439e08d0df77d0fe507e6faacaf54d46178735",
+    "bytes": 40756
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/body.tex",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/body.tex",
+    "sha256": "77cabb68a8576993d28845d165fa60fb169e3a2c824a4dad9efed9a0baa9d415",
+    "bytes": 96980
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py",
+    "sha256": "ad4872ef5de208c62254a77c48461191ac6f6ec41286e1f5955dce509643f120",
+    "bytes": 18565
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig4_attributes.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig4_attributes.py",
+    "sha256": "93f22bb7bc3808babbddc680e1d3ff86c87f431c5300f1691231a87bda4be735",
+    "bytes": 6950
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig2_counterexample.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig2_counterexample.py",
+    "sha256": "5704c687d3aeab11e2d8eb7bec3b2839fc8b44f4dcf765836576773565fde7b8",
+    "bytes": 7583
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig3_timeline.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig3_timeline.py",
+    "sha256": "346cf9af374555a7b7335384261eac94c3e921d3a3c3ec05162cd211abaa5557",
+    "bytes": 8496
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS1_strain_definitions.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS1_strain_definitions.py",
+    "sha256": "ed41741a0a9a84feffa53e7d227f56b073b61a2e02d48206b662cc215bb98e1b",
+    "bytes": 7543
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig5_validation_programme.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig5_validation_programme.py",
+    "sha256": "f1a1a4c931e5d1c84298131c05b5e4437c742e9af1250eb5008c71e7989fd1db",
+    "bytes": 6268
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS2_error_attributes.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS2_error_attributes.py",
+    "sha256": "7e641d05dda8e1fdbb5186f5ace2f6c997b148e0f163ff9a390105b44cfab538",
+    "bytes": 7602
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/graphical_abstract.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/graphical_abstract.py",
+    "sha256": "eda2edb80bdf41e259b5e9a69083383c18155401e60a4abc23c4275eabbe061f",
+    "bytes": 5279
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS3_training_inference.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/figS3_training_inference.py",
+    "sha256": "01706c83a5aa318a91cbb8ea2230f8a45f4a72ec3f3e222dcfd040476b36269a",
+    "bytes": 3231
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/scifig.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/scifig.py",
+    "sha256": "0e257b178c05a0663ac6a656a19653ef98ac6c063f0061973cda12a6e4aa0112",
+    "bytes": 28017
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/README.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/README.md",
+    "sha256": "bec7dccd376f3440293ca0bb1d92c8a613715fb4498679cf09958d6751f7f50a",
+    "bytes": 11320
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/render.cjs",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/render.cjs",
+    "sha256": "6a473630a637cd26ecc45a531d099414399ed5f8d5e27e3d3eff69c1c9fcace3",
+    "bytes": 1288
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/agarwood.mplstyle",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/house-style/agarwood-scifig/agarwood.mplstyle",
+    "sha256": "82fac604f3b205d254ef4cbf33c8aff4d2cecaf8856900c2029d7450cdec809a",
+    "bytes": 1721
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/README.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/README.md",
+    "sha256": "bf8ea4c50fd2859cba6845f6e79064fd17ebd9005fec53cbd3a8656d14d7a38f",
+    "bytes": 2858
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/captions_and_alt_text.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/captions_and_alt_text.md",
+    "sha256": "49ce2128ca30bcd863d6b05d0a4fef1992756c547b737d5508d5db2e1f6b113f",
+    "bytes": 8090
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv",
+    "sha256": "d5a3245715d955caca760785c0e02ad68ae58c4398eb810541e1c45faa072834",
+    "bytes": 14533
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/mrxcat2_values.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/mrxcat2_values.csv",
+    "sha256": "f0df33ccc5721072b9f7439d64a794523486245ca980c1aa94554d71385f81cc",
+    "bytes": 1255
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/finalize_outputs.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/finalize_outputs.py",
+    "sha256": "c433c37938d32533c3d93f2eac0109f212993414155804eaecc3fe97d1a85ad5",
+    "bytes": 3040
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/scifig_common.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/scifig_common.py",
+    "sha256": "7807a62582a206abd9ff347485956fde86bb5e576188de40cd8a8977b1d714e4",
+    "bytes": 8296
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/figstyle.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/figstyle.py",
+    "sha256": "8f72058a51a3a1c86b6811873b729b50aa09501ec88400e6262fd7e294603554",
+    "bytes": 4902
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/diagram.typ",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/diagram.typ",
+    "sha256": "ce52fac910e1dc0c5637b5f8224a6bd62d80a1f6d0535cbe9d3f90f9b0eb331d",
+    "bytes": 3704
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/contact_sheet.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/contact_sheet.py",
+    "sha256": "bc5967e7fbf30f4519190c44a7b635ccd7c322d48c4c6a89dff3ea98e31b3494",
+    "bytes": 1797
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/render_outputs.cjs",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/render_outputs.cjs",
+    "sha256": "12fa2e9f708fe915ba450ff4069c7294ea169d4e4cbdc3d59e82a40003a7233a",
+    "bytes": 2287
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/theme.typ",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/theme.typ",
+    "sha256": "e4a6ad1c0e0be612822c5e1bca2fbc1129c7b6d6355d9f55ff41832d91b80456",
+    "bytes": 1533
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/audit_panel_alignment.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/audit_panel_alignment.py",
+    "sha256": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+    "bytes": 39364
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/audit_font_sizes.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/style/audit_font_sizes.py",
+    "sha256": "2467b0632188c3cfbf9de87a59776137296ed1fceb8bbb9972b124f96cb2dbaa",
+    "bytes": 2166
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.png",
+    "sha256": "5b7353e1ae51d8c2679e12d3af2255f1bfc175e32806bc5eedeefe22ecbc9723",
+    "bytes": 199483
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.png",
+    "sha256": "0896fa6555002ea107925664ba12954ce891f7f0c56e74a7cae7e9d8d29afb25",
+    "bytes": 233300
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.png",
+    "sha256": "8bd6a5a63e9d15235a525d0518bf3dccd337af0abcaa894117c8c00f368e3225",
+    "bytes": 293135
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg",
+    "sha256": "d59730fc514870a94ed59ea343888d7a0567aaff3ae159e2aac072651e912708",
+    "bytes": 26456
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.pdf",
+    "sha256": "f9d9443e4b31111b47d6e3acffacaf75d33becc86924ba704345b0edb2fc4631",
+    "bytes": 237768
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.svg",
+    "sha256": "25f6c85cf37538ecd44963fe2a6c6d463e5a95f7032a0a9e94c55e444357990f",
+    "bytes": 44342
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.svg",
+    "sha256": "0ddd065781402ecbe66c5223e0dd67ab9f31b0d875b9a0e8e4d073ea1ec3ecff",
+    "bytes": 17383
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.svg",
+    "sha256": "5c01c6bf21c14edf96aa5605a9de0fbc209b53add588ae59a807dbc4e4a6897b",
+    "bytes": 9106
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.png",
+    "sha256": "9f5599514c8daffabfd6a3a4dd389579157811302147fda6786c07fb5b65d2ee",
+    "bytes": 474245
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S3_training_vs_inference_controls.pdf",
+    "sha256": "315f1344a9840bc754a01f3a6553babf3e6a0796a46cb0020bdbbe4c05418cc7",
+    "bytes": 40271
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg",
+    "sha256": "252553762c221699202726204020c070c4df3bb7604d21c76c074dc99296f26d",
+    "bytes": 79015
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.pdf",
+    "sha256": "34bf6e3567ef4da519112e8c70e1cd9658ab5a4b7be23aff45f7eab772c7fe69",
+    "bytes": 120333
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.pdf",
+    "sha256": "6ea4d58f9d1ecade1774546ac51734675ec4b49beb7c324777fca8f6dc25e710",
+    "bytes": 54082
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.pdf",
+    "sha256": "e0b13e31700c5609b648114949164e4a0d21f0ae569addaa36fe21e9320c002b",
+    "bytes": 191373
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.png",
+    "sha256": "659f93e1e9c5d0680ecc47168de95e33c66819b7e1094ce8e9e1428e98f4c140",
+    "bytes": 466857
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.pdf",
+    "sha256": "2432a30aac08966b7ee8c5ffa3be577ce96fb90605e96680143ab3607790a8fc",
+    "bytes": 77219
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.png",
+    "sha256": "1ad3da206c9a899289373e9dd2761e023aed32ba4b697d83d91e50344cba1c54",
+    "bytes": 296881
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.svg",
+    "sha256": "5efa0e708e8a4933777a0ae3486fc708cf928b5d4c9fa79807a00e65d11352e8",
+    "bytes": 40107
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_5_validation_targets_programme.svg",
+    "sha256": "34b304ccaf4aa8b98e3f580e7dcecf18e7ee356be6a790864dc790bfafd369ad",
+    "bytes": 15834
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.pdf",
+    "sha256": "4bf64c98ce56fedec9e769217cbbc64e2a144c5490f8caec6af0e44e616117cc",
+    "bytes": 98770
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.png",
+    "sha256": "f41b5df853e22115c6cc6ee8f52e66fbb3f6518181f33b48bbfb17c864186aa5",
+    "bytes": 257927
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S2_error_attributes_mapping_validity.svg",
+    "sha256": "88a5e9442b01c2e12918ded08f4332ca0d89297b1d9b4877795ffab729f79550",
+    "bytes": 150528
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.png",
+    "sha256": "f82bc9c85ce5c9642ff24a8583fdc4832241d55eef246b098a94c95ce4a2861f",
+    "bytes": 802338
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.png",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.png",
+    "sha256": "3ab0d269f2fe7f0efdbd4b55d576969802c9720b791e24a2a82f0fd56fd3ded0",
+    "bytes": 359898
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_2_same_contours_analytic.pdf",
+    "sha256": "d936415277c175e870d7b9799e9d1e2019490caf4cb3381eed70586274aad353",
+    "bytes": 170579
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_S1_strain_definition_traps.pdf",
+    "sha256": "eb4b339ed28230fba161fd04f0b8d96fc6629be64cca716e9d81314b9f5f1849",
+    "bytes": 113219
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.svg",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/figures/integrated/Graphical_abstract.svg",
+    "sha256": "f132510a1fa4becbe9b8166827f548f36dcca251ff9b555773bc6f8149196812",
+    "bytes": 35319
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/scripts/build_figures.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/scripts/build_figures.py",
+    "sha256": "a3f14e2a3e89591c02085e4b93e983c39598751034a0a0cd3220c13973384431",
+    "bytes": 865
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/scripts/build_manuscript.sh",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/scripts/build_manuscript.sh",
+    "sha256": "8494074a281bd053dd0127972d58d495687e253b86c4922b81c9f2b10358234c",
+    "bytes": 1581
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/scripts/static_qa.py",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/scripts/static_qa.py",
+    "sha256": "8a762b109e7db1ce66880e2ad7fbbe2a47b00e7bf0ae2764a3a7592d7f530bcd",
+    "bytes": 7359
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/references.bib",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/references.bib",
+    "sha256": "4a8c3988944e777cc64a198656cc295f9679541dff8912baaa71dcb944d8cc2e",
+    "bytes": 43031
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/main.tex",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/main.tex",
+    "sha256": "f491cacf36c779b5edfe15e8b6028d596fb1974964fe1df6475b1409d6e64cd6",
+    "bytes": 11182
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/COHORT_DATASET_LINKAGE.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/COHORT_DATASET_LINKAGE.csv",
+    "sha256": "473931178f1833bd8c583854ea58fba8b828b94e7d1fcca0ceeadce32beacbac",
+    "bytes": 3775
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/crossref_verification_20261009.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/crossref_verification_20261009.csv",
+    "sha256": "bffe945261c780ad501fd5e007347ddc27d83847add06eba13c2521329b26f63",
+    "bytes": 22917
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/README.md",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/README.md",
+    "sha256": "6e44cb781ebf0a2986e7d88e728ba48c079c6efbaaaaea6b8a8ca7c35a5aca52",
+    "bytes": 1433
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/codex_method_evidence_matrix.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/codex_method_evidence_matrix.csv",
+    "sha256": "4e3d1bf59531563ac0fbce60093500b3b1c5b9ac6d44e099229d0a7c49b93f79",
+    "bytes": 26200
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/codex_claim_ledger_135.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/codex_claim_ledger_135.csv",
+    "sha256": "a3ed2e469f00eed2c660dc09eb01c69d3b66c69f8766eb2efacd13dd0755de4a",
+    "bytes": 86809
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/manuscript/evidence/v9_atomic_claim_source_ledger.csv",
+    "decoded_path": "cine_cmr_reviewed_20261011/manuscript/evidence/v9_atomic_claim_source_ledger.csv",
+    "sha256": "1d7b1b6df5d35952be07ae843af20a5b359d76724aa7d0713fb4288cbde43ef8",
+    "bytes": 6757
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_main.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_main.pdf",
+    "sha256": "674eb3d74414fe8a5e61e54a532b92b3e1afab103b772625ab3c86103aeb4f04",
+    "bytes": 938685
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_graphical_abstract.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_graphical_abstract.pdf",
+    "sha256": "e0b13e31700c5609b648114949164e4a0d21f0ae569addaa36fe21e9320c002b",
+    "bytes": 191373
+  },
+  {
+    "zip_member": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_supplement.pdf",
+    "decoded_path": "cine_cmr_reviewed_20261011/pdf/cine_cmr_reviewed_20261011_supplement.pdf",
+    "sha256": "50389c45244d2c75fd73e6abe8e8b5f0d9b7f56ac87a7461db2a6486cde8a368",
+    "bytes": 514905
+  }
+]

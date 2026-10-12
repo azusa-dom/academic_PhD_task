@@ -1,0 +1,79 @@
+[
+  {
+    "file": "cao2018.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/cao2018.txt",
+    "sha256": "7b9013cb7ca81c5fa7b53e66903bffdbbae0593441ce69aa2d7e9aad5331f2eb",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 38840
+  },
+  {
+    "file": "chen2024.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/chen2024.txt",
+    "sha256": "6fa803c888f5d0d81a3ffce476b1b3e92a89f23bc3c005abd1cfff2f114109f5",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 69351
+  },
+  {
+    "file": "grob2025.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/grob2025.txt",
+    "sha256": "0e703ed5e3cb6edfac2f320aac32377afa5441ce413ec050b134253621081248",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 51613
+  },
+  {
+    "file": "jahromi2026.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/jahromi2026.txt",
+    "sha256": "ecc160d860ba8acd720fe6421f72f3b9b3e400dae3cc7805860c91234ddeb863",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 101491
+  },
+  {
+    "file": "kihlberg2020.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/kihlberg2020.txt",
+    "sha256": "af893fc58354c993f843f815f7c75b1494684c7750ba34d0021e275affc15bb4",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 47367
+  },
+  {
+    "file": "militaru2021.pdf",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/militaru2021.pdf",
+    "sha256": "8f6a6a6438eb139cbdfb7f8cdbe3ae81012d2748150e94066845ccec22ae7a35",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 4740052
+  },
+  {
+    "file": "militaru2021.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/militaru2021.txt",
+    "sha256": "8c3c9e2a4842da4bfc43c380b8762e87f92df1792e5ef6347d994a6c947befa0",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 59630
+  },
+  {
+    "file": "mrxcat2023.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/mrxcat2023.txt",
+    "sha256": "69453de8f76568eadee95fbbe0fa944e6f155f555ec9922c9faba96e6e14cdbf",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 65557
+  },
+  {
+    "file": "stanford_datacite.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/stanford_datacite.txt",
+    "sha256": "0788ea22bf7a758cdc96da65d8b90d7cfabfd82ea610a6706fb4738f936d9a07",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 8322
+  },
+  {
+    "file": "stanford_repository.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/stanford_repository.txt",
+    "sha256": "4a1bc0f422d0642f43d5d6bc4e430dc661b5ac0d7395c3f8632dad3b1e80f941",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 29847
+  },
+  {
+    "file": "wehner2018.txt",
+    "source_local_path": "/Users/hydra/Documents/ChatGPT/Supervisor-Skills/outputs/cine_cmr_three_job_synthesis_20261011/inputs/primary_sources/wehner2018.txt",
+    "sha256": "366f485c213b147dd498e702209f5d42349862e477acfe0cf2a8a3986e99f901",
+    "status": "prior_cached_source_not_reverified",
+    "bytes": 52390
+  }
+]

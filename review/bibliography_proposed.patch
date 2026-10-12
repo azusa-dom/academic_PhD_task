@@ -1,0 +1,20 @@
+--- a/manuscript/references.bib
++++ b/manuscript/references.bib
+@@ -344,7 +344,7 @@
+   journal = {Magn Reson Med},
+   year = {2025}, volume = {93}, number = {1}, pages = {138--150},
+   doi = {10.1002/mrm.30260},
+-  note = {Published online 27 August 2024}
++  note = {Published online 26 August 2024}
+ }
+ 
+ @article{yoon2023regain,
+@@ -472,7 +472,7 @@
+   title = {{MCM}: Mamba-Based Cardiac Motion Tracking Using Sequential Images in {MRI}},
+   year = {2025}, howpublished = {arXiv:2507.17678 [eess.IV]},
+   doi = {10.48550/arXiv.2507.17678},
+-  note = {MICCAI 2025 Reconstruction and Imaging Motion Estimation workshop paper; author version}
++  note = {Author preprint; listed in the MICCAI 2025 Reconstruction and Motion Estimation in Medical Imaging workshop programme}
+ }
+ 
+ @article{ruan2026latentode,

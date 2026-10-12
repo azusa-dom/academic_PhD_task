@@ -1,0 +1,737 @@
+citation_key,field,input_value,primary_value,status,primary_record
+buss2015,title,Prediction of Functional Recovery by Cardiac Magnetic Resonance Feature Tracking Imaging in First Time {ST}-Elevation Myocardial Infarction: Comparison to Infarct Size and Transmurality by Late Gadolinium Enhancement,Prediction of functional recovery by cardiac magnetic resonance feature tracking imaging in first time ST-elevation myocardial infarction. Comparison to infarct size and transmurality by late gadolinium enhancement,MATCH_NORMALIZED,sources/stage03/buss2015_crossref.json
+buss2015,year,2015,2015,MATCH_NORMALIZED,sources/stage03/buss2015_crossref.json
+buss2015,volume,183,183,MATCH_NORMALIZED,sources/stage03/buss2015_crossref.json
+buss2015,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/buss2015_crossref.json
+buss2015,pages,162--170,162-170,MATCH_NORMALIZED,sources/stage03/buss2015_crossref.json
+buss2015,doi,10.1016/j.ijcard.2015.01.022,10.1016/j.ijcard.2015.01.022,MATCH_NORMALIZED,sources/stage03/buss2015_crossref.json
+buss2015,author,"Buss, Sebastian J and Krautz, Birgit and Hofmann, Nina and Sander, Yannick and Rust, Lukas and Giusca, Sorin and Galuschky, Christian and Seitz, Sebastian and Giannitsis, Evangelos and Pleger, Sven and Raake, Philip and Most, Patrick and Katus, Hugo A and Korosoglou, Grigorios",Sebastian J. Buss; Birgit Krautz; Nina Hofmann; Yannick Sander; Lukas Rust; Sorin Giusca; Christian Galuschky; Sebastian Seitz; Evangelos Giannitsis; Sven Pleger; Philip Raake; Patrick Most; Hugo A. Katus; Grigorios Korosoglou,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/buss2015_crossref.json
+mangion2019,title,Circumferential Strain Predicts Major Adverse Cardiovascular Events Following an Acute {ST}-Segment--Elevation Myocardial Infarction,Circumferential Strain Predicts Major Adverse Cardiovascular Events                    Following an Acute ST-Segment–Elevation Myocardial                    Infarction,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,year,2019,2019,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,volume,290,290,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,number,2,2,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,pages,329--337,329-337,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,doi,10.1148/radiol.2018181253,10.1148/radiol.2018181253,MATCH_NORMALIZED,sources/stage03/mangion2019_crossref.json
+mangion2019,author,"Mangion, Kenneth and Carrick, David and Carberry, Jaclyn and Mahrous, Ahmed and McComb, Christie and Oldroyd, Keith G and Eteiba, Hany and Lindsay, Mitchell and McEntegart, Margaret and Hood, Stuart and Petrie, Mark C and Watkins, Stuart and Davie, Andrew and Zhong, Xiaodong and Epstein, Frederick H and Haig, Caroline E and Berry, Colin",Kenneth Mangion; David Carrick; Jaclyn Carberry; Ahmed Mahrous; Christie McComb; Keith G. Oldroyd; Hany Eteiba; Mitchell Lindsay; Margaret McEntegart; Stuart Hood; Mark C. Petrie; Stuart Watkins; Andrew Davie; Xiaodong Zhong; Frederick H. Epstein; Caroline E. Haig; Colin Berry,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/mangion2019_crossref.json
+reindl2021,title,Global Longitudinal Strain by Feature Tracking for Optimized Prediction of Adverse Remodeling after {ST}-Elevation Myocardial Infarction,Global longitudinal strain by feature tracking for optimized prediction of adverse remodeling after ST-elevation myocardial infarction,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,year,2021,2021,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,volume,110,110,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,number,1,1,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,pages,61--71,61-71,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,doi,10.1007/s00392-020-01649-2,10.1007/s00392-020-01649-2,MATCH_NORMALIZED,sources/stage03/reindl2021_crossref.json
+reindl2021,author,"Reindl, Martin and Tiller, Christina and Holzknecht, Magdalena and Lechner, Ivan and Eisner, Dorothea and Riepl, Laura and Pamminger, Mathias and Henninger, Benjamin and Mayr, Agnes and Schwaiger, Johannes P and Klug, Gert and Bauer, Axel and Metzler, Bernhard and Reinstadler, Sebastian J",Martin Reindl; Christina Tiller; Magdalena Holzknecht; Ivan Lechner; Dorothea Eisner; Laura Riepl; Mathias Pamminger; Benjamin Henninger; Agnes Mayr; Johannes P. Schwaiger; Gert Klug; Axel Bauer; Bernhard Metzler; Sebastian J. Reinstadler,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/reindl2021_crossref.json
+raunig2015,title,Quantitative Imaging Biomarkers: A Review of Statistical Methods for Technical Performance Assessment,Quantitative imaging biomarkers: A review of statistical methods for technical performance assessment,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,year,2015,2015,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,volume,24,24,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,number,1,1,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,pages,27--67,27-67,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,doi,10.1177/0962280214537344,10.1177/0962280214537344,MATCH_NORMALIZED,sources/stage03/raunig2015_crossref.json
+raunig2015,author,"Raunig, David L and McShane, Lisa M and Pennello, Gene and Gatsonis, Constantine and Carson, Paul L and Voyvodic, James T and Wahl, Richard L and Kurland, Brenda F and Schwarz, Adam J and G{\""o}nen, Mithat and Zahlmann, Gudrun and Kondratovich, Marina V and O'Donnell, Kevin and Petrick, Nicholas and Cole, Patricia E and Garra, Brian and Sullivan, Daniel C and {QIBA Technical Performance Working Group}",David L Raunig; Lisa M McShane; Gene Pennello; Constantine Gatsonis; Paul L Carson; James T Voyvodic; Richard L Wahl; Brenda F Kurland; Adam J Schwarz; Mithat Gönen; Gudrun Zahlmann; Marina V Kondratovich; Kevin O’Donnell; Nicholas Petrick; Patricia E Cole; Brian Garra; Daniel C Sullivan;  QIBA Technical Performance Working Group,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/raunig2015_crossref.json
+puntmann2018,title,Society for Cardiovascular Magnetic Resonance ({SCMR}) Expert Consensus for {CMR} Imaging Endpoints in Clinical Research: Part I---Analytical Validation and Clinical Qualification,Society for Cardiovascular Magnetic Resonance (SCMR) expert consensus for CMR imaging endpoints in clinical research: part I - analytical validation and clinical qualification,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,year,2018,2018,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,volume,20,20,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,number,1,1,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,pages,67,67,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,doi,10.1186/s12968-018-0484-5,10.1186/s12968-018-0484-5,MATCH_NORMALIZED,sources/stage03/puntmann2018_crossref.json
+puntmann2018,author,"Puntmann, Valentina O and Valbuena, Silvia and Hinojar, Rocio and Petersen, Steffen E and Greenwood, John P and Kramer, Christopher M and Kwong, Raymond Y and McCann, Gerry P and Berry, Colin and Nagel, Eike and {SCMR Clinical Trial Writing Group}",Valentina O. Puntmann; Silvia Valbuena; Rocio Hinojar; Steffen E. Petersen; John P. Greenwood; Christopher M. Kramer; Raymond Y. Kwong; Gerry P. McCann; Colin Berry; Eike Nagel; Colin Berry; David Bluemke; Jens Bremerich; Rene Botnar; Chiara Bucciarelli-Ducci; Robin P. Choudhury; Marc Dweck; Ingo Eitel; Vic Ferrari; Matthias Friedrich; John Greenwood; Rocio Hinojar; Greg Hundley; Christopher M. Kramer; Raymond Y. Kwong; Massimo Lombardi; Teresa Lopez Fernandez; Thomas Marwick; Eike Nagel; Jagat Narula; Stefan Neubauer; Amit Patel; Dudley Pennell; Steffen E. Petersen; Sven Plein; Sanjay Prasad; Valentina O. Puntmann; Frank Rademakers; Subha Raman; Hajime Sakuma; Javier Sanz; Jeannette Schulz-Menger; Orlando Simonetti; Andrew Swift; Andrew J. Taylor; T. Teixeira; Holger Thiele; Martin Ugander; Silvia Valbuena; Jos J. Westenberg; Alistair A. Young,RESOLVED_PRIMARY_BYLINE_GROUP_RETAIN,sources/stage03/puntmann2018_crossref.json
+schulzmenger2020,title,Standardized Image Interpretation and Post-Processing in Cardiovascular Magnetic Resonance---2020 Update,Standardized image interpretation and post-processing in cardiovascular magnetic resonance - 2020 update,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,year,2020,2020,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,volume,22,22,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,number,1,1,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,pages,19,19,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,doi,10.1186/s12968-020-00610-6,10.1186/s12968-020-00610-6,MATCH_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+schulzmenger2020,author,"Schulz-Menger, Jeanette and Bluemke, David A and Bremerich, Jens and Flamm, Scott D and Fogel, Mark A and Friedrich, Matthias G and Kim, Raymond J and von Knobelsdorff-Brenkenhoff, Florian and Kramer, Christopher M and Pennell, Dudley J and Plein, Sven and Nagel, Eike",Jeanette Schulz-Menger; David A. Bluemke; Jens Bremerich; Scott D. Flamm; Mark A. Fogel; Matthias G. Friedrich; Raymond J. Kim; Florian von Knobelsdorff-Brenkenhoff; Christopher M. Kramer; Dudley J. Pennell; Sven Plein; Eike Nagel,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/schulzmenger2020_crossref.json
+hundley2022,title,Society for Cardiovascular Magnetic Resonance ({SCMR}) Guidelines for Reporting Cardiovascular Magnetic Resonance Examinations,Society for Cardiovascular Magnetic Resonance (SCMR) guidelines for reporting cardiovascular magnetic resonance examinations,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,year,2022,2022,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,volume,24,24,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,number,1,1,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,pages,29,29,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,doi,10.1186/s12968-021-00827-z,10.1186/s12968-021-00827-z,MATCH_NORMALIZED,sources/stage03/hundley2022_crossref.json
+hundley2022,author,"Hundley, W Gregory and Bluemke, David A and Bogaert, Jan and Flamm, Scott D and Fontana, Marianna and Friedrich, Matthias G and Grosse-Wortmann, Lars and Karamitsos, Theodoros D and Kramer, Christopher M and Kwong, Raymond Y and McConnell, Michael and Nagel, Eike and Neubauer, Stefan and Nijveldt, Robin and Pennell, Dudley J and Petersen, Steffen E and Raman, Subha V and van Rossum, Albert",W. Gregory Hundley; David A. Bluemke; Jan Bogaert; Scott D. Flamm; Marianna Fontana; Matthias G. Friedrich; Lars Grosse-Wortmann; Theodoros D. Karamitsos; Christopher M. Kramer; Raymond Y. Kwong; Michael McConnell; Eike Nagel; Stefan Neubauer; Robin Nijveldt; Dudley J. Pennell; Steffen E. Petersen; Subha V. Raman; Albert van Rossum,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/hundley2022_crossref.json
+chadalavada2024,title,Myocardial Strain Measured by Cardiac Magnetic Resonance Predicts Cardiovascular Morbidity and Death,Myocardial Strain Measured by Cardiac Magnetic Resonance Predicts Cardiovascular Morbidity and Death,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,year,2024,2024,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,volume,84,84,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,number,7,7,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,pages,648--659,648-659,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,doi,10.1016/j.jacc.2024.05.050,10.1016/j.jacc.2024.05.050,MATCH_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+chadalavada2024,author,"Chadalavada, Sucharitha and Fung, Kenneth and Rauseo, Elisa and Lee, Aaron M and Khanji, Mohammed Y and Amir-Khalili, Alborz and Paiva, Jose and Naderi, Hafiz and Banik, Shantanu and Chirvasa, Mihaela and Jensen, Magnus T and Aung, Nay and Petersen, Steffen E",Sucharitha Chadalavada; Kenneth Fung; Elisa Rauseo; Aaron M. Lee; Mohammed Y. Khanji; Alborz Amir-Khalili; Jose Paiva; Hafiz Naderi; Shantanu Banik; Mihaela Chirvasa; Magnus T. Jensen; Nay Aung; Steffen E. Petersen,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/chadalavada2024_crossref.json
+pedrizzetti2016,title,Principles of Cardiovascular Magnetic Resonance Feature Tracking and Echocardiographic Speckle Tracking for Informed Clinical Use,Principles of cardiovascular magnetic resonance feature tracking and echocardiographic speckle tracking for informed clinical use,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,year,2016,2016,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,volume,18,18,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,number,1,1,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,pages,51,51,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,doi,10.1186/s12968-016-0269-7,10.1186/s12968-016-0269-7,MATCH_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+pedrizzetti2016,author,"Pedrizzetti, Gianni and Claus, Piet and Kilner, Philip J and Nagel, Eike",Gianni Pedrizzetti; Piet Claus; Philip J. Kilner; Eike Nagel,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/pedrizzetti2016_crossref.json
+duchateau2020,title,Machine Learning Approaches for Myocardial Motion and Deformation Analysis,Machine Learning Approaches for Myocardial Motion and Deformation Analysis,MATCH_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+duchateau2020,year,2020,2020,MATCH_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+duchateau2020,volume,6,6,MATCH_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+duchateau2020,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/duchateau2020_crossref.json
+duchateau2020,pages,190,190,MATCH_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+duchateau2020,doi,10.3389/fcvm.2019.00190,10.3389/fcvm.2019.00190,MATCH_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+duchateau2020,author,"Duchateau, Nicolas and King, Andrew P and De Craene, Mathieu",Nicolas Duchateau; Andrew P. King; Mathieu De Craene,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/duchateau2020_crossref.json
+chen2024,title,Improve Myocardial Strain Estimation Based on Deformable Groupwise Registration with a Locally Low-Rank Dissimilarity Metric,Improve myocardial strain estimation based on deformable groupwise registration with a locally low-rank dissimilarity metric,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,year,2024,2024,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,volume,24,24,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,number,1,1,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,pages,330,330,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,doi,10.1186/s12880-024-01519-7,10.1186/s12880-024-01519-7,MATCH_NORMALIZED,sources/stage03/chen2024_crossref.json
+chen2024,author,"Chen, Haiyang and Gao, Juan and Chen, Zhuo and Gao, Chenhao and Huo, Sirui and Jiang, Meng and Pu, Jun and Hu, Chenxi",Haiyang Chen; Juan Gao; Zhuo Chen; Chenhao Gao; Sirui Huo; Meng Jiang; Jun Pu; Chenxi Hu,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/chen2024_crossref.json
+bell2025strain8,title,The Strain-8 Study: A Multimodal Scan--Rescan Assessment of Myocardial Strain Repeatability,The strain-8 study: a multimodal scan–rescan assessment of myocardial strain repeatability,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,year,2025,2025,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,volume,3,3,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,number,4,4,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,pages,qyaf144,qyaf144,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,doi,10.1093/ehjimp/qyaf144,10.1093/ehjimp/qyaf144,MATCH_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+bell2025strain8,author,"Bell, Andrew and Okafor, Joseph and Yazdani, Momina and Franks, Russell and Draper, Jane and Campbell, Brian and Kapetanakis, Stamatis and Chiribiri, Amedeo and Young, Alistair and Nazir, Muhummad Sohaib",Andrew Bell; Joseph Okafor; Momina Yazdani; Russell Franks; Jane Draper; Brian Campbell; Stamatis Kapetanakis; Amedeo Chiribiri; Alistair Young; Muhummad Sohaib Nazir,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/bell2025strain8_crossref.json
+voigt2015,title,Definitions for a Common Standard for {2D} Speckle Tracking Echocardiography: Consensus Document of the {EACVI/{ASE}/Industry} Task Force to Standardize Deformation Imaging,Definitions for a common standard for 2D speckle tracking echocardiography: consensus document of the EACVI/ASE/Industry Task Force to standardize deformation imaging,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,year,2015,2015,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,volume,16,16,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,number,1,1,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,pages,1--11,1-11,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,doi,10.1093/ehjci/jeu184,10.1093/ehjci/jeu184,MATCH_NORMALIZED,sources/stage03/voigt2015_crossref.json
+voigt2015,author,"Voigt, Jens-Uwe and Pedrizzetti, Gianni and Lysyansky, Peter and Marwick, Tom H and Houle, Helen and Baumann, Rolf and Pedri, Stefano and Ito, Yasuhiro and Abe, Yasuhiko and Metz, Stephen and Song, Joo Hyun and Hamilton, Jamie and Sengupta, Partho P and Kolias, Theodore J and d'Hooge, Jan and Aurigemma, Gerard P and Thomas, James D and Badano, Luigi Paolo",Jens-Uwe Voigt; Gianni Pedrizzetti; Peter Lysyansky; Tom H. Marwick; Helen Houle; Rolf Baumann; Stefano Pedri; Yasuhiro Ito; Yasuhiko Abe; Stephen Metz; Joo Hyun Song; Jamie Hamilton; Partho P. Sengupta; Theodore J. Kolias; Jan d'Hooge; Gerard P. Aurigemma; James D. Thomas; Luigi Paolo Badano,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/voigt2015_crossref.json
+amzulescu2019,title,"Myocardial Strain Imaging: Review of General Principles, Validation, and Sources of Discrepancies","Myocardial strain imaging: review of general principles, validation, and sources of discrepancies",MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,year,2019,2019,MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,volume,20,20,MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,number,6,6,MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,pages,605--619,605-619,MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,doi,10.1093/ehjci/jez041,10.1093/ehjci/jez041,MATCH_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+amzulescu2019,author,"Amzulescu, M S and De Craene, M and Langet, H and Pasquet, A and Vancraeynest, D and Pouleur, A C and Vanoverschelde, J L and Gerber, B L",M S Amzulescu; M De Craene; H Langet; A Pasquet; D Vancraeynest; A C Pouleur; J L Vanoverschelde; B L Gerber,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/amzulescu2019_crossref.json
+smiseth2025,title,"Myocardial Strain Imaging: Theory, Current Practice, and the Future",Myocardial Strain Imaging,RESOLVED_PUBMED_FULL_TITLE_RETAIN,sources/stage03/smiseth2025_crossref.json
+smiseth2025,year,2025,2025,MATCH_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+smiseth2025,volume,18,18,MATCH_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+smiseth2025,number,3,3,MATCH_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+smiseth2025,pages,340--381,340-381,MATCH_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+smiseth2025,doi,10.1016/j.jcmg.2024.07.011,10.1016/j.jcmg.2024.07.011,MATCH_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+smiseth2025,author,"Smiseth, Otto A and Rider, Oliver and Cvijic, Marta and Valkovi{\v{c}}, Ladislav and Remme, Espen W and Voigt, Jens-Uwe",Otto A. Smiseth; Oliver Rider; Marta Cvijic; Ladislav Valkovič; Espen W. Remme; Jens-Uwe Voigt,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/smiseth2025_crossref.json
+morales2021,title,{DeepStrain}: A Deep Learning Workflow for the Automated Characterization of Cardiac Mechanics,DeepStrain: A Deep Learning Workflow for the Automated Characterization of Cardiac Mechanics,MATCH_NORMALIZED,sources/stage03/morales2021_crossref.json
+morales2021,year,2021,2021,MATCH_NORMALIZED,sources/stage03/morales2021_crossref.json
+morales2021,volume,8,8,MATCH_NORMALIZED,sources/stage03/morales2021_crossref.json
+morales2021,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/morales2021_crossref.json
+morales2021,pages,730316,730316,MATCH_NORMALIZED,sources/stage03/morales2021_crossref.json
+morales2021,doi,10.3389/fcvm.2021.730316,10.3389/fcvm.2021.730316,MATCH_NORMALIZED,sources/stage03/morales2021_crossref.json
+morales2021,author,"Morales, Manuel A and van den Boomen, Maaike and Nguyen, Christopher and Kalpathy-Cramer, Jayashree and Rosen, Bruce R and Stultz, Collin M and Izquierdo-Garcia, David and Catana, Ciprian",Manuel A. Morales; Maaike van den Boomen; Christopher Nguyen; Jayashree Kalpathy-Cramer; Bruce R. Rosen; Collin M. Stultz; David Izquierdo-Garcia; Ciprian Catana,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/morales2021_crossref.json
+wang2023strainnet,title,{StrainNet}: Improved Myocardial Strain Analysis of Cine {MRI} by Deep Learning from {DENSE},StrainNet: Improved Myocardial Strain Analysis of Cine MRI by Deep                     Learning from DENSE,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,year,2023,2023,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,volume,5,5,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,number,3,3,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,pages,e220196,e220196,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,doi,10.1148/ryct.220196,10.1148/ryct.220196,MATCH_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+wang2023strainnet,author,"Wang, Yu and Sun, Changyu and Ghadimi, Sona and Auger, Daniel C and Croisille, Pierre and Viallon, Magalie and Mangion, Kenneth and Berry, Colin and Haggerty, Christopher M and Jing, Linyuan and Fornwalt, Brandon K and Cao, J Jane and Cheng, Joshua and Scott, Andrew D and Ferreira, Pedro F and Oshinski, John N and Ennis, Daniel B and Bilchick, Kenneth C and Epstein, Frederick H",Yu Wang; Changyu Sun; Sona Ghadimi; Daniel C. Auger; Pierre Croisille; Magalie Viallon; Kenneth Mangion; Colin Berry; Christopher M. Haggerty; Linyuan Jing; Brandon K. Fornwalt; J. Jane Cao; Joshua Cheng; Andrew D. Scott; Pedro F. Ferreira; John N. Oshinski; Daniel B. Ennis; Kenneth C. Bilchick; Frederick H. Epstein,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/wang2023strainnet_crossref.json
+militaru2021,title,Multivendor Comparison of Global and Regional {2D} Cardiovascular Magnetic Resonance Feature Tracking Strains vs Tissue Tagging at 3T,Multivendor comparison of global and regional 2D cardiovascular magnetic resonance feature tracking strains vs tissue tagging at 3T,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,year,2021,2021,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,volume,23,23,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,number,1,1,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,pages,54,54,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,doi,10.1186/s12968-021-00742-3,10.1186/s12968-021-00742-3,MATCH_NORMALIZED,sources/stage03/militaru2021_crossref.json
+militaru2021,author,"Militaru, Sebastian and Panovsky, Roman and Hanet, Vincent and Amzulescu, Mihaela Silvia and Langet, H{\'e}l{\`e}ne and Pisciotti, Mary Mojica and Pouleur, Anne-Catherine and Vanoverschelde, Jean-Louis J and Gerber, Bernhard L",Sebastian Militaru; Roman Panovsky; Vincent Hanet; Mihaela Silvia Amzulescu; Hélène Langet; Mary Mojica Pisciotti; Anne-Catherine Pouleur; Jean-Louis J. Vanoverschelde; Bernhard L. Gerber,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/militaru2021_crossref.json
+goetze2026,title,A Multicenter Study on the Comparability of Myocardial Strain Values Acquired with Different {CMR} Scanners and Analyzed with Different Post-Processing Software: Insights into the ``Traveling Volunteers'' Study,A multicenter study on the comparability of myocardial strain values acquired with different CMR scanners and analyzed with different post-processing software: insights into the “Traveling Volunteers” study,MATCH_NORMALIZED,sources/stage03/goetze2026_crossref.json
+goetze2026,year,2026,2025,RESOLVED_2026_VOLUME_YEAR_RETAIN,sources/stage03/goetze2026_crossref.json
+goetze2026,volume,21,21,MATCH_NORMALIZED,sources/stage03/goetze2026_crossref.json
+goetze2026,number,2,2,MATCH_NORMALIZED,sources/stage03/goetze2026_crossref.json
+goetze2026,pages,319--331,319-331,MATCH_NORMALIZED,sources/stage03/goetze2026_crossref.json
+goetze2026,doi,10.1007/s11548-025-03499-7,10.1007/s11548-025-03499-7,MATCH_NORMALIZED,sources/stage03/goetze2026_crossref.json
+goetze2026,author,"Goetze, Collin and Chen, Wensu and Doeblin, Patrick and Demir, Aylin and Wiesemann, Stephanie and Hansmann, Jochen and Falk, Volkmar and Schulz-Menger, Jeanette and Erley, Jennifer and Kelle, Sebastian",Collin Goetze; Wensu Chen; Patrick Doeblin; Aylin Demir; Stephanie Wiesemann; Jochen Hansmann; Volkmar Falk; Jeanette Schulz-Menger; Jennifer Erley; Sebastian Kelle,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/goetze2026_crossref.json
+wehner2018,title,Comparison of Left Ventricular Strains and Torsion Derived from Feature Tracking and {DENSE CMR},Comparison of left ventricular strains and torsion derived from feature tracking and DENSE CMR,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,year,2018,2018,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,volume,20,20,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,number,1,1,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,pages,63,63,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,doi,10.1186/s12968-018-0485-4,10.1186/s12968-018-0485-4,MATCH_NORMALIZED,sources/stage03/wehner2018_crossref.json
+wehner2018,author,"Wehner, Gregory J and Jing, Linyuan and Haggerty, Christopher M and Suever, Jonathan D and Chen, Jing and Hamlet, Sean M and Feindt, Jared A and Dimitri Mojsejenko, W and Fogel, Mark A and Fornwalt, Brandon K",Gregory J. Wehner; Linyuan Jing; Christopher M. Haggerty; Jonathan D. Suever; Jing Chen; Sean M. Hamlet; Jared A. Feindt; W. Dimitri Mojsejenko; Mark A. Fogel; Brandon K. Fornwalt,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/wehner2018_crossref.json
+cao2018,title,A Comparison of Both {DENSE} and Feature Tracking Techniques with Tagging for the Cardiovascular Magnetic Resonance Assessment of Myocardial Strain,A comparison of both DENSE and feature tracking techniques with tagging for the cardiovascular magnetic resonance assessment of myocardial strain,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,year,2018,2018,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,volume,20,20,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,number,1,1,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,pages,26,26,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,doi,10.1186/s12968-018-0448-9,10.1186/s12968-018-0448-9,MATCH_NORMALIZED,sources/stage03/cao2018_crossref.json
+cao2018,author,"Cao, J Jane and Ngai, Nora and Duncanson, Lynette and Cheng, Joshua and Gliganic, Kathleen and Chen, Qizhi",J. Jane Cao; Nora Ngai; Lynette Duncanson; Joshua Cheng; Kathleen Gliganic; Qizhi Chen,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/cao2018_crossref.json
+adams2023,title,Effects of Spatial and Temporal Resolution on Cardiovascular Magnetic Resonance Feature Tracking Measurements Using a Simple Realistic Numerical Phantom,Effects of spatial and temporal resolution on cardiovascular magnetic resonance feature tracking measurements using a simple realistic numerical phantom,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,year,2023,2023,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,volume,96,96,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,number,1143,1143,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,pages,20220233,20220233,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,doi,10.1259/bjr.20220233,10.1259/bjr.20220233,MATCH_NORMALIZED,sources/stage03/adams2023_crossref.json
+adams2023,author,"Adams, David M and Boubertakh, Redha and Miquel, Marc Eric",David M Adams; Redha Boubertakh; Marc Eric Miquel,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/adams2023_crossref.json
+mukherjee2024,title,In-Silico Heart Model Phantom to Validate Cardiac Strain Imaging,In-silico heart model phantom to validate cardiac strain imaging,MATCH_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,year,2024,2024,MATCH_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,volume,181,181,MATCH_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,pages,109065,109065,MATCH_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,doi,10.1016/j.compbiomed.2024.109065,10.1016/j.compbiomed.2024.109065,MATCH_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+mukherjee2024,author,"Mukherjee, Tanmay and Usman, Muhammad and Mehdi, Rana Raza and Mendiola, Emilio and Ohayon, Jacques and Lindquist, Diana and Shah, Dipan and Sadayappan, Sakthivel and Pettigrew, Roderic and Avazmohammadi, Reza",Tanmay Mukherjee; Muhammad Usman; Rana Raza Mehdi; Emilio Mendiola; Jacques Ohayon; Diana Lindquist; Dipan Shah; Sakthivel Sadayappan; Roderic Pettigrew; Reza Avazmohammadi,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/mukherjee2024_crossref.json
+barbaroux2025,title,{DENSE-SIM}: A Modular Pipeline for the Evaluation of Cine Displacement Encoding with Stimulated Echoes Images with Sub-Voxel Ground-Truth Strain,DENSE-SIM: A modular pipeline for the evaluation of cine displacement encoding with stimulated echoes images with sub-voxel ground-truth strain,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,year,2025,2025,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,volume,27,27,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,number,1,1,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,pages,101866,101866,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,doi,10.1016/j.jocmr.2025.101866,10.1016/j.jocmr.2025.101866,MATCH_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+barbaroux2025,author,"Barbaroux, Hugo and Loecher, Michael and Brackenier, Yannick and Kunze, Karl P and Neji, Radhouene and Pennell, Dudley J and Ennis, Daniel B and Nielles-Vallespin, Sonia and Scott, Andrew D and Young, Alistair A",Hugo Barbaroux; Michael Loecher; Yannick Brackenier; Karl P. Kunze; Radhouene Neji; Dudley J. Pennell; Daniel B. Ennis; Sonia Nielles-Vallespin; Andrew D. Scott; Alistair A. Young,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/barbaroux2025_crossref.json
+cmac2011,title,Cardiac Motion Analysis Challenge 2011,,CHECKED_OFFICIAL_RECORD,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,year,2011,,CHECKED_OFFICIAL_RECORD,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,doi,,,CHECKED_OFFICIAL_RECORD,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+cmac2011,author,{Cardiac Atlas Project},,CHECKED_OFFICIAL_RECORD,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+stanforddata,title,Human {MRI} Data to Quantify Cardiac Performance,,CHECKED_OFFICIAL_RECORD,https://purl.stanford.edu/xt223hz2438
+stanforddata,year,2026,,CHECKED_OFFICIAL_RECORD,https://purl.stanford.edu/xt223hz2438
+stanforddata,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://purl.stanford.edu/xt223hz2438
+stanforddata,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://purl.stanford.edu/xt223hz2438
+stanforddata,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://purl.stanford.edu/xt223hz2438
+stanforddata,doi,10.25740/xt223hz2438,,CHECKED_OFFICIAL_RECORD,https://purl.stanford.edu/xt223hz2438
+stanforddata,author,{Cardiac Magnetic Research Group},,CHECKED_OFFICIAL_RECORD,https://purl.stanford.edu/xt223hz2438
+zhou2018straus,title,A Framework for the Generation of Realistic Synthetic Cardiac Ultrasound and Magnetic Resonance Imaging Sequences from the Same Virtual Patients,A Framework for the Generation of Realistic Synthetic Cardiac Ultrasound and Magnetic Resonance Imaging Sequences From the Same Virtual Patients,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,year,2018,2018,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,volume,37,37,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,number,3,3,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,pages,741--754,741-754,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,doi,10.1109/TMI.2017.2708159,10.1109/tmi.2017.2708159,MATCH_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+zhou2018straus,author,"Zhou, Y and Giffard-Roisin, S and De Craene, M and Camarasu-Pop, S and D'hooge, J and Alessandrini, M and Friboulet, D and Sermesant, M and Bernard, O",Y. Zhou; S. Giffard-Roisin; M. De Craene; S. Camarasu-Pop; J. D'Hooge; M. Alessandrini; D. Friboulet; M. Sermesant; O. Bernard,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/zhou2018straus_crossref.json
+strausdata,title,Multimodality {STRAUS},,CHECKED_OFFICIAL_RECORD,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,year,n.d.,,CHECKED_OFFICIAL_RECORD,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,doi,,,CHECKED_OFFICIAL_RECORD,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+strausdata,author,{CREATIS Human Heart Project},,CHECKED_OFFICIAL_RECORD,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+tobongomez2013cmac,title,Benchmarking Framework for Myocardial Tracking and Deformation Algorithms: An Open Access Database,Benchmarking framework for myocardial tracking and deformation algorithms: An open access database,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,year,2013,2013,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,volume,17,17,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,number,6,6,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,pages,632--648,632-648,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,doi,10.1016/j.media.2013.03.008,10.1016/j.media.2013.03.008,MATCH_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+tobongomez2013cmac,author,"Tobon-Gomez, C and De Craene, M and McLeod, K and Tautz, L and Shi, W and Hennemuth, A and Prakosa, A and Wang, H and Carr-White, G and Kapetanakis, S and Lutz, A and Rasche, V and Schaeffter, T and Butakoff, C and Friman, O and Mansi, T and Sermesant, M and Zhuang, X and Ourselin, S and Peitgen, H-O and Pennec, X and Razavi, R and Rueckert, D and Frangi, A F and Rhode, K S",C. Tobon-Gomez; M. De Craene; K. McLeod; L. Tautz; W. Shi; A. Hennemuth; A. Prakosa; H. Wang; G. Carr-White; S. Kapetanakis; A. Lutz; V. Rasche; T. Schaeffter; C. Butakoff; O. Friman; T. Mansi; M. Sermesant; X. Zhuang; S. Ourselin; H-O. Peitgen; X. Pennec; R. Razavi; D. Rueckert; A.F. Frangi; K.S. Rhode,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/tobongomez2013cmac_crossref.json
+wissmann2014mrxcat,title,{MRXCAT}: Realistic Numerical Phantoms for Cardiovascular Magnetic Resonance,MRXCAT: Realistic numerical phantoms for cardiovascular magnetic resonance,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,year,2014,2014,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,volume,16,16,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,number,1,1,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,pages,63,63,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,doi,10.1186/s12968-014-0063-3,10.1186/s12968-014-0063-3,MATCH_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+wissmann2014mrxcat,author,"Wissmann, Lukas and Santelli, Claudio and Segars, William P and Kozerke, Sebastian",Lukas Wissmann; Claudio Santelli; William P Segars; Sebastian Kozerke,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/wissmann2014mrxcat_crossref.json
+mrxcat2repo,title,{MRXCAT 2.0} Source Repository,,CHECKED_OFFICIAL_RECORD,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,year,n.d.,,CHECKED_OFFICIAL_RECORD,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,doi,,,CHECKED_OFFICIAL_RECORD,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+mrxcat2repo,author,"{Institute for Biomedical Engineering, ETH Zurich}",,CHECKED_OFFICIAL_RECORD,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+he2024,title,Prognostic Value of Segmental Strain After {ST}-Elevation Myocardial Infarction: Insights From the {EARLY} Assessment of {MYOcardial} Tissue Characteristics by Cardiac Magnetic Resonance ({EARLY-MYO-CMR}) Study,Prognostic Value of Segmental Strain After <scp>ST</scp>‐Elevation Myocardial Infarction: Insights From the <scp>EARLY</scp> Assessment of <scp>MYOcardial</scp> Tissue Characteristics by Cardiac Magnetic Resonance (<scp>EARLY‐MYO‐CMR</scp>) Study,MATCH_NORMALIZED,sources/stage03/he2024_crossref.json
+he2024,year,2024,2024,MATCH_NORMALIZED,sources/stage03/he2024_crossref.json
+he2024,volume,60,,PRIMARY_FIELD_ABSENT,sources/stage03/he2024_crossref.json
+he2024,number,5,,PRIMARY_FIELD_ABSENT,sources/stage03/he2024_crossref.json
+he2024,pages,2002--2017,jmri.29274,RESOLVED_PUBMED_2002_2017_RETAIN,sources/stage03/he2024_crossref.json
+he2024,doi,10.1002/jmri.29274,10.1002/jmri.29274,MATCH_NORMALIZED,sources/stage03/he2024_crossref.json
+he2024,author,"He, Jie and Kong, Lingcong and An, Dongaolei and Chen, Binghua and Zhao, Chengxu and Li, Zheng and Yang, Fan and Dong, Jianxun and Wei, Lai and Shan, Peiren and Chen, Yingmin and Wu, Lianming and Xu, Jianrong and Ge, Heng and Pu, Jun",Jie He; Lingcong Kong; Dongaolei An; Binghua Chen; Chengxu Zhao; Zheng Li; Fan Yang; Jianxun Dong; Lai Wei; Peiren Shan; Yingmin Chen; Lianming Wu; Jianrong Xu; Heng Ge; Jun Pu,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/he2024_crossref.json
+yu2020mpn,title,Motion Pyramid Networks for Accurate and Efficient Cardiac Motion Estimation,Motion Pyramid Networks for Accurate and Efficient Cardiac Motion Estimation,MATCH_NORMALIZED,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,year,2020,2020,MATCH_NORMALIZED,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,pages,436--446,436-446,MATCH_NORMALIZED,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,doi,10.1007/978-3-030-59725-2_42,10.1007/978-3-030-59725-2_42,MATCH_NORMALIZED,sources/stage03/yu2020mpn_crossref.json
+yu2020mpn,author,"Yu, Hanchao and Chen, Xiao and Shi, Humphrey and Chen, Terrence and Huang, Thomas S. and Sun, Shanhui",Hanchao Yu; Xiao Chen; Humphrey Shi; Terrence Chen; Thomas S. Huang; Shanhui Sun,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/yu2020mpn_crossref.json
+yu2020foal,title,{FOAL}: Fast Online Adaptive Learning for Cardiac Motion Estimation,FOAL: Fast Online Adaptive Learning for Cardiac Motion Estimation,MATCH_NORMALIZED,sources/stage03/yu2020foal_crossref.json
+yu2020foal,year,2020,2020,MATCH_NORMALIZED,sources/stage03/yu2020foal_crossref.json
+yu2020foal,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/yu2020foal_crossref.json
+yu2020foal,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/yu2020foal_crossref.json
+yu2020foal,pages,4312--4322,4312-4322,MATCH_NORMALIZED,sources/stage03/yu2020foal_crossref.json
+yu2020foal,doi,10.1109/CVPR42600.2020.00437,10.1109/cvpr42600.2020.00437,MATCH_NORMALIZED,sources/stage03/yu2020foal_crossref.json
+yu2020foal,author,"Yu, Hanchao and Sun, Shanhui and Yu, Haichao and Chen, Xiao and Shi, Honghui and Huang, Thomas S. and Chen, Terrence",Hanchao Yu; Shanhui Sun; Haichao Yu; Xiao Chen; Honghui Shi; Thomas S. Huang; Terrence Chen,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/yu2020foal_crossref.json
+chen2020anatomy,title,Anatomy-Aware Cardiac Motion Estimation,Anatomy-Aware Cardiac Motion Estimation,MATCH_NORMALIZED,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,year,2020,2020,MATCH_NORMALIZED,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,pages,150--159,150-159,MATCH_NORMALIZED,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,doi,10.1007/978-3-030-59861-7_16,10.1007/978-3-030-59861-7_16,MATCH_NORMALIZED,sources/stage03/chen2020anatomy_crossref.json
+chen2020anatomy,author,"Chen, Pingjun and Chen, Xiao and Chen, Eric Z. and Yu, Hanchao and Chen, Terrence and Sun, Shanhui",Pingjun Chen; Xiao Chen; Eric Z. Chen; Hanchao Yu; Terrence Chen; Shanhui Sun,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/chen2020anatomy_crossref.json
+alvarez2026warppinn,title,{WarpPINN-fibers}: Improved Cardiac Strain Estimation from Cine-{MR} with Physics-Informed Neural Networks,WarpPINN-fibers: improved cardiac strain estimation from cine-MR with physics-informed neural networks,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,year,2026,2026,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,volume,42,42,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,number,2,2,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,pages,58,58,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,doi,10.1007/s00366-026-02295-4,10.1007/s00366-026-02295-4,MATCH_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+alvarez2026warppinn,author,"{\'A}lvarez-Barrientos, Felipe and Banduc, Tom{\'a}s and Sirven, Isabeau and Sahli Costabal, Francisco",Felipe Álvarez-Barrientos; Tomás Banduc; Isabeau Sirven; Francisco Sahli Costabal,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/alvarez2026warppinn_crossref.json
+liu2026fe,title,Unlocking {2D}/{3D}+T Myocardial Mechanics from Cine {MRI}: A Mechanically Regularized Space-Time Finite Element Correlation Framework,Unlocking 2D/3D+T myocardial mechanics from cine MRI: a mechanically regularized space-time finite element correlation framework,MATCH_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+liu2026fe,year,2026,2026,MATCH_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+liu2026fe,volume,109,109,MATCH_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+liu2026fe,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/liu2026fe_crossref.json
+liu2026fe,pages,103944,103944,MATCH_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+liu2026fe,doi,10.1016/j.media.2026.103944,10.1016/j.media.2026.103944,MATCH_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+liu2026fe,author,"Liu, Haizhou and Qin, Xueling and Liu, Zhou and Jin, Yuxi and Jiang, Heng and Gao, Yunlong and Han, Jidong and Zheng, Yijia and Sun, Heng and Mao, Lingtao and Hild, Fran{\c{c}}ois and Zheng, Hairong and Liang, Dong and Zhang, Na and Liang, Jiuping and Luo, Dehong and Hu, Zhanli",Haizhou Liu; Xueling Qin; Zhou Liu; Yuxi Jin; Heng Jiang; Yunlong Gao; Jidong Han; Yijia Zheng; Heng Sun; Lingtao Mao; François Hild; Hairong Zheng; Dong Liang; Na Zhang; Jiuping Liang; Dehong Luo; Zhanli Hu,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/liu2026fe_crossref.json
+lim2021,title,Quantification of Myocardial Strain Assessed by Cardiovascular Magnetic Resonance Feature Tracking in Healthy Subjects---Influence of Segmentation and Analysis Software,Quantification of myocardial strain assessed by cardiovascular magnetic resonance feature tracking in healthy subjects—influence of segmentation and analysis software,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,year,2021,2021,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,volume,31,31,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,number,6,6,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,pages,3962--3972,3962-3972,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,doi,10.1007/s00330-020-07539-5,10.1007/s00330-020-07539-5,MATCH_NORMALIZED,sources/stage03/lim2021_crossref.json
+lim2021,author,"Lim, Carolin and Blaszczyk, Edyta and Riazy, Leili and Wiesemann, Stephanie and Sch{\""u}ler, Johannes and von Knobelsdorff-Brenkenhoff, Florian and Schulz-Menger, Jeanette",Carolin Lim; Edyta Blaszczyk; Leili Riazy; Stephanie Wiesemann; Johannes Schüler; Florian von Knobelsdorff-Brenkenhoff; Jeanette Schulz-Menger,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/lim2021_crossref.json
+mrxcat2023,title,"{MRXCAT2.0}: Synthesis of Realistic Numerical Phantoms by Combining Left-Ventricular Shape Learning, Biophysical Simulations and Tissue Texture Generation","MRXCAT2.0: Synthesis of realistic numerical phantoms by combining left-ventricular shape learning, biophysical simulations and tissue texture generation",MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,year,2023,2023,MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,volume,25,25,MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,number,1,1,MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,pages,25,25,MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,doi,10.1186/s12968-023-00934-z,10.1186/s12968-023-00934-z,MATCH_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+mrxcat2023,author,"Buoso, Stefano and Joyce, Thomas and Schulthess, Nico and Kozerke, Sebastian",Stefano Buoso; Thomas Joyce; Nico Schulthess; Sebastian Kozerke,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/mrxcat2023_crossref.json
+jahromi2026densecine,title,Automated cardiac strain estimation from short-axis {DENSE} and {Cine} {MR} images,Automated cardiac strain estimation from short-axis DENSE and Cine MR images,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,year,2026,2026,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,volume,25,25,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,number,5,5,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,pages,103,103,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,doi,10.1007/s10237-026-02120-3,10.1007/s10237-026-02120-3,MATCH_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+jahromi2026densecine,author,"Naqizadeh Jahromi, Mohammad and Menna Costa, Rodrigo and Delavald Marques, Augusto and Wellner, Luigi and Hannum, Ariel J. and Liu, Zhan-Qiu and Wu, Dazhong and Ennis, Daniel B. and Perotti, Luigi E.",Mohammad Naqizadeh Jahromi; Rodrigo Menna Costa; Augusto Delavald Marques; Luigi Wellner; Ariel J. Hannum; Zhan-Qiu Liu; Dazhong Wu; Daniel B. Ennis; Luigi E. Perotti,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/jahromi2026densecine_crossref.json
+kihlberg2020clinical,title,Clinical Validation of Three Cardiovascular Magnetic Resonance Techniques to Measure Strain and Torsion in Patients with Suspected Coronary Artery Disease,Clinical validation of three cardiovascular magnetic resonance techniques to measure strain and torsion in patients with suspected coronary artery disease,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,year,2020,2020,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,volume,22,22,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,number,1,1,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,pages,83,83,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,doi,10.1186/s12968-020-00684-2,10.1186/s12968-020-00684-2,MATCH_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+kihlberg2020clinical,author,"Kihlberg, Johan and Gupta, Vikas and Haraldsson, Henrik and Sigfridsson, Andreas and Sarvari, Sebastian I. and Ebbers, Tino and Engvall, Jan E.",Johan Kihlberg; Vikas Gupta; Henrik Haraldsson; Andreas Sigfridsson; Sebastian I. Sarvari; Tino Ebbers; Jan E. Engvall,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/kihlberg2020clinical_crossref.json
+gao2014cine,title,Left Ventricular Strain and Its Pattern Estimated from Cine {CMR} and Validation with {DENSE},Left ventricular strain and its pattern estimated from cine CMR and validation with DENSE,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,year,2014,2014,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,volume,59,59,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,number,13,13,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,pages,3637--3656,3637-3656,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,doi,10.1088/0031-9155/59/13/3637,10.1088/0031-9155/59/13/3637,MATCH_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+gao2014cine,author,"Gao, Hao and Allan, Andrew and McComb, Christie and Luo, Xiaoyu and Berry, Colin",Hao Gao; Andrew Allan; Christie McComb; Xiaoyu Luo; Colin Berry,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/gao2014cine_crossref.json
+jia2026fouriernetplus,title,{Fourier-Net+}: Band-Limited Spatial Representation for Efficient Medical Image Registration,Fourier-Net+: Band-Limited Spatial Representation for Efficient Medical Image Registration,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,year,2026,2026,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,volume,37,37,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,number,10,10,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,pages,5712--5726,5712-5726,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,doi,10.1109/TNNLS.2026.3688245,10.1109/tnnls.2026.3688245,MATCH_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+jia2026fouriernetplus,author,"Jia, Xi and Thorley, Alexander and Gomez, Alberto and Lu, Wenqi and Kotecha, Dipak and Frangi, Alejandro F. and Duan, Jinming",Xi Jia; Alexander Thorley; Alberto Gomez; Wenqi Lu; Dipak Kotecha; Alejandro F. Frangi; Jinming Duan,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/jia2026fouriernetplus_crossref.json
+movahed2026cardiomorphnet,title,{CardioMorphNet}: Cardiac Motion Prediction Using a Shape-Guided Bayesian Recurrent Deep Network,CardioMorphNet: Cardiac motion prediction using a shape-guided Bayesian recurrent deep network,MATCH_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,year,2026,2026,MATCH_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,volume,113,113,MATCH_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,pages,104149,104149,MATCH_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,doi,10.1016/j.media.2026.104149,10.1016/j.media.2026.104149,MATCH_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+movahed2026cardiomorphnet,author,"Movahed, Reza Akbari and Rezaee, Abuzar and Zakeri, Arezoo and Berry, Colin and Ho, Edmond S. L. and Gooya, Ali",Reza Akbari Movahed; Abuzar Rezaee; Arezoo Zakeri; Colin Berry; Edmond S.L. Ho; Ali Gooya,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/movahed2026cardiomorphnet_crossref.json
+monfared2026review,title,"Deep Learning for Cardiac Wall Motion Analysis: A Review of Methods, Challenges, and Clinical Applications","Deep Learning for Cardiac Wall Motion Analysis: A Review of Methods, Challenges, and Clinical Applications",MATCH_NORMALIZED,sources/stage03/monfared2026review_crossref.json
+monfared2026review,year,2026,2026,MATCH_NORMALIZED,sources/stage03/monfared2026review_crossref.json
+monfared2026review,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/monfared2026review_crossref.json
+monfared2026review,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/monfared2026review_crossref.json
+monfared2026review,pages,,,PRIMARY_FIELD_ABSENT,sources/stage03/monfared2026review_crossref.json
+monfared2026review,doi,10.1007/s10439-026-04147-0,10.1007/s10439-026-04147-0,MATCH_NORMALIZED,sources/stage03/monfared2026review_crossref.json
+monfared2026review,author,"Monfared, Mohammadali and Kakavand, Bahram and Taebi, Amirtah{\`a}",Mohammadali Monfared; Bahram Kakavand; Amirtahà Taebi,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/monfared2026review_crossref.json
+hussein2026review,title,Myocardial Strain Evaluation from Cardiovascular {MRI} and {CT}: Physiological Principles and Clinical Perspectives,Myocardial strain evaluation from cardiovascular MRI and CT: physiological principles and clinical perspectives,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,year,2026,2026,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,volume,99,99,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,number,1186,1186,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,pages,2004--2019,2004-2019,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,doi,10.1093/bjr/tqag192,10.1093/bjr/tqag192,MATCH_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+hussein2026review,author,"Hussein, Tawfik M. and Pourmorteza, Amir and Oshinski, John N.",Tawfik M Hussein; Amir Pourmorteza; John N Oshinski,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/hussein2026review_crossref.json
+cmrxrecon2025official,title,"{CMRxRecon2025}: Multi-Centre, Multi-Vendor and Multi-Disease Cardiovascular Magnetic Resonance Reconstruction Challenge",,CHECKED_OFFICIAL_RECORD,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,year,2025,,CHECKED_OFFICIAL_RECORD,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,doi,,,CHECKED_OFFICIAL_RECORD,https://cmrxrecon.github.io/2025/Data.html
+cmrxrecon2025official,author,{CMRxRecon Organising Committee},,CHECKED_OFFICIAL_RECORD,https://cmrxrecon.github.io/2025/Data.html
+vornehm2024cinevn,title,{CineVN}: Variational Network Reconstruction for Rapid Functional Cardiac Cine {MRI},CineVN: Variational network reconstruction for rapid functional cardiac cine MRI,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,year,2025,2025,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,volume,93,93,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,number,1,1,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,pages,138--150,138-150,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,doi,10.1002/mrm.30260,10.1002/mrm.30260,MATCH_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+vornehm2024cinevn,author,"Vornehm, Marc and Wetzl, Jens and Giese, Daniel and F{\""u}rnrohr, Florian and Pang, Jianing and Chow, Kelvin and Gebker, Rolf and Ahmad, Rizwan and Knoll, Florian",Marc Vornehm; Jens Wetzl; Daniel Giese; Florian Fürnrohr; Jianing Pang; Kelvin Chow; Rolf Gebker; Rizwan Ahmad; Florian Knoll,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/vornehm2024cinevn_crossref.json
+yoon2023regain,title,Accelerated Cardiac {MRI} Cine with Use of Resolution Enhancement Generative Adversarial Inline Neural Network,Accelerated Cardiac MRI Cine with Use of Resolution Enhancement                     Generative Adversarial Inline Neural Network,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,year,2023,2023,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,volume,307,307,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,number,5,5,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,pages,e222878,e222878,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,doi,10.1148/radiol.222878,10.1148/radiol.222878,MATCH_NORMALIZED,sources/stage03/yoon2023regain_crossref.json
+yoon2023regain,author,"Yoon, Siyeop and Nakamori, Shiro and Amyar, Amine and Assana, Salah and Cirillo, Julia and Morales, Manuel A. and Chow, Kelvin and Bi, Xiaoming and Pierce, Patrick and Goddu, Beth and Rodriguez, Jennifer and Ngo, Long H. and Manning, Warren J. and Nezafat, Reza",Siyeop Yoon; Shiro Nakamori; Amine Amyar; Salah Assana; Julia Cirillo; Manuel A. Morales; Kelvin Chow; Xiaoming Bi; Patrick Pierce; Beth Goddu; Jennifer Rodriguez; Long H. Ngo; Warren J. Manning; Reza Nezafat,RESOLVED_PRIMARY_BYLINE_NAME_PARTITION_RETAIN,sources/stage03/yoon2023regain_crossref.json
+morales2024dent,title,Deformation-Encoding Deep Learning Transformer for High-Frame-Rate Cardiac Cine {MRI},Deformation-encoding Deep Learning Transformer for High-Frame-Rate                     Cardiac Cine MRI,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,year,2024,2024,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,volume,6,6,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,number,3,3,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,pages,e230177,e230177,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,doi,10.1148/ryct.230177,10.1148/ryct.230177,MATCH_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+morales2024dent,author,"Morales, Manuel A. and Ghanbari, Fahime and Nakamori, Shiro and Assana, Salah and Amyar, Amine and Yoon, Siyeop and Rodriguez, Jennifer and Maron, Martin S. and Rowin, Ethan J. and Kim, Jiwon and Judd, Robert M. and Weinsaft, Jonathan W. and Nezafat, Reza",Manuel A. Morales; Fahime Ghanbari; Shiro Nakamori; Salah Assana; Amine Amyar; Siyeop Yoon; Jennifer Rodriguez; Martin S. Maron; Ethan J. Rowin; Jiwon Kim; Robert M. Judd; Jonathan W. Weinsaft; Reza Nezafat,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/morales2024dent_crossref.json
+tsuneta2025dlr,title,The Impact of Model-Based Deep-Learning Reconstruction Compared with That of Compressed Sensing--Sensitivity Encoding on the Image Quality and Precision of Cine Cardiac {MR} in Evaluating Left-Ventricular Volume and Strain: A Study on Healthy Volunteers,The Impact of Model-based Deep-learning Reconstruction Compared with that of Compressed Sensing–Sensitivity Encoding on the Image Quality and Precision of Cine Cardiac MR in Evaluating Left-ventricular Volume and Strain: A Study on Healthy Volunteers,MATCH_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,year,2025,2025,MATCH_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,volume,24,24,MATCH_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,number,4,4,MATCH_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,pages,mp.2024-0202,n/a,RESOLVED_JSTAGE_ARTICLE_ID_RETAIN,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,doi,10.2463/mrms.mp.2024-0202,10.2463/mrms.mp.2024-0202,MATCH_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+tsuneta2025dlr,author,"Tsuneta, Satonori and Aono, Satoru and Kimura, Rina and Kwon, Jihun and Fujima, Noriyuki and Ishizaka, Kinya and Nishioka, Noriko and Yoneyama, Masami and Kato, Fumi and Minowa, Kazuyuki and Kudo, Kohsuke",Satonori Tsuneta; Satoru Aono; Rina Kimura; Jihun Kwon; Noriyuki Fujima; Kinya Ishizaka; Noriko Nishioka; Masami Yoneyama; Fumi Kato; Kazuyuki Minowa; Kohsuke Kudo,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/tsuneta2025dlr_crossref.json
+metz2011,title,Nonrigid Registration of Dynamic Medical Imaging Data Using {$n$D}+{$t$} {B}-Splines and a Groupwise Optimization Approach,Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,year,2011,2011,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,volume,15,15,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,number,2,2,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,pages,238--249,238-249,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,doi,10.1016/j.media.2010.10.003,10.1016/j.media.2010.10.003,MATCH_NORMALIZED,sources/stage03/metz2011_crossref.json
+metz2011,author,"Metz, C T and Klein, S and Schaap, M and van Walsum, T and Niessen, W J",C.T. Metz; S. Klein; M. Schaap; T. van Walsum; W.J. Niessen,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/metz2011_crossref.json
+rueckert1999,title,Nonrigid Registration Using Free-Form Deformations: Application to Breast {MR} Images,Nonrigid registration using free-form deformations: application to breast MR images,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,year,1999,1999,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,volume,18,18,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,number,8,8,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,pages,712--721,712-721,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,doi,10.1109/42.796284,10.1109/42.796284,MATCH_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+rueckert1999,author,"Rueckert, D and Sonoda, L I and Hayes, C and Hill, D L G and Leach, M O and Hawkes, D J",D. Rueckert; L.I. Sonoda; C. Hayes; D.L.G. Hill; M.O. Leach; D.J. Hawkes,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/rueckert1999_crossref.json
+vigneault2017,title,Feature Tracking Cardiac Magnetic Resonance via Deep Learning and Spline Optimization,Feature Tracking Cardiac Magnetic Resonance via Deep Learning and Spline Optimization,MATCH_NORMALIZED,sources/stage03/vigneault2017_crossref.json
+vigneault2017,year,2017,2017,MATCH_NORMALIZED,sources/stage03/vigneault2017_crossref.json
+vigneault2017,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/vigneault2017_crossref.json
+vigneault2017,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/vigneault2017_crossref.json
+vigneault2017,pages,183--194,183-194,MATCH_NORMALIZED,sources/stage03/vigneault2017_crossref.json
+vigneault2017,doi,10.1007/978-3-319-59448-4_18,10.1007/978-3-319-59448-4_18,MATCH_NORMALIZED,sources/stage03/vigneault2017_crossref.json
+vigneault2017,author,"Vigneault, Davis M. and Xie, Weidi and Bluemke, David A. and Noble, J. Alison",Davis M. Vigneault; Weidi Xie; David A. Bluemke; J. Alison Noble,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/vigneault2017_crossref.json
+puyolanton2018,title,Fully Automated Myocardial Strain Estimation from Cine {MRI} Using Convolutional Neural Networks,Fully automated myocardial strain estimation from cine MRI using convolutional neural networks,MATCH_NORMALIZED,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,year,2018,2018,MATCH_NORMALIZED,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,pages,1139--1143,1139-1143,MATCH_NORMALIZED,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,doi,10.1109/ISBI.2018.8363772,10.1109/isbi.2018.8363772,MATCH_NORMALIZED,sources/stage03/puyolanton2018_crossref.json
+puyolanton2018,author,"Puyol-Anton, Esther and Ruijsink, Bram and Bai, Wenjia and Langet, Helene and De Craene, Mathieu and Schnabel, Julia A. and Piro, Paolo and King, Andrew P. and Sinclair, Matthew",Esther Puyol-Anton; Bram Ruijsink; Wenjia Bai; Helene Langet; Mathieu De Craene; Julia A. Schnabel; Paolo Piro; Andrew P. King; Matthew Sinclair,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/puyolanton2018_crossref.json
+osman2000harp,title,Imaging Heart Motion Using Harmonic Phase {MRI},Imaging heart motion using harmonic phase MRI,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,year,2000,2000,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,volume,19,19,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,number,3,3,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,pages,186--202,186-202,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,doi,10.1109/42.845177,10.1109/42.845177,MATCH_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+osman2000harp,author,"Osman, N F and McVeigh, E R and Prince, J L",N.F. Osman; E.R. McVeigh; J.L. Prince,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/osman2000harp_crossref.json
+balakrishnan2019voxelmorph,title,{VoxelMorph}: A Learning Framework for Deformable Medical Image Registration,VoxelMorph: A Learning Framework for Deformable Medical Image Registration,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,year,2019,2019,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,volume,38,38,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,number,8,8,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,pages,1788--1800,1788-1800,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,doi,10.1109/TMI.2019.2897538,10.1109/tmi.2019.2897538,MATCH_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+balakrishnan2019voxelmorph,author,"Balakrishnan, Guha and Zhao, Amy and Sabuncu, Mert R and Guttag, John and Dalca, Adrian V",Guha Balakrishnan; Amy Zhao; Mert R. Sabuncu; John Guttag; Adrian V. Dalca,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+chen2022transmorph,title,{TransMorph}: Transformer for Unsupervised Medical Image Registration,TransMorph: Transformer for unsupervised medical image registration,MATCH_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,year,2022,2022,MATCH_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,volume,82,82,MATCH_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,pages,102615,102615,MATCH_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,doi,10.1016/j.media.2022.102615,10.1016/j.media.2022.102615,MATCH_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+chen2022transmorph,author,"Chen, Junyu and Frey, Eric C and He, Yufan and Segars, William P and Li, Ye and Du, Yong",Junyu Chen; Eric C. Frey; Yufan He; William P. Segars; Ye Li; Yong Du,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/chen2022transmorph_crossref.json
+jia2023fouriernet,title,{Fourier-Net}: Fast Image Registration with Band-Limited Deformation,Fourier-Net: Fast Image Registration with Band-Limited Deformation,MATCH_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,year,2023,2023,MATCH_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,volume,37,37,MATCH_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,number,,1,OPTIONAL_FIELD_ABSENT,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,pages,1015--1023,1015-1023,MATCH_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,doi,10.1609/aaai.v37i1.25182,10.1609/aaai.v37i1.25182,MATCH_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+jia2023fouriernet,author,"Jia, Xi and Bartlett, Joseph and Chen, Wei and Song, Siyang and Zhang, Tianyang and Cheng, Xinxing and Lu, Wenqi and Qiu, Zhaowen and Duan, Jinming",Xi Jia; Joseph Bartlett; Wei Chen; Siyang Song; Tianyang Zhang; Xinxing Cheng; Wenqi Lu; Zhaowen Qiu; Jinming Duan,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/jia2023fouriernet_crossref.json
+qin2018joint,title,Joint Learning of Motion Estimation and Segmentation for Cardiac {MR} Image Sequences,Joint Learning of Motion Estimation and Segmentation for Cardiac MR Image Sequences,MATCH_NORMALIZED,sources/stage03/qin2018joint_crossref.json
+qin2018joint,year,2018,2018,MATCH_NORMALIZED,sources/stage03/qin2018joint_crossref.json
+qin2018joint,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/qin2018joint_crossref.json
+qin2018joint,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/qin2018joint_crossref.json
+qin2018joint,pages,472--480,472-480,MATCH_NORMALIZED,sources/stage03/qin2018joint_crossref.json
+qin2018joint,doi,10.1007/978-3-030-00934-2_53,10.1007/978-3-030-00934-2_53,MATCH_NORMALIZED,sources/stage03/qin2018joint_crossref.json
+qin2018joint,author,"Qin, Chen and Bai, Wenjia and Schlemper, Jo and Petersen, Steffen E. and Piechnik, Stefan K. and Neubauer, Stefan and Rueckert, Daniel",Chen Qin; Wenjia Bai; Jo Schlemper; Steffen E. Petersen; Stefan K. Piechnik; Stefan Neubauer; Daniel Rueckert,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/qin2018joint_crossref.json
+zheng2019apparent,title,Explainable Cardiac Pathology Classification on Cine {MRI} with Motion Characterization by Semi-Supervised Learning of Apparent Flow,Explainable cardiac pathology classification on cine MRI with motion characterization by semi-supervised learning of apparent flow,MATCH_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,year,2019,2019,MATCH_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,volume,56,56,MATCH_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,pages,80--95,80-95,MATCH_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,doi,10.1016/j.media.2019.06.001,10.1016/j.media.2019.06.001,MATCH_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+zheng2019apparent,author,"Zheng, Qiao and Delingette, Herv{\'e} and Ayache, Nicholas",Qiao Zheng; Hervé Delingette; Nicholas Ayache,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/zheng2019apparent_crossref.json
+meng2022mulvimotion,title,{MulViMotion}: Shape-Aware {3D} Myocardial Motion Tracking from Multi-View Cardiac {MRI},MulViMotion: Shape-Aware 3D Myocardial Motion Tracking From Multi-View Cardiac MRI,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,year,2022,2022,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,volume,41,41,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,number,8,8,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,pages,1961--1974,1961-1974,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,doi,10.1109/TMI.2022.3154599,10.1109/tmi.2022.3154599,MATCH_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2022mulvimotion,author,"Meng, Qingjie and Qin, Chen and Bai, Wenjia and Liu, Tianrui and de Marvao, Antonio and O'Regan, Declan P. and Rueckert, Daniel",Qingjie Meng; Chen Qin; Wenjia Bai; Tianrui Liu; Antonio de Marvao; Declan P O'Regan; Daniel Rueckert,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/meng2022mulvimotion_crossref.json
+meng2024deepmesh,title,{DeepMesh}: Mesh-Based Cardiac Motion Tracking Using Deep Learning,DeepMesh: Mesh-Based Cardiac Motion Tracking Using Deep Learning,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,year,2024,2024,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,volume,43,43,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,number,4,4,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,pages,1489--1500,1489-1500,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,doi,10.1109/TMI.2023.3340118,10.1109/tmi.2023.3340118,MATCH_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+meng2024deepmesh,author,"Meng, Qingjie and Bai, Wenjia and O'Regan, Declan P. and Rueckert, Daniel",Qingjie Meng; Wenjia Bai; Declan P. O’Regan; Daniel Rueckert,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/meng2024deepmesh_crossref.json
+qiao2026stcmt,title,{STCMT-Net}: A Spatiotemporal Consistency Motion Transfer Network for Enhancing Cardiac Motion Estimation,STCMT-Net: A spatiotemporal consistency motion transfer network for enhancing cardiac motion estimation,MATCH_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,year,2026,2026,MATCH_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,volume,109,109,MATCH_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,pages,103926,103926,MATCH_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,doi,10.1016/j.media.2025.103926,10.1016/j.media.2025.103926,MATCH_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+qiao2026stcmt,author,"Qiao, Xiaoya and Yu, Jiwei and Wang, Hanzhong and Ding, Wenxiang and Zhang, Ruiyan and Zhu, Zhengbin and Huang, Qiu",Xiaoya Qiao; Jiwei Yu; Hanzhong Wang; Wenxiang Ding; Ruiyan Zhang; Zhengbin Zhu; Qiu Huang,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/qiao2026stcmt_crossref.json
+yin2025mcm,title,{MCM}: Mamba-Based Cardiac Motion Tracking Using Sequential Images in {MRI},,CHECKED_OFFICIAL_RECORD,https://arxiv.org/abs/2507.17678
+yin2025mcm,year,2025,,CHECKED_OFFICIAL_RECORD,https://arxiv.org/abs/2507.17678
+yin2025mcm,volume,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://arxiv.org/abs/2507.17678
+yin2025mcm,number,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://arxiv.org/abs/2507.17678
+yin2025mcm,pages,,,PRIMARY_RESOURCE_NOT_APPLICABLE,https://arxiv.org/abs/2507.17678
+yin2025mcm,doi,10.48550/arXiv.2507.17678,,CHECKED_OFFICIAL_RECORD,https://arxiv.org/abs/2507.17678
+yin2025mcm,author,"Yin, Jiahui and Cheng, Xinxing and Duan, Jinming and Pang, Yan and O'Regan, Declan and Reynaud, Hadrien and Meng, Qingjie",,CHECKED_OFFICIAL_RECORD,https://arxiv.org/abs/2507.17678
+ruan2026latentode,title,Cardiac Motion Tracking with Bidirectional Latent Neural {ODEs} from Cine Cardiac {MRI},Cardiac motion tracking with bidirectional latent neural ODEs from cine cardiac MRI,MATCH_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,year,2026,2026,MATCH_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,volume,134,134,MATCH_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,pages,102797,102797,MATCH_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,doi,10.1016/j.compmedimag.2026.102797,10.1016/j.compmedimag.2026.102797,MATCH_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+ruan2026latentode,author,"Ruan, Dongsheng and Zhou, Ke and Zhu, Chenyi and Yu, Chengjin and Gao, Zhifan and Jiang, Mingfeng and Zheng, Luyan and Liu, Huafeng",Dongsheng Ruan; Ke Zhou; Chenyi Zhu; Chengjin Yu; Zhifan Gao; Mingfeng Jiang; Luyan Zheng; Huafeng Liu,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/ruan2026latentode_crossref.json
+fu2026cinema,title,Development and Validation of a Versatile Foundation Model for Cine Cardiac Magnetic Resonance Image Analysis,Development and validation of a versatile foundation model for cine cardiac magnetic resonance image analysis,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,year,2026,2026,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,volume,6,6,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,number,1,1,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,pages,408,408,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,doi,10.1038/s43856-026-01636-0,10.1038/s43856-026-01636-0,MATCH_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+fu2026cinema,author,"Fu, Yunguan and Bai, Wenjia and Yi, Weixi and Manisty, Charlotte and Bhuva, Anish N and Treibel, Thomas A and Moon, James C and Clarkson, Matthew J and Davies, Rhodri H and Hu, Yipeng",Yunguan Fu; Wenjia Bai; Weixi Yi; Charlotte Manisty; Anish N. Bhuva; Thomas A. Treibel; James C. Moon; Matthew J. Clarkson; Rhodri Huw Davies; Yipeng Hu,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/fu2026cinema_crossref.json
+jacob2025cmrfm,title,Towards a Cardiovascular Magnetic Resonance Foundation Model for Multi-Task Cardiac Image Analysis,Towards a cardiovascular magnetic resonance foundation model for multi-task cardiac image analysis,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,year,2025,2025,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,volume,27,27,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,number,2,2,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,pages,101967,101967,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,doi,10.1016/j.jocmr.2025.101967,10.1016/j.jocmr.2025.101967,MATCH_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+jacob2025cmrfm,author,"Jacob, Athira J and Borgohain, Indraneel and Chitiboi, Teodora and Sharma, Puneet and Comaniciu, Dorin and Rueckert, Daniel",Athira J. Jacob; Indraneel Borgohain; Teodora Chitiboi; Puneet Sharma; Dorin Comaniciu; Daniel Rueckert,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/jacob2025cmrfm_crossref.json
+qin2023biomech,title,Generative Myocardial Motion Tracking via Latent Space Exploration with Biomechanics-Informed Prior,Generative myocardial motion tracking via latent space exploration with biomechanics-informed prior,MATCH_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,year,2023,2023,MATCH_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,volume,83,83,MATCH_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,pages,102682,102682,MATCH_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,doi,10.1016/j.media.2022.102682,10.1016/j.media.2022.102682,MATCH_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+qin2023biomech,author,"Qin, Chen and Wang, Shuo and Chen, Chen and Bai, Wenjia and Rueckert, Daniel",Chen Qin; Shuo Wang; Chen Chen; Wenjia Bai; Daniel Rueckert,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/qin2023biomech_crossref.json
+arratia2023warppinn,title,{WarpPINN}: Cine-{MR} Image Registration with Physics-Informed Neural Networks,WarpPINN: Cine-MR image registration with physics-informed neural networks,MATCH_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,year,2023,2023,MATCH_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,volume,89,89,MATCH_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,pages,102925,102925,MATCH_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,doi,10.1016/j.media.2023.102925,10.1016/j.media.2023.102925,MATCH_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+arratia2023warppinn,author,"Arratia L{\'o}pez, Pablo and Mella, Hernan and Uribe, Sergio and Hurtado, Daniel E and Sahli Costabal, Francisco",Pablo Arratia López; Hernán Mella; Sergio Uribe; Daniel E. Hurtado; Francisco Sahli Costabal,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/arratia2023warppinn_crossref.json
+ye2021deeptag,title,{DeepTag}: An Unsupervised Deep Learning Method for Motion Tracking on Cardiac Tagging Magnetic Resonance Images,DeepTag: An Unsupervised Deep Learning Method for Motion Tracking on Cardiac Tagging Magnetic Resonance Images,MATCH_NORMALIZED,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,year,2021,2021,MATCH_NORMALIZED,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,pages,7257--7267,7257-7267,MATCH_NORMALIZED,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,doi,10.1109/CVPR46437.2021.00718,10.1109/cvpr46437.2021.00718,MATCH_NORMALIZED,sources/stage03/ye2021deeptag_crossref.json
+ye2021deeptag,author,"Ye, Meng and Kanski, Mikael and Yang, Dong and Chang, Qi and Yan, Zhennan and Huang, Qiaoying and Axel, Leon and Metaxas, Dimitris",Meng Ye; Mikael Kanski; Dong Yang; Qi Chang; Zhennan Yan; Qiaoying Huang; Leon Axel; Dimitris Metaxas,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/ye2021deeptag_crossref.json
+lei2025denserotation,title,{DENSE}-Guided Deep Motion Networks Accounted by Large Rotations to Improve Myocardial Strain Analysis from Routine Cine {MRI},DENSE-Guided Deep Motion Networks Accounted by Large Rotations to Improve Myocardial Strain Analysis from Routine Cine MRI,MATCH_NORMALIZED,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,year,2025,2025,MATCH_NORMALIZED,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,pages,1--5,1-5,MATCH_NORMALIZED,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,doi,10.1109/isbi60581.2025.10980688,10.1109/isbi60581.2025.10980688,MATCH_NORMALIZED,sources/stage03/lei2025denserotation_crossref.json
+lei2025denserotation,author,"Lei, Pengcheng and Xing, Jiarui and Fang, Faming and Epstein, Frederick H and Zhang, Miaomiao",Pengcheng Lei; Jiarui Xing; Faming Fang; Frederick H. Epstein; Miaomiao Zhang,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/lei2025denserotation_crossref.json
+an2026myonet,title,{MyoNet}: Deep Learning-Based Myocardial Strain Quantification from Cine Cardiac {MRI},MyoNet: Deep Learning-Based Myocardial Strain Quantification from Cine Cardiac MRI,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,year,2026,2026,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,volume,13,13,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,number,3,3,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,pages,310,310,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,doi,10.3390/bioengineering13030310,10.3390/bioengineering13030310,MATCH_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+an2026myonet,author,"An, Dayeong and Nencka, Andrew and Clarysse, Patrick and Croisille, Pierre and Bergom, Carmen and Ibrahim, El-Sayed",Dayeong An; Andrew Nencka; Patrick Clarysse; Pierre Croisille; Carmen Bergom; El-Sayed Ibrahim,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/an2026myonet_crossref.json
+morales2022comparison,title,Comparison of {DeepStrain} and Feature Tracking for Cardiac {MRI} Strain Analysis,Comparison of <scp>DeepStrain</scp> and Feature Tracking for Cardiac <scp>MRI</scp> Strain Analysis,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,year,2023,2023,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,volume,57,57,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,number,5,5,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,pages,1507--1515,1507-1515,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,doi,10.1002/jmri.28374,10.1002/jmri.28374,MATCH_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+morales2022comparison,author,"Morales, Manuel A and Cirillo, Julia and Nakata, Kei and Kucukseymen, Selcuk and Ngo, Long H and Izquierdo-Garcia, David and Catana, Ciprian and Nezafat, Reza",Manuel A. Morales; Julia Cirillo; Kei Nakata; Selcuk Kucukseymen; Long H. Ngo; David Izquierdo‐Garcia; Ciprian Catana; Reza Nezafat,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/morales2022comparison_crossref.json
+masutani2023dlss,title,Deep Learning Synthetic Strain: Quantitative Assessment of Regional Myocardial Wall Motion at {MRI},Deep Learning Synthetic Strain: Quantitative Assessment of Regional                     Myocardial Wall Motion at MRI,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,year,2023,2023,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,volume,5,5,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,number,3,3,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,pages,e220202,e220202,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,doi,10.1148/ryct.220202,10.1148/ryct.220202,MATCH_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+masutani2023dlss,author,"Masutani, Evan M and Chandrupatla, Rahul S and Wang, Shuo and Zocchi, Chiara and Hahn, Lewis D and Horowitz, Michael and Jacobs, Kathleen and Kligerman, Seth and Raimondi, Francesca and Patel, Amit and Hsiao, Albert",Evan M. Masutani; Rahul S. Chandrupatla; Shuo Wang; Chiara Zocchi; Lewis D. Hahn; Michael Horowitz; Kathleen Jacobs; Seth Kligerman; Francesca Raimondi; Amit Patel; Albert Hsiao,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/masutani2023dlss_crossref.json
+koehler2025alignedstrain,title,Deep Learning-Based Aligned Strain from Cine Cardiac {MRI} for Detection of Fibrotic Myocardial Tissue in Patients with {Duchenne} Muscular Dystrophy,Deep Learning–based Aligned Strain from Cine Cardiac MRI for                     Detection of Fibrotic Myocardial Tissue in Patients with Duchenne Muscular                     Dystrophy,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,year,2025,2025,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,volume,7,7,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,number,3,3,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,pages,e240303,e240303,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,doi,10.1148/ryai.240303,10.1148/ryai.240303,MATCH_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+koehler2025alignedstrain,author,"Koehler, Sven and Kuhm, Julian and Huffaker, Tyler and Young, Daniel and Tandon, Animesh and Andr{\'e}, Florian and Frey, Norbert and Greil, Gerald and Hussain, Tarique and Engelhardt, Sandy",Sven Koehler; Julian Kuhm; Tyler Huffaker; Daniel Young; Animesh Tandon; Florian André; Norbert Frey; Gerald Greil; Tarique Hussain; Sandy Engelhardt,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/koehler2025alignedstrain_crossref.json
+xu2018,title,Direct Delineation of Myocardial Infarction without Contrast Agents Using a Joint Motion Feature Learning Architecture,Direct delineation of myocardial infarction without contrast agents using a joint motion feature learning architecture,MATCH_NORMALIZED,sources/stage03/xu2018_crossref.json
+xu2018,year,2018,2018,MATCH_NORMALIZED,sources/stage03/xu2018_crossref.json
+xu2018,volume,50,50,MATCH_NORMALIZED,sources/stage03/xu2018_crossref.json
+xu2018,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/xu2018_crossref.json
+xu2018,pages,82--94,82-94,MATCH_NORMALIZED,sources/stage03/xu2018_crossref.json
+xu2018,doi,10.1016/j.media.2018.09.001,10.1016/j.media.2018.09.001,MATCH_NORMALIZED,sources/stage03/xu2018_crossref.json
+xu2018,author,"Xu, Chenchu and Xu, Lei and Gao, Zhifan and Zhao, Shen and Zhang, Heye and Zhang, Yanping and Du, Xiuquan and Zhao, Shu and Ghista, Dhanjoo and Liu, Huafeng and Li, Shuo",Chenchu Xu; Lei Xu; Zhifan Gao; Shen Zhao; Heye Zhang; Yanping Zhang; Xiuquan Du; Shu Zhao; Dhanjoo Ghista; Huafeng Liu; Shuo Li,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/xu2018_crossref.json
+bello2019,title,Deep-Learning Cardiac Motion Analysis for Human Survival Prediction,Deep-learning cardiac motion analysis for human survival prediction,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,year,2019,2019,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,volume,1,1,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,number,2,2,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,pages,95--104,95-104,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,doi,10.1038/s42256-019-0019-2,10.1038/s42256-019-0019-2,MATCH_NORMALIZED,sources/stage03/bello2019_crossref.json
+bello2019,author,"Bello, Ghalib A and Dawes, Timothy J W and Duan, Jinming and Biffi, Carlo and de Marvao, Antonio and Howard, Luke S G E and Gibbs, J Simon R and Wilkins, Martin R and Cook, Stuart A and Rueckert, Daniel and O'Regan, Declan P",Ghalib A. Bello; Timothy J. W. Dawes; Jinming Duan; Carlo Biffi; Antonio de Marvao; Luke S. G. E. Howard; J. Simon R. Gibbs; Martin R. Wilkins; Stuart A. Cook; Daniel Rueckert; Declan P. O’Regan,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/bello2019_crossref.json
+brandt2024,title,"Quantification of Left Ventricular Myocardial Strain: Comparison between {MRI} Tagging, {MRI} Feature Tracking, and Ultrasound Speckle Tracking","Quantification of left ventricular myocardial strain: Comparison between MRI tagging, MRI feature tracking, and ultrasound speckle tracking",MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,year,2024,2024,MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,volume,37,37,MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,number,9,9,MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,pages,e5164,e5164,MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,doi,10.1002/nbm.5164,10.1002/nbm.5164,MATCH_NORMALIZED,sources/stage03/brandt2024_crossref.json
+brandt2024,author,"Brandt, Yentl and Lubrecht, Jolijn M and Adriaans, Bouke P and Aben, Jean-Paul and Gerretsen, Suzanne C and Ghossein-Doha, Chahinda and Spaanderman, Marc E A and Prinzen, Frits W and Kooi, M Eline",Yentl Brandt; Jolijn M. Lubrecht; Bouke P. Adriaans; Jean‐Paul Aben; Suzanne C. Gerretsen; Chahinda Ghossein‐Doha; Marc E. A. Spaanderman; Frits W. Prinzen; M. Eline Kooi,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/brandt2024_crossref.json
+yeon2001sonomicrometry,title,Validation of In Vivo Myocardial Strain Measurement by Magnetic Resonance Tagging with Sonomicrometry,Validation of in vivo myocardial strain measurement by magnetic resonance tagging with sonomicrometry,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,year,2001,2001,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,volume,38,38,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,number,2,2,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,pages,555--561,555-561,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,doi,10.1016/s0735-1097(01)01397-3,10.1016/s0735-1097(01)01397-3,MATCH_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+yeon2001sonomicrometry,author,"Yeon, Susan B and Reichek, Nathaniel and Tallant, Barbara A and Lima, Jo{\~a}o A C and Calhoun, Linda P and Clark, Neil R and Hoffman, Eric A and Ho, Kalon K L and Axel, Leon",Susan B Yeon; Nathaniel Reichek; Barbara A Tallant; João A.C Lima; Linda P Calhoun; Neil R Clark; Eric A Hoffman; Kalon K.L Ho; Leon Axel,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/yeon2001sonomicrometry_crossref.json
+portal2025semisup,title,Semi-Supervised Motion Flow and Myocardial Strain Estimation in Cardiac Videos Using Distance Maps and Memory Networks,Semi-supervised motion flow and myocardial strain estimation in cardiac videos using distance maps and memory networks,MATCH_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,year,2025,2025,MATCH_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,volume,196,196,MATCH_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,pages,110739,110739,MATCH_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,doi,10.1016/j.compbiomed.2025.110739,10.1016/j.compbiomed.2025.110739,MATCH_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+portal2025semisup,author,"Portal, Nicolas and Dietenbeck, Thomas and Khan, Saud and Nguyen, Vincent and Prigent, Mikael and Zarai, Mohamed and Bouazizi, Khaoula and Sylvain, Johanne and Redheuil, Alban and Montalescot, Gilles and Kachenoura, Nadjia and Achard, Catherine",Nicolas Portal; Thomas Dietenbeck; Saud Khan; Vincent Nguyen; Mikael Prigent; Mohamed Zarai; Khaoula Bouazizi; Johanne Sylvain; Alban Redheuil; Gilles Montalescot; Nadjia Kachenoura; Catherine Achard,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/portal2025semisup_crossref.json
+buoso2025tagging3d,title,Automatic Analysis of Three-Dimensional Cardiac Tagged Magnetic Resonance Images Using Neural Networks Trained on Synthetic Data,Automatic analysis of three-dimensional cardiac tagged magnetic resonance images using neural networks trained on synthetic data,MATCH_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,year,2025,2025,MATCH_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,volume,27,27,MATCH_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,number,,1,OPTIONAL_FIELD_ABSENT,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,pages,101869,101869,MATCH_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,doi,10.1016/j.jocmr.2025.101869,10.1016/j.jocmr.2025.101869,MATCH_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+buoso2025tagging3d,author,"Buoso, Stefano and Stoeck, Christian T. and Kozerke, Sebastian",Stefano Buoso; Christian T. Stoeck; Sebastian Kozerke,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/buoso2025tagging3d_crossref.json
+maret2009ft,title,{Functional measurements based on feature tracking of cine magnetic resonance images identify left ventricular segments with myocardial scar},Functional measurements based on feature tracking of cine magnetic resonance images identify left ventricular segments with myocardial scar,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,year,2009,2009,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,volume,7,7,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,number,1,1,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,pages,53,53,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,doi,10.1186/1476-7120-7-53,10.1186/1476-7120-7-53,MATCH_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+maret2009ft,author,"Maret, Eva and Todt, Tim and Brudin, Lars and Nylander, Eva and Swahn, Eva and Ohlsson, Jan L and Engvall, Jan E",Eva Maret; Tim Todt; Lars Brudin; Eva Nylander; Eva Swahn; Jan L Ohlsson; Jan E Engvall,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/maret2009ft_crossref.json
+hor2010ft,title,{Comparison of Magnetic Resonance Feature Tracking for Strain Calculation With Harmonic Phase Imaging Analysis},Comparison of Magnetic Resonance Feature Tracking for Strain Calculation With Harmonic Phase Imaging Analysis,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,year,2010,2010,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,volume,3,3,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,number,2,2,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,pages,144--151,144-151,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,doi,10.1016/j.jcmg.2009.11.006,10.1016/j.jcmg.2009.11.006,MATCH_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+hor2010ft,author,"Hor, Kan N. and Gottliebson, William M. and Carson, Christopher and Wash, Erin and Cnota, James and Fleck, Robert and Wansapura, Janaka and Klimeczek, Piotr and Al-Khalidi, Hussein R. and Chung, Eugene S. and Benson, D. Woodrow and Mazur, Wojciech",Kan N. Hor; William M. Gottliebson; Christopher Carson; Erin Wash; James Cnota; Robert Fleck; Janaka Wansapura; Piotr Klimeczek; Hussein R. Al-Khalidi; Eugene S. Chung; D. Woodrow Benson; Wojciech Mazur,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/hor2010ft_crossref.json
+augustine2013ft,title,{Global and regional left ventricular myocardial deformation measures by magnetic resonance feature tracking in healthy volunteers: comparison with tagging and relevance of gender},Global and regional left ventricular myocardial deformation measures by magnetic resonance feature tracking in healthy volunteers: comparison with tagging and relevance of gender,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,year,2013,2013,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,volume,15,15,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,number,1,1,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,pages,8,8,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,doi,10.1186/1532-429X-15-8,10.1186/1532-429x-15-8,MATCH_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+augustine2013ft,author,"Augustine, Daniel and Lewandowski, Adam J and Lazdam, Merzaka and Rai, Aitzaz and Francis, Jane and Myerson, Saul and Noble, Alison and Becher, Harald and Neubauer, Stefan and Petersen, Steffen E and Leeson, Paul",Daniel Augustine; Adam J Lewandowski; Merzaka Lazdam; Aitzaz Rai; Jane Francis; Saul Myerson; Alison Noble; Harald Becher; Stefan Neubauer; Steffen E Petersen; Paul Leeson,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/augustine2013ft_crossref.json
+grob2025interp,title,{Retrospective temporal resolution interpolation alters myocardial strain quantification on compressed sensing cine CMR},Retrospective temporal resolution interpolation alters myocardial strain quantification on compressed sensing cine CMR,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,year,2025,2025,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,volume,41,41,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,number,3,3,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,pages,591--602,591-602,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,doi,10.1007/s10554-025-03348-3,10.1007/s10554-025-03348-3,MATCH_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+grob2025interp,author,"Grob, Leonard and Schwerzmann, Yann and Kaiser, Dario and Jung, Bernd and Schweizer, Thilo and Huettenmoser, Stefan P. and Dozio, Scilla and Huber, Adrian T. and Boscolo Berto, Martina and Gräni, Christoph and Guensch, Dominik P. and Fischer, Kady",Leonard Grob; Yann Schwerzmann; Dario Kaiser; Bernd Jung; Thilo Schweizer; Stefan P. Huettenmoser; Scilla Dozio; Adrian T. Huber; Martina Boscolo Berto; Christoph Gräni; Dominik P. Guensch; Kady Fischer,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/grob2025interp_crossref.json
+bi2025segmorph,title,{SegMorph: Concurrent Motion Estimation and Segmentation for Cardiac MRI Sequences},SegMorph: Concurrent Motion Estimation and Segmentation for Cardiac MRI Sequences,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,year,2025,2025,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,volume,44,44,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,number,9,9,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,pages,3515--3528,3515-3528,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,doi,10.1109/TMI.2024.3435000,10.1109/tmi.2024.3435000,MATCH_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+bi2025segmorph,author,"Bi, Ning and Zakeri, Arezoo and Xia, Yan and Cheng, Nina and Frangi, Alejandro F. and Gooya, Ali",Ning Bi; Arezoo Zakeri; Yan Xia; Nina Cheng; Alejandro F. Frangi; Ali Gooya,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/bi2025segmorph_crossref.json
+lu2023bireg,title,{A bidirectional registration neural network for cardiac motion tracking using cine MRI images},A bidirectional registration neural network for cardiac motion tracking using cine MRI images,MATCH_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,year,2023,2023,MATCH_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,volume,160,160,MATCH_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,pages,107001,107001,MATCH_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,doi,10.1016/j.compbiomed.2023.107001,10.1016/j.compbiomed.2023.107001,MATCH_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+lu2023bireg,author,"Lu, Jiayi and Jin, Renchao and Wang, Manyang and Song, Enmin and Ma, Guangzhi",Jiayi Lu; Renchao Jin; Manyang Wang; Enmin Song; Guangzhi Ma,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/lu2023bireg_crossref.json
+jia2026igbireg,title,{IG-BiReg: implicit-guided bidirectional residual registration framework for cardiac cine MRI images},IG-BiReg: implicit-guided bidirectional residual registration framework for cardiac cine MRI images,MATCH_NORMALIZED,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,year,2026,2026,MATCH_NORMALIZED,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,volume,,,PRIMARY_FIELD_ABSENT,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,pages,,,PRIMARY_FIELD_ABSENT,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,doi,10.1088/1361-6560/aeb060,10.1088/1361-6560/aeb060,MATCH_NORMALIZED,sources/stage03/jia2026igbireg_crossref.json
+jia2026igbireg,author,"Jia, Shuangshuang and Yang, Yi and Chang, Qing",Shuangshuang Jia; Yi Yang; Qing Chang,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/jia2026igbireg_crossref.json
+wang2019opticalflow,title,{A gradient-based optical-flow cardiac motion estimation method for cine and tagged MR images},A gradient-based optical-flow cardiac motion estimation method for cine and tagged MR images,MATCH_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,year,2019,2019,MATCH_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,volume,57,57,MATCH_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,number,,,PRIMARY_FIELD_ABSENT,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,pages,136--148,136-148,MATCH_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,doi,10.1016/j.media.2019.06.016,10.1016/j.media.2019.06.016,MATCH_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+wang2019opticalflow,author,"Wang, Liang and Clarysse, Patrick and Liu, Zhengjun and Gao, Bin and Liu, Wanyu and Croisille, Pierre and Delachartre, Philippe",Liang Wang; Patrick Clarysse; Zhengjun Liu; Bin Gao; Wanyu Liu; Pierre Croisille; Philippe Delachartre,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/wang2019opticalflow_crossref.json
+elnakib2015laplace,title,{Intramyocardial strain estimation from cardiac cine MRI},Intramyocardial strain estimation from cardiac cine MRI,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,year,2015,2015,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,volume,10,10,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,number,8,8,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,pages,1299--1312,1299-1312,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,doi,10.1007/s11548-014-1137-2,10.1007/s11548-014-1137-2,MATCH_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+elnakib2015laplace,author,"Elnakib, Ahmed and Beache, Garth M. and Gimel’farb, Georgy and El-Baz, Ayman",Ahmed Elnakib; Garth M. Beache; Georgy Gimel’farb; Ayman El-Baz,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/elnakib2015laplace_crossref.json
+tuyisenge2016assimilation,title,{Estimation of Myocardial Strain and Contraction Phase From Cine MRI Using Variational Data Assimilation},Estimation of Myocardial Strain and Contraction Phase From Cine MRI Using Variational Data Assimilation,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,year,2016,2016,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,volume,35,35,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,number,2,2,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,pages,442--455,442-455,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,doi,10.1109/TMI.2015.2478117,10.1109/tmi.2015.2478117,MATCH_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+tuyisenge2016assimilation,author,"Tuyisenge, Viateur and Sarry, Laurent and Corpetti, Thomas and Innorta-Coupez, Elisabeth and Ouchchane, Lemlih and Cassagnes, Lucie",Viateur Tuyisenge; Laurent Sarry; Thomas Corpetti; Elisabeth Innorta-Coupez; Lemlih Ouchchane; Lucie Cassagnes,CHECKED_NAME_ORDER_NORMALIZED,sources/stage03/tuyisenge2016assimilation_crossref.json
+buss2015,journal_or_booktitle,Int J Cardiol,International Journal of Cardiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/buss2015_crossref.json
+mangion2019,journal_or_booktitle,Radiology,Radiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/mangion2019_crossref.json
+reindl2021,journal_or_booktitle,Clin Res Cardiol,Clinical Research in Cardiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/reindl2021_crossref.json
+raunig2015,journal_or_booktitle,Stat Methods Med Res,Statistical Methods in Medical Research,CHECKED_ABBREVIATION_VENUE,sources/stage03/raunig2015_crossref.json
+puntmann2018,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/puntmann2018_crossref.json
+schulzmenger2020,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/schulzmenger2020_crossref.json
+hundley2022,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/hundley2022_crossref.json
+chadalavada2024,journal_or_booktitle,J Am Coll Cardiol,Journal of the American College of Cardiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/chadalavada2024_crossref.json
+pedrizzetti2016,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/pedrizzetti2016_crossref.json
+duchateau2020,journal_or_booktitle,Front Cardiovasc Med,Frontiers in Cardiovascular Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/duchateau2020_crossref.json
+chen2024,journal_or_booktitle,BMC Med Imaging,BMC Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/chen2024_crossref.json
+bell2025strain8,journal_or_booktitle,Eur Heart J Imaging Methods Pract,European Heart Journal - Imaging Methods and Practice,CHECKED_ABBREVIATION_VENUE,sources/stage03/bell2025strain8_crossref.json
+voigt2015,journal_or_booktitle,Eur Heart J Cardiovasc Imaging,European Heart Journal - Cardiovascular Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/voigt2015_crossref.json
+amzulescu2019,journal_or_booktitle,Eur Heart J Cardiovasc Imaging,European Heart Journal - Cardiovascular Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/amzulescu2019_crossref.json
+smiseth2025,journal_or_booktitle,JACC Cardiovasc Imaging,JACC: Cardiovascular Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/smiseth2025_crossref.json
+morales2021,journal_or_booktitle,Front Cardiovasc Med,Frontiers in Cardiovascular Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/morales2021_crossref.json
+wang2023strainnet,journal_or_booktitle,Radiol Cardiothorac Imaging,Radiology: Cardiothoracic Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/wang2023strainnet_crossref.json
+militaru2021,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/militaru2021_crossref.json
+goetze2026,journal_or_booktitle,Int J Comput Assist Radiol Surg,International Journal of Computer Assisted Radiology and Surgery,CHECKED_ABBREVIATION_VENUE,sources/stage03/goetze2026_crossref.json
+wehner2018,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/wehner2018_crossref.json
+cao2018,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/cao2018_crossref.json
+adams2023,journal_or_booktitle,Br J Radiol,The British Journal of Radiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/adams2023_crossref.json
+mukherjee2024,journal_or_booktitle,Comput Biol Med,Computers in Biology and Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/mukherjee2024_crossref.json
+barbaroux2025,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/barbaroux2025_crossref.json
+cmac2011,journal_or_booktitle,,,CHECKED_RESOURCE_OR_PREPRINT,https://www.cardiacatlas.org/motion-tracking-2011-challenge/
+stanforddata,journal_or_booktitle,,,CHECKED_RESOURCE_OR_PREPRINT,https://purl.stanford.edu/xt223hz2438
+zhou2018straus,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/zhou2018straus_crossref.json
+strausdata,journal_or_booktitle,,,CHECKED_RESOURCE_OR_PREPRINT,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html
+tobongomez2013cmac,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/tobongomez2013cmac_crossref.json
+wissmann2014mrxcat,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/wissmann2014mrxcat_crossref.json
+mrxcat2repo,journal_or_booktitle,,,CHECKED_RESOURCE_OR_PREPRINT,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0
+he2024,journal_or_booktitle,J Magn Reson Imaging,Journal of Magnetic Resonance Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/he2024_crossref.json
+yu2020mpn,journal_or_booktitle,Medical Image Computing and Computer Assisted Intervention -- MICCAI 2020,Lecture Notes in Computer Science;Medical Image Computing and Computer Assisted Intervention – MICCAI 2020,CHECKED_ABBREVIATION_VENUE,sources/stage03/yu2020mpn_crossref.json
+yu2020foal,journal_or_booktitle,2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition,2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR),CHECKED_ABBREVIATION_VENUE,sources/stage03/yu2020foal_crossref.json
+chen2020anatomy,journal_or_booktitle,Machine Learning in Medical Imaging,Lecture Notes in Computer Science;Machine Learning in Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/chen2020anatomy_crossref.json
+alvarez2026warppinn,journal_or_booktitle,Engineering with Computers,Engineering with Computers,CHECKED_ABBREVIATION_VENUE,sources/stage03/alvarez2026warppinn_crossref.json
+liu2026fe,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/liu2026fe_crossref.json
+lim2021,journal_or_booktitle,Eur Radiol,European Radiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/lim2021_crossref.json
+mrxcat2023,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/mrxcat2023_crossref.json
+jahromi2026densecine,journal_or_booktitle,Biomech Model Mechanobiol,Biomechanics and Modeling in Mechanobiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/jahromi2026densecine_crossref.json
+kihlberg2020clinical,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/kihlberg2020clinical_crossref.json
+gao2014cine,journal_or_booktitle,Phys Med Biol,Physics in Medicine and Biology,CHECKED_ABBREVIATION_VENUE,sources/stage03/gao2014cine_crossref.json
+jia2026fouriernetplus,journal_or_booktitle,IEEE Trans Neural Netw Learn Syst,IEEE Transactions on Neural Networks and Learning Systems,CHECKED_ABBREVIATION_VENUE,sources/stage03/jia2026fouriernetplus_crossref.json
+movahed2026cardiomorphnet,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/movahed2026cardiomorphnet_crossref.json
+monfared2026review,journal_or_booktitle,Ann Biomed Eng,Annals of Biomedical Engineering,CHECKED_ABBREVIATION_VENUE,sources/stage03/monfared2026review_crossref.json
+hussein2026review,journal_or_booktitle,Br J Radiol,British Journal of Radiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/hussein2026review_crossref.json
+cmrxrecon2025official,journal_or_booktitle,,,CHECKED_RESOURCE_OR_PREPRINT,https://cmrxrecon.github.io/2025/Data.html
+vornehm2024cinevn,journal_or_booktitle,Magn Reson Med,Magnetic Resonance in Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/vornehm2024cinevn_crossref.json
+yoon2023regain,journal_or_booktitle,Radiology,Radiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/yoon2023regain_crossref.json
+morales2024dent,journal_or_booktitle,Radiol Cardiothorac Imaging,Radiology: Cardiothoracic Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/morales2024dent_crossref.json
+tsuneta2025dlr,journal_or_booktitle,Magn Reson Med Sci,Magnetic Resonance in Medical Sciences,CHECKED_ABBREVIATION_VENUE,sources/stage03/tsuneta2025dlr_crossref.json
+metz2011,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/metz2011_crossref.json
+rueckert1999,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/rueckert1999_crossref.json
+vigneault2017,journal_or_booktitle,Functional Imaging and Modeling of the Heart,Lecture Notes in Computer Science;Functional Imaging and Modelling of the Heart,CHECKED_ABBREVIATION_VENUE,sources/stage03/vigneault2017_crossref.json
+puyolanton2018,journal_or_booktitle,2018 IEEE 15th International Symposium on Biomedical Imaging,2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018),CHECKED_ABBREVIATION_VENUE,sources/stage03/puyolanton2018_crossref.json
+osman2000harp,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/osman2000harp_crossref.json
+balakrishnan2019voxelmorph,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/balakrishnan2019voxelmorph_crossref.json
+chen2022transmorph,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/chen2022transmorph_crossref.json
+jia2023fouriernet,journal_or_booktitle,Proceedings of the AAAI Conference on Artificial Intelligence,Proceedings of the AAAI Conference on Artificial Intelligence,CHECKED_ABBREVIATION_VENUE,sources/stage03/jia2023fouriernet_crossref.json
+qin2018joint,journal_or_booktitle,Medical Image Computing and Computer Assisted Intervention -- MICCAI 2018,Lecture Notes in Computer Science;Medical Image Computing and Computer Assisted Intervention – MICCAI 2018,CHECKED_ABBREVIATION_VENUE,sources/stage03/qin2018joint_crossref.json
+zheng2019apparent,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/zheng2019apparent_crossref.json
+meng2022mulvimotion,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/meng2022mulvimotion_crossref.json
+meng2024deepmesh,journal_or_booktitle,IEEE Trans Med Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/meng2024deepmesh_crossref.json
+qiao2026stcmt,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/qiao2026stcmt_crossref.json
+yin2025mcm,journal_or_booktitle,arXiv:2507.17678 [eess.IV],,CHECKED_RESOURCE_OR_PREPRINT,https://arxiv.org/abs/2507.17678
+ruan2026latentode,journal_or_booktitle,Comput Med Imaging Graph,Computerized Medical Imaging and Graphics,CHECKED_ABBREVIATION_VENUE,sources/stage03/ruan2026latentode_crossref.json
+fu2026cinema,journal_or_booktitle,Commun Med (Lond),Communications Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/fu2026cinema_crossref.json
+jacob2025cmrfm,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/jacob2025cmrfm_crossref.json
+qin2023biomech,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/qin2023biomech_crossref.json
+arratia2023warppinn,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/arratia2023warppinn_crossref.json
+ye2021deeptag,journal_or_booktitle,2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition,2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR),CHECKED_ABBREVIATION_VENUE,sources/stage03/ye2021deeptag_crossref.json
+lei2025denserotation,journal_or_booktitle,Proc IEEE Int Symp Biomed Imaging (ISBI),2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI),CHECKED_ABBREVIATION_VENUE,sources/stage03/lei2025denserotation_crossref.json
+an2026myonet,journal_or_booktitle,Bioengineering (Basel),Bioengineering,CHECKED_ABBREVIATION_VENUE,sources/stage03/an2026myonet_crossref.json
+morales2022comparison,journal_or_booktitle,J Magn Reson Imaging,Journal of Magnetic Resonance Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/morales2022comparison_crossref.json
+masutani2023dlss,journal_or_booktitle,Radiol Cardiothorac Imaging,Radiology: Cardiothoracic Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/masutani2023dlss_crossref.json
+koehler2025alignedstrain,journal_or_booktitle,Radiol Artif Intell,Radiology: Artificial Intelligence,CHECKED_ABBREVIATION_VENUE,sources/stage03/koehler2025alignedstrain_crossref.json
+xu2018,journal_or_booktitle,Med Image Anal,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/xu2018_crossref.json
+bello2019,journal_or_booktitle,Nat Mach Intell,Nature Machine Intelligence,CHECKED_ABBREVIATION_VENUE,sources/stage03/bello2019_crossref.json
+brandt2024,journal_or_booktitle,NMR Biomed,NMR in Biomedicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/brandt2024_crossref.json
+yeon2001sonomicrometry,journal_or_booktitle,J Am Coll Cardiol,Journal of the American College of Cardiology,CHECKED_ABBREVIATION_VENUE,sources/stage03/yeon2001sonomicrometry_crossref.json
+portal2025semisup,journal_or_booktitle,Comput Biol Med,Computers in Biology and Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/portal2025semisup_crossref.json
+buoso2025tagging3d,journal_or_booktitle,J Cardiovasc Magn Reson,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/buoso2025tagging3d_crossref.json
+maret2009ft,journal_or_booktitle,Cardiovascular Ultrasound,Cardiovascular Ultrasound,CHECKED_ABBREVIATION_VENUE,sources/stage03/maret2009ft_crossref.json
+hor2010ft,journal_or_booktitle,JACC: Cardiovascular Imaging,JACC: Cardiovascular Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/hor2010ft_crossref.json
+augustine2013ft,journal_or_booktitle,Journal of Cardiovascular Magnetic Resonance,Journal of Cardiovascular Magnetic Resonance,CHECKED_ABBREVIATION_VENUE,sources/stage03/augustine2013ft_crossref.json
+grob2025interp,journal_or_booktitle,The International Journal of Cardiovascular Imaging,The International Journal of Cardiovascular Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/grob2025interp_crossref.json
+bi2025segmorph,journal_or_booktitle,IEEE Transactions on Medical Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/bi2025segmorph_crossref.json
+lu2023bireg,journal_or_booktitle,Computers in Biology and Medicine,Computers in Biology and Medicine,CHECKED_ABBREVIATION_VENUE,sources/stage03/lu2023bireg_crossref.json
+jia2026igbireg,journal_or_booktitle,Physics in Medicine \& Biology,Physics in Medicine &amp; Biology,CHECKED_ABBREVIATION_VENUE,sources/stage03/jia2026igbireg_crossref.json
+wang2019opticalflow,journal_or_booktitle,Medical Image Analysis,Medical Image Analysis,CHECKED_ABBREVIATION_VENUE,sources/stage03/wang2019opticalflow_crossref.json
+elnakib2015laplace,journal_or_booktitle,International Journal of Computer Assisted Radiology and Surgery,International Journal of Computer Assisted Radiology and Surgery,CHECKED_ABBREVIATION_VENUE,sources/stage03/elnakib2015laplace_crossref.json
+tuyisenge2016assimilation,journal_or_booktitle,IEEE Transactions on Medical Imaging,IEEE Transactions on Medical Imaging,CHECKED_ABBREVIATION_VENUE,sources/stage03/tuyisenge2016assimilation_crossref.json

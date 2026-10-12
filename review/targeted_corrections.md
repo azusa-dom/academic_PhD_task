@@ -1,0 +1,897 @@
+最终定点建议以 delivery/03_逐条修改建议.md 为准；前阶段版本保留在 stage04_baseline/。
+
+按影响排序供作者审定。P1为分母、范围或当前状态需优先改清；P2为源内差异披露或未核内容限缩；P3为口径/平衡呈现。优先级不是研究质量评级。下列英文仅替换相应句子或表格单元格，不自动覆盖整段；同段多项建议应合并编辑。关联位置列出同一来源的全部用途及图表上下文，不意味着每个位置都重复同一数字或都需粘贴同一句话。原文摘录逐条与不可变源码吻合。
+
+**P1 · CHEN-03 · chen2024**
+
+定位：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；main.pdf p9。
+
+当前英文片段：`reduced late-diastolic drift and better correlation with tagging for radial strain in several segments than Farneback optical flow, pairwise registration and global low-rank groupwise registration.`
+
+判断：SUPPORTED_WITH_QUALIFICATION。末尾比较对象可能同时修饰两项结果；应分开以免把LLR对GLR相关优势扩大到减漂移。
+
+来源：Results ACDC Fig6; patient Table3/Fig9；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11619273/)。减漂移相对两种pairwise成立；LLR late-diastolic残差不比GLR低，多个径向段相关比GLR高。
+
+建议英文：
+
+> Both groupwise methods reduced late-diastolic drift relative to optical flow and pairwise registration; Groupwise-LLR showed higher tagging-based radial-strain ICCs in several segments than those methods and Groupwise-GLR.
+
+全部关联位置：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；[supplement.tex:290](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:290)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)[Groupwise LLR]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P1 · BRANDT-01 · brandt2024**
+
+定位：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；main.pdf p18。
+
+当前英文片段：`In 42 participants`
+
+判断：PARTIALLY_SUPPORTED。入组数真实，但当前句式易误认42均进入圆周比较。
+
+来源：Experimental2.1; Results p7；[主来源](https://www.piemedicalimaging.com/download_file/850/0)。42入组；圆周tagging/FT最终30，纵向FT/US36。
+
+建议英文：
+
+> Among 42 enrolled participants, 30 contributed to the circumferential tagging–feature-tracking comparison.
+
+全部关联位置：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P1 · S03-29-02 · chadalavada2024**
+
+定位：[body.tex:297](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:297)；main.pdf p22。
+
+当前英文片段：`across disease cohorts`
+
+判断：PARTIALLY_SUPPORTED。将该文并入“disease cohorts”误缩队列属性；关联本身得到支持。
+
+来源：Abstract Methods/Conclusions；[主来源](https://pubmed.ncbi.nlm.nih.gov/39111972/)。本篇是一般人群UK Biobank而非特定疾病队列。
+
+建议英文：
+
+> Strain has been associated with adverse events in disease cohorts and in a population-based cohort.
+
+全部关联位置：[body.tex:7](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:7)；[body.tex:297](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:297)。
+
+**P1 · S03-54-02 · movahed2026cardiomorphnet**
+
+定位：[supplement.tex:320](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:320)；supplement.pdf p12。
+
+当前英文片段：`without an intensity loss`
+
+判断：PARTIALLY_SUPPORTED。此处需要改窄。
+
+来源：§3.3 Eq11；[主来源](https://pubmed.ncbi.nlm.nih.gov/42242080/)。总loss实际含image-reconstructionMSE，表格无registration限定使原文范围扩大。
+
+建议英文：
+
+> SAX cine volumes; registration guided by segmentation maps, without a warped-image similarity term; VAE image-reconstruction loss retained.
+
+全部关联位置：[body.tex:156](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:156)；[supplement.tex:320](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:320)。
+
+**P1 · S03-57-02 · cmrxrecon2025official**
+
+定位：[body.tex:398](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:398)；main.pdf p27。
+
+当前英文片段：`with disease labels`
+
+判断：PARTIALLY_SUPPORTED。“with disease labels”让人误以为可直接用于监督；官方diseasegroups≠公开逐例label。
+
+来源：Tasks Regular Task2；[主来源](https://cmrxrecon.github.io/2025/Data.html)。官方说明为避免训练偏倚，不公开training/validation逐例疾病信息。
+
+建议英文：
+
+> Multicentre, multivendor reconstruction resource spanning disease groups; per-case disease information is withheld for training and validation.
+
+全部关联位置：[body.tex:373](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:373)；[body.tex:398](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:398)；[supplement.tex:167](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:167)；[supplement.tex:248](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:248)。
+
+**P1 · S03-69-02 · meng2024deepmesh**
+
+定位：[supplement.tex:312](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:312)；supplement.pdf p12。
+
+当前英文片段：`unsupervised via differentiable rasteriser`
+
+判断：PARTIALLY_SUPPORTED。不使用motionGT不等于无标注；与MulViMotion表格术语应一致。
+
+来源：MethodsP31–32；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC7615801/)。rasterizer将3Dmesh变2Dsoftcontours并与groundtruth2Dseg比较，监督由shape提供。
+
+建议英文：
+
+> SAX and LAX cine; no motion-field labels, with weak supervision from 2D segmentations through a differentiable rasteriser.
+
+全部关联位置：[body.tex:156](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:156)；[supplement.tex:312](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:312)。
+
+**P1 · S03-89-01 · jia2026igbireg**
+
+定位：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；main.pdf p11。
+
+当前英文片段：`its detailed mechanism and performance could not be verified from an accessible primary source`
+
+判断：PARTIALLY_SUPPORTED。原稿title-only阅读状态已过时，可升级摘要深度；implicit指全局反馈，不可据题名归为坐标式INR。
+
+来源：Publisher-deposited Crossref abstract Objective/Approach/Main results；[主来源](https://doi.org/10.1088/1361-6560/aeb060)。已可读取主摘要：双向residual fusion生成field；mean-intensity与PCA feature双空间global约束；ACDC/M&Ms Dice .843/.842。
+
+建议英文：
+
+> IG-BiReg combines a bidirectional residual fusion network with global constraints in mean-intensity and principal-component feature spaces. The published abstract reports mask and contour agreement on ACDC and M&Ms; material-strain validation was not verified.
+
+全部关联位置：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；[supplement.tex:328](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:328)。
+
+**P1 · S03-89-02 · jia2026igbireg**
+
+定位：[supplement.tex:328](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:328)；supplement.pdf p12。
+
+当前英文片段：`Primary scientific content not accessed in finalisation; performance NV`
+
+判断：PARTIALLY_SUPPORTED。更新阅读状态；保留定量指标的mask/contour性质和全文限制，不添加摘要未定义的距离单位。
+
+来源：Publisher-deposited abstract；[主来源](https://doi.org/10.1088/1361-6560/aeb060)。正文机制和Dice/HD95/ASSD已可摘要核对；完整Methods/Results仍未访问。
+
+建议英文：
+
+> Published abstract accessed: bidirectional residual fusion with mean-intensity/PCA constraints; ACDC/M&Ms mask and contour metrics. Full methods, supervision details and material-strain validation remain unverified.
+
+全部关联位置：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；[supplement.tex:328](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:328)。
+
+**P2 · WANG-11 · wang2023strainnet**
+
+定位：[supplement.tex:223](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:223)；supplement PDF p9。
+
+当前英文片段：`Table~2 gives bias \(-0.51\) with a 95\% limits half-width of 5.15 percentage points`
+
+判断：SOURCE_INTERNAL_DISCREPANCY。原文表图确有差异；当前稿件披露合理，建议同时列明算术区间。
+
+来源：Table2 pixels; Fig5A pixels; Results Correlations；[主来源](https://pubs.rsna.org/radiology/doi/full/10.1148/ryct.220196)。Table2−0.51±5.15=>−5.66至4.64；Fig5A与正文−5.74至4.72；均已实际查看。
+
+建议英文：
+
+> The Results prose and Figure 5 report global limits of −5.74 to 4.72 percentage points, whereas Table 2 reports −0.51 ± 5.15, implying −5.66 to 4.64; these source values are retained without reconciliation.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:172](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:172)；[body.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:242)；[body.tex:274](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:274)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:117](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:117)；[supplement.tex:176](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:176)；[supplement.tex:214](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:214)；[supplement.tex:223](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:223)；[supplement.tex:352](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:352)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[body.tex:109](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:109)；[body.tex:128](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:128)；[body.tex:427](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:427)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)；[figures/integrated/Figure_3_method_timeline.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)。
+
+**P2 · WANG-12 · wang2023strainnet**
+
+定位：[body.tex:172](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:172)；main PDF p13。
+
+当前英文片段：`circumferential Green--Lagrange strain`
+
+判断：NOT_VERIFIED。主文明确Lagrangian Ecc，但精确Green–Lagrange实现未从已访问方法独立确认；AppendixS1不可得。不是认定稿件错误。
+
+来源：Methods DL Implementation; Appendix S1 unavailable；[主来源](https://pubs.rsna.org/radiology/doi/full/10.1148/ryct.220196)。正文称Lagrangian strain，精确张量定义依赖方法与补充材料。
+
+建议英文：
+
+> End-systolic circumferential strain derived from estimated Lagrangian displacement; the exact strain-tensor implementation remains unverified without the relevant technical appendix.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:172](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:172)；[body.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:242)；[body.tex:274](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:274)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:117](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:117)；[supplement.tex:176](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:176)；[supplement.tex:214](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:214)；[supplement.tex:223](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:223)；[supplement.tex:352](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:352)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[body.tex:109](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:109)；[body.tex:128](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:128)；[body.tex:427](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:427)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)；[figures/integrated/Figure_3_method_timeline.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)。
+
+**P2 · WANG-13 · wang2023strainnet**
+
+定位：[supplement.tex:223](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:223)；supplement PDF p9。
+
+当前英文片段：`the segmental interval is consistent across the two presentations`
+
+判断：SOURCE_INTERNAL_DISCREPANCY。整体一致但并非逐位相等，宜加approximately。
+
+来源：Table2 and Fig5 pixels；[主来源](https://pubs.rsna.org/radiology/doi/full/10.1148/ryct.220196)。表2−0.55±8.61 =>−9.16至8.06；Fig5/正文−9.16至8.07，0.01pp舍入精度差。
+
+建议英文：
+
+> The segmental limits are approximately consistent, with a 0.01-percentage-point difference at the upper endpoint.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:172](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:172)；[body.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:242)；[body.tex:274](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:274)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:117](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:117)；[supplement.tex:176](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:176)；[supplement.tex:214](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:214)；[supplement.tex:223](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:223)；[supplement.tex:352](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:352)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[body.tex:109](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:109)；[body.tex:128](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:128)；[body.tex:427](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:427)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)；[figures/integrated/Figure_3_method_timeline.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)。
+
+**P2 · MRX-17 · mrxcat2023**
+
+定位：[body.tex:276](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:276)；main PDF p21。
+
+当前英文片段：`Peak values; timing error not established here`
+
+判断：NOT_VERIFIED。无法把图14全部估计误差确定为peak-only；后半句关于局灶峰时未核合理。
+
+来源：Fig14 caption and Results p8; stage02 Additional file1 pp1–5；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC10116689/)。规定组织曲线含peak值，但估计误差汇总的时间选择未完全明确。；新读补充明确ED参考和GL张量，但未界定Fig14时间聚合，未核结论保留。
+
+建议英文：
+
+> Figure 14 averages three mid-ventricular short-axis slices; the exact temporal aggregation of its strain summaries was not established from the accessed report.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:194](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:194)；[body.tex:196](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:196)；[body.tex:200](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:200)；[body.tex:205](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:205)；[body.tex:210](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:210)；[body.tex:246](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:246)；[body.tex:276](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:276)；[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；[body.tex:396](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:396)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:184](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:184)；[supplement.tex:246](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:246)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[body.tex:198](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:198)；[body.tex:429](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:429)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)；[figures/integrated/Figure_4_attribute_specific_recovery.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_4_attribute_specific_recovery.svg)；[figures/integrated_sources/data/mrxcat2_values.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/mrxcat2_values.csv)。
+
+**P2 · MIL-09 · militaru2021**
+
+定位：[body.tex:238](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:238)；main PDF p19。
+
+当前英文片段：`0.10--0.81 between FT products`
+
+判断：SOURCE_INTERNAL_DISCREPANCY。当前稿件忠实转引摘要但源内图像不同。应披露来源差异，避免把对tagging的0.10混入软件间范围。
+
+来源：Abstract versus Fig5c p11 original pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC8117295/)。摘要0.10–0.81；图5c软件间三值0.81/0.11/0.19=>0.11–0.81。
+
+建议英文：
+
+> Global radial ICCs against tagging were 0.63 for cvi42, 0.48 for Segment and 0.10 for Tomtec; intersoftware ICCs in Figure 5c were 0.81 for cvi42–Segment, 0.11 for cvi42–Tomtec and 0.19 for Segment–Tomtec, although the abstract reports an intersoftware range of 0.10–0.81.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:138](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:138)；[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；[body.tex:238](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:238)；[body.tex:270](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:270)；[body.tex:311](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:311)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:157](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:157)；[supplement.tex:178](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:178)；[supplement.tex:210](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:210)；[supplement.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:268)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)。
+
+**P2 · S03-41-02 · zhou2018straus**
+
+定位：[body.tex:367](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:367)；main.pdf p25,26。
+
+当前英文片段：`three volunteer-derived multimodal templates`
+
+判断：NOT_VERIFIED。不继承前模型／清单3×6断言；需要原论文Methods或作者合法AAM。
+
+来源：Published abstract Results (18 simulated subjects); official STRAUS database description (18 virtual patients); full Methods unavailable for independent-anatomy/state construction；[主来源](https://pubmed.ncbi.nlm.nih.gov/28574344/)。摘要和已读官方页不足以确认3×6构成及五种病理全名；IEEE空页、HAL反爬、CREATIS仅摘要。
+
+建议英文：
+
+> STRAUS provides 18 virtual cases with simulated electromechanical motion; the number of independent source anatomies and the detailed state construction require full-method verification.
+
+全部关联位置：[body.tex:210](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:210)；[body.tex:367](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:367)；[body.tex:388](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:388)；[supplement.tex:238](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:238)。
+
+**P2 · S03-41-03 · zhou2018straus**
+
+定位：[body.tex:367](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:367)；main.pdf p25,26。
+
+当前英文片段：`the paper used engineering strain`
+
+判断：NOT_VERIFIED。不能把mesh参考自动解释为engineeringstrain；表S2同样暂缓。
+
+来源：Access boundary；[主来源](https://pubmed.ncbi.nlm.nih.gov/28574344/)。已访问摘要/官方页未给strain公式；IEEE/HAL尝试未取全文。
+
+建议英文：
+
+> The framewise meshes support reference deformation calculations; the strain convention must be verified from the original methods.
+
+全部关联位置：[body.tex:210](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:210)；[body.tex:367](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:367)；[body.tex:388](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:388)；[supplement.tex:238](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:238)。
+
+**P2 · S03-42-02 · strausdata**
+
+定位：[body.tex:388](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:388)；main.pdf p27。
+
+当前英文片段：`3 templates $\times$ 6 functional states`
+
+判断：NOT_VERIFIED。官方页面可核资源规模，不替代原论文strain定义／独立解剖数；见S03-41对应项。
+
+来源：Official STRAUS database description: 18 virtual patients; 90 simulated image sequences; 2700 volumetric images; independent-anatomy/state construction not established on this page；[主来源](https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html)。该页没有足够方法构成说明；依赖zhou论文尚未取得的细节。
+
+建议英文：
+
+> 18 virtual cases; the number of independent source anatomies and the construction of functional states remain unverified.
+
+全部关联位置：[body.tex:367](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:367)；[body.tex:388](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:388)；[supplement.tex:238](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:238)。
+
+**P2 · S03-45-02 · mrxcat2repo**
+
+定位：[body.tex:396](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:396)；main.pdf p27。
+
+当前英文片段：`Repository cited by the paper; live contents not verified`
+
+判断：NOT_VERIFIED。只核实仓库来源关联，实时内容、依赖与可复用性仍不能确认。
+
+来源：Actual GitLab retrieval; ETH official site；[主来源](https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0)。仓库请求为Anubis challenge；未读取README／release／代码／examples。
+
+建议英文：
+
+> Repository linked by the primary paper and ETH software page; live code and example contents remain unverified.
+
+全部关联位置：[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；[body.tex:396](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:396)；[supplement.tex:246](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:246)。
+
+**P2 · S03-51-03 · liu2026fe**
+
+定位：[supplement.tex:339](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:339)；supplement.pdf p13。
+
+当前英文片段：`size/severity sweep NV`
+
+判断：NOT_VERIFIED。不能把NV升级为该实验不存在；保持访问深度限定。
+
+来源：Access boundary；[主来源](https://pubmed.ncbi.nlm.nih.gov/41547064/)。已得摘要未说明病灶大小／严重度扫描；出版路由仅响应脚本页，未取得全文。
+
+建议英文：
+
+> Lesion-size/severity experiments could not be verified from the accessed abstract.
+
+全部关联位置：[body.tex:164](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:164)；[supplement.tex:339](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:339)。
+
+**P2 · S03-53-04 · jia2026fouriernetplus**
+
+定位：[supplement.tex:299](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:299)；supplement.pdf p11。
+
+当前英文片段：`shortened contracting path`
+
+判断：NOT_VERIFIED。IEEE全文空响应；作者早期preprint不自动证明2026final细节。
+
+来源：Published final abstract; inaccessible final full Methods；[主来源](https://pubmed.ncbi.nlm.nih.gov/42154702/)。摘要可核Fourier降采样，但shortened contracting path具体结构未读到正式Methods。
+
+建议英文：
+
+> Band-limited image inputs with a parameter-free Fourier decoder; cascaded and diffeomorphic variants.
+
+全部关联位置：[body.tex:150](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:150)；[supplement.tex:299](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:299)。
+
+**P2 · S03-76-03 · arratia2023warppinn**
+
+定位：[supplement.tex:335](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:335)；supplement.pdf p13。
+
+当前英文片段：`focal abnormality not evaluated`
+
+判断：NOT_VERIFIED。将无条件否定改为阅读界限；物理约束并不证明strain准确。
+
+来源：Read scope: selected Methods and benchmark description；[主来源](https://pubmed.ncbi.nlm.nih.gov/37598608/)。本次尚未逐项读所有syntheticResults/supplement，不能排除focal定义；healthyhumanbenchmark确定。
+
+建议英文：
+
+> Healthy-volunteer benchmark; a prescribed focal-abnormality experiment was not verified in the accessed sections.
+
+全部关联位置：[body.tex:164](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:164)；[supplement.tex:335](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:335)。
+
+**P2 · S03-78-02 · lei2025denserotation**
+
+定位：[supplement.tex:356](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:356)；supplement.pdf p14。
+
+当前英文片段：`NV in the record retrieved`
+
+判断：NOT_VERIFIED。不可将摘要机制升级为完整临床性能核验。
+
+来源：Access boundary；[主来源](https://pubmed.ncbi.nlm.nih.gov/42626382/)。摘要可核监督/branches，具体cohort和focaltest仍未核；IEEE页为空、PMC全文XML失败。
+
+建议英文：
+
+> DENSE-supervised rotation and radial-motion branches; cohort denominators and focal-abnormality validation were not verified from the accessed abstract.
+
+全部关联位置：[body.tex:174](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:174)；[supplement.tex:356](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:356)。
+
+**P2 · S03-91-01 · elnakib2015laplace**
+
+定位：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；main.pdf p9,10。
+
+当前英文片段：`without an image-similarity term`
+
+判断：NOT_VERIFIED。方法名字／摘要未提某项不能推出该项不存在；删除negative限定。
+
+来源：Abstract plus unsuccessful fulltext attempts；[主来源](https://pubmed.ncbi.nlm.nih.gov/25542202/)。几何Laplace追踪successivecontours，synthetic+30invivo；摘要并不足以排除image-similarity项。
+
+建议英文：
+
+> Two further designs use a Laplace-based mapping between contours and variational assimilation of cine observations into a contraction model.
+
+全部关联位置：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；[supplement.tex:278](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:278)。
+
+**P2 · S03-92-01 · tuyisenge2016assimilation**
+
+定位：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；main.pdf p9,10。
+
+当前英文片段：`without an image-similarity term`
+
+判断：NOT_VERIFIED。方法名字／摘要未提某项不能推出该项不存在；删除negative限定。
+
+来源：Abstract plus unsuccessful fulltext attempts；[主来源](https://pubmed.ncbi.nlm.nih.gov/26372228/)。imageobservations+dynamiccontractionmodel，knownsyntheticmotion，47patients3levels，tagstrainICC>.8，clinicalscore关联；摘要并不足以排除image-similarity项。
+
+建议英文：
+
+> Two further designs use a Laplace-based mapping between contours and variational assimilation of cine observations into a contraction model.
+
+全部关联位置：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；[supplement.tex:280](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:280)。
+
+**P3 · MOR21-06 · morales2021**
+
+定位：[body.tex:170](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:170)；main.pdf p12。
+
+当前英文片段：`Independent dense material truth for the cine motion field is a separate matter`
+
+判断：SUPPORTED_WITH_QUALIFICATION。该限定句可辩护；上下文宜补全直接正面验证，以免读者误认为只有轮廓与重扫。
+
+来源：Experiments simulation and CMAC; Discussion limitations；[主来源](https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2021.730316/full)。无病理区域密集真值，但存在MRXCAT运动/应变及CMAC MEVIS全局应变比较。
+
+建议英文：
+
+> The original study also evaluated simulated motion and strain and compared global end-systolic strain with MEVIS-derived tagging estimates in 15 healthy participants; these endpoints do not establish dense regional accuracy in disease.
+
+全部关联位置：[body.tex:170](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:170)；[body.tex:246](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:246)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:117](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:117)；[supplement.tex:350](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:350)；[figures/integrated/Figure_3_method_timeline.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_3_method_timeline.svg)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)。
+
+**P3 · CAO-03 · cao2018**
+
+定位：[supplement.tex:208](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:208)；supplement PDF p8。
+
+当前英文片段：`bias 0.155 percentage points`
+
+判断：SUPPORTED_WITH_QUALIFICATION。当前值正确；分母、差值方向与参考误差须保持明确。
+
+来源：Table3 p6; Fig3a/caption p7 pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC5907464/)。应变差0.155百分点；图注明确tagging−comparand。
+
+建议英文：
+
+> For DENSE versus HARP tagging, peak mid-slice Ecc had ICC 0.778; the reported tagging-minus-DENSE bias was 0.155 percentage points, with limits of agreement from −6.166 to 6.476.
+
+全部关联位置：[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[body.tex:85](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:85)；[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:236](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:236)；[body.tex:311](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:311)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:157](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:157)；[supplement.tex:208](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:208)；[main.tex:68](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/main.tex:68)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)。
+
+**P3 · WEH-07 · wehner2018**
+
+定位：[body.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:268)；main PDF p20。
+
+当前英文片段：`only mid-slice Ecc was judged acceptable by the study`
+
+判断：SUPPORTED_WITH_QUALIFICATION。“acceptable”混合了作者结论与CoV标准，建议保留Ell边界表述。
+
+来源：Abstract p1; Discussion/Conclusion pp8–9; Methods statistics p5；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC6136226/)。结论仅mid accurate，但摘要称Ell borderline-acceptable；调整后多项CoV均<20%。
+
+建议英文：
+
+> Mid-slice Ecc showed the best agreement; longitudinal strain was described as borderline acceptable in the abstract, despite wide limits of agreement.
+
+全部关联位置：[body.tex:54](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:54)；[body.tex:85](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:85)；[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:234](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:234)；[body.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:268)；[supplement.tex:48](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:48)；[supplement.tex:70](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:70)；[supplement.tex:206](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:206)。
+
+**P3 · BELL-02 · bell2025strain8**
+
+定位：[body.tex:244](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:244)；main.pdf p19。
+
+当前英文片段：`Global coefficients of variation ranged from excellent to fair ($\leq20\%$)`
+
+判断：SUPPORTED_WITH_QUALIFICATION。方向与范围准确，需避免理解为全部协议方向组合均有测量。
+
+来源：Results Tables2–4; Methods Statistics；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC12671395/)。全局CoV点估计≤20%；2D echo未评GCS/GRS，各分析n17–20。
+
+建议英文：
+
+> All assessed global measures had CoV point estimates ≤20%; 2D echocardiographic GCS and GRS repeatability was not assessed.
+
+全部关联位置：[body.tex:244](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:244)；[body.tex:285](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:285)；[supplement.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:216)；[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[supplement.tex:182](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:182)；[figures/integrated_sources/src/fig1_two_track_journal.py:306](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py:306)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)[Strain-8 panel]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · BELL-05 · bell2025strain8**
+
+定位：[supplement.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:216)；supplement.pdf p8。
+
+当前英文片段：`Precision and minimum detectable change under controlled same-day conditions`
+
+判断：PARTIALLY_SUPPORTED。precision有证据；minimum detectable change可能把CoV界限提升为个体变化阈值。
+
+来源：Methods Statistics; Table2; Discussion；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC12671395/)。测CoV、ICC及LoA；11.2%对应CoV CI上界，非标准个体MDC计算。
+
+建议英文：
+
+> Same-day scan–rescan precision under controlled conditions; no validated individual change threshold or accuracy claim.
+
+全部关联位置：[body.tex:244](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:244)；[body.tex:285](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:285)；[supplement.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:216)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · BELL-07 · bell2025strain8**
+
+定位：[supplement.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:268)；supplement.pdf p10。
+
+当前英文片段：`Many disease cohorts; regional and radial agreement consistently weaker than global`
+
+判断：PARTIALLY_SUPPORTED。组合引用需分配证据角色；不把重复性当跨方法一致性，亦不把健康队列当疾病队列。
+
+来源：Bell Methods participants and repeatability outcomes；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC12671395/)。Bell仅20健康同日scan–rescan；支持区域精度较弱，不提供疾病队列或跨方法径向一致性的直接证据。
+
+建议英文：
+
+> Disease cohorts support product-specific agreement comparisons; Strain-8 adds healthy-volunteer scan–rescan evidence showing greater segmental variability.
+
+全部关联位置：[supplement.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:268)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · YOON-06 · yoon2023regain**
+
+定位：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；main.pdf p27。
+
+当前英文片段：`\(-7\%\) to 6\%`
+
+判断：SUPPORTED_WITH_QUALIFICATION。数值与原图相符；建议明确绝对差而非相对百分比。
+
+来源：Results Breath-hold; Fig4A pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC10315558/)。radial LoA −7至6，绝对应变百分点。
+
+建议英文：
+
+> 95% limits of agreement were −7 to 6 percentage points for global radial strain.
+
+全部关联位置：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[figures/integrated_sources/src/fig1_two_track_journal.py:298](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py:298)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)[REGAIN panel]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · YOON-07 · yoon2023regain**
+
+定位：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；main.pdf p27。
+
+当前英文片段：`\(-2\%\) to 3\%`
+
+判断：SUPPORTED_WITH_QUALIFICATION。数值与原图相符；建议明确绝对差而非相对百分比。
+
+来源：Results Breath-hold; Fig4A pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC10315558/)。circumferential LoA −2至3，绝对应变百分点。
+
+建议英文：
+
+> 95% limits of agreement were −2 to 3 percentage points for global circumferential strain.
+
+全部关联位置：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[figures/integrated_sources/src/fig1_two_track_journal.py:298](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py:298)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)[REGAIN panel]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · YOON-08 · yoon2023regain**
+
+定位：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；main.pdf p27。
+
+当前英文片段：`\(-3\%\) to 3\%`
+
+判断：SUPPORTED_WITH_QUALIFICATION。数值与原图相符；建议明确绝对差而非相对百分比。
+
+来源：Results Breath-hold; Fig4A pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC10315558/)。longitudinal LoA −3至3，绝对应变百分点。
+
+建议英文：
+
+> 95% limits of agreement were −3 to 3 percentage points for global longitudinal strain.
+
+全部关联位置：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[body.tex:36](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:36)；[figures/integrated_sources/src/fig1_two_track_journal.py:298](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/src/fig1_two_track_journal.py:298)；[figures/integrated/Figure_1_two_track_evidence_map.svg](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated/Figure_1_two_track_evidence_map.svg)[REGAIN panel]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · CHEN-04 · chen2024**
+
+定位：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；main.pdf p9。
+
+当前英文片段：`Comparisons with \(n\)D\(+t\) B-splines and pTVreg concerned simulation and in-vivo tracking endpoints`
+
+判断：SUPPORTED_WITH_QUALIFICATION。原句可辩护；明确模拟应变也存在，避免误读为它们仅比较tracking。
+
+来源：Methods Baselines; Table1; Results ACDC tracking and patient Table3；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11619273/)。模拟包含位移与应变；ACDC为轮廓跟踪；患者tagging不含这两法。
+
+建议英文：
+
+> nD+t B-splines and pTVreg were compared for simulated tracking and strain errors and ACDC contour tracking, but were not included in the patient tagging comparison.
+
+全部关联位置：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；[supplement.tex:290](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:290)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)[Groupwise LLR]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · CHEN-05 · chen2024**
+
+定位：[supplement.tex:290](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:290)；supplement.pdf p11。
+
+当前英文片段：`disease composition NV`
+
+判断：PARTIALLY_SUPPORTED。NV是历史未核状态，全文现有信息足以替换，不应写为原文未报告。
+
+来源：Methods Experiments on patient dataset；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11619273/)。16例：normal3、coronary4、connective tissue4、nonischemic3、other2。
+
+建议英文：
+
+> Paired tagging in 16 clinical participants: normal findings (n=3), coronary heart disease (n=4), connective tissue disease (n=4), nonischemic heart disease (n=3), and other indications (n=2); prescribed focal-abnormality validation was not established.
+
+全部关联位置：[body.tex:146](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:146)；[supplement.tex:290](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:290)；[figures/integrated_sources/data/table_s3_methods.csv](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/figures/integrated_sources/data/table_s3_methods.csv)[Groupwise LLR]；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · GAO-02 · gao2014cine**
+
+定位：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；main.pdf p18。
+
+当前英文片段：`agreement in peak circumferential strain and similar regional patterns between cine registration and DENSE`
+
+判断：SUPPORTED_WITH_QUALIFICATION。概括可保留，但应说明ES定义和残余组间差。
+
+来源：Methods2.5; Results3.1–3.2；[主来源](https://www.maths.gla.ac.uk/~xl/gao-MRI.pdf)。健康圆周均值接近，患者模式相似；MI区仍有小差别；非等效检验。
+
+建议英文：
+
+> Gao et al. reported broadly similar end-systolic regional circumferential strain patterns between cine registration and DENSE, with residual differences in infarcted regions.
+
+全部关联位置：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · GAO-03 · gao2014cine**
+
+定位：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；main.pdf p18。
+
+当前英文片段：`cine radial strain was overestimated`
+
+判断：SUPPORTED_WITH_QUALIFICATION。不宜无条件推广到所有病变区域。
+
+来源：Results3.1–3.2; Discussion pp3652–3653；[主来源](https://www.maths.gla.ac.uk/~xl/gao-MRI.pdf)。健康及非MI区高估，MI区相对接近。
+
+建议英文：
+
+> Cine radial strain was overestimated particularly in healthy myocardium and noninfarcted regions.
+
+全部关联位置：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · GAO-04 · gao2014cine**
+
+定位：[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；main.pdf p20。
+
+当前英文片段：`Similar regional patterns reported at abstract depth`
+
+判断：SUPPORTED_WITH_QUALIFICATION。原摘要表述不错误；本审计已能支持更具体且平衡的区域正面证据。
+
+来源：Results3.2; Tables1–2；[主来源](https://www.maths.gla.ac.uk/~xl/gao-MRI.pdf)。现已读全文；有六区模式与LGE分类ROC，无空间边界误差。
+
+建议英文：
+
+> Six-region patterns and LGE-based infarct/transmurality discrimination were evaluated; lesion-boundary accuracy was not established.
+
+全部关联位置：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · GAO-06 · gao2014cine**
+
+定位：[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；main.pdf p20。
+
+当前英文片段：`Peak values; timing error not established here`
+
+判断：SUPPORTED_WITH_QUALIFICATION。明确ES口径，避免把存在曲线比较误写为无时间证据。
+
+来源：Methods2.5; Results3.1 Fig2; Discussion；[主来源](https://www.maths.gla.ac.uk/~xl/gao-MRI.pdf)。原文peak在ES识别；有全周期曲线相关，未局灶峰时误差。
+
+建议英文：
+
+> Regional peaks identified at end systole; full-cycle curve comparisons were reported, but focal time-to-peak error was not established.
+
+全部关联位置：[body.tex:216](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:216)；[body.tex:266](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:266)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · BRANDT-02 · brandt2024**
+
+定位：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；main.pdf p18。
+
+当前英文片段：`moderate-to-good agreement for global and segmental circumferential time to peak strain`
+
+判断：SUPPORTED_WITH_QUALIFICATION。用ICC描述相关/一致程度时须保留个体差值范围和区域定义。
+
+来源：Results p7; Fig5 p11；[主来源](https://www.piemedicalimaging.com/download_file/850/0)。ICC整体.82、间隔/侧壁.74，BA有明显个体差异。
+
+建议英文：
+
+> Circumferential time-to-peak ICCs were 0.82 globally and 0.74 in the septal and lateral regions; these values do not establish individual interchangeability.
+
+全部关联位置：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · BRANDT-04 · brandt2024**
+
+定位：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；main.pdf p18。
+
+当前英文片段：`a focal peak-time error endpoint was not established by the abstract inspected here`
+
+判断：SUPPORTED_WITH_QUALIFICATION。已升级全文；应保留正面区域时间证据，去掉过时摘要限制。
+
+来源：Methods2.3–2.5; complete Results; Fig5；[主来源](https://www.piemedicalimaging.com/download_file/850/0)。有整体及两区域峰时差比较，无病灶尺度峰时误差。
+
+建议英文：
+
+> The study compared global, septal and lateral time-to-peak measurements, but did not establish lesion-scale timing accuracy.
+
+全部关联位置：[body.tex:218](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:218)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · BRANDT-05 · brandt2024**
+
+定位：[supplement.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:268)；supplement.pdf p10。
+
+当前英文片段：`regional and radial agreement consistently weaker than global`
+
+判断：PARTIALLY_SUPPORTED。组合引用应明确Brandt不提供radial证据。
+
+来源：Methods2.3; Results p7；[主来源](https://www.piemedicalimaging.com/download_file/850/0)。该源支持区域与global的差别，但明确未评估radial；同句其他来源另行支持。
+
+建议英文：
+
+> Regional agreement was less consistent than global agreement; radial limitations were demonstrated in the studies that assessed radial strain.
+
+全部关联位置：[supplement.tex:268](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:268)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · CINEVN-02 · vornehm2024cinevn**
+
+定位：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；main.pdf p27。
+
+当前英文片段：`On individual mid-ventricular slices, CineVN had the smallest bias and narrowest limits among the tested accelerated reconstructions`
+
+判断：SUPPORTED_WITH_QUALIFICATION。应变结论成立；补充合并协议，不能扩展全部功能指标。
+
+来源：Methods2.4; Fig5 pixels/caption; Discussion4.3；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11518642/)。切面PRS/PCS比较三法；BA合并two-shot与real-time。
+
+建议英文：
+
+> For slice-level peak radial and circumferential strain, CineVN had the smallest bias and narrowest limits of agreement among the tested reconstructions, with Bland–Altman results pooled across the two accelerated protocols.
+
+全部关联位置：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · CINEVN-03 · vornehm2024cinevn**
+
+定位：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；main.pdf p27。
+
+当前英文片段：`all accelerated protocols significantly underestimated peak radial strain and overestimated peak circumferential strain`
+
+判断：SUPPORTED_WITH_QUALIFICATION。建议注明符号，避免读作更强圆周缩短。
+
+来源：Fig5; Discussion4.3；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11518642/)。PRS低估，负PCS有符号值高估（缩短幅度低估）。
+
+建议英文：
+
+> All accelerated protocols underestimated peak radial strain and yielded less negative peak circumferential strain than GRAPPA.
+
+全部关联位置：[body.tex:405](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:405)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · DENT-01 · morales2024dent**
+
+定位：[body.tex:407](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:407)；main.pdf p28。
+
+当前英文片段：`DENT was developed from 5840 patients across nine centres`
+
+判断：SUPPORTED_WITH_QUALIFICATION。developed from可以概括总资源，但勿写trained on5840。
+
+来源：Study Sample; Fig1/Table1 pixels；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11211941/)。5840总资源；3177训练1059验证1056内部测试548外部测试。
+
+建议英文：
+
+> DENT was developed and evaluated using retrospective data from 5840 patients across nine centres, including 548 patients from six centres reserved for external testing.
+
+全部关联位置：[body.tex:407](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:407)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · DENT-06 · morales2024dent**
+
+定位：[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；supplement.pdf p7。
+
+当前英文片段：`DENT improved image-phase interpolation and reader-rated temporal presentation`
+
+判断：SUPPORTED_WITH_QUALIFICATION。不能把所有前瞻读者评价概括为统计显著改善。
+
+来源：Model Evaluation studiesA–C; Results；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC11211941/)。图像回填RMSE优于线性/双三次；前瞻B组主观非劣效，C组偏好高帧率的描述性趋势。
+
+建议英文：
+
+> DENT reduced retrospective image-phase interpolation error; prospective readers rated its high-frame-rate presentation as noninferior or showed a descriptive preference for higher frame rates.
+
+全部关联位置：[body.tex:407](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:407)；[supplement.tex:163](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:163)；[review/stage02_occurrence_coverage.csv](stage02_occurrence_coverage.csv)。
+
+**P3 · S03-35-01 · goetze2026**
+
+定位：[body.tex:285](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:285)；main.pdf p21。
+
+当前英文片段：`the same kind of variation across scanners and post-processing`
+
+判断：SUPPORTED_WITH_QUALIFICATION。概括方向合理，但不宜把跨设备与跨软件差异写成相同大小；也不是区域重复性研究。
+
+来源：Abstract Methods/Results/Conclusion；[主来源](https://pubmed.ncbi.nlm.nih.gov/40884734/)。15健康者、3台设备、Medis/CVI；GLS/GCS跨scanner较好、GRS较低，跨软件明显差异。
+
+建议英文：
+
+> The travelling-volunteer study found relatively good inter-scanner agreement for global longitudinal and circumferential strain, with larger software-related differences.
+
+全部关联位置：[body.tex:285](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:285)。
+
+**P3 · S03-39-02 · cmac2011**
+
+定位：[body.tex:392](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:392)；main.pdf p27。
+
+当前英文片段：`median inter-observer variability 0.84~mm`
+
+判断：SUPPORTED_WITH_QUALIFICATION。数值正确但建议交代参考筛选，尤其勿把0.84解释为算法误差下限或对真值准确性。
+
+来源：README p3 Excluding criteria；[主来源](https://www.cardiacatlas.org/motion-tracking-2011-challenge/)。0.84mm为实施运动闭合／观察者一致性排除后，全时间人工观察者间距离中位数，不是无误差精度。
+
+建议英文：
+
+> Sparse manual tagging landmarks; median inter-observer distance 0.84 mm after the stated landmark exclusion criteria.
+
+全部关联位置：[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；[body.tex:392](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:392)；[supplement.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:242)。
+
+**P3 · S03-39-03 · cmac2011**
+
+定位：[supplement.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:242)；supplement.pdf p9。
+
+当前英文片段：`whole-cycle 3DTAG and cine with modality registration described`
+
+判断：SUPPORTED_WITH_QUALIFICATION。整周期图像不代表整周期跨模态可直接一一比较。
+
+来源：README pp2–3；[主来源](https://www.cardiacatlas.org/motion-tracking-2011-challenge/)。采集覆盖周期，但SSFP/3DUS原比较限final frame和ES，因与3DTAG时间不匹配。
+
+建议英文：
+
+> Whole-cycle acquisitions; original SSFP/3DUS landmark errors were evaluated at final frame and end systole because of temporal misalignment.
+
+全部关联位置：[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；[body.tex:392](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:392)；[supplement.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:242)。
+
+**P3 · S03-43-02 · tobongomez2013cmac**
+
+定位：[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；main.pdf p26。
+
+当前英文片段：`median inter-observer variability of 0.84~mm`
+
+判断：SUPPORTED_WITH_QUALIFICATION。数字得到官方技术说明独立于摘要的核实；建议把筛选条件和一致性性质写清。
+
+来源：Abstract; README p3 Excluding criteria；[主来源](https://pubmed.ncbi.nlm.nih.gov/23708255/)。人体0.84、phantom0.77；排除依末点闭合和观察者差异75th percentile规则，跨时间中位数。
+
+建议英文：
+
+> The reported median inter-observer distances were 0.77 mm in the phantom and 0.84 mm in volunteers, after the stated landmark exclusions.
+
+全部关联位置：[body.tex:371](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:371)；[body.tex:392](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:392)；[supplement.tex:242](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:242)。
+
+**P3 · S03-53-03 · jia2026fouriernetplus**
+
+定位：[supplement.tex:299](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:299)；supplement.pdf p11。
+
+当前英文片段：`cardiac evaluation is geometric/functional, not regional strain`
+
+判断：SUPPORTED_WITH_QUALIFICATION。应写已访问摘要的证据范围，不称全篇无strain研究。
+
+来源：Published abstract; attempted IEEE primary full text；[主来源](https://pubmed.ncbi.nlm.nih.gov/42154702/)。摘要所列临床/几何指标确不能单独建立区域应变准确性；未取得期刊全文以排除其他实验。
+
+建议英文：
+
+> The published abstract reports geometric and functional cardiac endpoints; regional strain validation was not verified.
+
+全部关联位置：[body.tex:150](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:150)；[supplement.tex:299](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:299)。
+
+**P3 · S03-54-01 · movahed2026cardiomorphnet**
+
+定位：[body.tex:156](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:156)；main.pdf p11。
+
+当前英文片段：`without an intensity-based similarity loss`
+
+判断：SUPPORTED_WITH_QUALIFICATION。避免扩大为完全无intensity-based loss；保持warp-mask驱动DVF区别。
+
+来源：§3.3 Eqs5/6/11；[主来源](https://pubmed.ncbi.nlm.nih.gov/42242080/)。没有fixed-versus-warped intensityregistrationloss，但有VAE reconstruction Lrec=像素MSE；正文应明确是registration项。
+
+建议英文：
+
+> CardioMorphNet supervises registration through segmentation-map alignment rather than a warped-image intensity-similarity term; its VAE objective still includes an image-reconstruction loss.
+
+全部关联位置：[body.tex:156](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:156)；[supplement.tex:320](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:320)。
+
+**P3 · S03-64-02 · chen2022transmorph**
+
+定位：[supplement.tex:295](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:295)；supplement.pdf p11。
+
+当前英文片段：`uncertainty calibration`
+
+判断：SUPPORTED_WITH_QUALIFICATION。建议补appearance限定，保持非cardiacpathology证据边界。
+
+来源：§3.4.1 and uncertainty results；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC9999483/)。主要明确appearanceuncertainty校准；不是任意displacementerror或regionalstrainerror被校准。
+
+建议英文：
+
+> Brain MRI and phantom-to-CT registration; topology preservation and appearance-uncertainty calibration.
+
+全部关联位置：[body.tex:148](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:148)；[supplement.tex:295](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:295)。
+
+**P3 · S03-71-01 · yin2025mcm**
+
+定位：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；main.pdf p11。
+
+当前英文片段：`presented in a MICCAI workshop`
+
+判断：SUPPORTED_WITH_QUALIFICATION。宜写listed in/associated with MICCAIworkshop，引用身份仍为arXiv。
+
+来源：Official2025 program p229；[主来源](https://arxiv.org/abs/2507.17678)。Reconstruction and Motion Estimation in Medical Imaging日程列MCM/JiahuiYin；证明programlisted，不证明实际到场报告。
+
+建议英文：
+
+> A Mamba-based sequential model was listed in the 2025 MICCAI Reconstruction and Motion Estimation in Medical Imaging workshop programme.
+
+全部关联位置：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；[supplement.tex:316](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:316)。
+
+**P3 · S03-73-03 · fu2026cinema**
+
+定位：[supplement.tex:330](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:330)；supplement.pdf p13。
+
+当前英文片段：`diagnosis, prognostication across independent datasets`
+
+判断：SUPPORTED_WITH_QUALIFICATION。合并行容易把任务／独立性套给两篇，建议分列。
+
+来源：Table1; Methods Par17/24；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC13396196/)。CineMA有生存预测；并非两个模型均做prognostication；UKB下游同来源且包含重复visit。
+
+建议英文：
+
+> CineMA: segmentation, landmark-derived function, diagnosis and exploratory survival prediction; CMR-FM: classification, segmentation, landmark localisation and pathology detection. Neither task list reports dense motion estimation.
+
+全部关联位置：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；[supplement.tex:330](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:330)。
+
+**P3 · S03-74-02 · jacob2025cmrfm**
+
+定位：[supplement.tex:330](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:330)；supplement.pdf p13。
+
+当前英文片段：`Segmentation, landmark localisation, diagnosis, prognostication across independent datasets`
+
+判断：SUPPORTED_WITH_QUALIFICATION。应分清两篇任务与in/out-of-distribution，不能把“independent datasets”泛化至所有任务。
+
+来源：Table1 and §2.3 task list；[主来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC12745146/)。9任务没有prognostication；三项task5B,7,8A与预训练同分布，部分使用其中带标注样本。
+
+建议英文：
+
+> CMR-FM reports nine classification, segmentation, landmark and pathology-detection tasks, including both in-distribution and out-of-distribution evaluations; survival prediction is reported by CineMA.
+
+全部关联位置：[body.tex:158](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/body.tex:158)；[supplement.tex:330](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:330)。
+
+**P1 · 当前书目数与历史台账分开**
+
+定位：[supplement.tex:56](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:56)；将当前集合的94改92。[supplement.tex:54](../inputs/manuscript_package/cine_cmr_reviewed_20261011/manuscript/supplement.tex:54)记述历史94条身份台账，可保留历史措辞。依据是不可变references.bib与92-key inventory，不是外部论文。
+
+建议替换对应句：
+
+> It covers 69 citation keys, which do not match the complete current 92-reference set; many locators refer to source files that are no longer available.
+
+**P3 · 两条书目字段与Figure3定位同步**
+
+CineVN：references.bib:347 的在线日期27 August 2024改为26 August 2024，依据Wiley文章页“First published”栏。MCM：references.bib:475 的workshop名称改为Reconstruction and Motion Estimation in Medical Imaging，并限称listed in programme，依据MICCAI2025官方日程p229。完整字段替换见[书目补丁](review/bibliography_proposed.patch)，不增加新的论文引用键。
+
+Figure3旧s3_line到当前补表行的逐行映射见[同步建议CSV](review/stage03_figure3_proposed_updates.csv)。IG-BiReg的metadata-only可更新为摘要深度/mask端点；选择性图示47项的类别计数可据新编码更新，但不能据此推全领域比例。STRAUS的3×6在正文、表4、S2及Figure5应同步标未核，MRXCAT的peak-only聚合限定也须随表3同步。

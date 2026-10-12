@@ -1,0 +1,93 @@
+citation_key,title,doi,year,url,tier,stage,priority_order
+wang2023strainnet,{StrainNet}: Improved Myocardial Strain Analysis of Cine {MRI} by Deep Learning from {DENSE},10.1148/ryct.220196,2023,,1,01_CORE,1
+mrxcat2023,"{MRXCAT2.0}: Synthesis of Realistic Numerical Phantoms by Combining Left-Ventricular Shape Learning, Biophysical Simulations and Tissue Texture Generation",10.1186/s12968-023-00934-z,2023,,1,01_CORE,2
+morales2021,{DeepStrain}: A Deep Learning Workflow for the Automated Characterization of Cardiac Mechanics,10.3389/fcvm.2021.730316,2021,,1,01_CORE,3
+morales2022comparison,Comparison of {DeepStrain} and Feature Tracking for Cardiac {MRI} Strain Analysis,10.1002/jmri.28374,2023,,1,01_CORE,4
+militaru2021,Multivendor Comparison of Global and Regional {2D} Cardiovascular Magnetic Resonance Feature Tracking Strains vs Tissue Tagging at 3T,10.1186/s12968-021-00742-3,2021,,1,01_CORE,5
+cao2018,A Comparison of Both {DENSE} and Feature Tracking Techniques with Tagging for the Cardiovascular Magnetic Resonance Assessment of Myocardial Strain,10.1186/s12968-018-0448-9,2018,,1,01_CORE,6
+wehner2018,Comparison of Left Ventricular Strains and Torsion Derived from Feature Tracking and {DENSE CMR},10.1186/s12968-018-0485-4,2018,,1,01_CORE,7
+kihlberg2020clinical,Clinical Validation of Three Cardiovascular Magnetic Resonance Techniques to Measure Strain and Torsion in Patients with Suspected Coronary Artery Disease,10.1186/s12968-020-00684-2,2020,,1,01_CORE,8
+jahromi2026densecine,Automated cardiac strain estimation from short-axis {DENSE} and {Cine} {MR} images,10.1007/s10237-026-02120-3,2026,https://doi.org/10.1007/s10237-026-02120-3,1,01_CORE,9
+bell2025strain8,The Strain-8 Study: A Multimodal Scan--Rescan Assessment of Myocardial Strain Repeatability,10.1093/ehjimp/qyaf144,2025,,1,02_CORE_RECON,10
+yoon2023regain,Accelerated Cardiac {MRI} Cine with Use of Resolution Enhancement Generative Adversarial Inline Neural Network,10.1148/radiol.222878,2023,,1,02_CORE_RECON,11
+masutani2023dlss,Deep Learning Synthetic Strain: Quantitative Assessment of Regional Myocardial Wall Motion at {MRI},10.1148/ryct.220202,2023,,1,02_CORE_RECON,12
+koehler2025alignedstrain,Deep Learning-Based Aligned Strain from Cine Cardiac {MRI} for Detection of Fibrotic Myocardial Tissue in Patients with {Duchenne} Muscular Dystrophy,10.1148/ryai.240303,2025,,1,02_CORE_RECON,13
+bello2019,Deep-Learning Cardiac Motion Analysis for Human Survival Prediction,10.1038/s42256-019-0019-2,2019,,1,02_CORE_RECON,14
+chen2024,Improve Myocardial Strain Estimation Based on Deformable Groupwise Registration with a Locally Low-Rank Dissimilarity Metric,10.1186/s12880-024-01519-7,2024,,1,02_CORE_RECON,15
+gao2014cine,Left Ventricular Strain and Its Pattern Estimated from Cine {CMR} and Validation with {DENSE},10.1088/0031-9155/59/13/3637,2014,,1,02_CORE_RECON,16
+brandt2024,"Quantification of Left Ventricular Myocardial Strain: Comparison between {MRI} Tagging, {MRI} Feature Tracking, and Ultrasound Speckle Tracking",10.1002/nbm.5164,2024,,1,02_CORE_RECON,17
+vornehm2024cinevn,{CineVN}: Variational Network Reconstruction for Rapid Functional Cardiac Cine {MRI},10.1002/mrm.30260,2025,,1.5,02_CORE_RECON,18
+tsuneta2025dlr,The Impact of Model-Based Deep-Learning Reconstruction Compared with That of Compressed Sensing--Sensitivity Encoding on the Image Quality and Precision of Cine Cardiac {MR} in Evaluating Left-Ventricular Volume and Strain: A Study on Healthy Volunteers,10.2463/mrms.mp.2024-0202,2025,,1.5,02_CORE_RECON,19
+grob2025interp,{Retrospective temporal resolution interpolation alters myocardial strain quantification on compressed sensing cine CMR},10.1007/s10554-025-03348-3,2025,,1.5,02_CORE_RECON,20
+morales2024dent,Deformation-Encoding Deep Learning Transformer for High-Frame-Rate Cardiac Cine {MRI},10.1148/ryct.230177,2024,,1.5,02_CORE_RECON,21
+buss2015,Prediction of Functional Recovery by Cardiac Magnetic Resonance Feature Tracking Imaging in First Time {ST}-Elevation Myocardial Infarction: Comparison to Infarct Size and Transmurality by Late Gadolinium Enhancement,10.1016/j.ijcard.2015.01.022,2015,,2,03_REMAINING,22
+mangion2019,Circumferential Strain Predicts Major Adverse Cardiovascular Events Following an Acute {ST}-Segment--Elevation Myocardial Infarction,10.1148/radiol.2018181253,2019,,2,03_REMAINING,23
+reindl2021,Global Longitudinal Strain by Feature Tracking for Optimized Prediction of Adverse Remodeling after {ST}-Elevation Myocardial Infarction,10.1007/s00392-020-01649-2,2021,,2,03_REMAINING,24
+raunig2015,Quantitative Imaging Biomarkers: A Review of Statistical Methods for Technical Performance Assessment,10.1177/0962280214537344,2015,,3,03_REMAINING,25
+puntmann2018,Society for Cardiovascular Magnetic Resonance ({SCMR}) Expert Consensus for {CMR} Imaging Endpoints in Clinical Research: Part I---Analytical Validation and Clinical Qualification,10.1186/s12968-018-0484-5,2018,,3,03_REMAINING,26
+schulzmenger2020,Standardized Image Interpretation and Post-Processing in Cardiovascular Magnetic Resonance---2020 Update,10.1186/s12968-020-00610-6,2020,,3,03_REMAINING,27
+hundley2022,Society for Cardiovascular Magnetic Resonance ({SCMR}) Guidelines for Reporting Cardiovascular Magnetic Resonance Examinations,10.1186/s12968-021-00827-z,2022,,3,03_REMAINING,28
+chadalavada2024,Myocardial Strain Measured by Cardiac Magnetic Resonance Predicts Cardiovascular Morbidity and Death,10.1016/j.jacc.2024.05.050,2024,,2,03_REMAINING,29
+pedrizzetti2016,Principles of Cardiovascular Magnetic Resonance Feature Tracking and Echocardiographic Speckle Tracking for Informed Clinical Use,10.1186/s12968-016-0269-7,2016,,3,03_REMAINING,30
+duchateau2020,Machine Learning Approaches for Myocardial Motion and Deformation Analysis,10.3389/fcvm.2019.00190,2020,,3,03_REMAINING,31
+voigt2015,Definitions for a Common Standard for {2D} Speckle Tracking Echocardiography: Consensus Document of the {EACVI/{ASE}/Industry} Task Force to Standardize Deformation Imaging,10.1093/ehjci/jeu184,2015,,3,03_REMAINING,32
+amzulescu2019,"Myocardial Strain Imaging: Review of General Principles, Validation, and Sources of Discrepancies",10.1093/ehjci/jez041,2019,,3,03_REMAINING,33
+smiseth2025,"Myocardial Strain Imaging: Theory, Current Practice, and the Future",10.1016/j.jcmg.2024.07.011,2025,,3,03_REMAINING,34
+goetze2026,A Multicenter Study on the Comparability of Myocardial Strain Values Acquired with Different {CMR} Scanners and Analyzed with Different Post-Processing Software: Insights into the ``Traveling Volunteers'' Study,10.1007/s11548-025-03499-7,2026,,2,03_REMAINING,35
+adams2023,Effects of Spatial and Temporal Resolution on Cardiovascular Magnetic Resonance Feature Tracking Measurements Using a Simple Realistic Numerical Phantom,10.1259/bjr.20220233,2023,,2,03_REMAINING,36
+mukherjee2024,In-Silico Heart Model Phantom to Validate Cardiac Strain Imaging,10.1016/j.compbiomed.2024.109065,2024,,2,03_REMAINING,37
+barbaroux2025,{DENSE-SIM}: A Modular Pipeline for the Evaluation of Cine Displacement Encoding with Stimulated Echoes Images with Sub-Voxel Ground-Truth Strain,10.1016/j.jocmr.2025.101866,2025,,2,03_REMAINING,38
+cmac2011,Cardiac Motion Analysis Challenge 2011,,2011,https://www.cardiacatlas.org/motion-tracking-2011-challenge/,3,03_REMAINING,39
+stanforddata,Human {MRI} Data to Quantify Cardiac Performance,10.25740/xt223hz2438,2026,https://purl.stanford.edu/xt223hz2438,3,03_REMAINING,40
+zhou2018straus,A Framework for the Generation of Realistic Synthetic Cardiac Ultrasound and Magnetic Resonance Imaging Sequences from the Same Virtual Patients,10.1109/TMI.2017.2708159,2018,,2,03_REMAINING,41
+strausdata,Multimodality {STRAUS},,n.d.,https://humanheart-project.creatis.insa-lyon.fr/multimodalityStraus.html,2,03_REMAINING,42
+tobongomez2013cmac,Benchmarking Framework for Myocardial Tracking and Deformation Algorithms: An Open Access Database,10.1016/j.media.2013.03.008,2013,,3,03_REMAINING,43
+wissmann2014mrxcat,{MRXCAT}: Realistic Numerical Phantoms for Cardiovascular Magnetic Resonance,10.1186/s12968-014-0063-3,2014,,3,03_REMAINING,44
+mrxcat2repo,{MRXCAT 2.0} Source Repository,,n.d.,https://gitlab.ethz.ch/ibt-cmr-public/mrxcat-2.0,3,03_REMAINING,45
+he2024,Prognostic Value of Segmental Strain After {ST}-Elevation Myocardial Infarction: Insights From the {EARLY} Assessment of {MYOcardial} Tissue Characteristics by Cardiac Magnetic Resonance ({EARLY-MYO-CMR}) Study,10.1002/jmri.29274,2024,,2,03_REMAINING,46
+yu2020mpn,Motion Pyramid Networks for Accurate and Efficient Cardiac Motion Estimation,10.1007/978-3-030-59725-2_42,2020,,2,03_REMAINING,47
+yu2020foal,{FOAL}: Fast Online Adaptive Learning for Cardiac Motion Estimation,10.1109/CVPR42600.2020.00437,2020,,2,03_REMAINING,48
+chen2020anatomy,Anatomy-Aware Cardiac Motion Estimation,10.1007/978-3-030-59861-7_16,2020,,2,03_REMAINING,49
+alvarez2026warppinn,{WarpPINN-fibers}: Improved Cardiac Strain Estimation from Cine-{MR} with Physics-Informed Neural Networks,10.1007/s00366-026-02295-4,2026,,2,03_REMAINING,50
+liu2026fe,Unlocking {2D}/{3D}+T Myocardial Mechanics from Cine {MRI}: A Mechanically Regularized Space-Time Finite Element Correlation Framework,10.1016/j.media.2026.103944,2026,,2,03_REMAINING,51
+lim2021,Quantification of Myocardial Strain Assessed by Cardiovascular Magnetic Resonance Feature Tracking in Healthy Subjects---Influence of Segmentation and Analysis Software,10.1007/s00330-020-07539-5,2021,,3,03_REMAINING,52
+jia2026fouriernetplus,{Fourier-Net+}: Band-Limited Spatial Representation for Efficient Medical Image Registration,10.1109/TNNLS.2026.3688245,2026,,2,03_REMAINING,53
+movahed2026cardiomorphnet,{CardioMorphNet}: Cardiac Motion Prediction Using a Shape-Guided Bayesian Recurrent Deep Network,10.1016/j.media.2026.104149,2026,,2,03_REMAINING,54
+monfared2026review,"Deep Learning for Cardiac Wall Motion Analysis: A Review of Methods, Challenges, and Clinical Applications",10.1007/s10439-026-04147-0,2026,,3,03_REMAINING,55
+hussein2026review,Myocardial Strain Evaluation from Cardiovascular {MRI} and {CT}: Physiological Principles and Clinical Perspectives,10.1093/bjr/tqag192,2026,,3,03_REMAINING,56
+cmrxrecon2025official,"{CMRxRecon2025}: Multi-Centre, Multi-Vendor and Multi-Disease Cardiovascular Magnetic Resonance Reconstruction Challenge",,2025,https://cmrxrecon.github.io/2025/,3,03_REMAINING,57
+metz2011,Nonrigid Registration of Dynamic Medical Imaging Data Using {$n$D}+{$t$} {B}-Splines and a Groupwise Optimization Approach,10.1016/j.media.2010.10.003,2011,,2,03_REMAINING,58
+rueckert1999,Nonrigid Registration Using Free-Form Deformations: Application to Breast {MR} Images,10.1109/42.796284,1999,,2,03_REMAINING,59
+vigneault2017,Feature Tracking Cardiac Magnetic Resonance via Deep Learning and Spline Optimization,10.1007/978-3-319-59448-4_18,2017,,2,03_REMAINING,60
+puyolanton2018,Fully Automated Myocardial Strain Estimation from Cine {MRI} Using Convolutional Neural Networks,10.1109/ISBI.2018.8363772,2018,,2,03_REMAINING,61
+osman2000harp,Imaging Heart Motion Using Harmonic Phase {MRI},10.1109/42.845177,2000,,2,03_REMAINING,62
+balakrishnan2019voxelmorph,{VoxelMorph}: A Learning Framework for Deformable Medical Image Registration,10.1109/TMI.2019.2897538,2019,,2,03_REMAINING,63
+chen2022transmorph,{TransMorph}: Transformer for Unsupervised Medical Image Registration,10.1016/j.media.2022.102615,2022,,2,03_REMAINING,64
+jia2023fouriernet,{Fourier-Net}: Fast Image Registration with Band-Limited Deformation,10.1609/aaai.v37i1.25182,2023,,2,03_REMAINING,65
+qin2018joint,Joint Learning of Motion Estimation and Segmentation for Cardiac {MR} Image Sequences,10.1007/978-3-030-00934-2_53,2018,,2,03_REMAINING,66
+zheng2019apparent,Explainable Cardiac Pathology Classification on Cine {MRI} with Motion Characterization by Semi-Supervised Learning of Apparent Flow,10.1016/j.media.2019.06.001,2019,,2,03_REMAINING,67
+meng2022mulvimotion,{MulViMotion}: Shape-Aware {3D} Myocardial Motion Tracking from Multi-View Cardiac {MRI},10.1109/TMI.2022.3154599,2022,,2,03_REMAINING,68
+meng2024deepmesh,{DeepMesh}: Mesh-Based Cardiac Motion Tracking Using Deep Learning,10.1109/TMI.2023.3340118,2024,,2,03_REMAINING,69
+qiao2026stcmt,{STCMT-Net}: A Spatiotemporal Consistency Motion Transfer Network for Enhancing Cardiac Motion Estimation,10.1016/j.media.2025.103926,2026,,2,03_REMAINING,70
+yin2025mcm,{MCM}: Mamba-Based Cardiac Motion Tracking Using Sequential Images in {MRI},10.48550/arXiv.2507.17678,2025,,2,03_REMAINING,71
+ruan2026latentode,Cardiac Motion Tracking with Bidirectional Latent Neural {ODEs} from Cine Cardiac {MRI},10.1016/j.compmedimag.2026.102797,2026,,2,03_REMAINING,72
+fu2026cinema,Development and Validation of a Versatile Foundation Model for Cine Cardiac Magnetic Resonance Image Analysis,10.1038/s43856-026-01636-0,2026,,2,03_REMAINING,73
+jacob2025cmrfm,Towards a Cardiovascular Magnetic Resonance Foundation Model for Multi-Task Cardiac Image Analysis,10.1016/j.jocmr.2025.101967,2025,,2,03_REMAINING,74
+qin2023biomech,Generative Myocardial Motion Tracking via Latent Space Exploration with Biomechanics-Informed Prior,10.1016/j.media.2022.102682,2023,,2,03_REMAINING,75
+arratia2023warppinn,{WarpPINN}: Cine-{MR} Image Registration with Physics-Informed Neural Networks,10.1016/j.media.2023.102925,2023,,2,03_REMAINING,76
+ye2021deeptag,{DeepTag}: An Unsupervised Deep Learning Method for Motion Tracking on Cardiac Tagging Magnetic Resonance Images,10.1109/CVPR46437.2021.00718,2021,,2,03_REMAINING,77
+lei2025denserotation,{DENSE}-Guided Deep Motion Networks Accounted by Large Rotations to Improve Myocardial Strain Analysis from Routine Cine {MRI},10.1109/isbi60581.2025.10980688,2025,,2,03_REMAINING,78
+an2026myonet,{MyoNet}: Deep Learning-Based Myocardial Strain Quantification from Cine Cardiac {MRI},10.3390/bioengineering13030310,2026,,2,03_REMAINING,79
+xu2018,Direct Delineation of Myocardial Infarction without Contrast Agents Using a Joint Motion Feature Learning Architecture,10.1016/j.media.2018.09.001,2018,,2,03_REMAINING,80
+yeon2001sonomicrometry,Validation of In Vivo Myocardial Strain Measurement by Magnetic Resonance Tagging with Sonomicrometry,10.1016/s0735-1097(01)01397-3,2001,,2,03_REMAINING,81
+portal2025semisup,Semi-Supervised Motion Flow and Myocardial Strain Estimation in Cardiac Videos Using Distance Maps and Memory Networks,10.1016/j.compbiomed.2025.110739,2025,,2,03_REMAINING,82
+buoso2025tagging3d,Automatic Analysis of Three-Dimensional Cardiac Tagged Magnetic Resonance Images Using Neural Networks Trained on Synthetic Data,10.1016/j.jocmr.2025.101869,2025,,2,03_REMAINING,83
+maret2009ft,{Functional measurements based on feature tracking of cine magnetic resonance images identify left ventricular segments with myocardial scar},10.1186/1476-7120-7-53,2009,,2,03_REMAINING,84
+hor2010ft,{Comparison of Magnetic Resonance Feature Tracking for Strain Calculation With Harmonic Phase Imaging Analysis},10.1016/j.jcmg.2009.11.006,2010,,2,03_REMAINING,85
+augustine2013ft,{Global and regional left ventricular myocardial deformation measures by magnetic resonance feature tracking in healthy volunteers: comparison with tagging and relevance of gender},10.1186/1532-429X-15-8,2013,,2,03_REMAINING,86
+bi2025segmorph,{SegMorph: Concurrent Motion Estimation and Segmentation for Cardiac MRI Sequences},10.1109/TMI.2024.3435000,2025,,2,03_REMAINING,87
+lu2023bireg,{A bidirectional registration neural network for cardiac motion tracking using cine MRI images},10.1016/j.compbiomed.2023.107001,2023,,2,03_REMAINING,88
+jia2026igbireg,{IG-BiReg: implicit-guided bidirectional residual registration framework for cardiac cine MRI images},10.1088/1361-6560/aeb060,2026,,2,03_REMAINING,89
+wang2019opticalflow,{A gradient-based optical-flow cardiac motion estimation method for cine and tagged MR images},10.1016/j.media.2019.06.016,2019,,2,03_REMAINING,90
+elnakib2015laplace,{Intramyocardial strain estimation from cardiac cine MRI},10.1007/s11548-014-1137-2,2015,,2,03_REMAINING,91
+tuyisenge2016assimilation,{Estimation of Myocardial Strain and Contraction Phase From Cine MRI Using Variational Data Assimilation},10.1109/TMI.2015.2478117,2016,,2,03_REMAINING,92

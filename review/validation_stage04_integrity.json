@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-11T23:00:04.301270+00:00",
+  "status": "PASS",
+  "errors": [],
+  "manifest_entries_verified": 82,
+  "register_rows": 92,
+  "claim_rows": 315,
+  "second_pass_sources": 38,
+  "moderate_findings_self_checked": 19,
+  "manuscript_location_check": {
+    "claims": 315,
+    "linked_locations": 1668,
+    "errors": [],
+    "low_pdf_match": []
+  },
+  "unresolved_keys": 50,
+  "limitation": "Integrity, schema, locators and recorded coverage only; not independent scientific verification."
+}

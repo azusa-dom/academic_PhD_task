@@ -1,0 +1,1 @@
+最终权威台账为 claim_citation_audit.csv、source_reading_register.csv 和 bibliography_identity_register.csv；自查与本次定位以 stage04_* 为准。stage01/02/03文件保留阶段性来源、引用覆盖和交叉定位，不代表新的独立审计或最终完成状态。阅读笔记保留历次观察，末尾阶段04段落调和先前描述；最终报告优先。55条主张替换建议及额外书目/计数/图表同步建议见上级03号报告。

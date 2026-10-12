@@ -1,0 +1,10 @@
+JobID|JobName|State|ExitCode|Start|End|Elapsed|WorkDir
+22557218|cmr_v10_skill|COMPLETED|0:0|11/10/26 01:28|11/10/26 01:51|00:23:53|/mnt/iusers01/fatpou01/bmh01/f12147zh/codex-slurm/cine-cmr-v10-skill-revision-20261011
+22557218.batch|batch|COMPLETED|0:0|11/10/26 01:28|11/10/26 01:51|00:23:53|
+22557218.extern|extern|COMPLETED|0:0|11/10/26 01:28|11/10/26 01:51|00:23:53|
+22557312|cmr_v10_readonly_astra|COMPLETED|0:0|11/10/26 01:31|11/10/26 01:53|00:22:53|/mnt/iusers01/fatpou01/bmh01/f12147zh/codex-slurm/csf3_v10_readonly_review_20261011_012543
+22557312.batch|batch|COMPLETED|0:0|11/10/26 01:31|11/10/26 01:53|00:22:53|
+22557312.extern|extern|COMPLETED|0:0|11/10/26 01:31|11/10/26 01:53|00:22:53|
+22557325|cmr_astra_review|COMPLETED|0:0|11/10/26 01:31|11/10/26 03:06|01:35:18|/mnt/iusers01/fatpou01/bmh01/f12147zh/codex-slurm/cine-review-astra-20261011
+22557325.batch|batch|COMPLETED|0:0|11/10/26 01:31|11/10/26 03:06|01:35:18|
+22557325.extern|extern|COMPLETED|0:0|11/10/26 01:31|11/10/26 03:06|01:35:18|

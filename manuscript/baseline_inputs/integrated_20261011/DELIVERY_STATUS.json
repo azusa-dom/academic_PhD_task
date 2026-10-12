@@ -1,0 +1,18 @@
+{
+  "task_complete": true,
+  "delivery_version": "20261011_final_integrated",
+  "main_pages": 36,
+  "supplement_pages": 20,
+  "main_figures": 5,
+  "supplement_figures": 3,
+  "graphical_abstract_separate": true,
+  "active_references": 94,
+  "review_register_entries": 83,
+  "historical_report_files": 62,
+  "original_inputs_unchanged": true,
+  "scientific_checks": "targeted primary-source checks plus critical cross-report integration",
+  "independent_human_review": false,
+  "author_approval": "pending",
+  "submission_ready": false,
+  "build_status": "compiled_and_render_checked_with_disclosed_Tectonic_pass_manager_warning"
+}

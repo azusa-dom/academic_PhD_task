@@ -1,0 +1,436 @@
+[
+  {
+    "job": "22557312",
+    "name": "CLAIM_EVIDENCE_AUDIT.csv",
+    "sha256": "355e012a4de41687f29986bad2070809fafc049d57df63674e8ad3be9f6179a0",
+    "bytes": 19141,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557312",
+    "name": "EXECUTIVE_SUMMARY_ZH.md",
+    "sha256": "102589b770b58a39b0a23ae8282cb14e0d1ba30b23f121c6070bea7a960a8834",
+    "bytes": 2917,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557312",
+    "name": "FINDINGS.csv",
+    "sha256": "cbcdcde0ed4527822ed264334c96a6c735d6bf68c5b096c5b7ba228a3e16dcae",
+    "bytes": 19317,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557312",
+    "name": "READING_AND_COVERAGE.md",
+    "sha256": "7905c5af2dcda6b7be04b6e4d6bb55ccf762eefe12440d2e09c2fe10ab689d76",
+    "bytes": 20581,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557312",
+    "name": "REVIEW_REPORT_ZH.md",
+    "sha256": "723f2470a26ecb8a66091f47f6eb2529437d70b505c8c61a3aac0dd3935f2f1a",
+    "bytes": 34498,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557312",
+    "name": "REVIEW_STATUS.json",
+    "sha256": "993d33f43f3cf8d1d7e4bfe27adb3f7ab2065712ea27c179b550a94ff186d5a3",
+    "bytes": 5001,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "00-阅读导航.md",
+    "sha256": "7a26f13d9506c1904ba775694b89af154e9e2f38b7c9f04f906b97ee0d15623c",
+    "bytes": 1799,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "AUTHOR_ACTIONS.zh-CN.md",
+    "sha256": "0ff25cf2a90473c445268411330ad272d311e228e5dcab07d712e56e69cfa330",
+    "bytes": 2421,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "CHANGE_LOG.zh-CN.md",
+    "sha256": "d3ff6ed9719be3eff87870f32af331e565b3151cb1084271a950f1783e0e0e46",
+    "bytes": 7882,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "CHECKPOINT.json",
+    "sha256": "784dc44687880316673e5bbcaf98f4bd53f6293a8b7453621ccb51ace690a105",
+    "bytes": 1074,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "CLAIM_EVIDENCE_MAP.csv",
+    "sha256": "6ed525e3f45836700171481df4d05575cea8a23209e825cb23a1c2d7e8e7de3b",
+    "bytes": 10646,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "FINAL_REVIEW.md",
+    "sha256": "f153da1df4a630e86bb9ce362a17f2845ad1f3d79b1a4c715ff2c3fad26ec0f7",
+    "bytes": 5703,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "ISSUE_REGISTER.csv",
+    "sha256": "b5b96509a6ecbefc47c632c191b252229a3a01b6b428cda91d53583ed3637b16",
+    "bytes": 9196,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "PDF_FIGURE_QA.md",
+    "sha256": "22b2dbbe5062d57dcf17997ccc07e6510f7c2582f79da2224c2894f21fcc5d3e",
+    "bytes": 4993,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "PROGRESS.md",
+    "sha256": "e29df15f33524fa92b4c1fa5255b9e032ee8eca7ec0435eb59d45013dac327ed",
+    "bytes": 2577,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "REFERENCE_VERIFICATION.md",
+    "sha256": "aa8d3e14177a2c920d7a22bbebe82274dfc6ce7f79a647b2edcb1a2d80b99e22",
+    "bytes": 3090,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "REVERSE_OUTLINE_AFTER.md",
+    "sha256": "e2e2ccc9ca43d7a9e0e3fcb59aa0519dba4b63a5a3e0b8181a6e12f0c0e80546",
+    "bytes": 15952,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "REVERSE_OUTLINE_BEFORE.md",
+    "sha256": "fa158107015575faa7113f0321601a09b2b8130ae039e9fb1618f0808233602b",
+    "bytes": 13243,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "REVISION_PLAN.md",
+    "sha256": "14f432ad463e2547ee7be04cb70f247c85b1c8767644e0926384c905e94f8e40",
+    "bytes": 5162,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "RUN_HANDOVER.md",
+    "sha256": "936f295cd700d304bd64975f57ad915e3687d68ad5356e25a6223d5662aa517b",
+    "bytes": 1147,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "SCIENTIFIC_REVIEW.md",
+    "sha256": "f30ad5293cb5fc1422b6b410cf21ea0c9f090de96def8bf63a560d2b380bd5fd",
+    "bytes": 6764,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "SKILL_EXECUTION_LOG.md",
+    "sha256": "37dd1c276aacab2682362b534ddf424dad97d74237741fb46cb9115b2bedaaf8",
+    "bytes": 2897,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "SOURCE_VERIFICATION.csv",
+    "sha256": "2d10011ede6bbca61e887166ab79347a2dd2d9c95853d3eee8e730ab6138c61a",
+    "bytes": 4638,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557218",
+    "name": "TARGETED_SEARCH_LOG.csv",
+    "sha256": "69da15918da2984cfaac996926a8a590b6b35a06163129d8bf9865bfb88e5b94",
+    "bytes": 3408,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "00-阅读导航.md",
+    "sha256": "87f80dd54a72f199090b6840b2b6639d96711e489bfe9108a59f0cac3a37fca6",
+    "bytes": 1000,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "01_audit_zh.md",
+    "sha256": "4f2c19556d9571c12656bc785cb1a9b2bf0f03eb0674017e5a61f75144f2e243",
+    "bytes": 37602,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "02_revision_zh.md",
+    "sha256": "c9297f03a37a4caea1495b876fb53ff1c8435e89d8962e00734e816e850e400e",
+    "bytes": 7468,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "03_independent_review_zh.md",
+    "sha256": "5d73cbb400bc7f4ccd05ad76ecfe6b83f9d3913f7aedffb46235955c351a56c9",
+    "bytes": 15968,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "AUDIT_PROMPT.md",
+    "sha256": "4dda4c9d5cae2480ccfd8adc44fad4d6f166f29260d51fa05f61a30e0b10a2be",
+    "bytes": 1863,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "DISAGREEMENTS_zh.md",
+    "sha256": "8bc5560b00cd1e064e93638531bbf231782ef167418ca26670928568d2ac6ac0",
+    "bytes": 1572,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "FINALIZER_RECHECK_zh.md",
+    "sha256": "e10faa3a854aad7bdb7dbb29e1f61438f59c49a2b95bffc499755ab6ce003f25",
+    "bytes": 4358,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "FINAL_AUDIT_STATUS.md",
+    "sha256": "ef4276c49c1db94433537b87022cda5fb7fd59fedf3da94b7c72a323d05c0dee",
+    "bytes": 2631,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "FINAL_CHANGE_SUMMARY_zh.md",
+    "sha256": "0b98f9b7b8bfece5953d5ad0852894f1a67943ab4e559d5435876d11d2243004",
+    "bytes": 2205,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "FINAL_QA_REPORT.md",
+    "sha256": "c9f0ce76bd784c904b71ed25d0936b347c853848f013c73d18fc90722239b719",
+    "bytes": 3274,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "FINAL_REVISION_STATUS.md",
+    "sha256": "3271c46ebda5e3b5160aaaf4af61283eed2cad4175a0b7aeaaf9c6ec362b3749",
+    "bytes": 3546,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "QA_REPORT.md",
+    "sha256": "f7fc1d6cebafa1cff28bd46c67cd1a484eeabb9c868f635dcc519aa68fb86558",
+    "bytes": 4696,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "REMAINING_CONCERNS.md",
+    "sha256": "d2b07112971ebd73971c1395946306bd9f5921ef230480fb3179fb11d6119837",
+    "bytes": 1844,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "REVISION_PROMPT.md",
+    "sha256": "9a1f2043f9e9a71ebcd8d404dcd9ee62b2406e552a100dcb1bf99acb9955ec80",
+    "bytes": 1604,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "REVISION_QA_REPORT.md",
+    "sha256": "a2e939f4380d38deb6458dba539b4e29097655bcaa7f98f60eeaafb78959fbab",
+    "bytes": 6190,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "REVISION_START.json",
+    "sha256": "0b5378c6b92f7f0ed9cf89e2dedd74dcf83fbc08c1f22f30c637e6eab3479c76",
+    "bytes": 247,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "SKILL_EXECUTION_LOG.md",
+    "sha256": "7ecd3e6d16a3d3cf4db2e2166324655523261e15942ed70c87e3cebee185829f",
+    "bytes": 9423,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "claim_evidence.csv",
+    "sha256": "54154779d663bc62970a7a30b5448e0fb32276470771a8cc95c298f6e3f50932",
+    "bytes": 194746,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "coverage.csv",
+    "sha256": "5a5b319dc46fa34e1153444646c0f0809b2da5a73bf7d15da7bc83a5efa4d60e",
+    "bytes": 220839,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "current_citation_claim_map.csv",
+    "sha256": "79733e467ee500de74cbff5112c443bad2cc8afbd9f1b7126be5f1330f1d06fa",
+    "bytes": 263855,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "final-message.md",
+    "sha256": "9d8f2faaeaf49e982552d5558f81790330ae120708b0cff424dc333d21e501d3",
+    "bytes": 1212,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "finalizer_targeted_recheck.csv",
+    "sha256": "b065cbac8f205e50d92a80b1eeeb5f5d9c8c998f8bda17933a32a1ac24d50633",
+    "bytes": 9745,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "independent_citation_audit.csv",
+    "sha256": "4b92bf8dcd6c436aafa90d876522d8f81fa595aff6ea429a53e5eede4ce9da5c",
+    "bytes": 103325,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "independent_citation_audit_zh.md",
+    "sha256": "a66c02408521d0a08bc5c5e58574037191e847388054cadc52c90ea772ac6d8a",
+    "bytes": 7569,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "independent_citation_checks.csv",
+    "sha256": "761346c9decb539cbee2f770cd3fd38d0c181a35fe9abacbd05411a19e61c7de",
+    "bytes": 238246,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "issue_resolution.csv",
+    "sha256": "b5f1e80593af860a0229fee5e8ea7bb0bd8e361d6478dd57b8babb650f51e907",
+    "bytes": 28886,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "issues.csv",
+    "sha256": "6033d3ca93ab8b7f37947c8dbb93d149560fd67a2711e42343179058af561093",
+    "bytes": 26149,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "issues.json",
+    "sha256": "249263deab437b1c55e90e984c2f4a9fd91c235bf593603586860b7a6c9652e0",
+    "bytes": 34900,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "meaning_changes.csv",
+    "sha256": "a4e36a3a9cbf1b73ddf83466efc4f1994241e27f7af5f52c077165549a207085",
+    "bytes": 268523,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "retrieval_addendum_20261011.md",
+    "sha256": "7b23f55470020a0bfdfe456fce453a13a18f382902b7a7349b50a59d8c629c22",
+    "bytes": 5968,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision-final-message.md",
+    "sha256": "51d765c5045926fdfd051d9d699360bb32ee247edd0021e621e1e309d505cdcf",
+    "bytes": 628,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision_blueprint.md",
+    "sha256": "72124c798b773b32a8118580bf551922905cd414203071fcfa3d3643a224f9c2",
+    "bytes": 5744,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision_final_source_review_zh.md",
+    "sha256": "805fe99d85dfe23022a4fb6dee52c60249eee26cf75f5eddc4c1a0acf1de02f9",
+    "bytes": 10826,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision_independent_sources.csv",
+    "sha256": "1de4663d84b45cfb0d614836f749147be7839afa389b6a345d4a5879e9b1c6e4",
+    "bytes": 12406,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision_independent_sources_zh.md",
+    "sha256": "074233005686d9ba896698adbf91e7040ee5c8b1e1bac6cd02a1c0f51e00c594",
+    "bytes": 20310,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "revision_record_counts.json",
+    "sha256": "1219aabef04dbd01f045adfdadc127866d131985c14435ce35f29a7ae1ebeff4",
+    "bytes": 155,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "verification_coverage.csv",
+    "sha256": "f4eaa29e19335fa77b5cce50df06d395851843e2776b1d157523e85665258b29",
+    "bytes": 123943,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  },
+  {
+    "job": "22557325",
+    "name": "verification_findings.csv",
+    "sha256": "398b3bcfa634abefb4e8a4575eb8497421d0b74fa7cc3ae8449b33257860e630",
+    "bytes": 11044,
+    "role": "historical source; status applies to its own stage, not automatically to this integration"
+  }
+]

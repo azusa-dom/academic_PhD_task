@@ -30,7 +30,7 @@ Reading depth varies by source. Central comparisons were checked in the relevant
 
 Balanced steady-state free-precession (bSSFP) cine CMR samples a time series of image intensities. In a typical short-axis image, the blood--myocardium interfaces are conspicuous, while intramyocardial texture can be weak and changes with coil sensitivity, through-plane motion, partial volume, reconstruction and artefact. The image therefore supplies anatomical and intensity cues without a persistent identity label for every tissue element. Every estimator has to add something to those cues. Feature tracking exploits image features or propagated contours; registration exploits an image-similarity relation; biomechanical models constrain admissible deformation; and learning-based methods import associations learned from training data~\cite{pedrizzetti2016,duchateau2020}. These four categories overlap in practice: a neural network may predict registration parameters, a registration method may use a learned similarity measure, and a biomechanical penalty may be embedded in either.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{integrated/Figure_1_two_track_evidence_map.pdf}
 \caption{From image cues to a regional measurement. (a) Conceptual chain: correspondence is inferred and strain depends on the measurement definition. The registration objective shown is one example; other families optimise other targets. Segment~11 is reduced; all curve readouts are calculated illustrations. Input (I), estimation (E) and representation (R) tests probe potentially coupled errors. (b) Selected empirical endpoints, shown without pooling or ranking. MRXCAT2.0 reports slice averages~\cite{mrxcat2023}. Militaru intraclass correlation coefficients (ICCs) for longitudinal, circumferential and radial strain (LS, CS, RS) compare feature tracking (FT) with tagging; the global RS range is 0.10--0.63~\cite{militaru2021}. Cao reports mid-slice peak circumferential strain (Ecc)~\cite{cao2018}; StrainNet reports end-systolic cine--DENSE Ecc agreement~\cite{wang2023strainnet}. REGAIN assesses reconstruction-plus-analysis agreement~\cite{yoon2023regain}; Strain-8 assesses repeatability~\cite{bell2025strain8}. Kihlberg's receiver operating characteristic (ROC) analysis uses end-systolic segmental Ecc and late gadolinium enhancement (LGE)~\cite{kihlberg2020clinical}. Bello's corrected C index concerns right-ventricular (RV) survival prediction in chronic thromboembolic pulmonary hypertension (CTEPH)~\cite{bello2019}; the deep-learning synthetic strain (DLSS) area under the curve (AUC) evaluates reader-defined wall-motion abnormality across thresholds~\cite{masutani2023dlss}. The axis value 0.5 is a scale reference only; no result is plotted there.}
@@ -57,7 +57,7 @@ These equations (\cref{eq:kinematics} and \cref{eq:gl}) state how a chosen mappi
 
 Boundary agreement constrains deformation without determining it. Consider an annulus whose end-diastolic and end-systolic contours are fixed. Material points can retain their angular positions, or they can be reparameterised around the same final contour. Both mappings give Dice overlap of one and Hausdorff distance of zero for the masks, while their circumferential stretch varies differently with position (\cref{fig:same-contours}). The counterexample proves a limited point: equal masks or equal mean geometry are insufficient to identify intramyocardial correspondence. It leaves two other questions open, namely whether cine-derived regional strain is wrong in any particular case, and whether image texture and temporal information can select a useful mapping.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{integrated/Figure_2_same_contours_analytic.pdf}
 \caption{Identical contours do not determine the same material correspondence. (a) Schematic of the information each acquisition supplies: routine cine provides boundaries and weak texture, tagging a prepared pattern, DENSE phase-encoded displacement; only tagging and DENSE carry a material label in the signal. (b) Two material mappings between the same annular contours (\(r\mapsto r\)): angular identity, \(\theta\mapsto\theta\), and \(\theta\mapsto\theta+a\sin\theta\) with \(a=0.5\). Both give identical masks (Dice~\(=1\), Hausdorff~\(=0\)). (c) Their circumferential stretch, \(\lambda_\theta=1\) and \(\lambda_\theta=1+a\cos\theta\), differs; the latter ranges from 0.5 to 1.5 and preserves orientation for \(|a|<1\), while both mappings have the same mean stretch over \(\theta\) (1.0). The figure is an analytic counterexample; no estimator error is measured, and the stretch ratio is a different quantity from Green--Lagrange strain.}
@@ -87,6 +87,13 @@ When these items are missing, apparent disagreement may reflect different quanti
 \section{Estimator families and the assumptions they contribute}\label{sec:families}
 
 All estimators resolve incomplete image information by adding structure. The useful comparison between them therefore concerns which assumptions each introduces, whether those assumptions are visible to the user, and whether they suit the abnormality being studied. \Cref{tab:families} summarises these attribute-level distinctions. \Cref{sec:illposed} then uses registration to explain how information, representation and estimation interact, and \cref{sec:ft} to \cref{sec:supervised} follow the literature in approximate chronological order within each family. Supplementary Table~S3 and \cref{fig:timeline} map selected method and evaluation entries, including non-cine comparators. Their documented endpoints do not provide a field-wide prevalence estimate.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{integrated/Figure_3_method_timeline.pdf}
+\caption{Selected method and evaluation records by year (Supplementary Table~S3). One marker denotes a plotted entry; entries are neither independent cohorts nor unique algorithms. Related non-cine methods and separate evaluations are included. The three early clinical feature-tracking studies and the MRXCAT2.0 evaluation of DeepStrain are plotted as separate entries, and the generic feature-tracking family row of Table~S3 is not plotted. Colours identify one selected documented endpoint per entry; studies may report several endpoints. They do not rank validation strength. Motion Pyramid Networks (MPN) include model-generated imposed-motion tests, which are distinct from independent physiological references. ``Endpoint not verified'' and ``other-task validation'' are separate categories, neither of which means that a study performed no validation. Source-specific reading depths and populations are documented in the figure data. The selective map is not a prevalence estimate for the field. Years 2001--2008, which have no selected entries, are compressed.}
+\label{fig:timeline}
+\end{figure}
 
 {\setstretch{1.0}\scriptsize\sloppy
 \setlength{\tabcolsep}{3pt}
@@ -177,12 +184,6 @@ Clinical labels enter these pipelines at different stages. Cine-only infarct del
 
 Deep-learning aligned strain also separates motion estimation from clinical classification. Its cine pipeline detects key phases, segments the myocardium and estimates deformation using image similarity, smoothness and mask agreement; LGE labels the downstream patient-level fibrosis classifier, and the displacement field is learned without LGE. Development used 57 patients with Duchenne muscular dystrophy, followed by a same-centre temporal holdout of 82 patients. The classification target was the presence of at least one LGE-positive segment; the spatial boundary of fibrosis was not a target~\cite{koehler2025alignedstrain}. In a different chamber and population, Bello and colleagues used right-ventricular motion to predict survival in 302 patients with chronic thromboembolic pulmonary hypertension. Internally bootstrap-corrected Harrell C indices were 0.75 for the learned model and 0.59 for a model using manually measured conventional volumetric and functional variables~\cite{bello2019}. Both studies provide clinically relevant discrimination evidence in their tested settings, without converting that evidence into dense motion accuracy or demonstrated treatment benefit.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{integrated/Figure_3_method_timeline.pdf}
-\caption{Selected method and evaluation records by year (Supplementary Table~S3). One marker denotes a plotted entry; entries are neither independent cohorts nor unique algorithms. Related non-cine methods and separate evaluations are included. The three early clinical feature-tracking studies and the MRXCAT2.0 evaluation of DeepStrain are plotted as separate entries, and the generic feature-tracking family row of Table~S3 is not plotted. Colours identify one selected documented endpoint per entry; studies may report several endpoints. They do not rank validation strength. Motion Pyramid Networks (MPN) include model-generated imposed-motion tests, which are distinct from independent physiological references. ``Endpoint not verified'' and ``other-task validation'' are separate categories, neither of which means that a study performed no validation. Source-specific reading depths and populations are documented in the figure data. The selective map is not a prevalence estimate for the field. Years 2001--2008, which have no selected entries, are compressed.}
-\label{fig:timeline}
-\end{figure}
 
 
 \section{What the validation literature establishes}\label{sec:validation}
@@ -199,11 +200,18 @@ DeepStrain achieved a reported myocardial Dice of 0.82 across phases and displac
 
 The generated domain also limits interpretation. The evaluation used one scar geometry and a signal-to-noise ratio (SNR) of 30, and myocardial texture was removed during image generation. The MRXCAT2.0 texture network (TextNet) and DeepStrain were both developed with ACDC data: independence of the evaluating team does not establish independence of the image domain, although shared dataset use alone is not evidence of leakage. The inspected source does not identify the evaluated DeepStrain release or weights. The component-specific errors could reflect image formation, wall thinning and partial volume, training data or estimation constraints; the experiment does not isolate these contributions~\cite{mrxcat2023}.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{integrated/Figure_4_attribute_specific_recovery.pdf}
 \caption{Prescribed tissue strain and reported DeepStrain errors in MRXCAT2.0. (a) Remote-to-scar peak systolic strain: radial strain is markedly reduced (0.95 to 0.30), circumferential strain approaches zero (\(-0.18\) to 0.01), and longitudinal strain changes little (\(-0.18\) to \(-0.17\)); infarct-case ejection fraction (EF) is 49\%. Differences are arithmetic scar-minus-remote values. (b) Source-reported means and standard deviations (SD): Ecc error \(0.02\pm0.04\), Err error \(-0.24\pm0.21\) across cases and \(-0.20\pm0.21\) in the infarct case. Source Figure~14 averages over three mid-ventricular short-axis slices. The all-case summary includes the infarct case; SD overlap does not establish equivalence, and no uniform case ranking is inferred. (c) The inspected results do not quantify scar-level magnitude, localisation, extent or peak-time error. Profile glyphs define attributes and are conceptual. Source values are retained~\cite{mrxcat2023}; the redraw adds no new experiment. The separate evaluating team and shared ACDC image domain are discussed in the text.}
 \label{fig:attributes-mrxcat}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{integrated/Figure_5_validation_targets_programme.pdf}
+\caption{What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, a direct claim each supports, and what each leaves open on its own. (b) A proposed programme of complementary tests, with the resources reviewed in \cref{tab:resources} placed alongside tests they can serve; counts denote resource units and are not counts of independent test participants. (c) Two fields with an equal global strain of \(-0.18\) and different regional content (segment values \(-0.22\), \(-0.22\), \(-0.06\), \(-0.18\), \(-0.20\) and \(-0.20\) against a uniform \(-0.18\)): recovering the mean is no evidence of regional recovery. Conceptual synthesis; no study data.}
+\label{fig:evaluation}
 \end{figure}
 
 
@@ -353,12 +361,6 @@ No material-sensitive reference is perfect, so this stage also needs a sensitivi
 
 Tissue characterisation, expert wall-motion scores and outcomes become valuable after the technical claim is clear. LGE can test whether a regional measurement captures scar-associated dysfunction; perfusion or mapping can address other substrates. Longitudinal studies can test responsiveness and minimal detectable change. Decision studies should specify what action changes, how false-positive and false-negative regional calls matter, and whether the regional measurement adds information beyond volumes, LGE and clinical covariates.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{integrated/Figure_5_validation_targets_programme.pdf}
-\caption{What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, a direct claim each supports, and what each leaves open on its own. (b) A proposed programme of complementary tests, with the resources reviewed in \cref{tab:resources} placed alongside tests they can serve; counts denote resource units and are not counts of independent test participants. (c) Two fields with an equal global strain of \(-0.18\) and different regional content (segment values \(-0.22\), \(-0.22\), \(-0.06\), \(-0.18\), \(-0.20\) and \(-0.20\) against a uniform \(-0.18\)): recovering the mean is no evidence of regional recovery. Conceptual synthesis; no study data.}
-\label{fig:evaluation}
-\end{figure}
 
 
 \subsection{Validation resources answer different parts of the question}\label{sec:resources}

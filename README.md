@@ -16,6 +16,10 @@ handoff package (imported 2026-10-09).
   - `source_notices/` — upstream license/attribution notices for third-party skill material.
 - `.claude/skills/` — the 24 project skills covering literature search/review, writing,
   figure/visualization workflows, and submission preparation (see
-  `docs/handoff/02_Skills与工具清单.md` for the full routing table).
+  `docs/handoff/02_Skills与工具清单.md` for the full routing table), plus
+  `paper-deconstruct`, a skill written in this repository (2026-10-14, v0.1.0 draft) for
+  reading one paper in depth: retracing the authors' research route, auditing the evidence
+  behind each claim, and turning the findings into next steps. Its design sources are in
+  `.claude/skills/paper-deconstruct/NOTICE.md`.
 
 No MRI/DICOM data, credentials, `.env` files, or virtual environments are included in this import.

@@ -21,6 +21,10 @@
 - "这篇 StrainNet 的结论能信到什么程度？"
 - "Deconstruct this paper and tell me what I can borrow for my own strain project."
 
+## 示例与测试
+
+`examples/wehner2018_example.md` 是对一篇开放获取的 cine FT–DENSE 一致性研究的完整示例输出；`evals/iteration-1_summary.md` 记录了与不加载 skill 的基线对比。
+
 ## 状态与局限
 
 v0.1.0 草稿。输出是 AI 辅助的单人精读，不等于独立同行评审；关键数字在使用前应对照原文核实。致谢与许可见 `NOTICE.md`。

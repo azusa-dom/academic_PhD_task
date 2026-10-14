@@ -87,6 +87,8 @@ Table 4 的表头和统计方法一节都写的是 Cox 比例风险模型和 HR�
 
 ## Khan 2012（TARGET）：摘要层面确认"无疤痕"是超声应变幅度，不是 LGE
 
+> 2026-10-14 更新：作者已提供全文文本，全文核对见 `review/27_全文核对_Gao2014_Brandt2024_Khan2012.md`，结论不变。
+
 摘要写道："220 patients … underwent baseline echocardiographic speckle-tracking 2-dimensional radial strain imaging"，干预组的导线放在"the latest site of peak contraction with an amplitude of >10% to signify freedom from scar" [原文事实，摘要]。所以 TARGET 的激动时相和"无疤痕"都来自超声斑点追踪径向应变，没有使用 CMR 或 LGE。主要终点（6 个月 LVESV 下降 ≥15%）响应率 70% vs 55%（p = 0.031）[原文事实，摘要]；Borgquist 2022 Table 4 中的 TARGET 行与之一致。全文未读。
 
 ## Borgquist 2022：两项试验的激动时相都来自超声；只有一项在有条件时用 CMR 判定疤痕

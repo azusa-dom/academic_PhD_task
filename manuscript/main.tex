@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[a4paper,margin=20mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[british]{babel}
@@ -16,6 +16,7 @@
 \renewcommand{\bottomfraction}{0.85}
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.6}
+\makeatletter\setlength{\@fptop}{0pt}\makeatother   % float pages start at the top, not vertically centred
 \graphicspath{{figures/}}
 \usepackage{caption}
 \captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified,singlelinecheck=false}
@@ -63,7 +64,13 @@
 \end{center}
 
 \begin{abstract}
-Regional myocardial dysfunction can be clinically important even when global ventricular function is preserved. Routine cine cardiovascular magnetic resonance (CMR) permits retrospective motion and strain estimation, but cine images do not explicitly identify myocardial material points, so their correspondence across frames must be inferred. Regional interpretation therefore depends on how an estimator infers that correspondence and on whether the estimator has been validated against a target that matches the intended claim. This critical narrative review examines both dependencies. Feature-tracking, registration-based, biomechanical and learning-based estimators rely on different priors and supervision, yet many of the method papers reviewed are evaluated mainly by mask overlap or surface distance, which cannot distinguish material mappings that share the same contours, or by sparse landmarks, which constrain correspondence at only a few points. Such evidence can support volumes and contour-derived global strain but not finer regional claims. Sorted by validation target, many apparently conflicting results answer different questions. Studies pairing cine with tagging or displacement encoding with stimulated echoes (DENSE) support selected circumferential-strain end\-points, most consistently at global and mid-ventricular whole-slice level when strain definitions are matched. Agreement nevertheless varied with strain component, spatial scale and software product and was least consistent for radial strain. One DENSE-supervised network improved end-systolic agreement with DENSE over conventional feature tracking in internal testing, although individual differences remained wide. Direct tests of focal magnitude, location, extent and timing remain sparse, and scar-discrimination and prognostic studies address clinical relevance but do not by themselves establish material-motion accuracy. A regional claim should therefore specify the acquisition, estimator, population, spatial unit, strain definition and reference state, time point, comparator and a prespecified tolerance. Known-motion tests with prescribed focal abnormalities, paired in-vivo comparisons with tagging or DENSE, and repeatability studies address different parts of that claim, and no single agreement measure validates an estimator for every claim.
+Regional myocardial dysfunction can be clinically important even when global ventricular function is preserved. Routine cine cardiovascular magnetic resonance (CMR) permits retrospective motion and strain estimation, but cine images do not explicitly identify myocardial material points, so their correspondence across frames must be inferred. Regional interpretation therefore depends on how an estimator infers that correspondence, how strain and its spatial and temporal summaries are defined, and whether the estimator has been validated against a target that matches the intended claim. This critical narrative review examines these dependencies.
+
+Feature-tracking, registration-based, biomechanical and learning-based estimators rely on different priors and supervision. Among the selected cardiac-specific method papers reviewed, reported validation often centres on mask overlap, surface distance or sparse landmarks. These endpoints assess geometry or correspondence at sampled locations, but cannot by themselves identify dense material mappings. Accurate boundaries can support volumes and, under an explicitly contour-based definition, some global strain measures, but they do not by themselves validate dense regional material motion or strain.
+
+When evidence is organised by validation target, apparently conflicting findings often answer different questions. Studies pairing cine with tagging or displacement encoding with stimulated echoes (DENSE) support selected circumferential-strain endpoints, most consistently at global and mid-ventricular whole-slice scales when strain definitions are matched. Agreement nevertheless varies with strain component, spatial scale and software product, and radial strain is the least consistent component across the paired studies reviewed. One DENSE-supervised network improved end-systolic cine--DENSE agreement over its tested conventional feature-tracking pipeline in internal testing, although residual limits of agreement constrained individual-level inference.
+
+Direct tests of focal magnitude, location, extent and timing remain sparse, while scar discrimination and prognostic studies address biological or clinical relevance rather than material-motion accuracy. A regional accuracy claim should therefore specify the acquisition, estimator, population, spatial unit, strain definition and reference state, time point, comparator and a prespecified tolerance. Known-motion tests with prescribed focal abnormalities, paired in-vivo comparisons with tagging or DENSE, and repeatability studies address complementary parts of such a claim; no single agreement measure validates an estimator for every claim.
 \end{abstract}
 
 \noindent\textbf{Keywords:} cardiovascular magnetic resonance; cine CMR; myocardial motion; myocardial strain; regional dysfunction; feature tracking; image registration; validation.

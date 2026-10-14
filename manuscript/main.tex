@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[a4paper,margin=20mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[british]{babel}
@@ -16,6 +16,7 @@
 \renewcommand{\bottomfraction}{0.85}
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.6}
+\makeatletter\setlength{\@fptop}{0pt}\makeatother   % float pages start at the top, not vertically centred
 \graphicspath{{figures/}}
 \usepackage{caption}
 \captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified,singlelinecheck=false}
@@ -48,12 +49,12 @@
 
 \title{\textbf{From routine cine CMR to regional myocardial dysfunction:}\\
 \large Fidelity, validation and interpretation of motion and strain estimates}
-\author{Ziying Huo\\[0.25em]
-\small Faculty of Biology, Medicine and Health, The University of Manchester, Manchester, United Kingdom\\
-\small ORCID: \href{https://orcid.org/0009-0003-1090-8784}{0009-0003-1090-8784}\\
-\small Correspondence: \href{mailto:ziying.huo@postgrad.manchester.ac.uk}{ziying.huo@postgrad.manchester.ac.uk}\\
-\small Full postal correspondence address to be confirmed before submission}
-\date{11 October 2026}
+\author{Ziying Huo\textsuperscript{1} and Jinming Duan\textsuperscript{2,*}\\[0.25em]
+\small \textsuperscript{1}Faculty of Biology, Medicine and Health, The University of Manchester, Manchester, United Kingdom\\
+\small \textsuperscript{2}Division of Informatics, Imaging and Data Sciences, The University of Manchester, Manchester, United Kingdom\\
+\small ORCID (Z.H.): \href{https://orcid.org/0009-0003-1090-8784}{0009-0003-1090-8784}\\
+\small \textsuperscript{*}Corresponding author: \href{mailto:jinming.duan@manchester.ac.uk}{jinming.duan@manchester.ac.uk}}
+\date{14 October 2026}
 
 \begin{document}
 \linenumbers
@@ -63,11 +64,13 @@
 \end{center}
 
 \begin{abstract}
-Regional myocardial dysfunction can be clinically important despite preserved global ventricular function. Routine cine cardiovascular magnetic resonance (CMR) permits retrospective motion and strain estimation, but cine images do not explicitly identify myocardial material points across frames. Regional interpretation therefore depends on the estimator's assumptions and on whether the validation target matches the intended claim.
+Regional myocardial dysfunction can be clinically important even when global ventricular function is preserved. Routine cine cardiovascular magnetic resonance (CMR) permits retrospective motion and strain estimation, but cine images do not explicitly identify myocardial material points, so their correspondence across frames must be inferred. Regional interpretation therefore depends on how an estimator infers that correspondence, how strain and its spatial and temporal summaries are defined, and whether the estimator has been validated against a target that matches the intended claim. This critical narrative review examines these dependencies.
 
-This critical narrative review compares feature-tracking, registration-based, biomechanical and learning-based methods by their inputs, representations, priors and supervision. It distinguishes evidence from known-motion tests, comparisons with tagging or displacement encoding with stimulated echoes (DENSE), repeatability studies, tissue-characterisation analyses and clinical-outcome studies. Among the paired studies reviewed, cine-derived circumferential strain showed agreement with tagging or DENSE at whole-slice, global and segmental scales when definitions were matched; direct tests of focal magnitude, location, extent and timing remain sparse. DENSE-supervised learning improved end-systolic cine--DENSE agreement relative to conventional feature tracking (global intraclass correlation with DENSE 0.87 versus 0.72), although individual differences remained and external-dataset validation was absent. Radial-strain estimates are particularly sensitive to software product and strain definition. In a prescribed-scar MRXCAT2.0 evaluation of DeepStrain, component-specific errors were averaged over whole slices and therefore did not quantify recovery within the scar. Clinical discrimination and prognosis provide evidence of clinical relevance but do not, by themselves, establish material-motion accuracy.
+Feature-tracking, registration-based, biomechanical and learning-based estimators rely on different priors and supervision. Among the selected cardiac-specific method papers reviewed, reported validation often centres on mask overlap, surface distance or sparse landmarks. These endpoints assess geometry or correspondence at sampled locations, but cannot by themselves identify dense material mappings. Accurate boundaries can support volumes and, under an explicitly contour-based definition, some global strain measures, but they do not by themselves validate dense regional material motion or strain.
 
-A defensible regional claim should therefore specify the acquisition, estimator, population, spatial scale, strain definition, reference and a prespecified tolerance. Controlled known-motion tests and aligned material-sensitive in-vivo comparisons can probe abnormality magnitude, location, extent and timing; downstream studies address clinical relevance. Input information, representation, estimation and reference uncertainty can contribute jointly to error, so each claim is best supported by the complementary tests that address it; no single agreement measure serves as general validation.
+When evidence is organised by validation target, apparently conflicting findings often answer different questions. Studies pairing cine with tagging or displacement encoding with stimulated echoes (DENSE) support selected circumferential-strain endpoints, most consistently at global and mid-ventricular whole-slice scales when strain definitions are matched. Agreement nevertheless varies with strain component, spatial scale and software product, and radial strain is the least consistent component across the paired studies reviewed. One DENSE-supervised network improved end-systolic cine--DENSE agreement over its tested conventional feature-tracking pipeline in internal testing, although residual limits of agreement constrained individual-level inference.
+
+Direct tests of focal magnitude, location, extent and timing remain sparse, and scar-discrimination and prognostic studies address biological or clinical relevance but do not by themselves establish material-motion accuracy. A regional accuracy claim should therefore specify the acquisition, estimator, population, spatial unit, strain definition and reference state, time point, comparator and a prespecified tolerance. Known-motion tests with prescribed focal abnormalities, paired in-vivo comparisons with tagging or DENSE, and repeatability studies address complementary parts of such a claim; no single agreement measure validates an estimator for every claim.
 \end{abstract}
 
 \noindent\textbf{Keywords:} cardiovascular magnetic resonance; cine CMR; myocardial motion; myocardial strain; regional dysfunction; feature tracking; image registration; validation.
@@ -90,28 +93,25 @@ ACDC, Automated Cardiac Diagnosis Challenge; AHA, American Heart Association; AU
 Not applicable. This review did not collect new participant data.
 
 \subsection*{Consent for publication}
-Not applicable to the review content. The corresponding author must confirm that all author and institutional details are approved before submission.
+Not applicable.
 
 \subsection*{Availability of data and materials}
 No new participant dataset was created; the review uses published sources. The manuscript and editable figure sources, the surviving historical query log and the extraction notes are available from the corresponding author on reasonable request. Original historical search exports and record-level screening decisions are no longer available.
 
 \subsection*{Competing interests}
-\textbf{Author confirmation required before submission.} This draft does not certify the absence or presence of competing interests.
+To be confirmed before submission.
 
 \subsection*{Funding}
-\textbf{Author confirmation required before submission.} No funding statement has been certified for this draft.
+To be confirmed before submission.
 
 \subsection*{Author contributions}
-The current title page lists Ziying Huo as the sole author. Authorship, order and contribution wording must be confirmed against the journal's criteria before submission. No contribution by a supervisor or other person is inferred from background materials.
-
-\subsection*{Acknowledgements}
-\textbf{Author confirmation required before submission.} Names, contributions and permission to acknowledge individuals must be confirmed by the author.
+Ziying Huo conceived the review, synthesised the literature, developed the methodological framework, prepared the figures, and wrote and revised the manuscript. Jinming Duan provided supervision, academic guidance, and critical review of the manuscript.
 
 \subsection*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
-OpenAI Codex and Claude Code (Anthropic) were used during preparation of this manuscript for search support, evidence organisation, drafting, revision, LaTeX preparation, deterministic consistency checks and programmatic figure generation. On 11 October 2026, OpenAI Codex was used to reconcile three AI-assisted review rounds of the draft with selected primary-source passages and with the revised figure package, and Claude Code was then used for a further scientific review and language revision whose edits are logged in the author-review package. AI-assisted review of intermediate drafts does not constitute independent human or clinical review. Figures were edited as Python/SVG sources and rendered with headless Chromium; the manuscript was compiled with pdfLaTeX and BibTeX. No generative image model, raw cardiac images or new experimental data were used. The corresponding author must verify the scientific content, sources, figures, process statements and declarations, confirm the journal's current policy on AI assistance and accept responsibility before submission.
+OpenAI Codex and Claude Code (Anthropic) were used during preparation of this manuscript for search support, evidence organisation, drafting, revision, LaTeX preparation, deterministic consistency checks and programmatic figure generation. On 11 October 2026, OpenAI Codex was used to reconcile three AI-assisted review rounds of the draft with selected primary-source passages and with the revised figure package, and Claude Code was then used for a further scientific review and language revision whose edits are logged in the author-review package. AI-assisted review of intermediate drafts does not constitute independent human or clinical review. Figures were edited as Python/SVG sources and rendered with headless Chromium; the manuscript was compiled with pdfLaTeX and BibTeX. No generative image model, raw cardiac images or new experimental data were used.
 
 \subsection*{Figure provenance and permissions}
-The figures combine conceptual diagrams, analytic illustrations and redraws of published numerical results. Figure~1 redraws reported values from MRXCAT2.0, Militaru, Cao, StrainNet, REGAIN, Strain-8, Kihlberg, Bello and DLSS; Figure~4 redraws MRXCAT2.0 values. Figure~3 maps selected source records and contains no measured patient data. Figures~2 and~5, Supplementary Figures~S1--S3 and the graphical abstract contain conceptual or analytic schematics. No patient image or third-party figure artwork is copied. Editable figure sources and their numerical inputs accompany the figures in the author-review package. Scientific review of the figures, source acknowledgement, rights assessment and current journal-policy interpretation remain the author's responsibility and are pending.
+The figures combine conceptual diagrams, analytic illustrations and redraws of published numerical results. Figure~1 redraws reported values from MRXCAT2.0, Militaru, Cao, StrainNet, REGAIN, Strain-8, Kihlberg, Bello and DLSS; Figure~5 redraws MRXCAT2.0 values. Figure~3 maps selected source records and contains no measured patient data. Figures~2 and~4, Supplementary Figures~S1--S3 and the graphical abstract contain conceptual or analytic schematics. No patient image or third-party figure artwork is copied. Editable figure sources and their numerical inputs accompany the figures in the author-review package.
 
 \setlength{\bibsep}{2pt}
 \bibliographystyle{jcmr-review}

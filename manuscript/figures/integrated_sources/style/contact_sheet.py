@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 ORDER = ["Figure_1_two_track_evidence_map", "Figure_2_same_contours_analytic", "Figure_3_method_timeline",
-         "Figure_4_attribute_specific_recovery", "Figure_5_validation_targets_programme", "Graphical_abstract",
+         "Figure_4_validation_targets_programme", "Figure_5_attribute_specific_recovery", "Graphical_abstract",
          "Figure_S1_strain_definition_traps", "Figure_S2_error_attributes_mapping_validity",
          "Figure_S3_training_vs_inference_controls"]
 COL_W, GAP, LABEL = 1400, 40, 34

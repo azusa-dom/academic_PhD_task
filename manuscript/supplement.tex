@@ -14,6 +14,7 @@
 \renewcommand{\bottomfraction}{0.85}
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.6}
+\makeatletter\setlength{\@fptop}{0pt}\makeatother   % float pages start at the top, not vertically centred
 \graphicspath{{figures/}}
 \usepackage{caption,float,enumitem,xcolor}
 \captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified,singlelinecheck=false}
@@ -73,9 +74,9 @@ Cardiac components require a coordinate frame. Circumferential, radial and longi
 
 Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve, \(\min_t E_s(t)\) is generally not equal to the spatial average of pointwise minima. ``End-systolic'', ``peak systolic'' and ``peak over the whole cardiac cycle'' may diverge in dyssynchrony or post-systolic shortening. A reproducible comparison must fix the order of differentiation, projection, spatial averaging and temporal peak selection. Supplementary Figure~\ref{fig:supp-definitions} illustrates these four traps.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
-\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S1_strain_definition_traps.pdf}}
+\includegraphics[width=\textwidth]{integrated/Figure_S1_strain_definition_traps.pdf}
 \caption{The same motion gives different numbers under different definitions. (a) Engineering strain \(e\) and Green--Lagrange strain \(E=e+e^2/2\) differ by 0.02 at \(e=-0.20\); the table converts five values. (b) Endocardial, mid-wall and epicardial layers and local radial and circumferential axes, with the choices a report must state. (c) One segmental curve read as peak systolic (\(-0.17\)), end-systolic (\(-0.14\)) and post-systolic peak (\(-0.21\)). (d) The minimum of a segment-mean curve (\(-0.10\)) differs from the mean of pointwise minima (\(-0.20\)). Conceptual and analytic schematics with no measured scale; printed values are computed from the drawn curves.}
 \label{fig:supp-definitions}
 \end{figure}
@@ -83,7 +84,7 @@ Peak definitions also differ. If \(E_s(t)\) is the segment-average strain curve,
 
 \section*{Supplementary Note 2: validation targets}
 
-The claim boundaries for common validation targets are summarised in Figure~5a of the main text.
+The claim boundaries for common validation targets are summarised in Figure~4a of the main text.
 
 A validation hierarchy should not be interpreted as a single ranking. Simulation supplies exact truth but imperfect realism. DENSE and tagging provide material-sensitive in-vivo information but have sequence- and processing-specific error. Scan--rescan establishes precision. LGE and outcomes test biological or clinical relationships. A mature claim often needs several targets because their weaknesses are complementary.
 
@@ -93,9 +94,9 @@ When two acquisitions are compared, acquisition registration is part of the refe
 
 The distinct spatial, temporal and field-validity failure modes are illustrated in Supplementary Figure~\ref{fig:supp-errors}.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
-\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S2_error_attributes_mapping_validity.pdf}}
+\includegraphics[width=\textwidth]{integrated/Figure_S2_error_attributes_mapping_validity.pdf}
 \caption{Regional error attributes and mapping validity. (a) Reference and estimate profiles separating magnitude, location, extent and support errors. (b) Temporal magnitude and timing errors. In a, and again in b, every estimate has the same root-mean-square error against its reference (0.17 and 0.16), so a single mean-squared error cannot tell these failures apart. (c) A smooth invertible mapping (minimum \(\det J=0.81\)), which can still be wrong, and a folded mapping with \(\det J\le 0\) in 5 of 121 outlined cells (minimum \(-1.13\)). Prescribed schematics with no measured scale.}
 \label{fig:supp-errors}
 \end{figure}
@@ -110,6 +111,8 @@ Let a prescribed abnormality field be \(g_{\mathrm{ref}}(\vect x,t)\) and an est
 \item error conditional on the reference support and a sensitivity analysis over the threshold.
 \end{itemize}
 
+\paragraph{Designing known-motion tests.} Known-motion experiments should vary one factor at a time and then test interactions: abnormality width, transmural extent, amplitude, onset/peak timing, position, wall thickness, through-plane motion, temporal resolution, spatial resolution, contrast, noise and artefact. To probe representation capacity, the known field should first be fitted in the candidate representation under an explicit norm, sampling scheme and boundary treatment. The fitting objective must match the target: minimising displacement error need not minimise strain-gradient or focal-attribute error. A failed numerical fit alone does not establish a representation limit. Such a conclusion requires an analytic restriction, a certified approximation bound, or convincing evidence that the best attainable fit was reached; otherwise optimisation remains an alternative explanation. Running the estimator on rendered images then measures recovery under the combined image and estimation conditions; the difference between these tests is informative but is not automatically an additive or uniquely attributable optimisation error.
+
 Field validity is related but distinct. A positive Jacobian determinant is a useful check against local folding, while near-incompressibility may be physiologically motivated. Neither proves accurate correspondence. A smooth, invertible mapping can be wrong, and a reference generated by an approximate 2D model can violate three-dimensional tissue behaviour. Validity metrics should accompany regional accuracy metrics and cannot replace them.
 
 \section*{Supplementary Note 4: learning target and control point}
@@ -120,9 +123,9 @@ Training-time and inference-time controls must also be distinguished. Changing a
 
 Supplementary Figure~\ref{fig:supp-controls} shows the two control points and their shared held-out evaluation contract.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
-\makebox[\textwidth][c]{\includegraphics[width=190mm]{integrated/Figure_S3_training_vs_inference_controls.pdf}}
+\includegraphics[width=\textwidth]{integrated/Figure_S3_training_vs_inference_controls.pdf}
 \caption{Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic.}
 \label{fig:supp-controls}
 \end{figure}
@@ -152,6 +155,8 @@ Failure policy & Exclusion, imputation, quality control or abstention; observabl
 Statistics & Bias/limits, confidence intervals, repeated-measures model, multiplicity and missingness \\
 \bottomrule
 \end{longtable}
+
+\paragraph{Design notes.} Case splits should occur at participant and, where relevant, centre level, and repeated segments should not be analysed as independent observations. Hyperparameters, model selection and any quality threshold should be chosen without using the final test set. Competing methods should be tuned on the same data with comparable effort, because a retrained baseline and a published score answer different questions; releasing the transformation direction, differentiation code and strain definition makes a disagreement diagnosable where a single aggregate score does not. External centres and scanners test transfer only if participants and acquisition conditions are independent of training and model selection. In paired in-vivo comparisons, reference processing should be blinded to cine outputs where feasible, and results should be reported separately for healthy myocardium and relevant disease patterns, including scar location, wall thickness and image quality. Clinical studies can also report minimal detectable change, and decision studies should state how false-positive and false-negative regional calls matter.
 
 \section*{Supplementary Note 6: software, versioning and regulatory context}
 

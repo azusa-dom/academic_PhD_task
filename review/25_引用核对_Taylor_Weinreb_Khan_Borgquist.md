@@ -6,24 +6,59 @@
 
 | 文献 | 实际读到的 | 读深 |
 |---|---|---|
-| Taylor 2016, Heart Rhythm 13(2):481–9, [DOI](https://doi.org/10.1016/j.hrthm.2015.10.024)，PMID 26498258 | PubMed 摘要与 MeSH 词。无 PMC 全文；Aston 机构库只有摘要页；出版社页面拒绝自动访问 | **仅摘要**。方法、多变量表、局限均未读 |
+| Taylor 2016, Heart Rhythm 13(2):481–9, [DOI](https://doi.org/10.1016/j.hrthm.2015.10.024)，PMID 26498258 | 作者提供的出版版 PDF，共 9 页，逐页看页面图像，含 Table 1–4、Fig. 1–3、参考文献。无补充材料 | 全文 |
 | Weinreb 2021, Radiology 298(1):28–35, [DOI](https://doi.org/10.1148/radiol.2020202903) | 同文联合发表于 Kidney Medicine 2021;3(1):142 起（末页未在 XML 中给出；[DOI](https://doi.org/10.1016/j.xkme.2020.10.001)，PMC7873723），经 Europe PMC JATS XML 读全文，含 Table 1–3 | 全文（联合发表版本；未逐字比对 Radiology 版） |
 | Khan 2012 (TARGET), JACC 59(17):1509–18, [DOI](https://doi.org/10.1016/j.jacc.2011.12.030)，PMID 22405632 | PubMed 摘要；Borgquist 2022 Table 4 中的 TARGET 行 | 仅摘要 |
 | Borgquist 2022, Heart Rhythm O2 3(4):377–384, [DOI](https://doi.org/10.1016/j.hroo.2022.05.003)，PMC9463689 | 全文（Europe PMC XML），含 Table 4 | 全文 |
 
-## Taylor 2016：只能核到摘要层面，四点中有三点需要全文
+## Taylor 2016：全文核对后，两句话都成立，但有三处要写准
 
-**第 1 点（激动的测量方法）。** 摘要写的是"Feature-tracking and late gadolinium enhancement images were analyzed retrospectively"，并在括号里把 LMA 定义为"time to peak systolic circumferential strain" [原文事实，摘要 Methods]。标题写明"feature-tracking … cardiovascular magnetic resonance study"，MeSH 标了"Magnetic Resonance Imaging, Cine"。摘要里没有出现 tagging 或 DENSE。因此"read from feature-tracking time to peak circumferential strain on cine CMR"在摘要层面成立。用的是哪个软件、哪几层短轴、"最晚"是按节段排序取最晚还是设了阈值，摘要都没写 [未报告：仅读摘要]。
+作者提供了出版版 PDF（9 页），逐页看了页面图像，包括 Table 1–4、Fig. 1–3 和参考文献。下面的页码是期刊页码。
 
-**第 2 点（疤痕的排除）。** 摘要定义 concordant 为"no scar and LMA"，nonconcordant 为"scar and/or no LMA" [原文事实]。所以 concordant 确实要求两个条件同时满足。LGE 透壁度阈值摘要没给 [未报告：仅读摘要]。
+**第 1 点（激动的测量方法）。成立。** 软件是 TomTec（Tomtec Imaging Systems, Munich），对象是 basal、mid、apical 三层短轴（p483 左栏）。图像来自 1.5 T GE Signa 上的 SSFP cine：TR 3.2 ms，TE 1.7 ms，层厚 7 mm、层间隔 3 mm，每个心动周期 25 个时相，平均时间分辨率 40 ms（p482–483）[原文事实]。作者选周向应变而不用径向应变，理由是它与 CMR tagging 做过验证、重复性更好；tagging 只出现在引用的前作里，本研究没有采集 tagging 或 DENSE [原文事实，p483]。所以"read from feature-tracking time to peak circumferential strain on cine CMR"准确。
 
-**第 3 点（效应大小）。** 摘要给出：LVRR 在 concordant 组为 68%，nonconcordant 组为 24%（P < .001），n = 89。中位随访 4.4 年（范围 0.1–8.7 年）。concordance 对心脏死亡的 aOR 为 0.27（95% CI 0.12–0.62），对心脏死亡或心衰住院的 aOR 为 0.26（0.12–0.58）。"no scar" 对心脏死亡的 aOR 为 0.24（0.11–0.52），对心脏死亡或心衰住院为 0.24（0.12–0.49） [原文事实，摘要 Results]。
+"最晚"的判定方法：每段取收缩期周向应变峰值出现的时间，用占 RR 间期的百分比表示；在可分析节段中取峰值最晚的节段作为 LMA [原文事实，p483 右栏；Fig. 1A 示例只标出一个 LMA 节段]。判定前有两道筛选：
 
-需要注意：摘要报告的是 **adjusted odds ratio，不是 HR**。随访跨度长达 8.7 年，却用比值比而不是时间–事件模型，这一点要看全文的统计方法才能判断 [读者推断]。另外，摘要的结论把两种成分分开说："LVRR was primarily related to LMA, whereas events were primarily related to scar" [作者推断，摘要 Conclusion]。也就是说，与硬终点相关的主要是"无疤痕"，不是激动时相。稿子如果用这篇支撑"时相信息有临床价值"，可依托的是 LVRR，而不是死亡或住院。
+- 只考虑 11 个游离壁节段；
+- 峰值周向应变高于 0 或在 0 到 −6.3% 之间的节段视为疤痕，先排除，不参与 LMA 判定 [原文事实，p483]。作者说 −6.3% 这个截断是为了偏向疤痕的特异性，敏感性交给 LGE。
 
-**第 4 点（局限与可重复性）。** 摘要自述是回顾性研究、n = 89。PubMed 给这篇标了 MeSH 词"Reproducibility of Results"，提示正文里很可能有某种可重复性分析。但它测的是什么（时相、应变幅值，还是轮廓），在摘要里无法确认 [读者推断]。在拿到全文之前，稿子里这句应保持现在的措辞，只说"read from"，不要写成"accurately measured"或"reproducibly measured"。
+也就是说，时相的读取本身没有阈值，但读取前有一道应变幅度门槛。
 
-**还需要全文才能完成的核对：** Methods 中的 FT 软件、短轴层数与 LMA 判定规则；LGE 透壁度阈值；多变量模型纳入了哪些协变量，concordance 是否独立预测 LVRR；Limitations 里关于 FT 时相可重复性的表述。请从曼大图书馆下载 PDF 放进仓库，或直接贴相关段落，我再补完这一节。
+**第 2 点（疤痕的排除）。LGE 只记"有/无"，没有透壁度阈值。** 观察者 R.J.T. 用 CVI42 在 16 节段上目测判读，每段记为 present 或 absent（p483 左栏）[原文事实]。全文没有出现 >50% 或其他透壁度标准 [未报告：Methods、Results、Discussion 已查]。透壁或心内膜下 LGE 只用来把病因分为缺血性（p482）。对比剂是 gadolinium-DTPA 0.1 mmol/kg [原文事实]，按 Weinreb 2021 的分组属于 group I；这与本稿论证无关，只作记录。
+
+**concordant 的定义比摘要写的宽：** "(1) subtended a nonscarred segment and (2) subtended LMA *or the adjacent segment*"（p483 右栏）[原文事实]。所以 concordant 是"无疤痕 + LMA 或其相邻节段"，不是严格的"最晚激动节段"。稿子如果写成"lead over the latest-activated, scar-free segment"，应改成"over or adjacent to the latest-activated segment"，或者不展开细节、只说"concordant with late activation and absence of scar"。
+
+**第 3 点（效应大小）。concordance 独立预测 LVRR，但调整的协变量很少；临床终点实际是 HR，被误标成 aOR。**
+
+LVRR 方面（Table 3，逻辑回归）：
+- 单变量：concordant 的 OR 为 6.62（95% CI 2.61–16.79）；LMA 或相邻节段 3.27（1.29–8.30）；单独"无疤痕"2.60（0.86–8.29，P = .09，未达显著）。
+- 多变量：Model 3 中 concordant 的 OR 为 6.28（2.45–16.08，P < .001），只与年龄一起进入模型。Model 2 中无疤痕 4.85（1.24–18.94），LMA 或相邻节段 7.01（1.96–25.10）[原文事实]。
+- 进入多变量模型的规则是单变量 P < .10（p485）。所以除年龄外，QRS 时限、病因、LVEF 都没有进入 LVRR 模型 [原文事实]。但 Table 1 中两组的 QRS 时限（155.3 vs 143.0 ms，P = .02）和缺血病因（45% vs 67%，P = .04）是不平衡的 [原文事实]。因此"独立预测"只是相对年龄而言 [读者推断]。
+- 导线恰好落在 LMA 节段本身（而不是相邻节段）的 20 人中，18 人（90%）出现 LVRR（p486）[原文事实]。
+
+临床终点方面（Table 4，Cox 回归）：随访中位 4.4 年，共 28 例心脏死亡（concordant 组 8 例，nonconcordant 组 20 例），心衰住院 3 例和 10 例（p486）[原文事实]。
+- Model 2 中 concordant 对心脏死亡的 HR 为 0.27（0.12–0.62），对心脏死亡或心衰住院为 0.26（0.12–0.58）。
+- Model 1 中"无疤痕"分别为 0.24（0.11–0.52）和 0.24（0.12–0.49）。
+- 两个模型都只调整了年龄和 LVEF [原文事实]。
+- 单独的"LMA 或相邻节段"对两个终点都没有预测作用：HR 0.82（0.33–2.02，P = .66）和 1.19（0.57–2.51，P = .64）[原文事实]。
+
+Table 4 的表头和统计方法一节都写的是 Cox 比例风险模型和 HR，但摘要和正文 p486 把同一组数字写成"adjusted odds ratio [aOR]"。这是论文自身的标注错误 [原文事实：两处标注不一致]。稿子如果引用这些数字，应写 HR，并注明出自 Table 4。
+
+**第 4 点（局限与可重复性）。FT 时相的可重复性没有报告。** 作者自述的局限包括：单中心、样本量中等、观察性设计，不能证明 LGE/FT 引导优于透视定位；CMR 是多年后回顾分析的（作者认为这相当于对 FT 结果设盲）；没有收集 QRS 形态数据（p488 Study limitations）[原文事实]。全文没有任何关于 LMA 时相或疤痕判读的观察者内或观察者间重复性数据 [未报告：Methods、Results、Limitations 已查]。文中唯一涉及"reproducibility"的地方，是选择周向应变的理由，引用了前作中的应变幅度重复性（引文 8、23，p483）。PubMed 标的 MeSH 词"Reproducibility of Results"大概来自这里 [读者推断]。所以稿子里应保持"read from"，不要写"accurately"或"reproducibly measured"。
+
+**与稿子论证相关的另外两点：**
+
+- 时相是在平均 40 ms 的时间分辨率下读取的（p483）。节段间的激动时间差本来就不大，Borgquist 2022 的讨论也强调了这一点。这可以作为 §4"时相空缺"的一个具体例子 [读者推断]。
+- 作者的结论是"it is scar rather than LMA that primarily relates to clinical outcomes"（p487），以及"The assessment of myocardial strain does not add value in predicting cardiac mortality or HF hospitalizations over and above the assessment of myocardial scar"（p488 Clinical implications）[作者推断]。
+
+**对稿子两句话的判断：**
+
+1. "late activation was read from feature-tracking time to peak circumferential strain on cine CMR"——全文支持，措辞可以不改。
+2. "最晚激动 + 无疤痕"的导线位置与 CRT 反应相关——支持，但要写准三处：
+   - "concordant"包括相邻节段；
+   - 激动时相（LMA）只与 LVRR 相关，与死亡和住院无关，硬终点主要由"无疤痕"解释；
+   - 这是回顾性、单中心、n = 89 的研究，多变量模型只调整了年龄（或年龄加 LVEF）。
+   若稿子用它说明"时相信息有临床意义"，应限定为"associated with LV reverse remodelling"。
 
 ## Weinreb 2021：稿子那句话成立，但要改成具体主体和条件，附带的论证要收窄
 
@@ -64,7 +99,7 @@
 
 ## 待办
 
-1. 取得 Taylor 2016 全文 PDF，补完第 1、2、4 点和多变量结果。
+1. ~~取得 Taylor 2016 全文 PDF~~：已完成（2026-10-14）。
 2. 确认机构用于 CMR 的对比剂品种和剂量（是否 0.1 mmol/kg）。
 3. 若稿子要用随访时长论证 NSF 风险，需要另读 Woolen 2020（JAMA Intern Med）。
 4. 把稿子当前版本放进仓库，我好对照原句和上下文做最终改写建议。

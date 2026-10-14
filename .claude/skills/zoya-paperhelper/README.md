@@ -1,4 +1,4 @@
-# paper-deconstruct
+# zoya-paperhelper
 
 一个用于 Claude Code / Claude Agent Skills 的单篇论文精读 skill：**重走作者的研究路线，并找出问题。**
 
@@ -13,7 +13,7 @@
 
 ## 安装
 
-把整个 `paper-deconstruct/` 目录复制到项目的 `.claude/skills/` 或用户级 `~/.claude/skills/` 下即可。
+把整个 `zoya-paperhelper/` 目录复制到项目的 `.claude/skills/` 或用户级 `~/.claude/skills/` 下即可。
 
 ## 用法示例
 

@@ -1,5 +1,5 @@
 ---
-name: paper-deconstruct
+name: zoya-paperhelper
 description: 单篇论文的三层拆解精读：先重走作者的研究路线（已有认识→缺口→假设→设计→数据→方法→评价→结论），标出每个决策分叉和路线断点；再逐图逐表核对每条核心结论的证据、成立条件和未被证明的部分，严格区分原文事实与作者推断；最后落到读者自己的下一步方案。Use whenever the user wants to deeply read, deconstruct, critically appraise, journal-club, or "find the problems in" ONE specific paper — e.g. "精读这篇", "拆解这篇论文", "帮我重走作者的思路", "这篇文章有什么问题", "这篇能不能信", "读完我能借鉴什么", "deconstruct this paper", "retrace the authors' reasoning", "what's wrong with this study" — even if they only paste a DOI, PDF, or title. Prefer this over generic summarisation for single-paper reading. For multi-paper synthesis use literature-review / academic-deep-research; for writing a formal referee report use peer-review.
 license: MIT
 metadata:
@@ -8,7 +8,7 @@ metadata:
   status: draft — 未经独立人类评估
 ---
 
-# Paper Deconstruct：重走研究路线并找出问题
+# Zoya Paperhelper：重走研究路线并找出问题
 
 读一篇论文最有价值的地方，不是它的结论本身，而是作者在每个分叉口做了什么选择、这些选择让结论在什么条件下成立、以及哪些东西其实没有被证明。这个 skill 把精读拆成三层：**重走路线**（理解作者为什么这么做）、**核对证据**（判断结论能信到什么程度）、**落到下一步**（读者能借什么、要避开什么、还能问什么）。找问题贯穿前两层：第一层找"路线断点"，第二层找"证据缺口"，最后有一轮自我反驳，把站不住的批评删掉。
 

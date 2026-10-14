@@ -107,4 +107,4 @@ fig.kv_table(560, by + 214, [("segments 1–3, focal", "−0.22 · −0.22 · �
                              ("global mean, both fields", "−0.18"), ("range, focal / uniform", "0.16 / 0")], w=220, row_h=17)
 fig.lines(560, by + 292, ["Recovering the mean does not", "establish deficit recovery."], T.SMALL)
 
-export(fig, "Figure_5_validation_targets_programme")
+export(fig, "Figure_4_validation_targets_programme")

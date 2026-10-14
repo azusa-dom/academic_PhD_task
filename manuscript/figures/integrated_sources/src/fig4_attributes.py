@@ -123,4 +123,4 @@ fig.text(38, H - 4, "not reported at the attribute's own (scar) level", T.SMALL,
 fig.line(560, H - 8, 578, H - 8, C.REF, 1.6)
 fig.text(584, H - 4, "reference profile (schematic)", T.SMALL, fill=C.MUTED)
 
-export(fig, "Figure_4_attribute_specific_recovery")
+export(fig, "Figure_5_attribute_specific_recovery")

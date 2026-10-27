@@ -46,13 +46,13 @@ The findings are reconciled by treating regional fidelity as attribute- and use-
 
 ## Proposed author
 
-Ziying Huo  
+[AUTHOR NAME]  
 Faculty of Biology, Medicine and Health, The University of Manchester, Manchester, United Kingdom  
 ORCID: 0009-0003-1090-8784  
-ziying.huo@postgrad.manchester.ac.uk
+author@example.org
 
 The author will confirm authorship, declarations, institutional wording and full postal address before this enquiry is sent.
 
 Kind regards,
 
-Ziying Huo
+[AUTHOR NAME]

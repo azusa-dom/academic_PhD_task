@@ -4,7 +4,7 @@
 
 Dear Editors of the *Journal of Cardiovascular Magnetic Resonance*,
 
-Please consider the Review article, “From routine cine CMR to regional myocardial dysfunction: Fidelity, validation and interpretation of motion and strain estimates,” by Ziying Huo.
+Please consider the Review article, “From routine cine CMR to regional myocardial dysfunction: Fidelity, validation and interpretation of motion and strain estimates,” by [AUTHOR NAME].
 
 Regional motion and strain estimates are increasingly produced from routine cine CMR, yet studies often validate different links in the measurement chain. Mask overlap, scan–rescan precision, agreement with tagging or DENSE, association with late gadolinium enhancement, and outcome prediction are all valuable, but they do not support identical claims. This review brings those literatures together around a practical question: for a specified cine acquisition, estimator and strain definition, which attributes of a regional abnormality—magnitude, location, spatial extent and timing—are recovered within a tolerance appropriate to the intended use?
 
@@ -20,11 +20,11 @@ Thank you for considering this Review.
 
 Yours sincerely,
 
-**Ziying Huo**  
+**[AUTHOR NAME]**  
 Faculty of Biology, Medicine and Health  
 The University of Manchester  
 Manchester, United Kingdom  
-ziying.huo@postgrad.manchester.ac.uk  
+author@example.org  
 ORCID: 0009-0003-1090-8784  
 
 *Electronic signature and full postal address to be added only after author review.*
